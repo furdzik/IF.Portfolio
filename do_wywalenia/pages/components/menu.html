@@ -1,0 +1,5 @@
+<ul data-ng-controller="menuCtrl">
+    <li data-ng-repeat="tab in menu" data-ng-class="{'active': getActiveClass(tab.url) }" data-ng-click="getNumberActiveTab(tab.url);">
+        <a href="[[ tab.url ]]">[[ tab.name ]]</a>
+    </li>
+</ul>

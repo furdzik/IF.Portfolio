@@ -1,0 +1,51 @@
+{
+  "name": "if.portfolio",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "5.11.4",
+    "@testing-library/react": "11.1.0",
+    "@testing-library/user-event": "12.1.10",
+    "prop-types": "15.7.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-intl": "5.10.16",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.1",
+    "styled-components": "5.2.1",
+    "stylelint": "13.8.0",
+    "web-vitals": "0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "npm run eslint && npm run stylelint",
+    "eslint": "eslint src/ --ext .jsx,.js",
+    "stylelint": "npx stylelint \"**/*.styles.js\"",
+    "lang": "extract-messages -l=pl -d=pl -o src/lang/components --flat \"src/components/**/*.messages.js\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "stylelint-config-prettier": "8.0.2",
+    "stylelint-config-recommended-scss": "4.2.0",
+    "stylelint-config-standard": "20.0.0",
+    "stylelint-config-styled-components": "0.1.1"
+  }
+}

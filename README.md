@@ -1,70 +1,118 @@
 # IF.Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository presents my front-end abilities.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table of Contents
 
-### `yarn start`
+- [Development](#development)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [Running](#running)
+  - [Build](#build)
+  - [Updating packages](#updating-packages)
+  - [Test & linters](#test--linters)
+- [Environments](#environments)
+- [Browsers](#browsers-support)
+- [Tests](#tests)
+- [Links](#links)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Development
 
-### `yarn test`
+This app is base on [Create React App](https://create-react-app.dev/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Requirements
 
-### `yarn build`
+- NodeJS >= v10.14.1
+- npm >= 6.4.1
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone project from GitHub repository `git clone git@github.com:furdzik/IF.Portfolio.git` or `git clone https://github.com/furdzik/IF.Portfolio.git`
+2. Add alias to your hosts file: 127.0.0.1 if.portfolio.local
+3. `cd IF.Portfolio`
+4. Install dependencies `npm install`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Running
 
-### `yarn eject`
+Run
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```sh
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+for starting dev server. Navigate to `http://if.portfolio.local:2021/`. The app will automatically reload if you change any of the source files.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Build
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Run
 
-## Learn More
+```sh
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+to build project.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+\* The build artifacts will be stored in the `build/` directory.
 
-### Code Splitting
+To run project locally run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```sh
+cd build
+```
 
-### Analyzing the Bundle Size
+### Updating packages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Package.json is strictly connected with package-lock.json. Updating package should have reflection in package-lock. You should also take care of installing exactly specified package version (see package.json [suffix](https://docs.npmjs.com/files/package.json#dependencies))
 
-### Making a Progressive Web App
+### Test & linters
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project used tools such as:
 
-### Advanced Configuration
+- [Jest](https://jestjs.io/)
+- [Testing library for React](https://testing-library.com/docs/react-testing-library/intro/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+for unit testing.
 
-### Deployment
+Run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```sh
+npm run lint
+```
 
-### `yarn build` fails to minify
+to execute code style analysis (Eslint, SASS Lint etc.).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Run
+
+```sh
+npm test
+```
+
+to execute the unit tests via Jest
+
+\* unit tests and linters run on every `git push` (add `--no-validate` flag to omit it - nor recommended)
+
+## Environments
+
+| Environment | Url                                                                      |
+|-------------|--------------------------------------------------------------------------|
+| Local       | [http://localhost:1217/](http://localhost:1217/) |
+
+
+## Browsers support
+
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Opera |
+| --------- | --------- | --------- | --------- | --------- |
+| Edge| last version| last version| last version| last version
+
+## Tests
+
+The whole logic of Redux should be covered by tests and if I had continued with this project I would have done it at the beginning.
+
+## Links
+
+- [Style guide](docs/STYLEGUIDE.md)
+- [Project structure](docs/PROJECT_STRUCTURE.md)

@@ -2,6 +2,15 @@
   "name": "if.portfolio",
   "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "npm run eslint && npm run stylelint",
+    "eslint": "eslint src/ --ext .jsx,.js",
+    "stylelint": "npx stylelint \"**/*.styles.js\"",
+    "lang": "extract-messages -l=pl -d=pl -o src/lang/components --flat \"src/components/**/*.messages.js\"",
+    "eslint:fix": "npm run eslint -- --fix"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "5.11.4",
     "@testing-library/react": "11.1.0",
@@ -16,19 +25,26 @@
     "stylelint": "13.8.0",
     "web-vitals": "0.2.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "lint": "npm run eslint && npm run stylelint",
-    "eslint": "eslint src/ --ext .jsx,.js",
-    "stylelint": "npx stylelint \"**/*.styles.js\"",
-    "lang": "extract-messages -l=pl -d=pl -o src/lang/components --flat \"src/components/**/*.messages.js\""
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "conventional-changelog-cli": "2.1.1",
+    "conventional-changelog-eslint": "3.0.9",
+    "editorconfig": "0.15.3",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "extract-react-intl-messages": "4.1.1",
+    "husky": "4.3.8",
+    "redux-devtools-extension": "2.13.8",
+    "stylelint-config-prettier": "8.0.2",
+    "stylelint-config-recommended-scss": "4.2.0",
+    "stylelint-config-standard": "20.0.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-declaration-block-no-ignored-properties": "2.3.0",
+    "stylelint-declaration-use-variable": "1.7.2",
+    "stylelint-order": "4.1.0",
+    "stylelint-processor-styled-components": "1.10.0",
+    "stylelint-scss": "3.18.0"
   },
   "browserslist": {
     "production": [
@@ -42,10 +58,85 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "stylelint-config-prettier": "8.0.2",
-    "stylelint-config-recommended-scss": "4.2.0",
-    "stylelint-config-standard": "20.0.0",
-    "stylelint-config-styled-components": "0.1.1"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "eslint-config-airbnb"
+    ],
+    "plugins": [
+      "eslint-plugin-import",
+      "eslint-plugin-react-hooks"
+    ],
+    "rules": {
+      "arrow-parens": [
+        "error",
+        "always"
+      ],
+      "comma-dangle": [
+        "error",
+        "never"
+      ],
+      "import/no-extraneous-dependencies": 0,
+      "import/extensions": 0,
+      "import/no-useless-path-segments": 0,
+      "import/prefer-default-export": 0,
+      "import/no-named-as-default": 0,
+      "jsx-a11y/anchor-has-content": 0,
+      "no-multiple-empty-lines": [
+        "error",
+        {
+          "max": 1
+        }
+      ],
+      "no-confusing-arrow": 0,
+      "react/destructuring-assignment": 0,
+      "react/sort-prop-types": [
+        2,
+        {
+          "ignoreCase": true,
+          "requiredFirst": true,
+          "callbacksLast": true
+        }
+      ],
+      "react/jsx-one-expression-per-line": 0,
+      "react/jsx-fragments": [
+        1,
+        "element"
+      ],
+      "react/jsx-props-no-spreading": 0,
+      "react/static-property-placement": [
+        1,
+        "static public field"
+      ],
+      "react/prop-types": [
+        1,
+        {
+          "skipUndeclared": true
+        }
+      ],
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "space-before-function-paren": 0
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lang",
+      "pre-push": "npm run lint"
+    }
   }
 }

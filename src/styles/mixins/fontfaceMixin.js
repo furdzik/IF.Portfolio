@@ -5,6 +5,7 @@ export const fontfaceMixin = (family, src, weight = 'normal', fontStyle = 'norma
     font-family: "${family}";
     font-style: ${fontStyle};
     font-weight: ${weight};
+    font-display: swap; // ?
     src:
       url("${src.woff}") format("woff"),
       url("${src.ttf}") format("truetype"),

@@ -1,5 +1,6 @@
 const fontFamily = {
   roboto: 'Roboto',
+  shadowsInto: 'ShadowsInto',
   fallback: 'Arial',
   fallbackIos: '-apple-system',
   fallbackAndroid: 'Roboto',
@@ -26,11 +27,14 @@ const fontSize = {
 };
 
 const fontWeight = {
+  ultraLight: 100,
   light: 300,
   regular: 400,
+  medium: 500,
   semibold: 600,
   bold: 700,
-  extrabold: 800
+  extrabold: 800,
+  black: 900
 };
 
 export const typography = {

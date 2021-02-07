@@ -1,13 +1,13 @@
 export const color = {
-  darkGreen: '#3b6345',
+  darkGreen: '#3ea577',
   green: '#36bc9b',
   lightGreen: '#91decb',
-  darkPink: '#b05088',
+  darkPink: '#c74591',
   pink: '#d870ad',
   lightPink: '#ec87bf',
   lightGray: '#e6e9ee',
   gray: '#ccd0d9',
-  darkGray: '#aab2bd'
+  darkGray: '#313131'
 };
 
 export const mainColors = {

@@ -5,7 +5,8 @@ export const theme = {
   ...typography,
   layout: {
     width: '100rem',
-    sidePadding: '2rem'
+    sidePadding: '2rem',
+    background: '#95e6c3'
   }
 };
 

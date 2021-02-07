@@ -20,9 +20,9 @@ const Heading = styled.h1`
 const SubHeading = styled.h2`
   margin-top: 2rem;
   font-family: ${(props) => props.theme.fontFamily.roboto};
+  font-size: 2.5rem;
   font-weight: ${(props) => props.theme.fontWeight.semibold};
   color: ${(props) => props.theme.monoColors.black};
-  font-size: 2.5rem;
   white-space: pre-line;
 `;
 
@@ -50,8 +50,8 @@ const SocialLink = styled.a`
 const ButtonsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10rem;
   width: 50%;
+  margin-left: 10rem;
 `;
 
 const ButtonStyled = styled(Button)`
@@ -73,7 +73,7 @@ const IconStyled = styled(Icon)`
     color: #1b1f23;
   `};
   ${(props) => props.path === mdiLinkedin && css`
-    color: #0077b7;
+    color: #0a66c2;
   `};
   ${(props) => props.path === mdiFacebook && css`
     color: #1877f2;

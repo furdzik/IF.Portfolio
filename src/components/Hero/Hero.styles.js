@@ -40,8 +40,8 @@ const ContainerStyled = styled(Container)`
 
 const CracowWrapper = styled.div`
   position: absolute;
-  width: 100%;
   right: 47%;
+  width: 100%;
   height: 100%;
 `;
 
@@ -60,8 +60,8 @@ const MtFujiStyled = styled(MtFuji)`
 
 const TreeGreenCracow = styled(Tree)`
   ${ElementsCommonStyle};
-  left: auto;
   right: 5.4rem;
+  left: auto;
   bottom: 5rem;
 `;
 

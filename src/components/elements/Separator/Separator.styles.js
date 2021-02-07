@@ -7,14 +7,14 @@ const Wrapper = styled.div`
   height: 100%;
   &::before,
   &::after {
-  content: '';
+    content: '';
   }
   span,
   &::before,
   &::after {
     ${ElementsSaferStyle};
-    border: .2rem solid ${(props) => props.theme.monoColors.black};
     height: 10rem;
+    border: .2rem solid ${(props) => props.theme.monoColors.black};
   }
   &::before {
     top: -1.5rem;

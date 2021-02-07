@@ -87,16 +87,6 @@ const GlobalStyles = createGlobalStyle`
     (props) => props.theme.fontWeight.ultraLight
   )};
 
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/fonts/Roboto-Thin.woff') format('woff'),
-        url('../assets/fonts/Roboto-Thin.ttf') format('truetype'),
-        url('../assets/fonts/Roboto-Thin.svg#Roboto-Thin') format('svg');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-  }
-
   html {
     box-sizing: border-box;
     height: 100%;

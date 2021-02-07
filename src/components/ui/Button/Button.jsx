@@ -9,6 +9,7 @@ const Button = (props) => (
   <ButtonWrapper
     className={props.className}
     href={props.href}
+    target={props.target}
   >
     {props.children}
   </ButtonWrapper>
@@ -17,12 +18,14 @@ const Button = (props) => (
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
-  href: PropTypes.string
+  href: PropTypes.string,
+  target: PropTypes.string
 };
 
 Button.defaultProps = {
   className: '',
-  href: ''
+  href: '',
+  target: ''
 };
 
 export default Button;

@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 const ButtonWrapper = styled.a`
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: .3rem 2rem;
+  align-items: center;
   height: 5.5rem;
+  padding: .3rem 2rem;
   border: .3rem solid ${(props) => props.theme.color.pink};
   border-radius: 4rem;
   font-family: ${(props) => props.theme.fontFamily.roboto};

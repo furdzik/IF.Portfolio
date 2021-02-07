@@ -58,7 +58,7 @@ const Wrapper = styled.div`
       }
     }
 
-    // #1c5b7a, #20475f
+    /* #1c5b7a, #20475f */
   }
 `;
 

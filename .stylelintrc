@@ -67,7 +67,6 @@
           "right",
           "left",
           "bottom",
-          "overflow",
           "visibility",
           "z-index"
         ]
@@ -111,7 +110,8 @@
           "max-width",
           "height",
           "min-height",
-          "max-height"
+          "max-height",
+          "overflow"
         ]
       },
       {

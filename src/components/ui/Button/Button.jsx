@@ -8,6 +8,7 @@ import {
 const Button = (props) => (
   <ButtonWrapper
     className={props.className}
+    href={props.href}
   >
     {props.children}
   </ButtonWrapper>
@@ -15,11 +16,13 @@ const Button = (props) => (
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
+  href: PropTypes.string
 };
 
 Button.defaultProps = {
-  className: ''
+  className: '',
+  href: ''
 };
 
 export default Button;

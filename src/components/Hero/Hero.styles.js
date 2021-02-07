@@ -29,6 +29,7 @@ const CommonGround = styled.div`
 
 const SeparatorStyled = styled(Separator)`
   ${ElementsSaferStyle};
+  top: -1.2rem;
   left: 50%;
 `;
 

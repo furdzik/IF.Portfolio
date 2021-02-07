@@ -8,5 +8,9 @@ export default defineMessages({
   subHeading: {
     id: 'app.components.subHeading',
     defaultMessage: 'My name is Izabela Furdzik.\nI am front-end developer.'
+  },
+  seeMore: {
+    id: 'app.components.seeMore',
+    defaultMessage: 'See also:'
   }
 });

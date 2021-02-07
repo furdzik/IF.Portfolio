@@ -196,6 +196,9 @@ const GlobalStyles = createGlobalStyle`
   img {
     max-width: none;
   }
+  ul, ol {
+    list-style: none;
+  }
   button {
     padding: 0;
     border: 0;

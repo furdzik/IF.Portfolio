@@ -3,9 +3,8 @@ import styled, { css } from 'styled-components';
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
-  /* margin-top: -5rem; // docelowe */
   margin-top: 5rem;
-  padding: 3rem;
+  padding: 2rem 3rem 3rem;
   border-radius: 1rem;
   background: ${(props) => props.theme.monoColors.white};
   box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 30%);

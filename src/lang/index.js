@@ -1,3 +1,3 @@
-import componentsPl from './components/pl.json';
+import componentsEn from './components/en.json';
 
-export const polish = { ...componentsPl };
+export const english = { ...componentsEn };

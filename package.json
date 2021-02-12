@@ -8,7 +8,7 @@
     "lint": "npm run eslint && npm run stylelint",
     "eslint": "eslint src/ --ext .jsx,.js",
     "stylelint": "npx stylelint \"**/*.styles.js\"",
-    "lang": "extract-messages -l=pl -d=pl -o src/lang/components --flat \"src/components/**/*.messages.js\"",
+    "lang": "extract-messages -l=en -d=en -o src/lang/components --flat \"src/components/**/*.messages.js\"",
     "eslint:fix": "npm run eslint -- --fix"
   },
   "dependencies": {

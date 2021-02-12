@@ -5,7 +5,7 @@ import { IntlProvider } from 'react-intl';
 
 import Routes from './routes';
 
-import { polish } from './lang';
+import { english } from './lang';
 import { defaultLocale } from './lang/config';
 
 import theme from './styles/theme';
@@ -14,7 +14,7 @@ import { GlobalStyles } from './styles/global.styles';
 const App = () => (
   <IntlProvider
     locale={defaultLocale}
-    messages={polish}
+    messages={english}
   >
     <ThemeProvider theme={theme}>
       <GlobalStyles />

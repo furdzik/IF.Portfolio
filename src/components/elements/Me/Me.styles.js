@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { ElementsCommonStyleUnspecified } from '../../../styles/elementsCommonStyle.styles';
 
@@ -62,13 +62,20 @@ const Hair = styled.div`
 
 const HeadWrapper = styled.div`
    ${ElementsCommonStyleUnspecified};
-   background: #ffd9bc; //#E7BC99;
-   border-radius: 7.1rem / 8.9rem;
-   height: 11rem;
-   left: 2rem;
-   top: 1rem;
-   transform: rotate(6deg);
-   width: 7.8rem;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+`;
+
+const Face = styled.div`
+  ${ElementsCommonStyleUnspecified};
+  background: #ffd9bc; //#E7BC99;
+  border-radius: 7.1rem / 8.9rem;
+  height: 11rem;
+  left: 2rem;
+  top: 1rem;
+  transform: rotate(6deg);
+  width: 7.8rem;
 `;
 
 const Eyebrows = styled.div`
@@ -202,184 +209,159 @@ const Ear = styled.div`
    z-index: 5;
 `;
 
-// /* dress */
-// .clothes {
-//   height: 74px;
-//   top: 116px;
-//   left: 0;
-//   width: 100%;
-//   z-index: 2;
-//   span {
-//   &:nth-child(1) {
-//       background: #487791;
-//       border-bottom: 1px dotted #FFFFFF;
-//       height: 34px;
-//       left: 43px;
-//       width: 29px;
-//       z-index: 2;
-//     }
-//   &:nth-child(2) {
-//       border-color: #487791 transparent;
-//       border-style: solid;
-//       border-width: 0 30px 20px;
-//       left: 28px;
-//       top: 25px;
-//       z-index: 1;
-//     }
-//   &:nth-child(3) {
-//       border-color: #FFFFFF transparent;
-//       border-style: solid;
-//       border-width: 22px 11px 0;
-//       left: 46px;
-//       top: 0;
-//       z-index: 3;
-//     }
-//   &:nth-child(4) {
-//       border-left: 1px dotted #FFFFFF;
-//       height: 14px;
-//       left: 57px;
-//       top: 21px;
-//       z-index: 3;
-//     }
-//   }
-// }
-// /* arms */
-// .arms {
-//   z-index: 2;
-//   height: 50px;
-//   top: 116px;
-//   span {
-//     background: #487791;
-//     width: 5px;
-//     height: 30px;
-//   &:nth-child(1) {
-//       border-radius: 5px 5px 0 0;
-//       right: 12px;
-//       top: -6px;
-//     }
-//   &:nth-child(2) {
-//       border-radius: 5px 5px 5px 5px;
-//       right: 14px;
-//       top: 11px;
-//     }
-//   &.hand {
-//       background: #E7BC99;
-//       border: 1px solid #E0BC9F;
-//       border-radius: 3px 3px 3px 3px;
-//       height: 8px;
-//       width: 6px;
-//       top: 29px;
-//     }
-//   }
-// &.arm1 {
-//     left: 17px;
-//     width: 31px;
-//     span {
-//     &:nth-child(1) {
-//         -moz-transform: rotate(54deg);
-//         -webkit-transform: rotate(54deg);
-//         -o-transform: rotate(54deg);
-//         -ms-transform: rotate(54deg);
-//         transform: rotate(54deg);
-//       }
-//     &:nth-child(2) {
-//         -moz-transform: rotate(-51deg);
-//         -webkit-transform: rotate(-51deg);
-//         -o-transform: rotate(-51deg);
-//         -ms-transform: rotate(-51deg);
-//         transform: rotate(-51deg);
-//       }
-//     &.hand {
-//         right: 3px;
-//       }
-//     }
-//   }
-// &.arm2 {
-//     left: auto;
-//     right: 0;
-//     width: 57px;
-//     span {
-//     &:nth-child(1) {
-//         -moz-transform: rotate(-54deg);
-//         -webkit-transform: rotate(-54deg);
-//         -o-transform: rotate(-54deg);
-//         -ms-transform: rotate(-54deg);
-//         transform: rotate(-54deg);
-//         left: 12px;
-//       }
-//     &:nth-child(2) {
-//         left: 14px;
-//         -moz-transform: rotate(51deg);
-//         -webkit-transform: rotate(51deg);
-//         -o-transform: rotate(51deg);
-//         -ms-transform: rotate(51deg);
-//         transform: rotate(51deg);
-//       }
-//     &.hand {
-//         left: 3px;
-//       }
-//     }
-//   }
-// &.wave span {
-//   &:nth-child(2) {
-//       left: 33px;
-//       top: -6px;
-//       -moz-transform: rotate(52deg);
-//       -webkit-transform: rotate(52deg);
-//       -o-transform: rotate(52deg);
-//       -ms-transform: rotate(52deg);
-//       transform: rotate(52deg);
-//     }
-//   &.hand {
-//       left: 46px;
-//       top: -9px;
-//       -moz-transform: rotate(46deg);
-//       -webkit-transform: rotate(46deg);
-//       -o-transform: rotate(46deg);
-//       -ms-transform: rotate(46deg);
-//       transform: rotate(46deg);
-//     }
-//   }
-// }
-// /* legs */
-// .legs {
-//   z-index: 2;
-//   height: 24px;
-//   left: 50px;
-//   top: 161px;
-//   width: 16px;
-// .leg {
-//     background: #E7BC99;
-//     width:5px;
-//     height:24px;
-//     left:0;
-//     + .leg {
-//       left: auto;
-//       right: 0;
-//     }
-//     span {
-//       /* skarpetka */
-//     &:nth-child(1) {
-//         background: #FFFFFF;
-//         border: 1px solid #CFCDCD;
-//         bottom: 0;
-//         height: 5px;
-//         width: 3px;
-//       }
-//       /* but */
-//     &:nth-child(2) {
-//         background: #487791;
-//         border-radius: 10px 10px 10px 10px;
-//         bottom: -4px;
-//         height: 6px;
-//         left: -2px;
-//         width: 10px;
-//       }
-//     }
-//   }
-// }
-// }
-//
+const Clothes = styled.div`
+  ${ElementsCommonStyleUnspecified};
+  height: 74px;
+  top: 116px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  span {
+  &:nth-child(1) {
+     background: #000000;
+     border-bottom: 1px dotted #FFFFFF;
+     height: 34px;
+     left: 43px;
+     width: 29px;
+     z-index: 2;
+   }
+  &:nth-child(2) {
+     border-color: #0d6ce6 transparent;
+     border-style: solid;
+     border-width: 0 30px 20px;
+     left: 28px;
+     top: 25px;
+     z-index: 1;
+   }
+  &:nth-child(3) {
+     border-color: #FFFFFF transparent;
+     border-style: solid;
+     border-width: 12px 11px 0;
+     left: 46px;
+     top: 0;
+     z-index: 3;
+   }
+  &:nth-child(4) {
+    border-left: 1px dotted #FFFFFF;
+    height: 21px;
+    left: 57px;
+    top: 12px;
+    z-index: 3;
+   }
+  }
+`;
+
+const Hand = styled.div`
+  ${ElementsCommonStyleUnspecified};
+  background: #ffd9bc;
+  border: 1px solid #ffd9bc;
+  border-radius: 3px 3px 3px 3px;
+  height: 8px;
+  width: 6px;
+  top: 29px;
+`;
+
+const Arm = styled.div`
+  ${ElementsCommonStyleUnspecified};
+  z-index: 2;
+  height: 50px;
+  top: 116px;
+  left: 3.5rem;
+  span {
+    background: #000000;
+    width: 5px;
+    height: 30px;
+    &:nth-child(1) {
+      border-radius: 5px 5px 0 0;
+      right: 12px;
+      top: -6px;
+    }
+    &:nth-child(2) {
+      border-radius: 5px 5px 5px 5px;
+      right: 14px;
+      top: 11px;
+    }
+  }
+
+  ${(props) => props.right && css`
+    left: auto;
+    right: 0;
+    width: 57px;
+    span {
+      &:nth-child(1) {
+        transform: rotate(-54deg);
+        left: 12px;
+      }
+      &:nth-child(2) {
+        left: 14px;
+        transform: rotate(51deg);
+      }
+    }
+    ${Hand} {
+      left: 3px;
+    }
+  `};
+
+  ${(props) => props.left && css`
+    left: 17px;
+    width: 31px;
+    span {
+      &:nth-child(1) {
+        transform: rotate(54deg);
+      }
+      &:nth-child(2) {
+        transform: rotate(-51deg);
+      }
+    }
+    ${Hand} {
+      right: 3px;
+    }
+  `};
+
+  ${(props) => props.wave && css`
+    span:nth-child(2) {
+      left: 33px;
+      top: -6px;
+      transform: rotate(52deg);
+    }
+    ${Hand} {
+      left: 46px;
+      top: -7px;
+      transform: rotate(46deg);
+    }
+  `};
+`;
+
+const Legs = styled.div`
+  ${ElementsCommonStyleUnspecified};
+  z-index: 2;
+  height: 24px;
+  left: 50px;
+  top: 161px;
+  width: 16px;
+`;
+
+const Leg = styled.div`
+  ${ElementsCommonStyleUnspecified};
+  background: #ffd9bc;
+  width:5px;
+  height:24px;
+  left:0;
+  & + & {
+    left: auto;
+    right: 0;
+  }
+  &:before {
+    content: '';
+    background: #ee382a;
+    border-radius: 10px 10px 10px 10px;
+    bottom: -4px;
+    height: 6px;
+    left: -2px;
+    width: 10px;
+  }
+`;
+
 // /* omar */
 // #omar-area {
 //   position: absolute;
@@ -794,9 +776,15 @@ export {
   MeWrapper,
   Hair,
   HeadWrapper,
+  Face,
   Eyebrows,
   Eyes,
   Nose,
   Lips,
-  Ear
+  Ear,
+  Clothes,
+  Hand,
+  Arm,
+  Legs,
+  Leg
 };

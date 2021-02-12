@@ -10,6 +10,7 @@ import {
 
 import Box from '../Box';
 import Button from '../ui/Button';
+import Me from '../elements/Me';
 // import { breakpointMixin } from '@styles/mixins';
 
 const Heading = styled.h1`
@@ -50,8 +51,8 @@ const SocialLink = styled.a`
 const ButtonsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
-  margin-left: 10rem;
+  width: 40%;
+  margin-left: 5rem;
 `;
 
 const ButtonStyled = styled(Button)`
@@ -80,6 +81,11 @@ const IconStyled = styled(Icon)`
   `};
 `;
 
+const MeStyled = styled(Me)`
+  margin-left: 4rem;
+  margin-top: 2rem;
+`;
+
 export {
   Heading,
   SubHeading,
@@ -89,5 +95,6 @@ export {
   SocialLink,
   ButtonsWrapper,
   ButtonStyled,
-  IconStyled
+  IconStyled,
+  MeStyled
 };

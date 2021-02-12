@@ -21,7 +21,8 @@ import {
   SocialLink,
   ButtonsWrapper,
   ButtonStyled,
-  IconStyled
+  IconStyled,
+  MeStyled
 } from './MainPage.styles';
 import messages from './MainPage.messages';
 
@@ -43,6 +44,7 @@ const MainPage = () => {
             <ButtonStyled href="http://cssart.furdzik.com/" target="_blank">CSS Art</ButtonStyled>
             <ButtonStyled href="http://japanese.furdzik.com/" target="_blank">Japanese App</ButtonStyled>
           </ButtonsWrapper>
+          <MeStyled />
           <SocialIcons>
             <SocialItem>
               <SocialLink href="mailto:izabela.furdzik+portfolio@gmail.com" target="_blank">

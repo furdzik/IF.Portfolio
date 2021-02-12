@@ -11,10 +11,23 @@ const ElementsCommonStyle = css`
   }
 `;
 
+const ElementsCommonStyleUnspecified = css`
+  display: block;
+  position: absolute;
+  span, *::before, *::after {
+    display: block;
+    position: absolute;
+  }
+`;
+
 const ElementsSaferStyle = css`
   display: block;
   position: absolute;
   bottom: 0;
 `;
 
-export { ElementsCommonStyle, ElementsSaferStyle };
+export {
+  ElementsCommonStyle,
+  ElementsSaferStyle,
+  ElementsCommonStyleUnspecified
+};

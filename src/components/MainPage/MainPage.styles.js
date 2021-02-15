@@ -8,18 +8,19 @@ import {
   mdiFacebook
 } from '@mdi/js';
 
+import { breakpointMixin } from '../../styles/mixins';
+
 import Box from '../Box';
 import Button from '../ui/Button';
-import Me from '../elements/Me';
-// import { breakpointMixin } from '@styles/mixins';
+import Cat from '../elements/Cat';
 
 const Heading = styled.h1`
   width: 100%;
   color: ${(props) => props.theme.color.darkPink};
+  margin-bottom: 2rem;
 `;
 
 const SubHeading = styled.h2`
-  margin-top: 2rem;
   font-family: ${(props) => props.theme.fontFamily.roboto};
   font-size: 2.5rem;
   font-weight: ${(props) => props.theme.fontWeight.semibold};
@@ -27,15 +28,33 @@ const SubHeading = styled.h2`
   white-space: pre-line;
 `;
 
+const MainBox = styled.div`
+  width: 100%;
+  ${breakpointMixin.portraitTablet`
+    width: auto;
+    order: 1;
+  `}
+`;
+
 const BoxStyled = styled(Box)`
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 `;
 
 const SocialIcons = styled.ul`
   display: flex;
   align-items: center;
   width: 100%;
+  margin-top: 4rem;
+
+  ${breakpointMixin.portraitTablet`
+    margin-top: -5rem;
+    order: 3;
+  `}
+  ${breakpointMixin.laptop`
+    order: 4;
+  `}
 `;
 
 const SocialItem = styled.li`
@@ -50,15 +69,33 @@ const SocialLink = styled.a`
 
 const ButtonsWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  width: 40%;
-  margin-left: 5rem;
+  width: 100%;
+  margin-top: 5rem;
+
+  ${breakpointMixin.portraitTablet`
+    margin-top: 0;
+    width: 40%;
+    order: 4;
+  `}
+  ${breakpointMixin.laptop`
+    flex-direction: row;
+    margin-left: 5rem;
+    order: 2;
+  `}
 `;
 
 const ButtonStyled = styled(Button)`
   & + & {
-    margin-left: 3rem;
+    margin-top: 3rem;
   }
+  ${breakpointMixin.laptop`
+    & + & {
+      margin-top: 0;
+      margin-left: 3rem;
+    }
+  `}
 `;
 
 const IconStyled = styled(Icon)`
@@ -81,20 +118,37 @@ const IconStyled = styled(Icon)`
   `};
 `;
 
-const MeStyled = styled(Me)`
-  margin-left: 4rem;
-  margin-top: 2rem;
+const MeAndCatWrapper = styled.div`
+  position: relative;
+  margin: 7rem 0 0 4rem; // do zmiany
+  order: 2;
+
+  ${breakpointMixin.portraitTablet`
+    margin-left: auto;
+  `}
+  ${breakpointMixin.laptop`
+    order: 3;
+    margin-left: 4rem;
+  `}
+`;
+
+const CatStyled = styled(Cat)`
+  position: absolute;
+  left: -6rem;
+  bottom: 0;
 `;
 
 export {
   Heading,
   SubHeading,
   BoxStyled,
+  MainBox,
   SocialIcons,
   SocialItem,
   SocialLink,
   ButtonsWrapper,
   ButtonStyled,
   IconStyled,
-  MeStyled
+  MeAndCatWrapper,
+  CatStyled
 };

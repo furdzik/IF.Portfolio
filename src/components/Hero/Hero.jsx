@@ -4,9 +4,7 @@ import PropTypes from 'prop-types';
 import {
   Wrapper,
   ContainerStyled,
-  CommonGround,
   CracowWrapper,
-  SeparatorStyled,
   TokyoWrapper,
   MtFujiStyled,
   TreeGreenCracow,
@@ -21,7 +19,6 @@ const Hero = (props) => (
       <CracowWrapper>
         <TreeGreenCracow color="green" isTaller />
       </CracowWrapper>
-      <SeparatorStyled />
       <TokyoWrapper>
         <MtFujiStyled />
         <TreePinkTokyoOne color="pink" />
@@ -29,7 +26,6 @@ const Hero = (props) => (
         <SkyTreeStyled />
       </TokyoWrapper>
     </ContainerStyled>
-    <CommonGround />
   </Wrapper>
 );
 

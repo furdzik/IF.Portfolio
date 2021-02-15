@@ -13,7 +13,6 @@ const Title = styled.h1`
   font-size: 2rem;
   font-weight: ${(props) => props.theme.fontWeight.extrabold};
   color: ${(props) => props.theme.monoColors.bold};
-  text-shadow: 0 0 4px #95e6c3;
 `;
 
 export {

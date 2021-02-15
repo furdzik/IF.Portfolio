@@ -14,7 +14,7 @@ const ElementsCommonStyle = css`
 const ElementsCommonStyleUnspecified = css`
   display: block;
   position: absolute;
-  span, *::before, *::after {
+  div, span, *::before, *::after {
     display: block;
     position: absolute;
   }

@@ -11,18 +11,22 @@ import {
 import Container from '../Container';
 import Header from '../Header';
 import Hero from '../Hero';
+import Footer from '../Footer';
+import Me from '../elements/Me';
 
 import {
   Heading,
   SubHeading,
   BoxStyled,
+  MainBox,
   SocialIcons,
   SocialItem,
   SocialLink,
   ButtonsWrapper,
   ButtonStyled,
   IconStyled,
-  MeStyled
+  MeAndCatWrapper,
+  CatStyled
 } from './MainPage.styles';
 import messages from './MainPage.messages';
 
@@ -31,20 +35,23 @@ const MainPage = () => {
 
   return (
     <React.Fragment>
-      <Header />
       <Hero />
+      <Header />
       <Container>
         <BoxStyled>
-          <div>
+          <MainBox>
             <Heading>{intl.formatMessage(messages.mainHeading)}</Heading>
             <SubHeading>{intl.formatMessage(messages.subHeading)}</SubHeading>
-          </div>
+          </MainBox>
           <ButtonsWrapper>
             <Heading>{intl.formatMessage(messages.seeMore)}</Heading>
             <ButtonStyled href="http://cssart.furdzik.com/" target="_blank">CSS Art</ButtonStyled>
             <ButtonStyled href="http://japanese.furdzik.com/" target="_blank">Japanese App</ButtonStyled>
           </ButtonsWrapper>
-          <MeStyled />
+          <MeAndCatWrapper>
+            <Me />
+            <CatStyled />
+          </MeAndCatWrapper>
           <SocialIcons>
             <SocialItem>
               <SocialLink href="mailto:izabela.furdzik+portfolio@gmail.com" target="_blank">
@@ -77,6 +84,7 @@ const MainPage = () => {
           </SocialIcons>
         </BoxStyled>
       </Container>
+      <Footer />
     </React.Fragment>
   );
 };

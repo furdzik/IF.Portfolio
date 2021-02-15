@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const ButtonWrapper = styled.a`
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   height: 5.5rem;

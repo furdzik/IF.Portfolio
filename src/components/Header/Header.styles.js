@@ -5,7 +5,7 @@ const Wrapper = styled.header`
   z-index: 3;
   padding: 1rem 0;
   background: ${(props) => props.theme.mainColors.primary};
-  box-shadow: 1px 1px 20px 3px rgb(0 0 0 / 30%);
+  box-shadow: .1rem .1rem 2rem .3rem rgb(0 0 0 / 19%);
 `;
 
 const Title = styled.h1`

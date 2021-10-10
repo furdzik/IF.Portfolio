@@ -1,7 +1,12 @@
 {
-  "app.components.footer.copyright": "Copyright © {currentYear} IZABELA FURDZIK",
+  "app.components.birtdayCard.header": "Wszystkiego Najlepszego",
+  "app.components.birtdayCard.name": "Monika",
+  "app.components.cssArt": "CSS Art",
+  "app.components.footer.copyright": "IZABELA FURDZIK © {currentYear} All rights reserved",
   "app.components.header.title": "IF.Portfolio [WIP]",
+  "app.components.japaneseApp": "Japanese App",
   "app.components.mainHeading": "Hello!",
   "app.components.seeMore": "See also:",
+  "app.components.styleGuide": "IF.StyleGuide",
   "app.components.subHeading": "My name is Izabela Furdzik.\nI am front-end developer."
 }

@@ -9,7 +9,6 @@ import {
 } from '@mdi/js';
 
 import Container from '../Container';
-import Header from '../Header';
 import Hero from '../Hero';
 import Footer from '../Footer';
 import Me from '../elements/Me';
@@ -22,11 +21,14 @@ import {
   SocialIcons,
   SocialItem,
   SocialLink,
-  ButtonsWrapper,
-  ButtonStyled,
+  ListWrapper,
+  List,
+  ListItem,
+  Link,
   IconStyled,
   MeAndCatWrapper,
-  CatStyled
+  CatStyled,
+  WipBadge
 } from './MainPage.styles';
 import messages from './MainPage.messages';
 
@@ -36,46 +38,62 @@ const MainPage = () => {
   return (
     <React.Fragment>
       <Hero />
-      <Header />
       <Container>
         <BoxStyled>
           <MainBox>
             <Heading>{intl.formatMessage(messages.mainHeading)}</Heading>
             <SubHeading>{intl.formatMessage(messages.subHeading)}</SubHeading>
           </MainBox>
-          <ButtonsWrapper>
+          <ListWrapper>
             <Heading>{intl.formatMessage(messages.seeMore)}</Heading>
-            <ButtonStyled href="http://cssart.furdzik.com/" target="_blank">CSS Art</ButtonStyled>
-            <ButtonStyled href="http://japanese.furdzik.com/" target="_blank">Japanese App</ButtonStyled>
-          </ButtonsWrapper>
+            <List>
+              <ListItem>
+                <Link href="http://japanese.furdzik.com/" target="_blank" rel="noreferrer">
+                  {intl.formatMessage(messages.japaneseApp)}
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link href="http://cssart.furdzik.com/" target="_blank" rel="noreferrer">
+                  {intl.formatMessage(messages.cssArt)}
+                  <WipBadge />
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link href="https://github.com/furdzik/IF.StyleGuide/blob/main/README.md" target="_blank" rel="noreferrer">
+                  {intl.formatMessage(messages.styleGuide)}
+                  <WipBadge />
+                </Link>
+              </ListItem>
+            </List>
+          </ListWrapper>
           <MeAndCatWrapper>
             <Me />
             <CatStyled />
           </MeAndCatWrapper>
           <SocialIcons>
             <SocialItem>
-              <SocialLink href="mailto:izabela.furdzik+portfolio@gmail.com" target="_blank">
+              <SocialLink href="mailto:izabela.furdzik+portfolio@gmail.com" target="_blank" rel="noreferrer">
                 <IconStyled
                   path={mdiGmail}
                 />
               </SocialLink>
             </SocialItem>
             <SocialItem>
-              <SocialLink href="https://github.com/furdzik" target="_blank">
+              <SocialLink href="https://github.com/furdzik" target="_blank" rel="noreferrer">
                 <IconStyled
                   path={mdiGithub}
                 />
               </SocialLink>
             </SocialItem>
             <SocialItem>
-              <SocialLink href="https://www.linkedin.com/in/izabela-furdzik-4971315a/" target="_blank">
+              <SocialLink href="https://www.linkedin.com/in/izabela-furdzik-4971315a/" target="_blank" rel="noreferrer">
                 <IconStyled
                   path={mdiLinkedin}
                 />
               </SocialLink>
             </SocialItem>
             <SocialItem>
-              <SocialLink href="https://www.facebook.com/izabela.furdzik" target="_blank">
+              <SocialLink href="https://www.facebook.com/izabela.furdzik" target="_blank" rel="noreferrer">
                 <IconStyled
                   path={mdiFacebook}
                 />

@@ -11,7 +11,6 @@ import {
 import { breakpointMixin } from '../../styles/mixins';
 
 import Box from '../Box';
-import Button from '../ui/Button';
 import Cat from '../elements/Cat';
 
 const Heading = styled.h1`
@@ -67,7 +66,7 @@ const SocialLink = styled.a`
   color: black;
 `;
 
-const ButtonsWrapper = styled.div`
+const ListWrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -86,16 +85,35 @@ const ButtonsWrapper = styled.div`
   `}
 `;
 
-const ButtonStyled = styled(Button)`
-  & + & {
-    margin-top: 3rem;
+const List = styled.ul`
+  margin: 0;
+  padding: 0;
+  list-style: none;
+`;
+
+const ListItem = styled.li`
+  display: flex;
+  align-items: center;
+  font-size: 2.2rem;
+
+  &::before {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1.5rem;
+    border-radius: 50%;
+    background: #eb4336;
+    content: '';
   }
-  ${breakpointMixin.laptop`
-    & + & {
-      margin-top: 0;
-      margin-left: 3rem;
-    }
-  `}
+
+  & + & {
+    margin-top: .5rem;
+  }
+`;
+
+const Link = styled.a`
+  display: block;
 `;
 
 const IconStyled = styled(Icon)`
@@ -137,6 +155,22 @@ const CatStyled = styled(Cat)`
   left: -6rem;
   bottom: 0;
 `;
+const WipBadge = styled.span`
+  display: inline-block;
+  background: #fff;
+  border: 2px solid red;
+  border-radius: 50%;
+  color: red;
+  padding: .5rem;
+  height: 3rem;
+  margin-left: 2rem;
+
+  &::before {
+  display: block;
+  font-size: 1.2rem;
+    content: 'WIP';
+  }
+`;
 
 export {
   Heading,
@@ -146,9 +180,12 @@ export {
   SocialIcons,
   SocialItem,
   SocialLink,
-  ButtonsWrapper,
-  ButtonStyled,
+  ListWrapper,
+  List,
+  ListItem,
+  Link,
   IconStyled,
   MeAndCatWrapper,
-  CatStyled
+  CatStyled,
+  WipBadge
 };

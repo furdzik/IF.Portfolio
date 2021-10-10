@@ -182,6 +182,9 @@ const GlobalStyles = createGlobalStyle`
     color: ${colors.textColors.primary};
     text-decoration: none;
     cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   img {
     max-width: none;
@@ -200,7 +203,8 @@ const GlobalStyles = createGlobalStyle`
       outline: none;
     }
   }
-  .root {
+  .root,
+  #root {
     height: 100%;
   }
 `;

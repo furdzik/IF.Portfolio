@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 
 import MainPage from '../components/MainPage';
+import BirthdayCard from '../components/BirthdayCard';
 
 const Routes = () => (
   <Router>
@@ -15,6 +16,12 @@ const Routes = () => (
         exact
       >
         <MainPage />
+      </Route>
+      <Route
+        path="/100-lat-monika"
+        exact
+      >
+        <BirthdayCard />
       </Route>
 
       <Route

@@ -12,5 +12,17 @@ export default defineMessages({
   seeMore: {
     id: 'app.components.seeMore',
     defaultMessage: 'See also:'
+  },
+  japaneseApp: {
+    id: 'app.components.japaneseApp',
+    defaultMessage: 'Japanese App'
+  },
+  cssArt: {
+    id: 'app.components.cssArt',
+    defaultMessage: 'CSS Art'
+  },
+  styleGuide: {
+    id: 'app.components.styleGuide',
+    defaultMessage: 'IF.StyleGuide'
   }
 });

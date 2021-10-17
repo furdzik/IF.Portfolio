@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
-  min-height: 30rem;
+  min-height: 28rem;
   padding: 2rem 3rem 3rem;
   border-radius: 1rem;
   background: ${(props) => props.theme.monoColors.white};

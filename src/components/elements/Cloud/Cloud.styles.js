@@ -76,6 +76,42 @@ const CloudTypeTwo = css`
   }
 `;
 
+const CloudTypeThreeSize = css`
+  width: 149px;
+  height: 95px;
+`;
+
+const CloudTypeThree = css`
+  &:nth-child(1) {
+    border-radius: 40px 40px 40px 40px;
+    bottom: 0;
+    height: 54px;
+    left: 0;
+    width: 150px;
+  }
+  &:nth-child(2) {
+    border-radius: 71px 71px 71px 71px;
+    height: 71px;
+    left: -4px;
+    top: 24px;
+    width: 71px;
+  }
+  &:nth-child(3) {
+    border-radius: 70px 70px 70px 70px;
+    height: 70px;
+    left: 26px;
+    top: 3px;
+    width: 70px;
+  }
+  &:nth-child(4) {
+    border-radius: 60px 60px 60px 60px;
+    height: 60px;
+    right: 12px;
+    top: 11px;
+    width: 60px;
+  }
+`;
+
 const Wrapper = styled.div`
   ${ElementsCommonStyleUnspecified};
 
@@ -84,6 +120,9 @@ const Wrapper = styled.div`
   `};
    ${(props) => props.cloudType === cloudType.two && css`
     ${CloudTypeTwoSize}
+  `};
+   ${(props) => props.cloudType === cloudType.three && css`
+    ${CloudTypeThreeSize}
   `};
 
   span {
@@ -96,6 +135,9 @@ const Wrapper = styled.div`
     `};
      ${(props) => props.cloudType === cloudType.two && css`
       ${CloudTypeTwo}
+    `};
+     ${(props) => props.cloudType === cloudType.three && css`
+      ${CloudTypeThree}
     `};
    }
 `;

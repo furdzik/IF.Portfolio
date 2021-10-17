@@ -35,6 +35,10 @@ const StyledCloud = styled(Cloud)`
     left: -2rem;
     top: 10rem;
   `};
+   ${(props) => props.cloudType === cloudType.three && css`
+    right: -42rem;
+    top: 16rem;
+  `};
 `;
 
 const CracowWrapper = styled.div`

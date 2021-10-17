@@ -30,7 +30,18 @@ Cloud.propTypes = {
     cloudType.two,
     cloudType.three,
     cloudType.four,
-    cloudType.five
+    cloudType.five,
+    cloudType.six,
+    cloudType.seven,
+    cloudType.eight,
+    cloudType.nine,
+    cloudType.ten,
+    cloudType.eleven,
+    cloudType.twelve,
+    cloudType.thirteen,
+    cloudType.fourteen,
+    cloudType.fifteen,
+    cloudType.sixteen
   ])
 };
 

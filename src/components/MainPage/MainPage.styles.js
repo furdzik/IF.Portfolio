@@ -49,7 +49,7 @@ const SocialIcons = styled.ul`
   margin-top: 4rem;
 
   ${breakpointMixin.portraitTablet`
-    margin-top: -5rem;
+    margin-top: -3rem;
     order: 3;
   `}
   ${breakpointMixin.laptop`
@@ -139,7 +139,7 @@ const IconStyled = styled(Icon)`
 
 const MeAndCatWrapper = styled.div`
   position: relative;
-  margin: 7rem 0 0 4rem; // do zmiany
+  margin: 4rem 0 0 4rem; // do zmiany
   order: 2;
 
   ${breakpointMixin.portraitTablet`

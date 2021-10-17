@@ -21,6 +21,7 @@ const Hero = (props) => (
     <ContainerStyled>
       <StyledCloud cloudType={cloudType.one} />
       <StyledCloud cloudType={cloudType.two} />
+      <StyledCloud cloudType={cloudType.three} />
       <CracowWrapper>
         <TreeGreenCracow color="green" isTaller />
       </CracowWrapper>

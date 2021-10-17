@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { cloudType } from '../../config/constants';
+
 import {
   Wrapper,
   ContainerStyled,
+  StyledCloud,
   CracowWrapper,
   TokyoWrapper,
   MtFujiStyled,
@@ -16,6 +19,8 @@ import {
 const Hero = (props) => (
   <Wrapper className={props.className}>
     <ContainerStyled>
+      <StyledCloud cloudType={cloudType.one} />
+      <StyledCloud cloudType={cloudType.two} />
       <CracowWrapper>
         <TreeGreenCracow color="green" isTaller />
       </CracowWrapper>

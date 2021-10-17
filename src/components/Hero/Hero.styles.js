@@ -1,8 +1,11 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+import { cloudType } from '../../config/constants';
 
 import { ElementsCommonStyle } from '../../styles/elementsCommonStyle.styles';
 
 import Container from '../Container';
+import Cloud from '../elements/Cloud';
 import SkyTree from '../elements/SkyTree';
 import MtFuji from '../elements/MtFuji';
 import Tree from '../elements/Tree';
@@ -20,6 +23,20 @@ const ContainerStyled = styled(Container)`
   height: 100%;
 `;
 
+const StyledCloud = styled(Cloud)`
+  position: absolute;
+  top: 2rem;
+
+  ${(props) => props.cloudType === cloudType.one && css`
+    left: 18rem;
+    top: 2rem;
+  `};
+   ${(props) => props.cloudType === cloudType.two && css`
+    left: -2rem;
+    top: 10rem;
+  `};
+`;
+
 const CracowWrapper = styled.div`
   position: absolute;
   right: 50%;
@@ -32,6 +49,7 @@ const TokyoWrapper = styled.div`
   left: 50%;
   width: 100%;
   height: 100%;
+  // background: #ff0000;
 `;
 
 const MtFujiStyled = styled(MtFuji)`
@@ -61,13 +79,14 @@ const TreePinkTokyoTwo = styled(Tree)`
 
 const SkyTreeStyled = styled(SkyTree)`
   ${ElementsCommonStyle};
-  left: 9rem;
+  left: 17rem;
   bottom: 0;
 `;
 
 export {
   Wrapper,
   ContainerStyled,
+  StyledCloud,
   CracowWrapper,
   TokyoWrapper,
   MtFujiStyled,

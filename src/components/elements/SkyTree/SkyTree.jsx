@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Wrapper } from './SkyTree.styles.js';
+import {
+  Wrapper
+} from './SkyTree.styles.js';
 
 const SkyTree = (props) => (
   <Wrapper
@@ -10,6 +12,18 @@ const SkyTree = (props) => (
     <span />
     <span />
     <span />
+    <span />
+    <span />
+    <span />
+    <span>
+      <span /><span /><span />
+      <span /><span /><span />
+    </span>
+    <span />
+    <span>
+      <span /><span /><span />
+      <span /><span /><span />
+    </span>
     <span />
     <span />
     <span />

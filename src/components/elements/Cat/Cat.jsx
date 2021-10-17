@@ -22,12 +22,10 @@ const Cat = (props) => (
         <span /><span />
       </HeadWrapper>
       <Torso />
-      <Leg>
-        <span /><span />
-        <span /><span />
+      <Leg front>
+        <span /><span /><span /><span />
       </Leg>
-      <Leg right>
-        <span /><span />
+      <Leg hind>
         <span /><span />
       </Leg>
       <Tail>

@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   width: 100%;
   height: 60rem;
   overflow: hidden;
-  background: linear-gradient(#c3eeef 90%, #77d4ab); // #77d4ab
+  background: linear-gradient(#c3eeef 90%, #75d3a9); // #77d4ab
 `;
 
 const ContainerStyled = styled(Container)`

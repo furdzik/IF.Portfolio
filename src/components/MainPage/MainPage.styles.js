@@ -15,7 +15,7 @@ import Cat from '../elements/Cat';
 
 const Heading = styled.h1`
   width: 100%;
-  color: ${(props) => props.theme.color.darkPink};
+  color: ${(props) => props.theme.color.violet};
   margin-bottom: 2rem;
 `;
 
@@ -39,6 +39,7 @@ const BoxStyled = styled(Box)`
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin-top: -1rem;
 `;
 
 const SocialIcons = styled.ul`
@@ -103,7 +104,7 @@ const ListItem = styled.li`
     height: 1rem;
     margin-right: 1.5rem;
     border-radius: 50%;
-    background: #eb4336;
+    background: ${(props) => props.theme.color.violet};
     content: '';
   }
 

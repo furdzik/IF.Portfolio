@@ -4,11 +4,10 @@ const Wrapper = styled.div`
   position: relative;
   width: 100%;
   min-height: 30rem;
-  margin-top: 5rem;
   padding: 2rem 3rem 3rem;
   border-radius: 1rem;
   background: ${(props) => props.theme.monoColors.white};
-  box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 30%);
+  box-shadow: 1px 1px 33px 2px rgb(255 255 255 / 21%), 1px 1px 10px 2px rgb(0 0 0 / 30%);
 `;
 
 const Slice = css`
@@ -27,7 +26,7 @@ const SliceCover = css`
   display: block;
   position: absolute;
   transform-origin: center;
-  width: .3rem;
+  width: .5rem;
   height: 7.1rem;
   background: ${(props) => props.theme.color.darkGray};
   content: '';

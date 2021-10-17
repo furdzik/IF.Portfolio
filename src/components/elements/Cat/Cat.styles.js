@@ -141,58 +141,65 @@ const Torso = styled.div`
 
 const Leg = styled.div`
   ${ElementsCommonStyleUnspecified};
-  z-index: 2;
   height: 60px;
   width: 100%;
   bottom: 0;
 
+  // front legs
   span {
     background: #C2C1C1;
     border-color: #C2C1C1;
     border-style: solid;
-    &:nth-child(1),
-    &:nth-child(2) {
-      background: none;
-      border-radius: 12px;
-      height: 50px;
-      width: 32px;
-      bottom: -3px;
-    }
-    &:nth-child(1) {
-      border-right-width: 15px;
-      left: -22px;
-      transform: rotate(10deg);
-    }
-    &:nth-child(2) {
-      border-left-width: 15px;
-      left: 25px;
-      transform: rotate(-10deg);
-    }
-    &:nth-child(3),
-    &:nth-child(4) {
-      width: 10px;
-      height: 8px;
-      border-radius: 20px;
-      bottom: -5px;
-    }
-    &:nth-child(3) {
-      left: 4px;
-    }
-    &:nth-child(4) {
-      left: 36px;
-    }
-  }
+    border-width: 0;
+    bottom: 0;
 
-  //leg 2
-  ${(props) => props.right && css`
-    span {
-      background: #ccc;
-      border-color: #ccc;
-      border-style: solid;
+    ${(props) => props.front && css`
+      z-index: 2;
+
       &:nth-child(1),
       &:nth-child(2) {
+        background: none;
+        border-radius: 12px;
+        height: 50px;
+        width: 47px;
+        bottom: -3px;
+      }
+      &:nth-child(1) {
+        border-right-width: 15px;
+        left: -22px;
+        transform: rotate(10deg);
+      }
+      &:nth-child(2) {
+        border-left-width: 15px;
+        left: 25px;
+        transform: rotate(-10deg);
+      }
+      &:nth-child(3),
+      &:nth-child(4) {
+        width: 10px;
+        height: 8px;
+        border-radius: 20px;
+        bottom: -5px;
+      }
+      &:nth-child(3) {
+        left: 4px;
+      }
+      &:nth-child(4) {
+        left: 36px;
+      }
+    `};
+  }
+
+  // hind legs
+  ${(props) => props.hind && css`
+    span {
+      &:nth-child(1),
+      &:nth-child(2) {
+        background: #ccc;
+        border-color: #ccc;
         width: 24px;
         height: 12px;
+        border-right-width: 0;
         border-radius: 20px;
         bottom: 0;
         z-index: 0;

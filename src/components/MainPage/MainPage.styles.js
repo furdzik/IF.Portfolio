@@ -40,6 +40,7 @@ const BoxStyled = styled(Box)`
   flex-wrap: wrap;
   align-items: flex-start;
   margin-top: -1rem;
+  z-index: 3;
 `;
 
 const SocialIcons = styled.ul`

@@ -10,9 +10,14 @@ import {
   CracowWrapper,
   TokyoWrapper,
   MtFujiStyled,
-  TreeGreenCracow,
+  TreeGreenCracowOne,
+  TreeGreenCracowTwo,
+  TreeGreenCracowThree,
+  TreeGreenCracowFour,
   TreePinkTokyoOne,
   TreePinkTokyoTwo,
+  TreePinkTokyoThree,
+  TreePinkTokyoFour,
   SkyTreeStyled
 } from './Hero.styles.js';
 
@@ -22,13 +27,31 @@ const Hero = (props) => (
       <StyledCloud cloudType={cloudType.one} />
       <StyledCloud cloudType={cloudType.two} />
       <StyledCloud cloudType={cloudType.three} />
+      <StyledCloud cloudType={cloudType.four} />
+      <StyledCloud cloudType={cloudType.five} />
+      <StyledCloud cloudType={cloudType.six} />
+      <StyledCloud cloudType={cloudType.seven} />
+      <StyledCloud cloudType={cloudType.eight} />
+      <StyledCloud cloudType={cloudType.nine} />
+      <StyledCloud cloudType={cloudType.ten} />
+      <StyledCloud cloudType={cloudType.eleven} />
+      <StyledCloud cloudType={cloudType.twelve} />
+      <StyledCloud cloudType={cloudType.thirteen} />
+      <StyledCloud cloudType={cloudType.fourteen} />
+      <StyledCloud cloudType={cloudType.fifteen} />
+      <StyledCloud cloudType={cloudType.sixteen} />
       <CracowWrapper>
-        <TreeGreenCracow color="green" isTaller />
+        <TreeGreenCracowOne color="green" isTaller />
+        <TreeGreenCracowTwo color="green" />
+        <TreeGreenCracowThree color="green" isTaller />
+        <TreeGreenCracowFour color="green" />
       </CracowWrapper>
       <TokyoWrapper>
         <MtFujiStyled />
         <TreePinkTokyoOne color="pink" />
         <TreePinkTokyoTwo color="pink" isTaller />
+        <TreePinkTokyoThree color="pink" />
+        <TreePinkTokyoFour color="pink" />
         <SkyTreeStyled />
       </TokyoWrapper>
     </ContainerStyled>

@@ -17,8 +17,6 @@ const Cloud = (props) => (
     <span />
     <span />
     <span />
-    <span />
-    <span />
   </Wrapper>
 );
 

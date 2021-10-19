@@ -6,6 +6,7 @@ const Wrapper = styled.div`
   position: relative;
   width: 15rem;
   height: 20rem;
+  z-index: 1;
   span {
     ${ElementsCommonStyle};
     &:nth-child(1) {

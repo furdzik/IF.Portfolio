@@ -9,6 +9,7 @@ import Cloud from '../elements/Cloud';
 import SkyTree from '../elements/SkyTree';
 import MtFuji from '../elements/MtFuji';
 import Tree from '../elements/Tree';
+import Mountains from '../elements/Mountains';
 
 const Wrapper = styled.div`
   position: relative;
@@ -107,35 +108,46 @@ const TokyoWrapper = styled.div`
   // background: #ff0000;
 `;
 
-const MtFujiStyled = styled(MtFuji)`
+const StyledMtFuji = styled(MtFuji)`
   ${ElementsCommonStyle};
   left: 18rem;
   bottom: 0;
 `;
 
+const StyledMountains = styled(Mountains)`
+  ${ElementsCommonStyle};
+  right: -25rem; // -11rem;
+  bottom: 0;
+  z-index: 0;
+`;
+
 const TreeGreenCracowOne = styled(Tree)`
   ${ElementsCommonStyle};
-  right: 5.4rem;
+  right: -16.6rem; // -2.6rem; // 6.4rem
   left: auto;
   bottom: 0;
+  z-index: 2;
 `;
 
 const TreeGreenCracowTwo = styled(Tree)`
   ${ElementsCommonStyle};
   left: 5.4rem;
   bottom: 0;
+  z-index: 3;
 `;
 
 const TreeGreenCracowThree = styled(Tree)`
   ${ElementsCommonStyle};
   left: 0;
   bottom: 0;
+  z-index: 2;
 `;
 
 const TreeGreenCracowFour = styled(Tree)`
   ${ElementsCommonStyle};
   left: 19.4rem;
   bottom: 0;
+  z-index: 2;
 `;
 
 const TreePinkTokyoOne = styled(Tree)`
@@ -162,7 +174,7 @@ const TreePinkTokyoFour = styled(Tree)`
   bottom: 0;
 `;
 
-const SkyTreeStyled = styled(SkyTree)`
+const StyledSkyTree = styled(SkyTree)`
   ${ElementsCommonStyle};
   left: 17rem;
   bottom: 0;
@@ -174,7 +186,8 @@ export {
   StyledCloud,
   CracowWrapper,
   TokyoWrapper,
-  MtFujiStyled,
+  StyledMtFuji,
+  StyledMountains,
   TreeGreenCracowOne,
   TreeGreenCracowTwo,
   TreeGreenCracowThree,
@@ -183,5 +196,5 @@ export {
   TreePinkTokyoTwo,
   TreePinkTokyoThree,
   TreePinkTokyoFour,
-  SkyTreeStyled
+  StyledSkyTree
 };

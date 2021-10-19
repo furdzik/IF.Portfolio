@@ -7,6 +7,7 @@ import {
   Wrapper,
   ContainerStyled,
   StyledCloud,
+  StyledBirds,
   CracowWrapper,
   TokyoWrapper,
   StyledMtFuji,
@@ -41,6 +42,7 @@ const Hero = (props) => (
       <StyledCloud cloudType={cloudType.fourteen} />
       <StyledCloud cloudType={cloudType.fifteen} />
       <StyledCloud cloudType={cloudType.sixteen} />
+      <StyledBirds />
       <CracowWrapper>
         <StyledMountains />
         <TreeGreenCracowOne color="green" isTaller />

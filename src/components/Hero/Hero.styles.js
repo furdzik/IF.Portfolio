@@ -6,6 +6,7 @@ import { ElementsCommonStyle } from '../../styles/elementsCommonStyle.styles';
 
 import Container from '../Container';
 import Cloud from '../elements/Cloud';
+import Birds from '../elements/Birds';
 import SkyTree from '../elements/SkyTree';
 import MtFuji from '../elements/MtFuji';
 import Tree from '../elements/Tree';
@@ -91,6 +92,12 @@ const StyledCloud = styled(Cloud)`
     right: -47rem;
     top: 30rem;
   `};
+`;
+
+const StyledBirds = styled(Birds)`
+  position: absolute;
+  right: -27rem;
+  top: 30rem;
 `;
 
 const CracowWrapper = styled.div`
@@ -184,6 +191,7 @@ export {
   Wrapper,
   ContainerStyled,
   StyledCloud,
+  StyledBirds,
   CracowWrapper,
   TokyoWrapper,
   StyledMtFuji,

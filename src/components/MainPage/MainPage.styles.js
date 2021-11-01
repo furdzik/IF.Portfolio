@@ -5,7 +5,7 @@ import {
   mdiGmail,
   mdiGithub,
   mdiLinkedin,
-  mdiFacebook
+  mdiStackOverflow
 } from '@mdi/js';
 
 import { breakpointMixin } from '../../styles/mixins';
@@ -65,7 +65,28 @@ const SocialItem = styled.li`
 `;
 
 const SocialLink = styled.a`
-  color: black;
+  display: block;
+`;
+
+const IconStyled = styled(Icon)`
+  width: 3rem;
+  height: 3rem;
+  &:hover {
+    opacity: .8;
+  }
+
+  ${(props) => props.path === mdiGmail && css`
+    color: #eb4336;
+  `};
+  ${(props) => props.path === mdiGithub && css`
+    color: #1b1f23;
+  `};
+  ${(props) => props.path === mdiLinkedin && css`
+    color: #0a66c2;
+  `};
+  ${(props) => props.path === mdiStackOverflow && css`
+    color: #f48225;
+  `};
 `;
 
 const ListWrapper = styled.div`
@@ -118,26 +139,6 @@ const Link = styled.a`
   display: block;
 `;
 
-const IconStyled = styled(Icon)`
-  width: 3rem;
-  &:hover {
-    opacity: .8;
-  }
-
-  ${(props) => props.path === mdiGmail && css`
-    color: #eb4336;
-  `};
-  ${(props) => props.path === mdiGithub && css`
-    color: #1b1f23;
-  `};
-  ${(props) => props.path === mdiLinkedin && css`
-    color: #0a66c2;
-  `};
-  ${(props) => props.path === mdiFacebook && css`
-    color: #1877f2;
-  `};
-`;
-
 const MeAndCatWrapper = styled.div`
   position: relative;
   margin: 4rem 0 0 4rem; // do zmiany
@@ -182,11 +183,11 @@ export {
   SocialIcons,
   SocialItem,
   SocialLink,
+  IconStyled,
   ListWrapper,
   List,
   ListItem,
   Link,
-  IconStyled,
   MeAndCatWrapper,
   CatStyled,
   WipBadge

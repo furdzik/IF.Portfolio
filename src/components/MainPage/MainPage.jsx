@@ -5,7 +5,7 @@ import {
   mdiGmail,
   mdiGithub,
   mdiLinkedin,
-  mdiFacebook
+  mdiStackOverflow
 } from '@mdi/js';
 
 import Container from '../Container';
@@ -72,13 +72,6 @@ const MainPage = () => {
           </MeAndCatWrapper>
           <SocialIcons>
             <SocialItem>
-              <SocialLink href="mailto:izabela.furdzik+portfolio@gmail.com" target="_blank" rel="noreferrer">
-                <IconStyled
-                  path={mdiGmail}
-                />
-              </SocialLink>
-            </SocialItem>
-            <SocialItem>
               <SocialLink href="https://github.com/furdzik" target="_blank" rel="noreferrer">
                 <IconStyled
                   path={mdiGithub}
@@ -93,9 +86,16 @@ const MainPage = () => {
               </SocialLink>
             </SocialItem>
             <SocialItem>
-              <SocialLink href="https://www.facebook.com/izabela.furdzik" target="_blank" rel="noreferrer">
+              <SocialLink href="https://stackoverflow.com/users/7615658/izabela-furdzik" target="_blank" rel="noreferrer">
                 <IconStyled
-                  path={mdiFacebook}
+                  path={mdiStackOverflow}
+                />
+              </SocialLink>
+            </SocialItem>
+            <SocialItem>
+              <SocialLink href="mailto:izabela.furdzik+portfolio@gmail.com" target="_blank" rel="noreferrer">
+                <IconStyled
+                  path={mdiGmail}
                 />
               </SocialLink>
             </SocialItem>

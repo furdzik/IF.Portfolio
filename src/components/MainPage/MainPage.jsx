@@ -48,7 +48,7 @@ const MainPage = () => {
             <Heading>{intl.formatMessage(messages.seeMore)}</Heading>
             <List>
               <ListItem>
-                <Link href="http://japanese.furdzik.com/" target="_blank" rel="noreferrer">
+                <Link href="https://japanese.furdzik.com/" target="_blank" rel="noreferrer">
                   {intl.formatMessage(messages.japaneseApp)}
                 </Link>
               </ListItem>

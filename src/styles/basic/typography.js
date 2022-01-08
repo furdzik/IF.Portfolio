@@ -25,7 +25,7 @@ const fontSize = {
     headingSmall: '1.8rem',
     medium: '2rem',
     normal: '1.4rem',
-    small: '1.2rem',
+    small: '1.2rem'
   },
   big: '1.6rem',
   header: '3.6rem',

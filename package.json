@@ -14,8 +14,7 @@
     "find-duplicates": "jscpd ./src/",
     "stylelint": "npx stylelint \"**/*.styles.{js,jsx}\"",
     "eslint": "eslint src/ --ext .jsx,.js",
-    "dev": "npx webpack-dev-server --history-api-fallback --open --env development",
-    "prepare": "husky install"
+    "dev": "npx webpack-dev-server --history-api-fallback --open --env development"
   },
   "browserslist": {
     "production": [

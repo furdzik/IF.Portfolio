@@ -1,15 +1,17 @@
 import React from 'react';
+import { Global, ThemeProvider } from '@emotion/react';
 
-import { ThemeProvider } from 'styled-components';
 import { IntlProvider } from 'react-intl';
+import '@formatjs/intl-relativetimeformat/dist/locale-data/en';
 
-import Routes from './routes';
+import { defaultLocale } from '@config/lang';
 
-import { english } from './lang';
-import { defaultLocale } from './lang/config';
+import theme from '@styles/theme';
+import { GlobalStyles } from '@styles/global.styles';
 
-import theme from './styles/theme';
-import { GlobalStyles } from './styles/global.styles';
+import { english } from '@lang';
+
+import RoutesConfig from '@routes';
 
 const App = () => (
   <IntlProvider
@@ -17,8 +19,8 @@ const App = () => (
     messages={english}
   >
     <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Routes />
+      <Global styles={GlobalStyles} />
+      <RoutesConfig />
     </ThemeProvider>
   </IntlProvider>
 );

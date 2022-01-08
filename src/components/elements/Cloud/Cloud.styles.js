@@ -1,8 +1,9 @@
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
+import { css } from '@emotion/react';
 
-import { cloudType } from '../../../config/constants';
+import { cloudType } from '@constants';
 
-import { ElementsCommonStyleUnspecified } from '../../../styles/elementsCommonStyle.styles';
+import { ElementsCommonStyleUnspecified } from '@styles/elementsCommonStyle.styles';
 
 const CloudTypeOneSize = css`
   width: 119px;
@@ -10,33 +11,33 @@ const CloudTypeOneSize = css`
 `;
 
 const CloudTypeOne = css`
-  &:nth-child(1) {
-    border-radius: 20px 20px 20px 20px;
-    height: 45px;
+  &:nth-of-type(1) {
+    top: 2rem;
     left: 0;
-    top: 20px;
     width: 97px;
+    height: 45px;
+    border-radius: 2rem;
   }
-  &:nth-child(2) {
-    border-radius: 50px 50px 50px 50px;
-    height: 50px;
-    left: 23px;
+  &:nth-of-type(2) {
     top: 0;
-    width: 50px;
+    left: 23px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
   }
-  &:nth-child(3) {
-    border-radius: 50px 50px 50px 50px;
-    height: 50px;
-    left: 48px;
+  &:nth-of-type(3) {
     top: 12px;
-    width: 50px;
+    left: 48px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
   }
-  &:nth-child(4) {
-    border-radius: 50px 50px 50px 50px;
-    bottom: 0;
-    height: 38px;
+  &:nth-of-type(4) {
     right: 0;
+    bottom: 0;
     width: 63px;
+    height: 38px;
+    border-radius: 5rem;
   }
 `;
 
@@ -46,33 +47,33 @@ const CloudTypeTwoSize = css`
 `;
 
 const CloudTypeTwo = css`
-  &:nth-child(1) {
-    border-radius: 20px 20px 20px 20px;
+  &:nth-of-type(1) {
     bottom: 0;
-    height: 31px;
     left: 0;
     width: 92px;
+    height: 31px;
+    border-radius: 2rem;
   }
-  &:nth-child(2) {
-    border-radius: 30px 30px 30px 30px;
-    height: 30px;
-    left: 14px;
+  &:nth-of-type(2) {
     top: 8px;
+    left: 14px;
     width: 30px;
-  }
-  &:nth-child(3) {
-    border-radius: 30px 30px 30px 30px;
     height: 30px;
-    left: 36px;
-    top: 3px;
-    width: 30px;
+    border-radius: 30px;
   }
-  &:nth-child(4) {
-    border-radius: 40px 40px 40px 40px;
-    height: 40px;
-    right: 0;
+  &:nth-of-type(3) {
+    top: 3px;
+    left: 36px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+  }
+  &:nth-of-type(4) {
     top: 11px;
+    right: 0;
     width: 40px;
+    height: 40px;
+    border-radius: 40px;
   }
 `;
 
@@ -82,33 +83,33 @@ const CloudTypeThreeSize = css`
 `;
 
 const CloudTypeThree = css`
-  &:nth-child(1) {
-    border-radius: 40px 40px 40px 40px;
+  &:nth-of-type(1) {
     bottom: 0;
-    height: 54px;
     left: 0;
-    width: 150px;
+    width: 15rem;
+    height: 54px;
+    border-radius: 40px;
   }
-  &:nth-child(2) {
-    border-radius: 71px 71px 71px 71px;
-    height: 71px;
-    left: -4px;
+  &:nth-of-type(2) {
     top: 24px;
+    left: -4px;
     width: 71px;
+    height: 71px;
+    border-radius: 71px;
   }
-  &:nth-child(3) {
-    border-radius: 70px 70px 70px 70px;
-    height: 70px;
-    left: 26px;
+  &:nth-of-type(3) {
     top: 3px;
+    left: 26px;
     width: 70px;
+    height: 70px;
+    border-radius: 70px;
   }
-  &:nth-child(4) {
-    border-radius: 60px 60px 60px 60px;
-    height: 60px;
-    right: 12px;
+  &:nth-of-type(4) {
     top: 11px;
+    right: 12px;
     width: 60px;
+    height: 60px;
+    border-radius: 60px;
   }
 `;
 
@@ -118,275 +119,275 @@ const CloudTypeFourSize = css`
 `;
 
 const CloudTypeFour = css`
-  &:nth-child(1) {
-    border-radius: 40px 40px 40px 40px;
+  &:nth-of-type(1) {
     bottom: 0;
-    height: 47px;
     left: 0;
     width: 126px;
+    height: 47px;
+    border-radius: 40px;
   }
-  &:nth-child(2) {
-    border-radius: 40px 40px 40px 40px;
-    height: 40px;
-    left: 13px;
+  &:nth-of-type(2) {
     top: 14px;
+    left: 13px;
     width: 40px;
-  }
-  &:nth-child(3) {
-    border-radius: 40px 40px 40px 40px;
     height: 40px;
-    left: 38px;
+    border-radius: 40px;
+  }
+  &:nth-of-type(3) {
     top: 10px;
+    left: 38px;
     width: 40px;
-  }
-  &:nth-child(4) {
-    border-radius: 40px 40px 40px 40px;
     height: 40px;
-    right: 21px;
+    border-radius: 40px;
+  }
+  &:nth-of-type(4) {
     top: 19px;
+    right: 21px;
     width: 40px;
+    height: 40px;
+    border-radius: 4rem;
   }
 `;
 
 const CloudTypeFiveSize = css`
-    height: 95px;
-    width: 141px;
+  width: 141px;
+  height: 95px;
 `;
 
 const CloudTypeFive = css`
-  &:nth-child(1) {
-    border-radius: 40px 40px 40px 40px;
+  &:nth-of-type(1) {
     bottom: 0;
-    height: 63px;
     left: 0;
     width: 141px;
+    height: 63px;
+    border-radius: 4rem;
   }
-  &:nth-child(2) {
-    border-radius: 70px 70px 70px 70px;
-    height: 70px;
-    left: 24px;
+  &:nth-of-type(2) {
     top: 0;
+    left: 24px;
     width: 70px;
+    height: 70px;
+    border-radius: 70px;
   }
-  &:nth-child(3) {
-    border-radius: 50px 50px 50px 50px;
-    height: 50px;
-    right: 11px;
+  &:nth-of-type(3) {
     top: 14px;
-    width: 50px;
+    right: 11px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
   }
 `;
 
 const CloudTypeSixSize = css`
-  height: 54px;
   width: 86px;
+  height: 54px;
 `;
 
 const CloudTypeSix = css`
-  &:nth-child(1) {
-    border-radius: 40px 40px 40px 40px;
+  &:nth-of-type(1) {
     bottom: 0;
-    height: 35px;
     left: 0;
     width: 86px;
+    height: 35px;
+    border-radius: 4rem;
   }
-  &:nth-child(2) {
-    border-radius: 30px 30px 30px 30px;
-    height: 30px;
-    left: 8px;
+  &:nth-of-type(2) {
     top: 6px;
+    left: 8px;
     width: 30px;
+    height: 30px;
+    border-radius: 30px;
   }
-  &:nth-child(3) {
-    border-radius: 40px 40px 40px 40px;
-    height: 40px;
-    left: 32px;
+  &:nth-of-type(3) {
     top: 3px;
+    left: 32px;
     width: 40px;
+    height: 40px;
+    border-radius: 4rem;
   }
 `;
 
 const CloudTypeSevenSize = css`
-  height: 65px;
   width: 114px;
+  height: 65px;
 `;
 
 const CloudTypeSeven = css`
-  &:nth-child(1) {
-    border-radius: 40px 40px 40px 40px;
+  &:nth-of-type(1) {
     bottom: 0;
-    height: 40px;
     left: 0;
     width: 114px;
-  }
-  &:nth-child(2) {
-    border-radius: 40px 40px 40px 40px;
     height: 40px;
+    border-radius: 4rem;
+  }
+  &:nth-of-type(2) {
+    top: 10px;
     right: 8px;
-    top: 10px;
     width: 40px;
-  }
-  &:nth-child(3) {
-    border-radius: 40px 40px 40px 40px;
     height: 40px;
-    left: 8px;
-    top: 10px;
-    width: 40px;
+    border-radius: 4rem;
   }
-  &:nth-child(4) {
-    border-radius: 50px 50px 50px 50px;
-    height: 50px;
-    left: 32px;
+  &:nth-of-type(3) {
+    top: 10px;
+    left: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4rem;
+  }
+  &:nth-of-type(4) {
     top: 0;
-    width: 50px;
+    left: 32px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
   }
 `;
 
 const CloudTypeEightSize = css`
-  height: 70px;
   width: 162px;
+  height: 70px;
 `;
 
 const CloudTypeEight = css`
-  &:nth-child(1) {
-    border-radius: 40px 40px 40px 40px;
+  &:nth-of-type(1) {
     bottom: 0;
-    height: 45px;
     left: 0;
     width: 162px;
+    height: 45px;
+    border-radius: 4rem;
   }
-  &:nth-child(2) {
-    border-radius: 70px 70px 70px 70px;
-    height: 70px;
-    right: -7px;
+  &:nth-of-type(2) {
     top: 0;
+    right: -7px;
     width: 70px;
+    height: 70px;
+    border-radius: 70px;
   }
-  &:nth-child(3) {
-    border-radius: 60px 60px 60px 60px;
-    height: 60px;
-    left: 22px;
+  &:nth-of-type(3) {
     top: 2px;
+    left: 22px;
     width: 60px;
+    height: 60px;
+    border-radius: 60px;
   }
-  &:nth-child(4) {
-    border-radius: 50px 50px 50px 50px;
-    height: 50px;
-    left: 65px;
+  &:nth-of-type(4) {
     top: -8px;
-    width: 50px;
+    left: 65px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
   }
 `;
 
 const CloudTypeNineSize = css`
-  height: 60px;
   width: 126px;
+  height: 60px;
 `;
 
 const CloudTypeNine = css`
-  &:nth-child(1) {
-    border-radius: 40px 40px 40px 40px;
+  &:nth-of-type(1) {
     bottom: 0;
-    height: 45px;
     left: 0;
     width: 126px;
+    height: 45px;
+    border-radius: 4rem;
   }
-  &:nth-child(2) {
-    border-radius: 40px 40px 40px 40px;
-    height: 40px;
-    right: 3px;
+  &:nth-of-type(2) {
     top: -4px;
-    width: 40px
+    right: 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4rem;
   }
-  &:nth-child(3) {
-    border-radius: 50px 50px 50px 50px;
-    height: 50px;
-    left: 15px;
+  &:nth-of-type(3) {
     top: 0;
-    width: 50px;
+    left: 15px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
   }
-  &:nth-child(4) {
-    border-radius: 50px 50px 50px 50px;
-    height: 50px;
-    left: 47px;
+  &:nth-of-type(4) {
     top: -14px;
-    width: 50px;
+    left: 47px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
   }
 `;
 
 const CloudTypeTenSize = css`
-  height: 51px;
   width: 92px;
+  height: 51px;
 `;
 
 const CloudTypeTen = css`
-  &:nth-child(1) {
-    border-radius: 20px 20px 20px 20px;
+  &:nth-of-type(1) {
     bottom: 0;
-    height: 31px;
     left: 0;
     width: 92px;
+    height: 31px;
+    border-radius: 2rem;
   }
-  &:nth-child(2) {
-    border-radius: 30px 30px 30px 30px;
-    height: 30px;
-    left: 14px;
+  &:nth-of-type(2) {
     top: 8px;
+    left: 14px;
     width: 30px;
-  }
-  &:nth-child(3) {
-    border-radius: 30px 30px 30px 30px;
     height: 30px;
-    left: 36px;
-    top: 3px;
-    width: 30px;
+    border-radius: 30px;
   }
-  &:nth-child(4) {
-    border-radius: 40px 40px 40px 40px;
-    height: 40px;
-    right: 0;
+  &:nth-of-type(3) {
+    top: 3px;
+    left: 36px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+  }
+  &:nth-of-type(4) {
     top: 11px;
+    right: 0;
     width: 40px;
+    height: 40px;
+    border-radius: 4rem;
   }
 `;
 
 const SmallCloudSize = css`
+  z-index: 1;
   width: 80px;
   height: 45px;
-  z-index: 1;
 `;
 
 const SmallCloud = css`
-  display: block;
   position: absolute;
+  display: block;
 
-  &:nth-child(1) {
-    border-radius: 20px 20px 20px 20px;
-    height: 25px;
-    left: 0;
+  &:nth-of-type(1) {
     bottom: 0;
+    left: 0;
     width: 80px;
+    height: 25px;
+    border-radius: 2rem;
   }
-  &:nth-child(2) {
-    border-radius: 20px 20px 20px 20px;
-    height: 30px;
+  &:nth-of-type(2) {
+    bottom: 0;
     left: 0;
-    bottom: 0;
     width: 30px;
-  }
-  &:nth-child(3) {
-    border-radius: 37px;
-    height: 37px;
-    left: 22px;
-    bottom: 3px;
-    width: 37px;
-  }
-  &:nth-child(4) {
-    border-radius: 30px;
     height: 30px;
-    left: 50px;
+    border-radius: 2rem;
+  }
+  &:nth-of-type(3) {
+    bottom: 3px;
+    left: 22px;
+    width: 37px;
+    height: 37px;
+    border-radius: 37px;
+  }
+  &:nth-of-type(4) {
     bottom: 0;
+    left: 5rem;
     width: 30px;
+    height: 30px;
+    border-radius: 30px;
   }
 `;
 
@@ -449,109 +450,108 @@ const Wrapper = styled.div`
   z-index: 2;
 
   ${(props) => props.cloudType === cloudType.one && css`
-    ${CloudTypeOneSize}
+    ${CloudTypeOneSize};
   `};
-   ${(props) => props.cloudType === cloudType.two && css`
-    ${CloudTypeTwoSize}
+  ${(props) => props.cloudType === cloudType.two && css`
+    ${CloudTypeTwoSize};
   `};
-   ${(props) => props.cloudType === cloudType.three && css`
-    ${CloudTypeThreeSize}
+  ${(props) => props.cloudType === cloudType.three && css`
+    ${CloudTypeThreeSize};
   `};
   ${(props) => props.cloudType === cloudType.four && css`
-    ${CloudTypeFourSize}
+    ${CloudTypeFourSize};
   `};
   ${(props) => props.cloudType === cloudType.five && css`
-    ${CloudTypeFiveSize}
+    ${CloudTypeFiveSize};
   `};
   ${(props) => props.cloudType === cloudType.six && css`
-    ${CloudTypeSixSize}
+    ${CloudTypeSixSize};
   `};
   ${(props) => props.cloudType === cloudType.seven && css`
-    ${CloudTypeSevenSize}
+    ${CloudTypeSevenSize};
   `};
   ${(props) => props.cloudType === cloudType.eight && css`
-    ${CloudTypeEightSize}
+    ${CloudTypeEightSize};
   `};
   ${(props) => props.cloudType === cloudType.nine && css`
-    ${CloudTypeNineSize}
+    ${CloudTypeNineSize};
   `};
   ${(props) => props.cloudType === cloudType.ten && css`
-    ${CloudTypeTenSize}
+    ${CloudTypeTenSize};
   `};
   ${(props) => props.cloudType === cloudType.eleven && css`
-    ${CloudTypeElevenSize}
+    ${CloudTypeElevenSize};
   `};
   ${(props) => props.cloudType === cloudType.twelve && css`
-    ${CloudTypeTwelveSize}
+    ${CloudTypeTwelveSize};
   `};
   ${(props) => props.cloudType === cloudType.thirteen && css`
-    ${CloudTypeThirteenSize}
+    ${CloudTypeThirteenSize};
   `};
   ${(props) => props.cloudType === cloudType.fourteen && css`
-    ${CloudTypeFourteenSize}
+    ${CloudTypeFourteenSize};
   `};
   ${(props) => props.cloudType === cloudType.fifteen && css`
-    ${CloudTypeFifteenSize}
+    ${CloudTypeFifteenSize};
   `};
   ${(props) => props.cloudType === cloudType.sixteen && css`
-    ${CloudTypeSixteenSize}
+    ${CloudTypeSixteenSize};
   `};
 
   span {
-    background: #F6F7F9;
-    display: block;
     position: absolute;
+    display: block;
+    background: #f6f7f9;
 
     ${(props) => props.cloudType === cloudType.one && css`
-      ${CloudTypeOne}
+      ${CloudTypeOne};
     `};
-     ${(props) => props.cloudType === cloudType.two && css`
-      ${CloudTypeTwo}
+    ${(props) => props.cloudType === cloudType.two && css`
+      ${CloudTypeTwo};
     `};
-     ${(props) => props.cloudType === cloudType.three && css`
-      ${CloudTypeThree}
+    ${(props) => props.cloudType === cloudType.three && css`
+      ${CloudTypeThree};
     `};
-     ${(props) => props.cloudType === cloudType.four && css`
-      ${CloudTypeFour}
+    ${(props) => props.cloudType === cloudType.four && css`
+      ${CloudTypeFour};
     `};
-     ${(props) => props.cloudType === cloudType.five && css`
-      ${CloudTypeFive}
+    ${(props) => props.cloudType === cloudType.five && css`
+      ${CloudTypeFive};
     `};
-     ${(props) => props.cloudType === cloudType.six && css`
-      ${CloudTypeSix}
+    ${(props) => props.cloudType === cloudType.six && css`
+      ${CloudTypeSix};
     `};
-     ${(props) => props.cloudType === cloudType.seven && css`
-      ${CloudTypeSeven}
+    ${(props) => props.cloudType === cloudType.seven && css`
+      ${CloudTypeSeven};
     `};
-     ${(props) => props.cloudType === cloudType.eight && css`
-      ${CloudTypeEight}
+    ${(props) => props.cloudType === cloudType.eight && css`
+      ${CloudTypeEight};
     `};
-     ${(props) => props.cloudType === cloudType.nine && css`
-      ${CloudTypeNine}
+    ${(props) => props.cloudType === cloudType.nine && css`
+      ${CloudTypeNine};
     `};
-     ${(props) => props.cloudType === cloudType.ten && css`
-      ${CloudTypeTen}
+    ${(props) => props.cloudType === cloudType.ten && css`
+      ${CloudTypeTen};
     `};
     ${(props) => props.cloudType === cloudType.eleven && css`
-      ${CloudTypeEleven}
+      ${CloudTypeEleven};
     `};
-     ${(props) => props.cloudType === cloudType.twelve && css`
-      ${CloudTypeTwelve}
+    ${(props) => props.cloudType === cloudType.twelve && css`
+      ${CloudTypeTwelve};
     `};
-     ${(props) => props.cloudType === cloudType.thirteen && css`
-      ${CloudTypeThirteen}
+    ${(props) => props.cloudType === cloudType.thirteen && css`
+      ${CloudTypeThirteen};
     `};
-     ${(props) => props.cloudType === cloudType.fourteen && css`
-      ${CloudTypeFourteen}
+    ${(props) => props.cloudType === cloudType.fourteen && css`
+      ${CloudTypeFourteen};
     `};
-     ${(props) => props.cloudType === cloudType.fifteen && css`
-      ${CloudTypeFifteen}
+    ${(props) => props.cloudType === cloudType.fifteen && css`
+      ${CloudTypeFifteen};
     `};
-     ${(props) => props.cloudType === cloudType.sixteen && css`
-      ${CloudTypeSixteen}
+    ${(props) => props.cloudType === cloudType.sixteen && css`
+      ${CloudTypeSixteen};
     `};
-   }
-
+  }
 `;
 
 export {

@@ -1,52 +1,19 @@
 {
   "name": "if.portfolio",
   "version": "0.0.1",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furdzik/if.portfolio.git"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run lang && npm run dev",
+    "build": "npx webpack --progress --env production",
     "lint": "npm run eslint && npm run stylelint",
+    "lang": "extract-messages -l=en -d=en -o src/lang/generated --flat \"src/**/**/**/*.messages.js\"",
+    "find-duplicates": "jscpd ./src/",
+    "stylelint": "npx stylelint \"**/*.styles.{js,jsx}\"",
     "eslint": "eslint src/ --ext .jsx,.js",
-    "stylelint": "npx stylelint \"**/*.styles.js\"",
-    "lang": "extract-messages -l=en -d=en -o src/lang/components --flat \"src/components/**/*.messages.js\"",
-    "eslint:fix": "npm run eslint -- --fix"
-  },
-  "dependencies": {
-    "@mdi/js": "5.9.55",
-    "@mdi/react": "1.4.0",
-    "@testing-library/jest-dom": "5.11.4",
-    "@testing-library/react": "11.1.0",
-    "@testing-library/user-event": "12.1.10",
-    "prop-types": "15.7.2",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-intl": "5.10.16",
-    "react-router-dom": "5.2.0",
-    "react-scripts": "4.0.1",
-    "styled-components": "5.2.1",
-    "stylelint": "13.8.0",
-    "web-vitals": "0.2.4"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "11.0.0",
-    "@commitlint/config-conventional": "11.0.0",
-    "conventional-changelog-cli": "2.1.1",
-    "conventional-changelog-eslint": "3.0.9",
-    "editorconfig": "0.15.3",
-    "eslint-config-airbnb": "18.2.1",
-    "eslint-plugin-react-hooks": "4.2.0",
-    "extract-react-intl-messages": "4.1.1",
-    "husky": "4.3.8",
-    "redux-devtools-extension": "2.13.8",
-    "stylelint-config-prettier": "8.0.2",
-    "stylelint-config-recommended-scss": "4.2.0",
-    "stylelint-config-standard": "20.0.0",
-    "stylelint-config-styled-components": "0.1.1",
-    "stylelint-declaration-block-no-ignored-properties": "2.3.0",
-    "stylelint-declaration-use-variable": "1.7.2",
-    "stylelint-order": "4.1.0",
-    "stylelint-processor-styled-components": "1.10.0",
-    "stylelint-scss": "3.18.0"
+    "dev": "npx webpack-dev-server --history-api-fallback --open --env development"
   },
   "browserslist": {
     "production": [
@@ -60,85 +27,91 @@
       "last 1 safari version"
     ]
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "eslint-config-airbnb"
-    ],
-    "plugins": [
-      "eslint-plugin-import",
-      "eslint-plugin-react-hooks"
-    ],
-    "rules": {
-      "arrow-parens": [
-        "error",
-        "always"
-      ],
-      "comma-dangle": [
-        "error",
-        "never"
-      ],
-      "import/no-extraneous-dependencies": 0,
-      "import/extensions": 0,
-      "import/no-useless-path-segments": 0,
-      "import/prefer-default-export": 0,
-      "import/no-named-as-default": 0,
-      "jsx-a11y/anchor-has-content": 0,
-      "no-multiple-empty-lines": [
-        "error",
-        {
-          "max": 1
-        }
-      ],
-      "no-confusing-arrow": 0,
-      "react/destructuring-assignment": 0,
-      "react/sort-prop-types": [
-        2,
-        {
-          "ignoreCase": true,
-          "requiredFirst": true,
-          "callbacksLast": true
-        }
-      ],
-      "react/jsx-one-expression-per-line": 0,
-      "react/jsx-fragments": [
-        1,
-        "element"
-      ],
-      "react/jsx-props-no-spreading": 0,
-      "react/static-property-placement": [
-        1,
-        "static public field"
-      ],
-      "react/prop-types": [
-        1,
-        {
-          "skipUndeclared": true
-        }
-      ],
-      "react/jsx-filename-extension": [
-        1,
-        {
-          "extensions": [
-            ".js",
-            ".jsx"
-          ]
-        }
-      ],
-      "space-before-function-paren": 0
-    }
-  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run lang",
-      "pre-push": "npm run lint"
-    }
+  "dependencies": {
+    "@emotion/is-prop-valid": "1.1.0",
+    "@emotion/react": "11.5.0",
+    "@emotion/styled": "11.3.0",
+    "@formatjs/intl-pluralrules": "1.5.2",
+    "@formatjs/intl-relativetimeformat": "4.5.9",
+    "@material-ui/core": "4.12.3",
+    "@material-ui/lab": "4.0.0-alpha.60",
+    "@mdi/js": "6.4.95",
+    "@mdi/react": "1.5.0",
+    "axios": "0.24.0",
+    "caniuse-lite": "1.0.30001292",
+    "core-js": "3.19.1",
+    "lodash": "4.17.21",
+    "prop-types": "15.7.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-intl": "3.12.0",
+    "react-router-dom": "6.0.1",
+    "uuid": "8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.16.0",
+    "@babel/core": "7.16.0",
+    "@babel/eslint-parser": "7.16.0",
+    "@babel/plugin-proposal-class-properties": "7.16.0",
+    "@babel/plugin-transform-runtime": "7.16.0",
+    "@babel/preset-env": "7.16.0",
+    "@babel/preset-react": "7.16.0",
+    "@babel/runtime": "7.16.0",
+    "@commitlint/cli": "14.1.0",
+    "@commitlint/config-conventional": "14.1.0",
+    "@emotion/babel-plugin": "11.3.0",
+    "@emotion/babel-preset-css-prop": "11.2.0",
+    "babel-loader": "8.2.3",
+    "babel-plugin-module-resolver": "4.1.0",
+    "babel-plugin-react-intl-auto": "3.3.0",
+    "babel-plugin-require-context-hook": "1.0.0",
+    "babel-plugin-styled-components": "1.13.3",
+    "conventional-changelog-cli": "2.1.1",
+    "conventional-changelog-eslint": "3.0.9",
+    "copy-webpack-plugin": "9.0.1",
+    "editorconfig": "0.15.3",
+    "eslint": "8.2.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-import-resolver-babel-module": "5.3.1",
+    "eslint-loader": "4.0.2",
+    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-module-resolver": "1.4.0",
+    "eslint-plugin-react": "7.26.1",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "extract-react-intl-messages": "4.1.1",
+    "file-loader": "6.2.0",
+    "full-icu": "1.4.0",
+    "handlebars-loader": "1.7.1",
+    "html-webpack-plugin": "5.5.0",
+    "husky": "7.0.4",
+    "jscpd": "3.4.1",
+    "postcss": "8.3.11",
+    "react-hot-loader": "4.13.0",
+    "react-test-renderer": "17.0.2",
+    "redux-devtools-extension": "2.13.9",
+    "stylelint": "14.0.1",
+    "stylelint-config-prettier": "9.0.3",
+    "stylelint-config-recommended": "6.0.0",
+    "stylelint-config-recommended-scss": "5.0.1",
+    "stylelint-config-standard": "23.0.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-declaration-block-no-ignored-properties": "2.4.0",
+    "stylelint-declaration-use-variable": "1.7.3",
+    "stylelint-order": "5.0.0",
+    "stylelint-processor-styled-components": "1.10.0",
+    "stylelint-scss": "4.0.0",
+    "webpack": "5.65.0",
+    "webpack-bundle-analyzer": "4.5.0",
+    "webpack-cdn-plugin": "3.3.1",
+    "webpack-cleanup-plugin": "0.5.1",
+    "webpack-cli": "4.9.1",
+    "webpack-dev-server": "4.4.0",
+    "webpack-merge": "5.8.0"
   }
 }

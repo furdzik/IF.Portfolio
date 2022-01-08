@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 import { ElementsSaferStyle } from '../../../styles/elementsCommonStyle.styles';
 
@@ -20,26 +20,26 @@ const Wrapper = styled.div`
     top: -1.5rem;
   }
   &::before,
-  span:nth-child(2),
-  span:nth-child(4) {
+  span:nth-of-type(2),
+  span:nth-of-type(4) {
     transform: rotate(40deg);
   }
-  span:nth-child(1),
-  span:nth-child(3),
+  span:nth-of-type(1),
+  span:nth-of-type(3),
   &::after {
     transform: rotate(-40deg);
   }
   span {
-    &:nth-child(1) {
+    &:nth-of-type(1) {
       top: 6rem;
     }
-    &:nth-child(2) {
+    &:nth-of-type(2) {
       top: 13.4rem;
     }
-    &:nth-child(3) {
+    &:nth-of-type(3) {
       top: 20.9rem;
     }
-    &:nth-child(4) {
+    &:nth-of-type(4) {
       top: 28.4rem;
     }
   }

@@ -1,99 +1,98 @@
-import { createGlobalStyle } from 'styled-components';
+import { css } from '@emotion/react';
+
 import _map from 'lodash/map';
 
-import ShadowIntoWoff from '../assets/fonts/ShadowsIntoLightTwo-Regular.woff';
-import ShadowIntoTtf from '../assets/fonts/ShadowsIntoLightTwo-Regular.ttf';
-import ShadowIntoSvg from '../assets/fonts/ShadowsIntoLightTwo-Regular.svg';
+import ShadowIntoWoff from '@assets/fonts/ShadowsIntoLightTwo-Regular.woff';
+import ShadowIntoTtf from '@assets/fonts/ShadowsIntoLightTwo-Regular.ttf';
+import ShadowIntoSvg from '@assets/fonts/ShadowsIntoLightTwo-Regular.svg';
 
-import RobotoRegularWoff from '../assets/fonts/Roboto-Regular.woff';
-import RobotoRegularTtf from '../assets/fonts/Roboto-Regular.ttf';
-import RobotoRegularSvg from '../assets/fonts/Roboto-Regular.svg';
+import RobotoRegularWoff from '@assets/fonts/Roboto-Regular.woff';
+import RobotoRegularTtf from '@assets/fonts/Roboto-Regular.ttf';
+import RobotoRegularSvg from '@assets/fonts/Roboto-Regular.svg';
 
-import RobotoMediumWoff from '../assets/fonts/Roboto-Medium.woff';
-import RobotoMediumTtf from '../assets/fonts/Roboto-Medium.ttf';
-import RobotoMediumSvg from '../assets/fonts/Roboto-Medium.svg';
+import RobotoMediumWoff from '@assets/fonts/Roboto-Medium.woff';
+import RobotoMediumTtf from '@assets/fonts/Roboto-Medium.ttf';
+import RobotoMediumSvg from '@assets/fonts/Roboto-Medium.svg';
 
-import RobotoLightWoff from '../assets/fonts/Roboto-Light.woff';
-import RobotoLightTtf from '../assets/fonts/Roboto-Light.ttf';
-import RobotoLightSvg from '../assets/fonts/Roboto-Light.svg';
+import RobotoLightWoff from '@assets/fonts/Roboto-Light.woff';
+import RobotoLightTtf from '@assets/fonts/Roboto-Light.ttf';
+import RobotoLightSvg from '@assets/fonts/Roboto-Light.svg';
 
-import RobotoBlackWoff from '../assets/fonts/Roboto-Black.woff';
-import RobotoBlackTtf from '../assets/fonts/Roboto-Black.ttf';
-import RobotoBlackSvg from '../assets/fonts/Roboto-Black.svg';
+import RobotoBlackWoff from '@assets/fonts/Roboto-Black.woff';
+import RobotoBlackTtf from '@assets/fonts/Roboto-Black.ttf';
+import RobotoBlackSvg from '@assets/fonts/Roboto-Black.svg';
 
-import RobotoBoldWoff from '../assets/fonts/Roboto-Bold.woff';
-import RobotoBoldTtf from '../assets/fonts/Roboto-Bold.ttf';
-import RobotoBoldSvg from '../assets/fonts/Roboto-Bold.svg';
+import RobotoBoldWoff from '@assets/fonts/Roboto-Bold.woff';
+import RobotoBoldTtf from '@assets/fonts/Roboto-Bold.ttf';
+import RobotoBoldSvg from '@assets/fonts/Roboto-Bold.svg';
 
-import RobotoThinWoff from '../assets/fonts/Roboto-Thin.woff';
-import RobotoThinTtf from '../assets/fonts/Roboto-Thin.ttf';
-import RobotoThinSvg from '../assets/fonts/Roboto-Thin.svg';
+import RobotoThinWoff from '@assets/fonts/Roboto-Thin.woff';
+import RobotoThinTtf from '@assets/fonts/Roboto-Thin.ttf';
+import RobotoThinSvg from '@assets/fonts/Roboto-Thin.svg';
 
-import { breakpointMixin, fontfaceMixin } from './mixins';
+import theme from '@styles/theme';
+import { breakpointMixin, fontfaceMixin } from '@styles/mixins';
 
-import { typography, colors } from './basic';
+const baseFontFamily = _map(theme.fontFamily, (el) => `${el}`).join(', ');
 
-const baseFontFamily = _map(typography.fontFamily, (el) => `${el}`).join(', ');
-
-const GlobalStyles = createGlobalStyle`
-
+const GlobalStyles = css`
   ${fontfaceMixin(
-    typography.fontFamily.shadowsInto, {
+    theme.fontFamily.shadowsInto, {
       woff: ShadowIntoWoff, ttf: ShadowIntoTtf, svg: ShadowIntoSvg
     },
-    (props) => props.theme.fontWeight.regular
+    theme.fontWeight.regular
   )};
 
   ${fontfaceMixin(
-    typography.fontFamily.roboto, {
+    theme.fontFamily.roboto, {
       woff: RobotoRegularWoff, ttf: RobotoRegularTtf, svg: RobotoRegularSvg
     },
-    (props) => props.theme.fontWeight.regular
+    theme.fontWeight.regular
   )};
   ${fontfaceMixin(
-    typography.fontFamily.roboto, {
+    theme.fontFamily.roboto, {
       woff: RobotoMediumWoff, ttf: RobotoMediumTtf, svg: RobotoMediumSvg
     },
-    (props) => props.theme.fontWeight.medium
+    theme.fontWeight.medium
   )};
   ${fontfaceMixin(
-    typography.fontFamily.roboto, {
+    theme.fontFamily.roboto, {
       woff: RobotoLightWoff, ttf: RobotoLightTtf, svg: RobotoLightSvg
     },
-    (props) => props.theme.fontWeight.medium
+    theme.fontWeight.medium
   )};
   ${fontfaceMixin(
-    typography.fontFamily.roboto, {
+    theme.fontFamily.roboto, {
       woff: RobotoLightWoff, ttf: RobotoLightTtf, svg: RobotoLightSvg
     },
-    (props) => props.theme.fontWeight.light
+    theme.fontWeight.light
   )};
   ${fontfaceMixin(
-    typography.fontFamily.roboto, {
+    theme.fontFamily.roboto, {
       woff: RobotoBlackWoff, ttf: RobotoBlackTtf, svg: RobotoBlackSvg
     },
-    (props) => props.theme.fontWeight.black
+    theme.fontWeight.black
   )};
   ${fontfaceMixin(
-    typography.fontFamily.roboto, {
+    theme.fontFamily.roboto, {
       woff: RobotoBoldWoff, ttf: RobotoBoldTtf, svg: RobotoBoldSvg
     },
-    (props) => props.theme.fontWeight.extrabold
+    theme.fontWeight.extrabold
   )};
   ${fontfaceMixin(
-    typography.fontFamily.roboto, {
+    theme.fontFamily.roboto, {
       woff: RobotoThinWoff, ttf: RobotoThinTtf, svg: RobotoThinSvg
     },
-    (props) => props.theme.fontWeight.ultraLight
+    theme.fontWeight.ultraLight
   )};
 
   html {
     box-sizing: border-box;
-    height: 100%;
-    font-family: ${baseFontFamily};
-    font-size: ${typography.fontSize.base};
     overflow-x: hidden;
     overflow-y: scroll;
+    height: 100%;
+    font-family: ${baseFontFamily};
+    font-size: ${theme.fontSize.base};
   }
 
   *,
@@ -104,10 +103,10 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     height: 100%;
-    background: ${(props) => props.theme.layout.background};
-    font-size: ${typography.fontSize.normal};
+    background: ${theme.layout.background};
+    font-size: ${theme.fontSize.normal};
     line-height: 1.6;
-    color: ${(props) => props.theme.textColors.primary};
+    color: ${theme.textColors.primary};
   }
 
   body,
@@ -128,7 +127,7 @@ const GlobalStyles = createGlobalStyle`
   p,
   ol,
   ul {
-    font-weight: ${typography.fontWeight.regular};
+    font-weight: ${theme.fontWeight.regular};
   }
   h1,
   h2,
@@ -137,7 +136,7 @@ const GlobalStyles = createGlobalStyle`
   h5,
   h6 {
     font-family: 'ShadowsInto', sans-serif;
-    font-weight: ${typography.fontWeight.light};
+    font-weight: ${theme.fontWeight.light};
   }
 
   h1,
@@ -147,39 +146,39 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1 {
-    font-size: ${typography.fontSize.h1Small};
+    font-size: ${theme.fontSize.h1Small};
 
-    ${breakpointMixin.portraitTablet`
-      font-size: ${typography.fontSize.h1Regular};
-    `}
+    ${breakpointMixin.portraitTablet(css`
+      font-size: ${theme.fontSize.h1Regular};
+    `)};
   }
 
   h2 {
-    font-size: ${typography.fontSize.h2Small};
+    font-size: ${theme.fontSize.h2Small};
 
-    ${breakpointMixin.portraitTablet`
-      font-size: ${typography.fontSize.h2Regular};
-    `}
+    ${breakpointMixin.portraitTablet(css`
+      font-size: ${theme.fontSize.h2Regular};
+  `)};
   }
 
   h3 {
-    font-size: ${typography.fontSize.h3Small};
+    font-size: ${theme.fontSize.h3Small};
 
-    ${breakpointMixin.portraitTablet`
-      font-size: ${typography.fontSize.h3Regular};
-    `}
+    ${breakpointMixin.portraitTablet(css`
+      font-size: ${theme.fontSize.h3Regular};
+    `)};
   }
 
   h4 {
-    font-size: ${typography.fontSize.h4Small};
+    font-size: ${theme.fontSize.h4Small};
 
-    ${breakpointMixin.portraitTablet`
-      font-size: ${typography.fontSize.h4Regular};
-    `}
+    ${breakpointMixin.portraitTablet(css`
+      font-size: ${theme.fontSize.h4Regular};
+  `)};
   }
 
   a {
-    color: ${colors.textColors.primary};
+    color: ${theme.textColors.primary};
     text-decoration: none;
     cursor: pointer;
     &:hover {
@@ -209,4 +208,6 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-export { GlobalStyles };
+export {
+  GlobalStyles
+};

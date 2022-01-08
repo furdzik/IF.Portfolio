@@ -1,3 +1,3 @@
-import componentsEn from './components/en.json';
+import componentsEn from './generated/en.json';
 
 export const english = { ...componentsEn };

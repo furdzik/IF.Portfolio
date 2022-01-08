@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
-import { ElementsCommonStyle } from '../../../styles/elementsCommonStyle.styles';
+import { ElementsCommonStyle } from '@styles/elementsCommonStyle.styles';
 
 const blue = '#1c5b7a';
 const blueShadow = '#20475f';
@@ -13,11 +13,11 @@ const Wrapper = styled.div`
   height: 45rem;
   > span {
     ${ElementsCommonStyle};
-    &:nth-child(1) {
+    &:nth-of-type(1) {
       display: flex;
       flex-wrap: wrap;
-      height: 17rem;
       width: 100%;
+      height: 17rem;
       &::before,
       &::after {
         ${ElementsCommonStyle};
@@ -34,32 +34,32 @@ const Wrapper = styled.div`
       }
       span {
         ${ElementsCommonStyle};
-        flex-shrink: 0;
         position: relative;
-        background: #8f8f8f;
+        z-index: 2;
+        flex-shrink: 0;
         width: .2rem;
         height: .6rem;
         margin: .4rem .25rem 0 .4rem;
-        z-index: 2;
-        &:nth-child(2n) {
+        background: #8f8f8f;
+        &:nth-of-type(2n) {
           margin-top: 1.2rem;
           margin-right: .6rem;
         }
-        &:nth-child(4n + 4) {
+        &:nth-of-type(4n + 4) {
           margin-right: 0;
         }
       }
     }
-    &:nth-child(2) {
+    &:nth-of-type(2) {
+      bottom: 17rem;
       width: 100%;
       height: 1rem;
-      bottom: 17rem;
       &::before,
       &::after {
         ${ElementsCommonStyle};
         content: '';
-        height: 100%;
         width: 2rem;
+        height: 100%;
       }
       &::before {
         background: ${blue};
@@ -69,10 +69,10 @@ const Wrapper = styled.div`
         background: ${blueShadow};
       }
     }
-    &:nth-child(3) {
+    &:nth-of-type(3) {
+      bottom: 18rem;
       width: 100%;
       height: .3rem;
-      bottom: 18rem;
       &::before,
       &::after {
         ${ElementsCommonStyle};
@@ -88,17 +88,17 @@ const Wrapper = styled.div`
         background: ${grayShadow};
       }
     }
-    &:nth-child(4) {
+    &:nth-of-type(4) {
+      bottom: 18.3rem;
       width: 100%;
       height: .3rem;
-      bottom: 18.3rem;
       &::before,
       &::after {
         ${ElementsCommonStyle};
         content: '';
-        height: 100%;
         left: -.3rem;
         width: 2.4rem;
+        height: 100%;
       }
       &::before {
         background: ${blue};
@@ -108,10 +108,10 @@ const Wrapper = styled.div`
         background: ${blueShadow};
       }
     }
-    &:nth-child(5) {
+    &:nth-of-type(5) {
+      bottom: 18.6rem;
       width: 100%;
       height: .3rem;
-      bottom: 18.6rem;
       &::before,
       &::after {
         ${ElementsCommonStyle};
@@ -128,17 +128,17 @@ const Wrapper = styled.div`
         background: ${grayShadow};
       }
     }
-    &:nth-child(6) {
+    &:nth-of-type(6) {
+      bottom: 18.9rem;
       width: 100%;
       height: .3rem;
-      bottom: 18.9rem;
       &::before,
       &::after {
         ${ElementsCommonStyle};
         content: '';
-        height: .3rem;
         left: -.4rem;
         width: 2.5rem;
+        height: .3rem;
       }
       &::before {
         background: ${blue};
@@ -148,16 +148,16 @@ const Wrapper = styled.div`
         background: ${blueShadow};
       }
     }
-    &:nth-child(7) {
+    &:nth-of-type(7) {
+      bottom: 19.2rem;
       width: 100%;
       height: 1.4rem;
-      bottom: 19.2rem;
       &::before,
       &::after {
         ${ElementsCommonStyle};
         content: '';
-        height: 0;
         width: 2.95rem;
+        height: 0;
       }
       &::before {
         left: -.9rem;
@@ -177,44 +177,45 @@ const Wrapper = styled.div`
         --width: .6rem;
 
         ${ElementsCommonStyle};
-        background: ${blue};
-        width: var(--width);
-        height: .5rem;
         bottom: .45rem;
         left: -.45rem;
         z-index: 2;
+        width: var(--width);
+        height: .5rem;
+        background: ${blue};
+
         /* TODO: generic */
-         &:nth-child(1) {
+        &:nth-of-type(1) {
           left: var(--start-left);
         }
-        &:nth-child(2) {
+        &:nth-of-type(2) {
           left: calc(var(--start-left) + var(--width) + var(--space));
         }
-        &:nth-child(3) {
+        &:nth-of-type(3) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 2);
         }
-        &:nth-child(4) {
+        &:nth-of-type(4) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 3);
         }
-        &:nth-child(5) {
+        &:nth-of-type(5) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 4);
         }
-        &:nth-child(6) {
+        &:nth-of-type(6) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 5);
         }
       }
     }
-    &:nth-child(8) {
+    &:nth-of-type(8) {
+      bottom: 20.6rem;
       width: 100%;
       height: 1rem;
-      bottom: 20.6rem;
       &::before,
       &::after {
         ${ElementsCommonStyle};
         content: '';
-        height: 100%;
-        width: 3.4rem;
         left: -1.2rem;
+        width: 3.4rem;
+        height: 100%;
       }
       &::before {
         background: ${blue};
@@ -224,7 +225,7 @@ const Wrapper = styled.div`
         background: ${blueShadow};
       }
     }
-    &:nth-child(9) {
+    &:nth-of-type(9) {
       bottom: 21.6rem;
       width: 100%;
       height: 1rem;
@@ -232,8 +233,8 @@ const Wrapper = styled.div`
       &::after {
         ${ElementsCommonStyle};
         content: '';
-        height: 0;
         width: 2.95rem;
+        height: 0;
       }
       &::before {
         left: -.9rem;
@@ -253,44 +254,45 @@ const Wrapper = styled.div`
         --width: .6rem;
 
         ${ElementsCommonStyle};
-        background: ${blue};
-        width: var(--width);
-        height: .25rem;
         bottom: .45rem;
         left: -.45rem;
         z-index: 2;
+        width: var(--width);
+        height: .25rem;
+        background: ${blue};
+
         /* TODO: generic */
-         &:nth-child(1) {
+        &:nth-of-type(1) {
           left: var(--start-left);
         }
-        &:nth-child(2) {
+        &:nth-of-type(2) {
           left: calc(var(--start-left) + var(--width) + var(--space));
         }
-        &:nth-child(3) {
+        &:nth-of-type(3) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 2);
         }
-        &:nth-child(4) {
+        &:nth-of-type(4) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 3);
         }
-        &:nth-child(5) {
+        &:nth-of-type(5) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 4);
         }
-        &:nth-child(6) {
+        &:nth-of-type(6) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 5);
         }
       }
     }
-    &:nth-child(10) {
+    &:nth-of-type(10) {
+      bottom: 22.6rem;
       width: 100%;
       height: 1rem;
-      bottom: 22.6rem;
       &::before,
       &::after {
         ${ElementsCommonStyle};
         content: '';
-        height: 100%;
-        width: 3.4rem;
         left: -1.2rem;
+        width: 3.4rem;
+        height: 100%;
       }
       &::before {
         background: ${blue};
@@ -300,16 +302,16 @@ const Wrapper = styled.div`
         background: ${blueShadow};
       }
     }
-    &:nth-child(11) {
+    &:nth-of-type(11) {
+      bottom: 23.6rem;
       width: 100%;
       height: .5rem;
-      bottom: 23.6rem;
       &::before,
       &::after {
         ${ElementsCommonStyle};
         content: '';
-        height: 100%;
         width: 2rem;
+        height: 100%;
       }
       &::before {
         background: ${blue};
@@ -319,28 +321,28 @@ const Wrapper = styled.div`
         background: ${blueShadow};
       }
     }
-    &:nth-child(12) {
+    &:nth-of-type(12) {
+      bottom: 24.1rem;
+      left: 50%;
       display: flex;
       flex-wrap: wrap;
+      transform: translateX(-50%);
       width: 74.5%;
       height: 6rem;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 24.1rem;
       span {
         ${ElementsCommonStyle};
-        flex-shrink: 0;
         position: relative;
-        background: #8f8f8f;
+        z-index: 2;
+        flex-shrink: 0;
         width: .2rem;
         height: .6rem;
         margin: .3rem .1rem 0 .3rem;
-        z-index: 2;
-        &:nth-child(2n) {
+        background: #8f8f8f;
+        &:nth-of-type(2n) {
           margin-top: 1rem;
           margin-right: .4rem;
         }
-        &:nth-child(4n + 4) {
+        &:nth-of-type(4n + 4) {
           margin-right: 0;
         }
       }
@@ -348,8 +350,8 @@ const Wrapper = styled.div`
       &::after {
         ${ElementsCommonStyle};
         content: '';
-        height: 100%;
         width: calc(50% + .1rem);
+        height: 100%;
       }
       &::before {
         background: ${gray};
@@ -360,22 +362,22 @@ const Wrapper = styled.div`
         background: ${grayShadow};
       }
     }
-    &:nth-child(13) {
-      width: 74.5%;
+    &:nth-of-type(13) {
+      bottom: 30.1rem;
       left: 50%;
       transform: translateX(-50%);
+      width: 74.5%;
       height: 1rem;
-      bottom: 30.1rem;
       &::before,
       &::after {
         ${ElementsCommonStyle};
         content: '';
-        height: 100%;
         width: 50%;
+        height: 100%;
       }
       &::before {
-        background: ${blue};
         width: calc(50% + .1rem);
+        background: ${blue};
       }
       &::after {
         left: 50%;

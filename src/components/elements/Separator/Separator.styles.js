@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { ElementsSaferStyle } from '../../../styles/elementsCommonStyle.styles';
+import { ElementsSaferStyle } from '@styles/elementsCommonStyle.styles';
 
 const Wrapper = styled.div`
   z-index: 2;

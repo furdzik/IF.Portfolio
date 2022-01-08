@@ -8,10 +8,11 @@ import {
   mdiStackOverflow
 } from '@mdi/js';
 
-import Container from '../Container';
-import Hero from '../Hero';
-import Footer from '../Footer';
-import Me from '../elements/Me';
+import Container from '@components/Container';
+import Hero from '@components/Hero';
+import Footer from '@components/Footer';
+
+import Me from '@components/elements/Me';
 
 import {
   Heading,

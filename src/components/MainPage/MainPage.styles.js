@@ -11,8 +11,8 @@ import {
 
 import { breakpointMixin } from '@styles/mixins';
 
-import Box from '../Box';
-import Cat from '../elements/Cat';
+import Box from '@components/Box';
+import Cat from '@components/elements/Cat';
 
 const Heading = styled.h1`
   width: 100%;

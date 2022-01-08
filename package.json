@@ -1,7 +1,10 @@
 {
   "name": "if.portfolio",
   "version": "0.0.1",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furdzik/if.portfolio.git"
+  },
   "scripts": {
     "start": "npm run lang && npm run dev",
     "build": "cross-env NODE_ENV=production npx webpack --progress --env production",
@@ -41,7 +44,6 @@
     "@material-ui/lab": "4.0.0-alpha.60",
     "@mdi/js": "6.4.95",
     "@mdi/react": "1.5.0",
-    "axios": "0.24.0",
     "caniuse-lite": "1.0.30001292",
     "core-js": "3.19.1",
     "lodash": "4.17.21",
@@ -107,7 +109,7 @@
     "stylelint-order": "5.0.0",
     "stylelint-processor-styled-components": "1.10.0",
     "stylelint-scss": "4.0.0",
-    "webpack": "5.62.1",
+    "webpack": "5.65.0",
     "webpack-bundle-analyzer": "4.5.0",
     "webpack-cdn-plugin": "3.3.1",
     "webpack-cleanup-plugin": "0.5.1",

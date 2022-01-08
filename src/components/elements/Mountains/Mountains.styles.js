@@ -66,50 +66,50 @@ const Wrapper = styled.div`
       }
     }
     &:nth-of-type(5) {
+      left: 386px;
+      width: 312px;
       border-width: 0 14rem 17rem;
       border-style: solid;
       border-color: #b5c7c7 transparent;
-      width: 312px;
-      left: 386px;
       &::before {
+        top: 31px;
+        left: -184px;
+        transform: rotate(-19deg);
+        width: 14rem;
         border-width: 0 9rem 4rem;
         border-style: solid;
         border-color: #b5c7c7 transparent;
-        width: 14rem;
-        left: -184px;
-        transform: rotate(-19deg);
-        top: 31px;
       }
       &::after {
+        top: 134px;
+        left: -379px;
+        transform: rotate(-13deg);
+        width: 18rem;
         border-width: 0 9rem 6rem;
         border-style: solid;
         border-color: #b5c7c7 transparent;
-        width: 18rem;
-        left: -379px;
-        transform: rotate(-13deg);
-        top: 134px;
       }
     }
     &:nth-of-type(6) {
-      width: 1rem;
-      height: 1.1rem;
       bottom: 170px;
       left: 537px;
+      width: 1rem;
+      height: 1.1rem;
       &::before {
-        background: #858585;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
         width: 2px;
         height: 1.1rem;
-        left: 50%;
-        top: 0;
-        transform: translateX(-50%);
+        background: #858585;
       }
       &::after {
-        background: #858585;
+        top: calc(50% - 1px);
+        left: 0;
+        transform: translateY(-50%);
         width: 1rem;
         height: 2px;
-        left: 0;
-        top: calc(50% - 1px);
-        transform: translateY(-50%);
+        background: #858585;
       }
     }
   }

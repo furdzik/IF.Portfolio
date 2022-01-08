@@ -38,7 +38,7 @@
     "function-url-quotes": "always",
     "indentation": 2,
     "max-nesting-depth": [
-      3,
+      5,
       {
         "ignoreAtRules": [
           "at-root",

@@ -1,4 +1,5 @@
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
+import { css } from '@emotion/react';
 
 const Wrapper = styled.div`
   position: relative;
@@ -10,26 +11,26 @@ const Wrapper = styled.div`
   box-shadow: 1px 1px 33px 2px rgb(255 255 255 / 21%), 1px 1px 10px 2px rgb(0 0 0 / 30%);
 `;
 
-const Slice = css`
-  display: block;
+const Slice = (props) => css`
+  content: '';
   position: absolute;
+  display: block;
   transform-origin: center;
   width: 0;
   height: 9rem;
   border-width: .7rem .5rem;
   border-style: solid;
-  border-color: transparent ${(props) => props.theme.color.darkGray};
-  content: '';
+  border-color: transparent ${props.theme.color.darkGray};
 `;
 
-const SliceCover = css`
-  display: block;
+const SliceCover = (props) => css`
+  content: '';
   position: absolute;
+  display: block;
   transform-origin: center;
   width: .5rem;
   height: 7.1rem;
-  background: ${(props) => props.theme.color.darkGray};
-  content: '';
+  background: ${props.theme.color.darkGray};
 `;
 
 const TopLeftCorner = styled.div`
@@ -72,13 +73,13 @@ const BottomLeftCorner = styled.div`
   }
   &::before {
     ${Slice};
-    left: .3em;
     bottom: -3rem;
+    left: .3em;
   }
   &::after {
     ${SliceCover};
-    left: .4em;
     bottom: -2rem;
+    left: .4em;
   }
 `;
 const BottomRightCorner = styled.div`

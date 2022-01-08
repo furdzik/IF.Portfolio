@@ -1,4 +1,6 @@
 const fontFamily = {
+  mainFont: 'Roboto',
+  mainFontAlt: 'Roboto',
   roboto: 'Roboto',
   shadowsInto: 'ShadowsInto',
   fallback: 'Arial',
@@ -10,13 +12,25 @@ const fontFamily = {
 };
 
 const fontSize = {
-  base: '62.5%', // TODO: add it pracuj layout font-sizes
-  small: '1.2rem',
+  base: '62.5%', // TODO: to refactor!
+  headingBig: '2.2rem',
+  headingMedium: '2rem',
+  headingSmall: '1.8rem',
+  medium: '2rem',
   normal: '1.4rem',
+  small: '1.2rem',
+  desktop: {
+    headingBig: '2.2rem',
+    headingMedium: '2rem',
+    headingSmall: '1.8rem',
+    medium: '2rem',
+    normal: '1.4rem',
+    small: '1.2rem',
+  },
   big: '1.6rem',
   header: '3.6rem',
   headerDesktop: '2.4rem',
-  h1Small: '3.6rem', // TODO: to refactor
+  h1Small: '3.6rem',
   h2Small: '3rem',
   h3Small: '2.2rem',
   h4Small: '1.8rem',
@@ -26,6 +40,9 @@ const fontSize = {
   h4Regular: '1.8rem'
 };
 
+const lineHeight = {
+  normal: 1.5
+};
 const fontWeight = {
   ultraLight: 100,
   light: 300,
@@ -40,5 +57,6 @@ const fontWeight = {
 export const typography = {
   fontFamily,
   fontSize,
+  lineHeight,
   fontWeight
 };

@@ -1,4 +1,5 @@
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
+import { css } from '@emotion/react';
 
 import Icon from '@mdi/react';
 import {
@@ -8,15 +9,15 @@ import {
   mdiStackOverflow
 } from '@mdi/js';
 
-import { breakpointMixin } from '../../styles/mixins';
+import { breakpointMixin } from '@styles/mixins';
 
 import Box from '../Box';
 import Cat from '../elements/Cat';
 
 const Heading = styled.h1`
   width: 100%;
-  color: ${(props) => props.theme.color.violet};
   margin-bottom: 2rem;
+  color: ${(props) => props.theme.color.violet};
 `;
 
 const SubHeading = styled.h2`
@@ -29,18 +30,19 @@ const SubHeading = styled.h2`
 
 const MainBox = styled.div`
   width: 100%;
-  ${breakpointMixin.portraitTablet`
+
+  ${breakpointMixin.portraitTablet(css`
     width: auto;
     order: 1;
-  `}
+  `)};
 `;
 
 const BoxStyled = styled(Box)`
+  z-index: 3;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   margin-top: -1rem;
-  z-index: 3;
 `;
 
 const SocialIcons = styled.ul`
@@ -49,13 +51,13 @@ const SocialIcons = styled.ul`
   width: 100%;
   margin-top: 4rem;
 
-  ${breakpointMixin.portraitTablet`
+  ${breakpointMixin.portraitTablet(css`
     margin-top: -3rem;
     order: 3;
-  `}
-  ${breakpointMixin.laptop`
+  `)};
+  ${breakpointMixin.laptop(css`
     order: 4;
-  `}
+  `)};
 `;
 
 const SocialItem = styled.li`
@@ -91,21 +93,20 @@ const IconStyled = styled(Icon)`
 
 const ListWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   width: 100%;
   margin-top: 5rem;
 
-  ${breakpointMixin.portraitTablet`
+  ${breakpointMixin.portraitTablet(css`
+    order: 4;
     margin-top: 0;
     width: 40%;
-    order: 4;
-  `}
-  ${breakpointMixin.laptop`
+  `)};
+  ${breakpointMixin.laptop(css`
+    order: 2;
     flex-direction: row;
     margin-left: 5rem;
-    order: 2;
-  `}
+  `)};
 `;
 
 const List = styled.ul`
@@ -120,6 +121,7 @@ const ListItem = styled.li`
   font-size: 2.2rem;
 
   &::before {
+    content: '';
     display: inline-block;
     flex-shrink: 0;
     width: 1rem;
@@ -127,7 +129,6 @@ const ListItem = styled.li`
     margin-right: 1.5rem;
     border-radius: 50%;
     background: ${(props) => props.theme.color.violet};
-    content: '';
   }
 
   & + & {
@@ -141,37 +142,37 @@ const Link = styled.a`
 
 const MeAndCatWrapper = styled.div`
   position: relative;
-  margin: 4rem 0 0 4rem; // do zmiany
   order: 2;
+  margin: 4rem 0 0 4rem; /* do zmiany */
 
-  ${breakpointMixin.portraitTablet`
+  ${breakpointMixin.portraitTablet(css`
     margin-left: auto;
-  `}
-  ${breakpointMixin.laptop`
+  `)};
+  ${breakpointMixin.laptop(css`
     order: 3;
     margin-left: 4rem;
-  `}
+  `)};
 `;
 
 const CatStyled = styled(Cat)`
   position: absolute;
-  left: -6rem;
   bottom: 0;
+  left: -6rem;
 `;
 const WipBadge = styled.span`
   display: inline-block;
-  background: #fff;
-  border: 2px solid red;
-  border-radius: 50%;
-  color: red;
-  padding: .5rem;
   height: 3rem;
   margin-left: 2rem;
+  padding: .5rem;
+  border: 2px solid red;
+  border-radius: 50%;
+  background: #ffffff;
+  color: red;
 
   &::before {
-  display: block;
-  font-size: 1.2rem;
     content: 'WIP';
+    display: block;
+    font-size: 1.2rem;
   }
 `;
 

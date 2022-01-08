@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 import { ElementsCommonStyle } from '../../../styles/elementsCommonStyle.styles';
 
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   height: 45rem;
   > span {
     ${ElementsCommonStyle};
-    &:nth-child(1) {
+    &:nth-of-type(1) {
       display: flex;
       flex-wrap: wrap;
       height: 17rem;
@@ -41,16 +41,16 @@ const Wrapper = styled.div`
         height: .6rem;
         margin: .4rem .25rem 0 .4rem;
         z-index: 2;
-        &:nth-child(2n) {
+        &:nth-of-type(2n) {
           margin-top: 1.2rem;
           margin-right: .6rem;
         }
-        &:nth-child(4n + 4) {
+        &:nth-of-type(4n + 4) {
           margin-right: 0;
         }
       }
     }
-    &:nth-child(2) {
+    &:nth-of-type(2) {
       width: 100%;
       height: 1rem;
       bottom: 17rem;
@@ -69,7 +69,7 @@ const Wrapper = styled.div`
         background: ${blueShadow};
       }
     }
-    &:nth-child(3) {
+    &:nth-of-type(3) {
       width: 100%;
       height: .3rem;
       bottom: 18rem;
@@ -88,7 +88,7 @@ const Wrapper = styled.div`
         background: ${grayShadow};
       }
     }
-    &:nth-child(4) {
+    &:nth-of-type(4) {
       width: 100%;
       height: .3rem;
       bottom: 18.3rem;
@@ -108,7 +108,7 @@ const Wrapper = styled.div`
         background: ${blueShadow};
       }
     }
-    &:nth-child(5) {
+    &:nth-of-type(5) {
       width: 100%;
       height: .3rem;
       bottom: 18.6rem;
@@ -128,7 +128,7 @@ const Wrapper = styled.div`
         background: ${grayShadow};
       }
     }
-    &:nth-child(6) {
+    &:nth-of-type(6) {
       width: 100%;
       height: .3rem;
       bottom: 18.9rem;
@@ -148,7 +148,7 @@ const Wrapper = styled.div`
         background: ${blueShadow};
       }
     }
-    &:nth-child(7) {
+    &:nth-of-type(7) {
       width: 100%;
       height: 1.4rem;
       bottom: 19.2rem;
@@ -184,27 +184,27 @@ const Wrapper = styled.div`
         left: -.45rem;
         z-index: 2;
         /* TODO: generic */
-         &:nth-child(1) {
+         &:nth-of-type(1) {
           left: var(--start-left);
         }
-        &:nth-child(2) {
+        &:nth-of-type(2) {
           left: calc(var(--start-left) + var(--width) + var(--space));
         }
-        &:nth-child(3) {
+        &:nth-of-type(3) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 2);
         }
-        &:nth-child(4) {
+        &:nth-of-type(4) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 3);
         }
-        &:nth-child(5) {
+        &:nth-of-type(5) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 4);
         }
-        &:nth-child(6) {
+        &:nth-of-type(6) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 5);
         }
       }
     }
-    &:nth-child(8) {
+    &:nth-of-type(8) {
       width: 100%;
       height: 1rem;
       bottom: 20.6rem;
@@ -224,7 +224,7 @@ const Wrapper = styled.div`
         background: ${blueShadow};
       }
     }
-    &:nth-child(9) {
+    &:nth-of-type(9) {
       bottom: 21.6rem;
       width: 100%;
       height: 1rem;
@@ -260,27 +260,27 @@ const Wrapper = styled.div`
         left: -.45rem;
         z-index: 2;
         /* TODO: generic */
-         &:nth-child(1) {
+         &:nth-of-type(1) {
           left: var(--start-left);
         }
-        &:nth-child(2) {
+        &:nth-of-type(2) {
           left: calc(var(--start-left) + var(--width) + var(--space));
         }
-        &:nth-child(3) {
+        &:nth-of-type(3) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 2);
         }
-        &:nth-child(4) {
+        &:nth-of-type(4) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 3);
         }
-        &:nth-child(5) {
+        &:nth-of-type(5) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 4);
         }
-        &:nth-child(6) {
+        &:nth-of-type(6) {
           left: calc(var(--start-left) + (var(--width) + var(--space)) * 5);
         }
       }
     }
-    &:nth-child(10) {
+    &:nth-of-type(10) {
       width: 100%;
       height: 1rem;
       bottom: 22.6rem;
@@ -300,7 +300,7 @@ const Wrapper = styled.div`
         background: ${blueShadow};
       }
     }
-    &:nth-child(11) {
+    &:nth-of-type(11) {
       width: 100%;
       height: .5rem;
       bottom: 23.6rem;
@@ -319,7 +319,7 @@ const Wrapper = styled.div`
         background: ${blueShadow};
       }
     }
-    &:nth-child(12) {
+    &:nth-of-type(12) {
       display: flex;
       flex-wrap: wrap;
       width: 74.5%;
@@ -336,11 +336,11 @@ const Wrapper = styled.div`
         height: .6rem;
         margin: .3rem .1rem 0 .3rem;
         z-index: 2;
-        &:nth-child(2n) {
+        &:nth-of-type(2n) {
           margin-top: 1rem;
           margin-right: .4rem;
         }
-        &:nth-child(4n + 4) {
+        &:nth-of-type(4n + 4) {
           margin-right: 0;
         }
       }
@@ -360,7 +360,7 @@ const Wrapper = styled.div`
         background: ${grayShadow};
       }
     }
-    &:nth-child(13) {
+    &:nth-of-type(13) {
       width: 74.5%;
       left: 50%;
       transform: translateX(-50%);

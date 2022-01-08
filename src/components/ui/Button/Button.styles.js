@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 const ButtonWrapper = styled.a`
   display: inline-flex;
@@ -16,7 +16,7 @@ const ButtonWrapper = styled.a`
 
   &:hover {
     border: .3rem solid ${(props) => props.theme.color.darkPink};
-    background: rgba(216, 112, 173, .1);
+    background: rgba(216 112 173 / .1);
   }
 `;
 

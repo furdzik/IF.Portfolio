@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 import { ElementsCommonStyle } from '../../../styles/elementsCommonStyle.styles';
 
@@ -12,7 +12,7 @@ const Wrapper = styled.div`
     height: 0;
     width: 0;
   }
-  span:nth-child(1) {
+  span:nth-of-type(1) {
     border-width: 0 23rem 27rem;
     border-style: solid;
     border-color: #2c3543 transparent;
@@ -30,7 +30,7 @@ const Wrapper = styled.div`
       border-color: #2c3543 transparent;
     }
   }
-  span:nth-child(2) {
+  span:nth-of-type(2) {
     top: 0;
     left: 16.7rem;
     width: 15rem;
@@ -59,7 +59,7 @@ const Wrapper = styled.div`
       transform: rotate(47deg);
     }
   }
-  span:nth-child(3) {
+  span:nth-of-type(3) {
     ${ElementsCommonStyle};
     top: 2rem;
     left: 27.1rem;
@@ -89,7 +89,7 @@ const Wrapper = styled.div`
       transform: rotate(68deg);
     }
   }
-  span:nth-child(4) {
+  span:nth-of-type(4) {
     ${ElementsCommonStyle};
     top: 2rem;
     left: 16.1rem;
@@ -119,7 +119,7 @@ const Wrapper = styled.div`
       transform: rotate(-79deg);
     }
   }
-  span:nth-child(5) {
+  span:nth-of-type(5) {
     ${ElementsCommonStyle};
     top: 4rem;
     left: 29.5rem;

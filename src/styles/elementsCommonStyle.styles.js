@@ -1,29 +1,29 @@
-import { css } from 'styled-components';
+import { css } from '@emotion/react';
 
 const ElementsCommonStyle = css`
-  display: block;
   position: absolute;
   bottom: 0;
+  display: block;
   span, *::before, *::after {
-    display: block;
     position: absolute;
     bottom: 0;
+    display: block;
   }
 `;
 
 const ElementsCommonStyleUnspecified = css`
-  display: block;
   position: absolute;
+  display: block;
   div, span, *::before, *::after {
-    display: block;
     position: absolute;
+    display: block;
   }
 `;
 
 const ElementsSaferStyle = css`
-  display: block;
   position: absolute;
   bottom: 0;
+  display: block;
 `;
 
 export {

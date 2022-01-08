@@ -1,6 +1,7 @@
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
+import { css } from '@emotion/react';
 
-import { ElementsCommonStyle } from '../../../styles/elementsCommonStyle.styles';
+import { ElementsCommonStyle } from '@styles/elementsCommonStyle.styles';
 
 const Wrapper = styled.div`
   position: relative;
@@ -9,7 +10,7 @@ const Wrapper = styled.div`
   z-index: 1;
   span {
     ${ElementsCommonStyle};
-    &:nth-child(1) {
+    &:nth-of-type(1) {
     background: #6e471c;
     width: .8rem;
     height: 11rem;
@@ -35,7 +36,7 @@ const Wrapper = styled.div`
       z-index: 2;
     }
     }
-    &:nth-child(2) {
+    &:nth-of-type(2) {
     background: #6e471c;
     width: .4rem;
     height: 3rem;
@@ -63,7 +64,7 @@ const Wrapper = styled.div`
       z-index: 2;
     }
     }
-    &:nth-child(3) {
+    &:nth-of-type(3) {
     background: #6e471c;
     width: .4rem;
     height: 3rem;
@@ -90,7 +91,7 @@ const Wrapper = styled.div`
       z-index: 2;
     }
     }
-    &:nth-child(4) {
+    &:nth-of-type(4) {
     background: #6e471c;
     width: .4rem;
     height: 2rem;
@@ -117,7 +118,7 @@ const Wrapper = styled.div`
       background: #efa5c0;
     }
     }
-    &:nth-child(5) {
+    &:nth-of-type(5) {
     background: #6e471c;
     width: .4rem;
     height: 3rem;
@@ -145,7 +146,7 @@ const Wrapper = styled.div`
       background: #eabfcf;
     }
     }
-    &:nth-child(6) {
+    &:nth-of-type(6) {
     background: #6e471c;
     width: .5rem;
     height: 3rem;
@@ -173,7 +174,7 @@ const Wrapper = styled.div`
       background: #eabfcf;
     }
     }
-    &:nth-child(7) {
+    &:nth-of-type(7) {
     background: #6e471c;
     width: .5rem;
     height: 3rem;
@@ -201,7 +202,7 @@ const Wrapper = styled.div`
       background: #eabfcf;
     }
     }
-    &:nth-child(8) {
+    &:nth-of-type(8) {
     background: #f3d0dd;
     left: 44px;
     bottom: 51px;
@@ -231,7 +232,7 @@ const Wrapper = styled.div`
       background: #dcadbe;
     }
     }
-    &:nth-child(9) {
+    &:nth-of-type(9) {
     background: #f3d0dd;
     left: 58px;
     bottom: 97px;
@@ -265,17 +266,17 @@ const Wrapper = styled.div`
 
   ${(props) => props.isTaller && css`
     span {
-      &:nth-child(1) {
+      &:nth-of-type(1) {
       width: .8rem;
       height: 13rem;
       left: 7rem;
      }
-     &:nth-child(9) {
+     &:nth-of-type(9) {
       &::before {
         bottom: 5.1rem;
       }
      }
-     &:nth-child(6) {
+     &:nth-of-type(6) {
       &::before {
         left: 0.6rem;
         bottom: -2.9rem;
@@ -287,7 +288,7 @@ const Wrapper = styled.div`
 
   ${(props) => props.green && css`
     span {
-      &:nth-child(1) {
+      &:nth-of-type(1) {
         &::before {
           background: #9bee97;
         }
@@ -295,7 +296,7 @@ const Wrapper = styled.div`
           background: #70dc97;
         }
        }
-      &:nth-child(2) {
+      &:nth-of-type(2) {
         &::before {
           background: #b7e8b5;
         }
@@ -303,7 +304,7 @@ const Wrapper = styled.div`
           background: #8cdaa9;
         }
        }
-       &:nth-child(3) {
+       &:nth-of-type(3) {
         &::before {
           background: #b7e8b5;
         }
@@ -311,7 +312,7 @@ const Wrapper = styled.div`
           background: #a5efb1;
         }
        }
-       &:nth-child(4) {
+       &:nth-of-type(4) {
         &::before {
           background: #6cce7c;
         }
@@ -319,7 +320,7 @@ const Wrapper = styled.div`
           background: #a5efb1;
         }
        }
-       &:nth-child(5) {
+       &:nth-of-type(5) {
         &::before {
           background: #8cdaa9;
         }
@@ -327,7 +328,7 @@ const Wrapper = styled.div`
           background: #6cce7c;
         }
        }
-       &:nth-child(6) {
+       &:nth-of-type(6) {
         &::before {
           background: #a5efb1;
         }
@@ -335,7 +336,7 @@ const Wrapper = styled.div`
           background: #6cce7c;
         }
        }
-       &:nth-child(7) {
+       &:nth-of-type(7) {
         &::before {
           background: #a5efb1;
         }
@@ -343,7 +344,7 @@ const Wrapper = styled.div`
           background: #6cce7c;
         }
        }
-       &:nth-child(8) {
+       &:nth-of-type(8) {
         background: #84dc91;
         &::before {
           background: #a5efb1;
@@ -352,7 +353,7 @@ const Wrapper = styled.div`
           background: #91e08c;
         }
        }
-       &:nth-child(9) {
+       &:nth-of-type(9) {
         background: #84dc91;
         &::before {
           background: #a5efb1;

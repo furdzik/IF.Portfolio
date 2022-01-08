@@ -1,34 +1,35 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Route,
-  Switch
+  Routes
 } from 'react-router-dom';
 
-import MainPage from '../components/MainPage';
-import BirthdayCard from '../components/BirthdayCard';
+import MainPage from '@components/MainPage';
+import BirthdayCard from '@components/BirthdayCard';
 
-const Routes = () => (
-  <Router>
-    <Switch>
+const RoutesConfig = () => (
+  <BrowserRouter>
+    <Routes>
       <Route
         path="/"
         exact
-      >
-        <MainPage />
-      </Route>
+        element={(
+          <MainPage />
+        )}
+      />
       <Route
         path="/100-lat-monika"
         exact
-      >
-        <BirthdayCard />
-      </Route>
-
+        element={(
+          <BirthdayCard />
+        )}
+      />
       <Route
         render={() => <h1>Page not found</h1>}
       />
-    </Switch>
-  </Router>
+    </Routes>
+  </BrowserRouter>
 );
 
-export default Routes;
+export default RoutesConfig;

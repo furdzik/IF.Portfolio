@@ -7,8 +7,7 @@
   },
   "scripts": {
     "start": "npm run lang && npm run dev",
-    "build": "cross-env NODE_ENV=production npx webpack --progress --env production",
-    "build:prod": "node ./scripts/create-env.js && npm run build",
+    "build": "npx webpack --progress --env production",
     "lint": "npm run eslint && npm run stylelint",
     "lang": "extract-messages -l=en -d=en -o src/lang/generated --flat \"src/**/**/**/*.messages.js\"",
     "find-duplicates": "jscpd ./src/",
@@ -46,8 +45,6 @@
     "axios": "0.24.0",
     "caniuse-lite": "1.0.30001292",
     "core-js": "3.19.1",
-    "cross-env": "7.0.3",
-    "dotenv": "10.0.0",
     "lodash": "4.17.21",
     "prop-types": "15.7.2",
     "react": "17.0.2",

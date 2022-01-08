@@ -39,8 +39,5 @@
     "import/resolver": {
       "babel-module": {}
     }
-  },
-  "globals": {
-    "NODE_ENV": "readonly"
   }
 }

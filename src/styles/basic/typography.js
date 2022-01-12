@@ -2,7 +2,7 @@ const fontFamily = {
   mainFont: 'Roboto',
   mainFontAlt: 'Roboto',
   roboto: 'Roboto',
-  shadowsInto: 'ShadowsInto',
+  shadowsInto: 'Shadows Into Light Two',
   fallback: 'Arial',
   fallbackIos: '-apple-system',
   fallbackAndroid: 'Roboto',

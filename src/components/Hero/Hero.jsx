@@ -16,6 +16,7 @@ import {
   TreeGreenCracowTwo,
   TreeGreenCracowThree,
   TreeGreenCracowFour,
+  TreeGreenCracowFive,
   TreePinkTokyoOne,
   TreePinkTokyoTwo,
   TreePinkTokyoThree,
@@ -49,6 +50,7 @@ const Hero = (props) => (
         <TreeGreenCracowTwo color="green" />
         <TreeGreenCracowThree color="green" isTaller />
         <TreeGreenCracowFour color="green" />
+        <TreeGreenCracowFive color="green" />
       </CracowWrapper>
       <TokyoWrapper>
         <StyledMtFuji />

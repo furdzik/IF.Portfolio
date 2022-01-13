@@ -114,7 +114,6 @@ const TokyoWrapper = styled.div`
   left: 50%;
   width: 100%;
   height: 100%;
-  // background: #ff0000;
 `;
 
 const StyledMtFuji = styled(MtFuji)`
@@ -156,6 +155,13 @@ const TreeGreenCracowFour = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 0;
   left: 19.4rem;
+  z-index: 2;
+`;
+
+const TreeGreenCracowFive = styled(Tree)`
+  ${ElementsCommonStyle};
+  bottom: 0;
+  left: -22rem;
   z-index: 2;
 `;
 
@@ -202,6 +208,7 @@ export {
   TreeGreenCracowTwo,
   TreeGreenCracowThree,
   TreeGreenCracowFour,
+  TreeGreenCracowFive,
   TreePinkTokyoOne,
   TreePinkTokyoTwo,
   TreePinkTokyoThree,

@@ -28,8 +28,8 @@ const SkyTree = (props) => (
     </span>
     <span />
     <span>
-      <span /><span /><span />
-      <span /><span /><span />
+      <span /><span /><span /><span />
+      <span /><span /><span /><span />
     </span>
     <span />
     <span />
@@ -39,6 +39,31 @@ const SkyTree = (props) => (
       <span /><span /><span />
       <span /><span /><span />
     </span>
+    <span />
+    <span />
+    <span />
+    <span>
+      <span /><span />
+      <span /><span />
+    </span>
+    <span />
+    <span />
+    <span>
+      <span /><span /><span />
+      <span /><span /><span />
+    </span>
+    <span />
+    <span />
+    <span />
+    <span />
+    <span />
+    <span />
+    <span />
+    <span />
+    <span />
+    <span />
+    <span />
+    <span />
     <span />
     <span />
     <span />

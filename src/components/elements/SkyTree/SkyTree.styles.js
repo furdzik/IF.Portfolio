@@ -463,7 +463,7 @@ const Wrapper = styled.div`
       }
       span {
         --space: .4rem;
-        --start-left: 0;
+        --start-left: .1rem;
         --width: .6rem;
 
         ${ElementsCommonStyle};

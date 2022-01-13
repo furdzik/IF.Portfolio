@@ -93,7 +93,7 @@
     "handlebars-loader": "1.7.1",
     "html-webpack-plugin": "5.5.0",
     "husky": "7.0.4",
-    "jscpd": "3.4.1",
+    "jscpd": "3.4.5",
     "postcss": "8.3.11",
     "react-hot-loader": "4.13.0",
     "react-test-renderer": "17.0.2",

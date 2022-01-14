@@ -3,16 +3,20 @@ import { css } from '@emotion/react';
 
 import { cloudType } from '@constants';
 
-import { ElementsCommonStyle } from '@styles/elementsCommonStyle.styles';
+import {
+  ElementsCommonStyle,
+  ElementsCommonStyleUnspecified
+} from '@styles/elementsCommonStyle.styles';
 
 import Container from '@components/Container';
 
 import Cloud from '@components/elements/Cloud';
-import Birds from '@components/elements/Birds';
+import Bird from '@components/elements/Bird';
 import SkyTree from '@components/elements/SkyTree';
 import MtFuji from '@components/elements/MtFuji';
 import Tree from '@components/elements/Tree';
 import Mountains from '@components/elements/Mountains';
+import StMarysBasilica from '@components/elements/StMarysBasilica';
 
 const Wrapper = styled.div`
   position: relative;
@@ -96,10 +100,20 @@ const StyledCloud = styled(Cloud)`
   `};
 `;
 
-const StyledBirds = styled(Birds)`
-  position: absolute;
-  top: 30rem;
-  right: -27rem;
+const StyledBirdOne = styled(Bird)`
+  ${ElementsCommonStyleUnspecified};
+  top: 10rem;
+  bottom: auto;
+  left: -22rem;
+  transform: rotate(31deg);
+`;
+
+const StyledBirdTwo = styled(Bird)`
+  ${ElementsCommonStyleUnspecified};
+  top: 13rem;
+  bottom: auto;
+  left: -17rem;
+  transform: rotate(-38deg);
 `;
 
 const CracowWrapper = styled.div`
@@ -195,11 +209,21 @@ const StyledSkyTree = styled(SkyTree)`
   left: 17rem;
 `;
 
+const StyledStMarysBasilica = styled(StMarysBasilica)`
+  ${ElementsCommonStyleUnspecified};
+  //bottom: 0;
+  //left: 61rem;
+  bottom: 31px;
+  left: 20rem;
+  z-index: 10;
+`;
+
 export {
   Wrapper,
   ContainerStyled,
   StyledCloud,
-  StyledBirds,
+  StyledBirdOne,
+  StyledBirdTwo,
   CracowWrapper,
   TokyoWrapper,
   StyledMtFuji,
@@ -213,5 +237,6 @@ export {
   TreePinkTokyoTwo,
   TreePinkTokyoThree,
   TreePinkTokyoFour,
-  StyledSkyTree
+  StyledSkyTree,
+  StyledStMarysBasilica
 };

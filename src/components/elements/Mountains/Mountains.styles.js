@@ -5,7 +5,7 @@ import { ElementsCommonStyle } from '@styles/elementsCommonStyle.styles';
 const Wrapper = styled.div`
   position: relative;
   width: 80rem;
-  height: 45rem;
+  height: 19rem;
   > span {
     &, &::before, &::after {
       ${ElementsCommonStyle};

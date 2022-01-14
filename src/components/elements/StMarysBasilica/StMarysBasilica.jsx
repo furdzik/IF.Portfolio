@@ -5,9 +5,12 @@ import {
   Wrapper,
   StMarysBasilicaWrapper,
   MainWall,
+  Roof,
+  RoofTower,
+  MainCross,
   LeftTower,
   LeftTowerUpper,
-  RightTower,
+  RightTower
 } from './StMarysBasilica.styles.js';
 
 const StMarysBasilica = (props) => (
@@ -16,6 +19,14 @@ const StMarysBasilica = (props) => (
   >
     <StMarysBasilicaWrapper>
       <MainWall />
+      <Roof>
+        <RoofTower />
+        <MainCross>
+          <span />
+          <span />
+          <span />
+        </MainCross>
+      </Roof>
       <LeftTower />
       <LeftTowerUpper />
       <RightTower />

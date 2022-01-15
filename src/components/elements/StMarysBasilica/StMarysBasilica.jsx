@@ -8,8 +8,16 @@ import {
   Roof,
   RoofTower,
   MainCross,
+  RoofWindow,
   LeftTower,
+  LeftTowerBricklayLeft,
+  LeftTowerBricklayRight,
+  TurretLeft,
+  TurretRight,
   LeftTowerUpper,
+  LeftTowerUpperBricklayLeft,
+  LeftTowerUpperBricklayRight,
+  LeftTowerUpperCornice,
   RightTower
 } from './StMarysBasilica.styles.js';
 
@@ -26,9 +34,19 @@ const StMarysBasilica = (props) => (
           <span />
           <span />
         </MainCross>
+        <RoofWindow />
       </Roof>
-      <LeftTower />
-      <LeftTowerUpper />
+      <LeftTower>
+        <LeftTowerBricklayLeft long={7} />
+        <LeftTowerBricklayRight long={7} flip />
+        <TurretLeft />
+        <TurretRight />
+      </LeftTower>
+      <LeftTowerUpper>
+        <LeftTowerUpperBricklayLeft long={30} />
+        <LeftTowerUpperBricklayRight long={30} flip />
+        <LeftTowerUpperCornice />
+      </LeftTowerUpper>
       <RightTower />
     </StMarysBasilicaWrapper>
   </Wrapper>

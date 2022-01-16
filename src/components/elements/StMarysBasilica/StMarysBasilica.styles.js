@@ -187,6 +187,7 @@ const LeftTower = styled.span`
   width: ${leftTowerWidth};
   height: ${leftTowerHeight};
   background: ${wallColor};
+  z-index: 2;
 
   &::before, &::after {
     content: '';
@@ -258,7 +259,23 @@ const LeftTowerUpper = styled.span`
   left: calc(${mainWallLeftPosition} + 11px);
   width: 21.2px;
   height: 33.5px;
-  background: ${wallColor};
+  background: ${wallShadowColor};
+  z-index: 1;
+  &::before, &::after {
+    content: '';
+    width: 9.5px;
+    height: 33.5px;
+    background: ${wallShadowColor};
+    top: 1.7px;
+  }
+  &::before {
+    left: 100%;
+    transform: skewY(20deg);
+  }
+  &::after {
+    right: 100%;
+    transform: skewY(-20deg);
+  }
 `;
 
 const LeftTowerUpperBricklayLeft = styled(Bricklay)`
@@ -278,14 +295,26 @@ const LeftTowerUpperBricklayRight = styled(Bricklay)`
 `;
 
 const LeftTowerUpperCornice = styled.span`
-  bottom: calc(
-    ${mainWallBottomPosition}
-    + ${leftTowerHeight}
-  );
-  left: calc(${mainWallLeftPosition} + 11px);
-  width: 21.2px;
-  height: 33.5px;
-  //background: ${wallColor};
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #e7e7d5;
+  z-index: 2;
+  &::before, &::after {
+    content: '';
+    width: 9.5px;
+    height: 1px;
+    background: #e7e7d5;
+    bottom: .2px;
+  }
+  &::before {
+    left: 100%;
+    transform: rotate(-4deg);
+  }
+  &::after {
+    right: 100%;
+    transform: rotate(4deg);
+  }
 `;
 
 const RightTower = styled.span`

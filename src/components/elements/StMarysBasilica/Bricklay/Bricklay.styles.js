@@ -68,52 +68,63 @@ const Brick = styled.span`
       z-index: 1;
     }
   }
-  // 7/25
-  &:nth-of-type(1) {
+  &:nth-of-type(1), &:nth-of-type(11), &:nth-of-type(21) {
     width: 1px;
     &::before {
       width: 1.5px;
       transform: rotate(-5deg);
     }
   }
-  &:nth-of-type(2) {
+  &:nth-of-type(2), &:nth-of-type(12), &:nth-of-type(22) {
     width: 2.5px;
     &::before {
       width: 2px;
     }
   }
-  &:nth-of-type(3) {
+  &:nth-of-type(3), &:nth-of-type(13), &:nth-of-type(23) {
     width: 2px;
     &::before {
       width: 2px;
     }
   }
-  &:nth-of-type(4) {
+  &:nth-of-type(4), &:nth-of-type(14), &:nth-of-type(24) {
     height: .8px;
     &::before {
       width: 1.5px;
       height: .8px;
     }
   }
-  &:nth-of-type(5) {
+  &:nth-of-type(5), &:nth-of-type(15), &:nth-of-type(25) {
     width: 1.5px;
     &::before {
         width: 2px;
     }
   }
-  &:nth-of-type(6) {
-    width: 1px;
-    &::before {
-      width: 1.5px;
-    }
+  &:nth-of-type(6), &:nth-of-type(16), &:nth-of-type(26) {
+    width: 2px;
   }
-  &:nth-of-type(6) {
-    width: 2.1px;
-  }
-  &:nth-of-type(7) {
+  &:nth-of-type(7), &:nth-of-type(17), &:nth-of-type(27) {
     width: 1.5px;
     &::before {
       width: 2.2px;
+    }
+  }
+  &:nth-of-type(8), &:nth-of-type(18), &:nth-of-type(28) {
+    width: 1.7px;
+    &::before {
+      width: 1.7px;
+    }
+  }
+  &:nth-of-type(9), &:nth-of-type(19), &:nth-of-type(29) {
+    width: .5px;
+    &::before {
+      width: .7px;
+    }
+  }
+  &:nth-of-type(10), &:nth-of-type(20), &:nth-of-type(30) {
+    width: 1.3px;
+    &::before {
+      width: .7px;
     }
   }
 `;

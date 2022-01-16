@@ -6,7 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 *.bak
 
-# Coverage directory used by tools like istanbul
+# Coverage and reports directory used by tools like jest
 coverage
 reports/
 

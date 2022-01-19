@@ -211,12 +211,12 @@ const StyledSkyTree = styled(SkyTree)`
 
 const StyledStMarysBasilica = styled(StMarysBasilica)`
   ${ElementsCommonStyleUnspecified};
-  //bottom: 0;
-  //left: 61rem;
   bottom: 31px;
-  left: 50%;
+  left: 142px;
+  //bottom: 10px;
+  //left: 50%;
   transform: translateX(-50%);
-  z-index: 10;
+  z-index: 1110;
 `;
 
 export {

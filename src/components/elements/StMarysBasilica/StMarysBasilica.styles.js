@@ -5,11 +5,11 @@ import { ElementsCommonStyleUnspecified } from '@styles/elementsCommonStyle.styl
 
 import Bricklay from './Bricklay';
 
-import smaller from './smaller.png'; // do wywalenia
+import smaller from './smaller-no-bg.png'; // do wywalenia
 
 const wallColor = '#d3531e'; // #c2531e;
 const wallShadowColor = '#f76331'; // #c2531e;
-const mainWallWidth = '2.87rem';
+const mainWallWidth = '2.88rem';
 const mainWallHeight = '131.5px';
 const mainWallBottomPosition = '2.5px';
 const mainWallLeftPosition = '29.7px';
@@ -87,54 +87,46 @@ const MainCross = styled.span`
   span {
     &:nth-of-type(1) {
       bottom: 0;
-      background: #dbd8bd;
+      background: #7f8c90;
       width: 2px;
       height: 5.2px;
       left: 1.3px;
       &::before {
-        background: #e7e7d0;
+        background: #6b737b;
         bottom: 0;
         width: 2.3px;
         height: 5.2px;
         left: 2px;
       }
       &::after {
-        background: #dbd8bd;
+        background: #465662;
         top: -1px;
         height: 1px;
         width: 4.3px;
       }
     }
     &:nth-of-type(2) {
-      background: #e7e7d5;
+      background: #465662;
       width: 0.5px;
       height: 10.5px;
       left: 3.1px;
       &::before {
-        background: #e7e7d5;
+        background: #465662;
         border-radius: 50%;
         width: 1.5px;
         height: 1.5px;
         left: -0.5px;
         top: -0.1px;
       }
-      &::after {
-        border: 0.5px solid #e7e7d5;
-        border-radius: 50%;
-        width: 3px;
-        height: 3px;
-        top: 2px;
-        left: -1.21px;
-      }
     }
     &:nth-of-type(3) {
-      background: #e7e7d5;
+      background: #465662;
       width: 6.5px;
       height: 0.5px;
       left: 0;
       top: 3.2px;
       &::before, &::after {
-        background: #e7e7d5;
+        background: #465662;
         border-radius: 50%;
         width: 1.5px;
         height: 1.5px;
@@ -334,6 +326,31 @@ const RightTower = styled.span`
   }
 `;
 
+const TowerCornice = styled.span`
+  left:-.9px;
+  right: -.9px;
+  height: 1.2px;
+  top: ${(props) => props.top}px;
+  &::before, &::after {
+    content: '';
+    width: 100%;
+    height: .6px;
+  }
+  &::before {
+    top: 0;
+    background: #e7e7d6;
+  }
+  &::after {
+    bottom: 0;
+    background: #c1c099;
+  }
+
+  ${(props) => props.longer && css`
+    left: -1.5px;
+    right: -1.5px;
+  `};
+`;
+
 export {
   Wrapper,
   StMarysBasilicaWrapper,
@@ -351,5 +368,6 @@ export {
   LeftTowerUpperBricklayLeft,
   LeftTowerUpperBricklayRight,
   LeftTowerUpperCornice,
-  RightTower
+  RightTower,
+  TowerCornice
 };

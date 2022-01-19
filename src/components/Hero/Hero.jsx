@@ -48,20 +48,19 @@ const Hero = (props) => (
       <StyledBirdOne />
       <StyledBirdTwo />
       <CracowWrapper>
-        {/*<StyledMountains />*/}
-        {/*<TreeGreenCracowOne color="green" isTaller />*/}
-        {/*<TreeGreenCracowTwo color="green" />*/}
-        {/*<TreeGreenCracowThree color="green" isTaller />*/}
-        {/*<TreeGreenCracowFour color="green" />*/}
-        {/*<TreeGreenCracowFive color="green" />*/}
-
+        <StyledMountains />
+        <TreeGreenCracowOne color="green" isTaller />
+        <TreeGreenCracowTwo color="green" />
+        <TreeGreenCracowThree color="green" isTaller />
+        <TreeGreenCracowFour color="green" />
+        <TreeGreenCracowFive color="green" />
       </CracowWrapper>
       <TokyoWrapper>
-        {/*<StyledMtFuji />*/}
-        {/*<TreePinkTokyoOne color="pink" />*/}
-        {/*<TreePinkTokyoTwo color="pink" isTaller />*/}
-        {/*<TreePinkTokyoThree color="pink" />*/}
-        {/*<TreePinkTokyoFour color="pink" />*/}
+        <StyledMtFuji />
+        <TreePinkTokyoOne color="pink" />
+        <TreePinkTokyoTwo color="pink" isTaller />
+        <TreePinkTokyoThree color="pink" />
+        <TreePinkTokyoFour color="pink" />
         <StyledSkyTree />
       </TokyoWrapper>
 

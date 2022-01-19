@@ -78,13 +78,7 @@ const MainPage = () => {
                   path={mdiGithub}
                 />
               </SocialLink>
-            </SocialItem>
-            <SocialItem>
-              <SocialLink href="https://www.linkedin.com/in/izabela-furdzik-4971315a/" target="_blank" rel="noreferrer">
-                <IconStyled
-                  path={mdiLinkedin}
-                />
-              </SocialLink>
+              tu cos będzie
             </SocialItem>
             <SocialItem>
               <SocialLink href="https://stackoverflow.com/users/7615658/izabela-furdzik" target="_blank" rel="noreferrer">
@@ -92,11 +86,19 @@ const MainPage = () => {
                   path={mdiStackOverflow}
                 />
               </SocialLink>
+              i tu
             </SocialItem>
             <SocialItem>
               <SocialLink href="mailto:izabela.furdzik+portfolio@gmail.com" target="_blank" rel="noreferrer">
                 <IconStyled
                   path={mdiGmail}
+                />
+              </SocialLink>
+            </SocialItem>
+            <SocialItem>
+              <SocialLink href="https://www.linkedin.com/in/izabela-furdzik-4971315a/" target="_blank" rel="noreferrer">
+                <IconStyled
+                  path={mdiLinkedin}
                 />
               </SocialLink>
             </SocialItem>

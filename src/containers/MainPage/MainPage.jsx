@@ -4,10 +4,10 @@ import { connect } from 'react-redux';
 
 import { statsShape } from '@types/statsShape';
 
+import MainPageComponent from '@components/MainPage';
+
 import { getStats } from './MainPage.reducer';
 import selector from './MainPage.selector';
-
-import MainPageComponent from '@components/MainPage';
 
 const MainPage = (props) => {
   useEffect(() => {
@@ -15,13 +15,13 @@ const MainPage = (props) => {
   }, []);
 
   return !props.loading ? (
-      <MainPageComponent stats={props.stats} />
+    <MainPageComponent stats={props.stats} />
   ) : 'Loading'; // @TODO: add Loader from my own components library
 };
 
 MainPage.propTypes = {
-  loading: PropTypes.bool.isRequired,
   getStats: PropTypes.func.isRequired,
+  loading: PropTypes.bool.isRequired,
   stats: statsShape.isRequired
 };
 

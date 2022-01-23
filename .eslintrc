@@ -17,6 +17,7 @@
     "NODE_ENV": "readonly",
     "JISHO_API_URL": "readonly",
     "STACKOVERFLOW_API_URL": "readonly",
+    "STACKOVERFLOW_USER": "readonly",
     "GITHUB_KEY": "readonly"
   }
 }

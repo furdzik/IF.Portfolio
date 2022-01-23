@@ -167,8 +167,8 @@ const Leg = styled.div`
         border-right-width: 15px;
       }
       &:nth-of-type(2) {
-        transform: rotate(-10deg);
         left: 25px;
+        transform: rotate(-10deg);
         border-left-width: 15px;
       }
       &:nth-of-type(3),
@@ -196,8 +196,8 @@ const Leg = styled.div`
         z-index: 0;
         width: 2.4rem;
         height: 1.2rem;
-        border-color: #cccccc;
         border-right-width: 0;
+        border-color: #cccccc;
         border-radius: 2rem;
         background: #cccccc;
       }

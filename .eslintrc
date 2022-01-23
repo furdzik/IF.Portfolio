@@ -18,6 +18,7 @@
     "JISHO_API_URL": "readonly",
     "STACKOVERFLOW_API_URL": "readonly",
     "STACKOVERFLOW_USER": "readonly",
+    "GITHUB_USER": "readonly",
     "GITHUB_KEY": "readonly"
   }
 }

@@ -87,6 +87,7 @@ module.exports = ({ production }) => {
         APP_URL: JSON.stringify(envVariables.APP_URL),
         STACKOVERFLOW_API_URL: JSON.stringify(envVariables.STACKOVERFLOW_API_URL),
         STACKOVERFLOW_USER: JSON.stringify(envVariables.STACKOVERFLOW_USER),
+        GITHUB_USER: JSON.stringify(envVariables.GITHUB_USER),
         GITHUB_KEY: JSON.stringify(envVariables.GITHUB_KEY)
       })
     ]

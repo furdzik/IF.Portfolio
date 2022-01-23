@@ -3,10 +3,13 @@
   "components.BirthdayCard.name": "Monika",
   "components.Footer.copyright": "IZABELA FURDZIK © {currentYear} All rights reserved",
   "components.Header.title": "IF.Portfolio [WIP]",
+  "components.MainPage.contributionsText": "contributions: ",
   "components.MainPage.cssArt": "CSS Art",
   "components.MainPage.japaneseApp": "Japanese App",
   "components.MainPage.mainHeading": "Hello!",
+  "components.MainPage.reputationText": "reputation: ",
   "components.MainPage.seeMore": "See also:",
   "components.MainPage.styleGuide": "Style Guide",
-  "components.MainPage.subHeading": "My name is Izabela Furdzik.\nI am front-end developer."
+  "components.MainPage.subHeading": "My name is Izabela Furdzik.\nI am front-end developer.",
+  "components.MainPage.wipText": "WIP"
 }

@@ -9,14 +9,17 @@ import {
   mdiStackOverflow
 } from '@mdi/js';
 
+import { NUMBER_BUTTON_TYPE } from '@constants';
+
 import { breakpointMixin } from '@styles/mixins';
 
 import Box from '@components/Box';
 import Cat from '@components/elements/Cat';
+import { STACK_BADGE_TYPE } from '../../constants';
 
 const Heading = styled.h1`
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: ${(props) => props.theme.color.violet};
 `;
 
@@ -32,8 +35,8 @@ const MainBox = styled.div`
   width: 100%;
 
   ${breakpointMixin.portraitTablet(css`
-    width: auto;
     order: 1;
+    width: auto;
   `)};
 `;
 
@@ -52,8 +55,9 @@ const SocialIcons = styled.ul`
   margin-top: 4rem;
 
   ${breakpointMixin.portraitTablet(css`
-    margin-top: -3rem;
     order: 3;
+    margin-top: -1rem;
+    margin-bottom: -3rem;
   `)};
   ${breakpointMixin.laptop(css`
     order: 4;
@@ -64,12 +68,18 @@ const SocialItem = styled.li`
   display:  flex;
   align-items: center;
   & + & {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 `;
 
 const SocialLink = styled.a`
-  display: block;
+  display: flex;
+`;
+
+const AdditionalInfoBox = styled.span`
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: .5rem;
 `;
 
 const IconStyled = styled(Icon)`
@@ -96,18 +106,20 @@ const IconStyled = styled(Icon)`
 const ListWrapper = styled.div`
   display: flex;
   flex-flow: column wrap;
+  order: 2;
   width: 100%;
   margin-top: 5rem;
 
-  ${breakpointMixin.portraitTablet(css`
-    order: 4;
+  ${breakpointMixin.landscapeTablet(css`
+    order: 2;
+    width: 38%;
     margin-top: 0;
-    width: 40%;
+    margin-left: 2rem;
   `)};
   ${breakpointMixin.laptop(css`
-    order: 2;
     flex-direction: row;
-    margin-left: 5rem;
+    order: 2;
+    margin-left: 7rem;
   `)};
 `;
 
@@ -120,7 +132,7 @@ const List = styled.ul`
 const ListItem = styled.li`
   display: flex;
   align-items: center;
-  font-size: 2.2rem;
+  font-size: 2rem;
 
   &::before {
     content: '';
@@ -131,10 +143,6 @@ const ListItem = styled.li`
     margin-right: 1.5rem;
     border-radius: 50%;
     background: ${(props) => props.theme.color.violet};
-  }
-
-  & + & {
-    margin-top: .5rem;
   }
 `;
 
@@ -161,21 +169,75 @@ const CatStyled = styled(Cat)`
   bottom: 0;
   left: -6rem;
 `;
+
 const WipBadge = styled.span`
   display: inline-block;
   height: 3rem;
   margin-left: 2rem;
   padding: .5rem;
-  border: 2px solid red;
+  border: 2px solid ${(props) => props.theme.color.red};
   border-radius: 50%;
-  background: #ffffff;
-  color: red;
+  background: ${(props) => props.theme.monoColors.white};
+  color: ${(props) => props.theme.color.red};
+  vertical-align: middle;
 
   &::before {
     content: 'WIP';
     display: block;
     font-size: 1.2rem;
   }
+`;
+
+const Number = styled.span`
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 2rem;
+  padding: .1rem .5rem;
+  font-size: 1rem;
+  color: ${(props) => props.theme.monoColors.white};
+
+  ${(props) => props.type === NUMBER_BUTTON_TYPE.contributions && css`
+    background: #40c463;
+  `};
+  ${(props) => props.type === NUMBER_BUTTON_TYPE.reputation && css`
+    background: #f48225;
+  `};
+`;
+
+const StackBadges = styled.ul`
+  display: flex;
+  margin-left: .5rem;
+`;
+
+const StackBadge = styled.li`
+  display:  inline-block;
+  margin-right: .5rem;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin-right: .2rem;
+  }
+
+  ${(props) => props.type === STACK_BADGE_TYPE.gold && css`
+    &::before {
+      background: #ffcc01;
+    }
+  `};
+  ${(props) => props.type === STACK_BADGE_TYPE.silver && css`
+    &::before {
+      background: #b4b8bc;
+    }
+  `};
+  ${(props) => props.type === STACK_BADGE_TYPE.bronze && css`
+    &::before {
+      background: #d1a684;
+    }
+  `};
 `;
 
 export {
@@ -186,6 +248,7 @@ export {
   SocialIcons,
   SocialItem,
   SocialLink,
+  AdditionalInfoBox,
   IconStyled,
   ListWrapper,
   List,
@@ -193,5 +256,8 @@ export {
   Link,
   MeAndCatWrapper,
   CatStyled,
-  WipBadge
+  WipBadge,
+  Number,
+  StackBadges,
+  StackBadge
 };

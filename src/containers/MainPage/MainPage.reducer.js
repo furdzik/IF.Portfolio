@@ -1,17 +1,42 @@
+import { fetchStackOverflowStats, fetchGitHubStats } from '@api';
+
 const actionTypes = {
   GET_STATS_INIT: 'MAIN_PAGE/GET_STATS_INIT',
   GET_STATS: 'MAIN_PAGE/GET_STATS'
 };
 
 const initialState = {
-  loading: true
+  loading: true,
+  stats: {}
 };
 
 export default function mainPageReducer (state = initialState, action = {}) {
   switch (action.type) {
+    case actionTypes.GET_STATS: {
+      const { stackOverflow, gitHub } = action.payload;
+      console.log('GET_STATS', stackOverflow, gitHub, action.payload);
+
+      return {
+        ...state,
+        loading: false,
+        stats: {
+          gitHub: {
+            totalContributions: gitHub?.contributionCalendar?.totalContributions
+          },
+          stackOverflow: {
+            reputation: stackOverflow?.reputation,
+            badgeCounts: stackOverflow?.badge_counts
+              ? { ...stackOverflow?.badge_counts }
+              : null
+          }
+        }
+      };
+    }
+
     case actionTypes.GET_STATS_INIT: {
       return {
-        ...state
+        ...state,
+        loading: true
       };
     }
 
@@ -20,9 +45,8 @@ export default function mainPageReducer (state = initialState, action = {}) {
   }
 }
 
-const getStatsInitAction = (payload) => ({
-  type: actionTypes.GET_STATS_INIT,
-  payload
+const getStatsInitAction = () => ({
+  type: actionTypes.GET_STATS_INIT
 });
 
 const getStatsAction = (payload) => ({
@@ -32,5 +56,21 @@ const getStatsAction = (payload) => ({
 
 export const getStats = () => (dispatch) => {
   dispatch(getStatsInitAction());
-  dispatch(getStatsAction());
+
+  Promise.all(
+    [
+      fetchGitHubStats(),
+      fetchStackOverflowStats()
+    ]
+  )
+    .then(([gitHubResponse, stackOverflowResponse]) => {
+      dispatch(getStatsAction({
+        gitHub: gitHubResponse?.data?.user?.contributionsCollection,
+        stackOverflow: stackOverflowResponse.items[0]
+      }));
+    })
+    .catch(() => {
+      console.log('error');
+      // @TODO: add errors msg
+    });
 };

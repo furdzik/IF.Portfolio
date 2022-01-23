@@ -14,9 +14,12 @@ const MainPage = (props) => {
     props.getStats();
   }, []);
 
-  return !props.loading ? (
-    <MainPageComponent stats={props.stats} />
-  ) : 'Loading'; // @TODO: add Loader from my own components library
+  return (
+    <MainPageComponent
+      loading={props.loading}
+      stats={props.stats}
+    />
+  );
 };
 
 MainPage.propTypes = {

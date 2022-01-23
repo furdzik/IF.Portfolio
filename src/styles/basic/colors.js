@@ -8,7 +8,8 @@ export const color = {
   violet: '#5319e7',
   lightGray: '#e6e9ee',
   gray: '#ccd0d9',
-  darkGray: '#313131'
+  darkGray: '#313131',
+  red: '#ff0000'
 };
 
 export const mainColors = {

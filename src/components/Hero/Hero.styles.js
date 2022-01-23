@@ -35,64 +35,64 @@ const StyledCloud = styled(Cloud)`
     left: 18rem;
   `};
   ${(props) => props.cloudType === cloudType.two && css`
-   top: 3rem;
-   right: -36rem;
+    top: 3rem;
+    right: -36rem;
   `};
   ${(props) => props.cloudType === cloudType.three && css`
-   top: 16rem;
-   right: -42rem;
+    top: 16rem;
+    right: -42rem;
   `};
   ${(props) => props.cloudType === cloudType.four && css`
-   top: 5rem;
-   right: -17rem;
+    top: 5rem;
+    right: -17rem;
   `};
   ${(props) => props.cloudType === cloudType.five && css`
-   top: 9rem;
-   left: -4rem;
+    top: 9rem;
+    left: -4rem;
   `};
   ${(props) => props.cloudType === cloudType.six && css`
-   top: 7rem;
-   left: 39rem;
+    top: 7rem;
+    left: 39rem;
   `};
   ${(props) => props.cloudType === cloudType.seven && css`
-   top: 22rem;
-   left: -34rem;
+    top: 22rem;
+    left: -34rem;
   `};
   ${(props) => props.cloudType === cloudType.eight && css`
-   top: 5rem;
-   right: -56rem;
+    top: 5rem;
+    right: -56rem;
   `};
   ${(props) => props.cloudType === cloudType.nine && css`
-   top: 8rem;
-   left: -46rem;
+    top: 8rem;
+    left: -46rem;
   `};
   ${(props) => props.cloudType === cloudType.ten && css`
-   top: 4rem;
-   right: 4rem;
+    top: 4rem;
+    right: 4rem;
   `};
   ${(props) => props.cloudType === cloudType.eleven && css`
-   top: 5rem;
-   left: -37rem;
+    top: 5rem;
+    left: -37rem;
   `};
   ${(props) => props.cloudType === cloudType.twelve && css`
-   top: 16rem;
-   right: -30rem;
+    top: 16rem;
+    right: -30rem;
   `};
   ${(props) => props.cloudType === cloudType.thirteen && css`
-   top: 3rem;
-   right: -9rem;
+    top: 3rem;
+    right: -9rem;
   `};
   ${(props) => props.cloudType === cloudType.fourteen && css`
-   top: 4rem;
-   left: 35rem;
+    top: 4rem;
+    left: 35rem;
   `};
   ${(props) => props.cloudType === cloudType.fifteen && css`
-   top: 9rem;
-   left: -6rem;
+    top: 9rem;
+    left: -6rem;
   `};
   ${(props) => props.cloudType === cloudType.sixteen && css`
-   top: 30rem;
-   right: -47rem;
+    top: 30rem;
+    right: -47rem;
   `};
 `;
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { useIntl } from 'react-intl';
 
 import {
@@ -169,11 +168,7 @@ const MainPage = (props) => {
 };
 
 MainPage.propTypes = {
-  loading: PropTypes.bool.isRequired,
   stats: statsShape.isRequired
-};
-
-MainPage.defaultProps = {
 };
 
 export default MainPage;

@@ -273,13 +273,13 @@ const Wrapper = styled.div`
       }
       &:nth-of-type(9) {
         &::before {
-        bottom: 5.1rem;
+          bottom: 5.1rem;
         }
       }
       &:nth-of-type(6) {
         &::before {
-          left: 0.6rem;
           bottom: -2.9rem;
+          left: 0.6rem;
           background: #dcadbe;
         }
       }

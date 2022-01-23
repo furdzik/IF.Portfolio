@@ -1,6 +1,12 @@
 {
   "processors": [
-    "stylelint-processor-styled-components"
+    [
+      "stylelint-processor-styled-components",
+      {
+        "moduleName": "@emotion",
+        "importName": "default"
+      }
+    ]
   ],
   "extends": [
     "@furdzik/stylelint-config"

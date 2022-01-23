@@ -8,5 +8,6 @@ export const breakpointMixin = Object.keys(breakpoints).reduce((accumulator, lab
       ${css(...args)};
     }
   `;
+
   return accumulator;
 }, {});

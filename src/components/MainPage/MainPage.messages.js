@@ -6,5 +6,8 @@ export default defineMessages({
   seeMore: 'See also:',
   japaneseApp: 'Japanese App',
   cssArt: 'CSS Art',
-  styleGuide: 'Style Guide'
+  styleGuide: 'Style Guide',
+  wipText: 'WIP',
+  contributionsText: 'contributions: ',
+  reputationText: 'reputation: '
 });

@@ -18,3 +18,14 @@ export const cloudType = {
   fifteen: 'fifteen',
   sixteen: 'sixteen'
 };
+
+export const NUMBER_BUTTON_TYPE = {
+  contributions: 'contributions',
+  reputation: 'reputation'
+};
+
+export const STACK_BADGE_TYPE = {
+  gold: 'gold',
+  silver: 'silver',
+  bronze: 'bronze'
+};

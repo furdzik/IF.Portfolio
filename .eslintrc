@@ -16,8 +16,7 @@
   "globals": {
     "NODE_ENV": "readonly",
     "JISHO_API_URL": "readonly",
-    "KANJIALIVE_API_URL": "readonly",
-    "KANJIALIVE_API_KEY": "readonly",
-    "ALTERNATIVE_KANJI_API_URL": "readonly"
+    "STACKOVERFLOW_API_URL": "readonly",
+    "GITHUB_KEY": "readonly"
   }
 }

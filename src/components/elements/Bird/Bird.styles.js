@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 `;
 
 const BirdWrapper = styled.div`
-  --birdColor: ${(props) => props.color ? props.color : '#000000'};
+  --bird-color: ${(props) => props.color ? props.color : '#000000'};
 
   ${ElementsCommonStyleUnspecified};
 
@@ -24,25 +24,25 @@ const BirdWrapper = styled.div`
     bottom: .8rem;
     width: 5rem;
     height: 1.9rem;
-    border-bottom: .5rem solid var(--birdColor);
+    border-bottom: .5rem solid var(--bird-color);
     border-radius: 50%;
   }
   &::after {
     bottom: 1.3rem;
     left: 50%;
     transform: translateX(-50%);
-    border-width: 0 .2rem .4rem .2rem;
+    border-width: 0 .2rem .4rem;
     border-style: solid;
-    border-color: var(--birdColor) transparent;
+    border-color: var(--bird-color) transparent;
   }
   span {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: .7rem;
-    border-width: 0 .3rem 1.4rem .3rem;
+    border-width: 0 .3rem 1.4rem;
     border-style: solid;
-    border-color: var(--birdColor) transparent;
+    border-color: var(--bird-color) transparent;
   }
 `;
 

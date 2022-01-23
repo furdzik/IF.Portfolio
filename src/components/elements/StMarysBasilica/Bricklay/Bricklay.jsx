@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { v4 as uuidv4 } from "uuid";
+import { v4 as uuidv4 } from 'uuid';
 
 import {
   BricklayWrapper,
@@ -27,15 +27,15 @@ const Bricklay = (props) => (
 
 Bricklay.propTypes = {
   className: PropTypes.string,
-  long: PropTypes.number, // number of elements
   flip: PropTypes.bool,
+  long: PropTypes.number, // number of elements
   noShadow: PropTypes.bool
 };
 
 Bricklay.defaultProps = {
   className: '',
-  long: 10,
   flip: false,
+  long: 10,
   noShadow: false
 };
 

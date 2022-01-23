@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import { ElementsCommonStyleUnspecified } from '@styles/elementsCommonStyle.styles';
+// import { ElementsCommonStyleUnspecified } from '@styles/elementsCommonStyle.styles';
 
 const brickHeight = 1.1;
 
@@ -33,10 +33,10 @@ const BrickWrapper = styled.span`
     }
     &::before {
       left: 50%;
+      z-index: 3;
       width: 1px;
       height: 100%;
       background: #e7e7d6;
-      z-index: 3;
     }
     &::after {
       left: calc(50% - 1px);
@@ -58,21 +58,21 @@ const Brick = styled.span`
     &::before {
       content: '';
       position: absolute;
-      right: 100%;
       top: 0;
+      right: 100%;
+      z-index: 1;
+      transform: rotate(-10deg);
+      transform-origin: right;
       width: .5px;
       height: ${brickHeight}px;
       background: #c1c099;
-      transform: rotate(-10deg);
-      transform-origin: right;
-      z-index: 1;
     }
   }
   &:nth-of-type(1), &:nth-of-type(11), &:nth-of-type(21) {
     width: 1px;
     &::before {
-      width: 1.5px;
       transform: rotate(-5deg);
+      width: 1.5px;
     }
   }
   &:nth-of-type(2), &:nth-of-type(12), &:nth-of-type(22) {
@@ -97,7 +97,7 @@ const Brick = styled.span`
   &:nth-of-type(5), &:nth-of-type(15), &:nth-of-type(25) {
     width: 1.5px;
     &::before {
-        width: 2px;
+      width: 2px;
     }
   }
   &:nth-of-type(6), &:nth-of-type(16), &:nth-of-type(26) {

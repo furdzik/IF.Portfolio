@@ -66,19 +66,18 @@ const RoofTower = styled.span`
     content: '';
     bottom: -16px;
     left: -15.5px;
-
     transform: translateX(50%);
-    border-width: 0 6px 10px 6px;
+    border-width: 0 6px 10px;
     border-style: solid;
     border-color: #943900 transparent;
   }
 `;
 
 const MainCross = styled.span`
-  width: 6.8px;
-  height: 16.6px;
   bottom: 50.5px;
   left: 10.8px;
+  width: 6.8px;
+  height: 16.6px;
 
   & ::before,
   & ::after {
@@ -87,50 +86,50 @@ const MainCross = styled.span`
   span {
     &:nth-of-type(1) {
       bottom: 0;
-      background: #7f8c90;
+      left: 1.3px;
       width: 2px;
       height: 5.2px;
-      left: 1.3px;
+      background: #7f8c90;
       &::before {
-        background: #6b737b;
         bottom: 0;
+        left: 2px;
         width: 2.3px;
         height: 5.2px;
-        left: 2px;
+        background: #6b737b;
       }
       &::after {
-        background: #465662;
         top: -1px;
-        height: 1px;
         width: 4.3px;
+        height: 1px;
+        background: #465662;
       }
     }
     &:nth-of-type(2) {
-      background: #465662;
+      left: 3.1px;
       width: 0.5px;
       height: 10.5px;
-      left: 3.1px;
+      background: #465662;
       &::before {
-        background: #465662;
-        border-radius: 50%;
+        top: -0.1px;
+        left: -0.5px;
         width: 1.5px;
         height: 1.5px;
-        left: -0.5px;
-        top: -0.1px;
+        border-radius: 50%;
+        background: #465662;
       }
     }
     &:nth-of-type(3) {
-      background: #465662;
+      top: 3.2px;
+      left: 0;
       width: 6.5px;
       height: 0.5px;
-      left: 0;
-      top: 3.2px;
+      background: #465662;
       &::before, &::after {
-        background: #465662;
-        border-radius: 50%;
+        top: -0.5px;
         width: 1.5px;
         height: 1.5px;
-        top: -0.5px;
+        border-radius: 50%;
+        background: #465662;
       }
       &::before {
         left: -0.5px;
@@ -143,29 +142,29 @@ const MainCross = styled.span`
 `;
 
 const RoofWindow = styled.span`
-  width: 5px;
-  height: 3.2px;
   top: 25.2px;
   left: 12px;
+  width: 5px;
+  height: 3.2px;
   background: #94a5a6;
   &::after, &::before {
     content: '';
   }
   &::before {
     content: '';
+    top: -3px;
+    left: -0.6px;
     border-width: 0 3px 3px;
     border-style: solid;
     border-color: #94a5a6 transparent;
-    top: -3px;
-    left: -0.6px;
   }
   &::after {
     content: '';
-    width: 3px;
-    height: 3px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    width: 3px;
+    height: 3px;
     border-radius: .5px .5px 0 0;
     background: #7e8c90;
   }
@@ -176,33 +175,33 @@ const LeftTower = styled.span`
 
   bottom: calc(${mainWallBottomPosition});
   left: ${mainWallLeftPosition};
+  z-index: 2;
   width: ${leftTowerWidth};
   height: ${leftTowerHeight};
   background: ${wallColor};
-  z-index: 2;
 
   &::before, &::after {
     content: '';
   }
   &::before {
     top: 8px;
+    right: 0;
     border-width: 68px 0 0 42px;
     border-style: solid;
     border-color: ${wallShadowColor} transparent;
-    right: 0;
   }
   &::after {
-    background: ${wallShadowColor};
+    left: 11px;
     width: 21.1px;
     height: 7.9px;
-    left: 11px;
+    background: ${wallShadowColor};
   }
 `;
 
 const Turret = styled.span`
   top: 2.9px;
-  width: 12px;
   z-index: 2;
+  width: 12px;
   &::before, &::after {
     content: '';
   }
@@ -212,10 +211,10 @@ const Turret = styled.span`
     border-color: #c5c19d transparent;
   }
   &::after {
+    right: 0;
     border-width: 0 6px 5px 0;
     border-style: solid;
     border-color: #e7e7d5 transparent;
-    right: 0;
   }
 `;
 
@@ -245,20 +244,19 @@ const LeftTowerBricklayRight = styled(Bricklay)`
 
 const LeftTowerUpper = styled.span`
   bottom: calc(
-    ${mainWallBottomPosition}
-    + ${leftTowerHeight}
+    ${mainWallBottomPosition} + ${leftTowerHeight}
   );
   left: calc(${mainWallLeftPosition} + 11px);
+  z-index: 1;
   width: 21.2px;
   height: 33.5px;
   background: ${wallShadowColor};
-  z-index: 1;
   &::before, &::after {
     content: '';
+    top: 1.7px;
     width: 9.5px;
     height: 33.5px;
     background: ${wallShadowColor};
-    top: 1.7px;
   }
   &::before {
     left: 100%;
@@ -288,16 +286,16 @@ const LeftTowerUpperBricklayRight = styled(Bricklay)`
 
 const LeftTowerUpperCornice = styled.span`
   bottom: 0;
+  z-index: 2;
   width: 100%;
   height: 1px;
   background: #e7e7d5;
-  z-index: 2;
   &::before, &::after {
     content: '';
+    bottom: .2px;
     width: 9.5px;
     height: 1px;
     background: #e7e7d5;
-    bottom: .2px;
   }
   &::before {
     left: 100%;
@@ -317,8 +315,8 @@ const RightTower = styled.span`
   background: ${wallColor};
   &::before {
     content: '';
-    height: 97px;
     top: 0;
+    height: 97px;
     border-width: 0 46px 75px 0;
     border-style: solid;
     border-color: ${wallColor} transparent;
@@ -327,10 +325,10 @@ const RightTower = styled.span`
 `;
 
 const TowerCornice = styled.span`
-  left:-.9px;
-  right: -.9px;
-  height: 1.2px;
   top: ${(props) => props.top}px;
+  right: -.9px;
+  left:-.9px;
+  height: 1.2px;
   &::before, &::after {
     content: '';
     width: 100%;
@@ -346,8 +344,8 @@ const TowerCornice = styled.span`
   }
 
   ${(props) => props.longer && css`
-    left: -1.5px;
     right: -1.5px;
+    left: -1.5px;
   `};
 `;
 

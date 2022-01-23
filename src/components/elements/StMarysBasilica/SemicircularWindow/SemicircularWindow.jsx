@@ -10,7 +10,7 @@ const SemicircularWindow = (props) => (
   <SemicircularWindowWrapper
     className={props.className}
   >
-
+    Empty
   </SemicircularWindowWrapper>
 );
 

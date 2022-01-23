@@ -9,13 +9,12 @@ import {
   mdiStackOverflow
 } from '@mdi/js';
 
-import { NUMBER_BUTTON_TYPE } from '@constants';
+import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from '@constants';
 
 import { breakpointMixin } from '@styles/mixins';
 
 import Box from '@components/Box';
 import Cat from '@components/elements/Cat';
-import { STACK_BADGE_TYPE } from '../../constants';
 
 const Heading = styled.h1`
   width: 100%;
@@ -190,11 +189,11 @@ const WipBadge = styled.span`
 
 const Number = styled.span`
   display: inline-block;
-  vertical-align: middle;
-  border-radius: 2rem;
   padding: .1rem .5rem;
+  border-radius: 2rem;
   font-size: 1rem;
   color: ${(props) => props.theme.monoColors.white};
+  vertical-align: middle;
 
   ${(props) => props.type === NUMBER_BUTTON_TYPE.contributions && css`
     background: #40c463;
@@ -216,11 +215,11 @@ const StackBadge = styled.li`
   &::before {
     content: '';
     display: inline-block;
-    vertical-align: middle;
     width: 1rem;
     height: 1rem;
-    border-radius: 50%;
     margin-right: .2rem;
+    border-radius: 50%;
+    vertical-align: middle;
   }
 
   ${(props) => props.type === STACK_BADGE_TYPE.gold && css`

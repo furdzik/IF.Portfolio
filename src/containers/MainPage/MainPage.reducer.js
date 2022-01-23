@@ -14,7 +14,6 @@ export default function mainPageReducer (state = initialState, action = {}) {
   switch (action.type) {
     case actionTypes.GET_STATS: {
       const { stackOverflow, gitHub } = action.payload;
-      console.log('GET_STATS', stackOverflow, gitHub, action.payload);
 
       return {
         ...state,
@@ -70,7 +69,6 @@ export const getStats = () => (dispatch) => {
       }));
     })
     .catch(() => {
-      console.log('error');
       // @TODO: add errors msg
     });
 };

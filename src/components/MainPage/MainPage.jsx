@@ -9,7 +9,7 @@ import {
   mdiStackOverflow
 } from '@mdi/js';
 
-import { NUMBER_BUTTON_TYPE } from '@constants';
+import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from '@constants';
 
 import { statsShape } from '@types/statsShape';
 
@@ -41,11 +41,10 @@ import {
   StackBadge
 } from './MainPage.styles';
 import messages from './MainPage.messages';
-import { STACK_BADGE_TYPE } from '../../constants';
 
 const MainPage = (props) => {
   const intl = useIntl();
-  console.log(props);
+
   return (
     <React.Fragment>
       <Hero />

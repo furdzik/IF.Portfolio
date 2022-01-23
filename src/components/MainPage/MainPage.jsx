@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { useIntl } from 'react-intl';
 
 import {
@@ -80,91 +79,87 @@ const MainPage = (props) => {
             <Me />
             <CatStyled />
           </MeAndCatWrapper>
-          {
-            !props.loading ? (
-              <SocialIcons>
-                <SocialItem>
-                  <SocialLink href="mailto:izabela.furdzik+portfolio@gmail.com" target="_blank" rel="noreferrer">
-                    <IconStyled
-                      path={mdiGmail}
-                    />
-                  </SocialLink>
-                </SocialItem>
-                <SocialItem>
-                  <SocialLink href="https://www.linkedin.com/in/izabela-furdzik-4971315a/" target="_blank" rel="noreferrer">
-                    <IconStyled
-                      path={mdiLinkedin}
-                    />
-                  </SocialLink>
-                </SocialItem>
-                <SocialItem>
-                  <SocialLink href="https://github.com/furdzik" target="_blank" rel="noreferrer">
-                    <IconStyled
-                      path={mdiGithub}
-                    />
-                  </SocialLink>
-                  {
-                    props.stats?.gitHub ? (
-                      <AdditionalInfoBox>
-                        <div>
-                          {intl.formatMessage(messages.contributionsText)}
-                          <Number type={NUMBER_BUTTON_TYPE.contributions}>
-                            {props.stats?.gitHub?.totalContributions}
-                          </Number>
-                        </div>
-                      </AdditionalInfoBox>
-                    ) : null
-                  }
-                </SocialItem>
-                <SocialItem>
-                  <SocialLink href="https://stackoverflow.com/users/7615658/izabela-furdzik" target="_blank" rel="noreferrer">
-                    <IconStyled
-                      path={mdiStackOverflow}
-                    />
-                  </SocialLink>
-                  {
-                    props.stats?.stackOverflow ? (
-                      <AdditionalInfoBox>
-                        <div>
-                          {intl.formatMessage(messages.reputationText)}
-                          <Number type={NUMBER_BUTTON_TYPE.reputation}>
-                            {props.stats?.stackOverflow?.reputation}
-                          </Number>
-                        </div>
-                        {
-                          props.stats?.stackOverflow?.badgeCounts ? (
-                            <StackBadges>
-                              {
-                                props.stats?.stackOverflow?.badgeCounts?.gold ? (
-                                  <StackBadge type={STACK_BADGE_TYPE.gold}>
-                                    {props.stats?.stackOverflow?.badgeCounts?.gold}
-                                  </StackBadge>
-                                ) : null
-                              }
-                              {
-                                props.stats?.stackOverflow?.badgeCounts?.silver ? (
-                                  <StackBadge type={STACK_BADGE_TYPE.silver}>
-                                    {props.stats?.stackOverflow?.badgeCounts?.silver}
-                                  </StackBadge>
-                                ) : null
-                              }
-                              {
-                                props.stats?.stackOverflow?.badgeCounts?.bronze ? (
-                                  <StackBadge type={STACK_BADGE_TYPE.bronze}>
-                                    {props.stats?.stackOverflow?.badgeCounts?.bronze}
-                                  </StackBadge>
-                                ) : null
-                              }
-                            </StackBadges>
-                          ) : null
-                        }
-                      </AdditionalInfoBox>
-                    ) : null
-                  }
-                </SocialItem>
-              </SocialIcons>
-            ) : null // @TODO: add Loader from my own components library
-          }
+          <SocialIcons>
+            <SocialItem>
+              <SocialLink href="mailto:izabela.furdzik+portfolio@gmail.com" target="_blank" rel="noreferrer">
+                <IconStyled
+                  path={mdiGmail}
+                />
+              </SocialLink>
+            </SocialItem>
+            <SocialItem>
+              <SocialLink href="https://www.linkedin.com/in/izabela-furdzik-4971315a/" target="_blank" rel="noreferrer">
+                <IconStyled
+                  path={mdiLinkedin}
+                />
+              </SocialLink>
+            </SocialItem>
+            <SocialItem>
+              <SocialLink href="https://github.com/furdzik" target="_blank" rel="noreferrer">
+                <IconStyled
+                  path={mdiGithub}
+                />
+              </SocialLink>
+              {
+                props.stats?.gitHub ? (
+                  <AdditionalInfoBox>
+                    <div>
+                      {intl.formatMessage(messages.contributionsText)}
+                      <Number type={NUMBER_BUTTON_TYPE.contributions}>
+                        {props.stats?.gitHub?.totalContributions}
+                      </Number>
+                    </div>
+                  </AdditionalInfoBox>
+                ) : null
+              }
+            </SocialItem>
+            <SocialItem>
+              <SocialLink href="https://stackoverflow.com/users/7615658/izabela-furdzik" target="_blank" rel="noreferrer">
+                <IconStyled
+                  path={mdiStackOverflow}
+                />
+              </SocialLink>
+              {
+                props.stats?.stackOverflow ? (
+                  <AdditionalInfoBox>
+                    <div>
+                      {intl.formatMessage(messages.reputationText)}
+                      <Number type={NUMBER_BUTTON_TYPE.reputation}>
+                        {props.stats?.stackOverflow?.reputation}
+                      </Number>
+                    </div>
+                    {
+                      props.stats?.stackOverflow?.badgeCounts ? (
+                        <StackBadges>
+                          {
+                            props.stats?.stackOverflow?.badgeCounts?.gold ? (
+                              <StackBadge type={STACK_BADGE_TYPE.gold}>
+                                {props.stats?.stackOverflow?.badgeCounts?.gold}
+                              </StackBadge>
+                            ) : null
+                          }
+                          {
+                            props.stats?.stackOverflow?.badgeCounts?.silver ? (
+                              <StackBadge type={STACK_BADGE_TYPE.silver}>
+                                {props.stats?.stackOverflow?.badgeCounts?.silver}
+                              </StackBadge>
+                            ) : null
+                          }
+                          {
+                            props.stats?.stackOverflow?.badgeCounts?.bronze ? (
+                              <StackBadge type={STACK_BADGE_TYPE.bronze}>
+                                {props.stats?.stackOverflow?.badgeCounts?.bronze}
+                              </StackBadge>
+                            ) : null
+                          }
+                        </StackBadges>
+                      ) : null
+                    }
+                  </AdditionalInfoBox>
+                ) : null
+              }
+            </SocialItem>
+          </SocialIcons>
         </BoxStyled>
       </Container>
       <Footer />
@@ -173,11 +168,7 @@ const MainPage = (props) => {
 };
 
 MainPage.propTypes = {
-  loading: PropTypes.bool.isRequired,
   stats: statsShape.isRequired
-};
-
-MainPage.defaultProps = {
 };
 
 export default MainPage;

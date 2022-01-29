@@ -215,13 +215,13 @@ const TreeGreenCracowEight = styled(Tree)`
 const TreePinkTokyoOne = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 0;
-  left: 65rem;
+  left: 67rem;
 `;
 
 const TreePinkTokyoTwo = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 0;
-  left: 57rem;
+  left: 59rem;
 `;
 
 const TreePinkTokyoThree = styled(Tree)`
@@ -239,7 +239,7 @@ const TreePinkTokyoFour = styled(Tree)`
 const StyledSkyTree = styled(SkyTree)`
   ${ElementsCommonStyle};
   bottom: 0;
-  left: 52rem;
+  left: 54rem;
 `;
 
 const StyledStMarysBasilica = styled(StMarysBasilica)`

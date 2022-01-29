@@ -41,7 +41,7 @@ const StyledContainer = styled(Container)`
   transform: translateX(-50%);
   z-index: 2;
   // do wywalenia
-  opacity: .2;
+  //opacity: .2;
 `;
 
 const StyledBox = styled(Box)`
@@ -190,7 +190,6 @@ const WipBadge = styled.span`
   padding: .5rem;
   border: 2px solid ${(props) => props.theme.color.red};
   border-radius: 50%;
-  background: ${(props) => props.theme.monoColors.white};
   color: ${(props) => props.theme.color.red};
   vertical-align: middle;
 
@@ -256,7 +255,7 @@ const StackBadge = styled.li`
 const StyledFooter = styled(Footer)`
   position: absolute;
   right: -5rem;
-  bottom: 8rem;
+  bottom: 6.5rem;
   transform: rotate(-90deg);
   transform-origin: center;
   font-size: .9rem;

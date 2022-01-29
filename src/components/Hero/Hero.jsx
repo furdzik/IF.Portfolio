@@ -9,6 +9,7 @@ import {
   StyledCloud,
   StyledBirdOne,
   StyledBirdTwo,
+  StyledRiver,
   CracowWrapper,
   TokyoWrapper,
   StyledMtFuji,
@@ -18,6 +19,9 @@ import {
   TreeGreenCracowThree,
   TreeGreenCracowFour,
   TreeGreenCracowFive,
+  TreeGreenCracowSix,
+  TreeGreenCracowSeven,
+  TreeGreenCracowEight,
   TreePinkTokyoOne,
   TreePinkTokyoTwo,
   TreePinkTokyoThree,
@@ -47,6 +51,7 @@ const Hero = (props) => (
       <StyledCloud cloudType={cloudType.sixteen} />
       <StyledBirdOne />
       <StyledBirdTwo />
+      <StyledRiver />
       <CracowWrapper>
         <StyledMountains />
         <TreeGreenCracowOne color="green" isTaller />
@@ -54,7 +59,10 @@ const Hero = (props) => (
         <TreeGreenCracowThree color="green" isTaller />
         <TreeGreenCracowFour color="green" />
         <TreeGreenCracowFive color="green" />
-        {/* <StyledStMarysBasilica /> */}
+        <TreeGreenCracowSix color="green" />
+        <TreeGreenCracowSeven color="green" />
+        <TreeGreenCracowEight color="green" />
+        <StyledStMarysBasilica />
       </CracowWrapper>
       <TokyoWrapper>
         <StyledMtFuji />
@@ -64,6 +72,7 @@ const Hero = (props) => (
         <TreePinkTokyoFour color="pink" />
         <StyledSkyTree />
       </TokyoWrapper>
+
     </ContainerStyled>
   </Wrapper>
 );

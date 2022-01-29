@@ -15,6 +15,7 @@ import Bird from '@components/elements/Bird';
 import SkyTree from '@components/elements/SkyTree';
 import MtFuji from '@components/elements/MtFuji';
 import Tree from '@components/elements/Tree';
+import River from '@components/elements/River';
 import Mountains from '@components/elements/Mountains';
 import StMarysBasilica from '@components/elements/StMarysBasilica';
 
@@ -23,7 +24,7 @@ const Wrapper = styled.div`
   overflow: hidden;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(#c3eeef 90%, #75d3a9); // #77d4ab
+  background: linear-gradient(#c3eeef 67%, #75d3a9); // 90%
 `;
 
 const ContainerStyled = styled(Container)`
@@ -116,6 +117,12 @@ const StyledBirdTwo = styled(Bird)`
   transform: rotate(-38deg);
 `;
 
+const StyledRiver = styled(River)`
+  ${ElementsCommonStyleUnspecified};
+  bottom: 0;
+  left: -529px;
+`;
+
 const CracowWrapper = styled.div`
   position: absolute;
   right: 50%;
@@ -138,37 +145,37 @@ const StyledMtFuji = styled(MtFuji)`
 
 const StyledMountains = styled(Mountains)`
   ${ElementsCommonStyle};
-  right: -25rem; // -11rem;
+  right: -4rem;
   bottom: 45rem;
   z-index: 0;
 `;
 
 const TreeGreenCracowOne = styled(Tree)`
   ${ElementsCommonStyle};
-  right: -22.6rem;
+  right: .4rem;
   bottom: 41.7rem;
   left: auto;
   z-index: 2;
-  transform: scale(.7);
+  transform: scale(.5);
 `;
 
 const TreeGreenCracowTwo = styled(Tree)`
   ${ElementsCommonStyle};
-  bottom: 0;
+  bottom: 51px;
   left: 5.4rem;
   z-index: 3;
 `;
 
 const TreeGreenCracowThree = styled(Tree)`
   ${ElementsCommonStyle};
-  bottom: 0;
-  left: 0;
+  bottom: 111px;
+  left: -35px;
   z-index: 2;
 `;
 
 const TreeGreenCracowFour = styled(Tree)`
   ${ElementsCommonStyle};
-  bottom: 0;
+  bottom: 39px;
   left: 19.4rem;
   z-index: 2;
 `;
@@ -178,6 +185,31 @@ const TreeGreenCracowFive = styled(Tree)`
   bottom: 0;
   left: -22rem;
   z-index: 2;
+`;
+
+const TreeGreenCracowSix = styled(Tree)`
+  ${ElementsCommonStyle};
+  right: 5.4rem;
+  bottom: 43.7rem;
+  left: auto;
+  z-index: 2;
+  transform: scale(.5);
+`;
+
+const TreeGreenCracowSeven = styled(Tree)`
+  ${ElementsCommonStyle};
+  left: 390px;
+  bottom: -2.3rem;
+  z-index: 2;
+  transform: scale(.5);
+`;
+
+const TreeGreenCracowEight = styled(Tree)`
+  ${ElementsCommonStyle};
+  left: 318px;
+  bottom: 2.7rem;
+  z-index: 2;
+  transform: scale(.5);
 `;
 
 const TreePinkTokyoOne = styled(Tree)`
@@ -212,12 +244,10 @@ const StyledSkyTree = styled(SkyTree)`
 
 const StyledStMarysBasilica = styled(StMarysBasilica)`
   ${ElementsCommonStyleUnspecified};
-  //bottom: 27px;
-  //left: 129px;
-  bottom: 27px;
-  left: 616px;
-  z-index: 1110;
-  transform: translateX(-50%);
+  bottom: 313px;
+  left: 292px;
+  //z-index: 1110;
+  //transform: translateX(-50%);
 `;
 
 export {
@@ -226,6 +256,7 @@ export {
   StyledCloud,
   StyledBirdOne,
   StyledBirdTwo,
+  StyledRiver,
   CracowWrapper,
   TokyoWrapper,
   StyledMtFuji,
@@ -235,6 +266,9 @@ export {
   TreeGreenCracowThree,
   TreeGreenCracowFour,
   TreeGreenCracowFive,
+  TreeGreenCracowSix,
+  TreeGreenCracowSeven,
+  TreeGreenCracowEight,
   TreePinkTokyoOne,
   TreePinkTokyoTwo,
   TreePinkTokyoThree,

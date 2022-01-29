@@ -20,6 +20,8 @@ const Wrapper = styled.div`
   ${ElementsCommonStyleUnspecified};
   width: 176px;
   height: 374px;
+  //width: 205px;
+  //height: 435px;
   background: #2581bc; // do wywalenia
   background: #2581bc url(${smaller}) center bottom no-repeat; // do wywalenia
   background-size: contain;

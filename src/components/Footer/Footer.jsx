@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useIntl } from 'react-intl';
 
-import Container from '@components/Container';
-
 import {
   Wrapper
 } from './Footer.styles.js';
@@ -17,11 +15,9 @@ const Footer = (props) => {
     <Wrapper
       className={props.className}
     >
-      <Container>
-        {intl.formatMessage(messages.copyright, {
-          currentYear
-        })}
-      </Container>
+      {intl.formatMessage(messages.copyright, {
+        currentYear
+      })}
     </Wrapper>
   );
 };

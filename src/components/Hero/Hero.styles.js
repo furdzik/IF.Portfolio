@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 60rem;
+  height: 100vh;
   background: linear-gradient(#c3eeef 90%, #75d3a9); // #77d4ab
 `;
 
@@ -51,8 +51,8 @@ const StyledCloud = styled(Cloud)`
     right: -17rem;
   `};
   ${(props) => props.cloudType === cloudType.five && css`
-    top: 9rem;
-    left: -4rem;
+    top: 2rem;
+    left: -10rem;
   `};
   ${(props) => props.cloudType === cloudType.six && css`
     top: 7rem;
@@ -91,8 +91,8 @@ const StyledCloud = styled(Cloud)`
     left: 35rem;
   `};
   ${(props) => props.cloudType === cloudType.fifteen && css`
-    top: 9rem;
-    left: -6rem;
+    top: 3rem;
+    left: -14.5rem;
   `};
   ${(props) => props.cloudType === cloudType.sixteen && css`
     top: 30rem;
@@ -132,23 +132,24 @@ const TokyoWrapper = styled.div`
 
 const StyledMtFuji = styled(MtFuji)`
   ${ElementsCommonStyle};
-  bottom: 0;
-  left: 18rem;
+  bottom: 40.5rem;
+  left: 40rem;
 `;
 
 const StyledMountains = styled(Mountains)`
   ${ElementsCommonStyle};
   right: -25rem; // -11rem;
-  bottom: 0;
+  bottom: 45rem;
   z-index: 0;
 `;
 
 const TreeGreenCracowOne = styled(Tree)`
   ${ElementsCommonStyle};
-  right: -16.6rem; // -2.6rem; // 6.4rem
-  bottom: 0;
+  right: -22.6rem;
+  bottom: 41.7rem;
   left: auto;
   z-index: 2;
+  transform: scale(.7);
 `;
 
 const TreeGreenCracowTwo = styled(Tree)`
@@ -206,15 +207,15 @@ const TreePinkTokyoFour = styled(Tree)`
 const StyledSkyTree = styled(SkyTree)`
   ${ElementsCommonStyle};
   bottom: 0;
-  left: 17rem;
+  left: 52rem;
 `;
 
 const StyledStMarysBasilica = styled(StMarysBasilica)`
   ${ElementsCommonStyleUnspecified};
-  bottom: 31px;
-  left: 142px;
-  //bottom: 10px;
-  //left: 50%;
+  //bottom: 27px;
+  //left: 129px;
+  bottom: 27px;
+  left: 616px;
   z-index: 1110;
   transform: translateX(-50%);
 `;

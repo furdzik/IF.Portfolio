@@ -14,6 +14,9 @@ import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from '@constants';
 import { breakpointMixin } from '@styles/mixins';
 
 import Box from '@components/Box';
+import Container from '@components/Container';
+import Footer from '@components/Footer';
+
 import Cat from '@components/elements/Cat';
 
 const Heading = styled.h1`
@@ -30,6 +33,25 @@ const SubHeading = styled.h2`
   white-space: pre-line;
 `;
 
+const StyledContainer = styled(Container)`
+  width: 100rem;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  // do wywalenia
+  opacity: .2;
+`;
+
+const StyledBox = styled(Box)`
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: rgb(255 255 255 / 88%);
+`;
+
 const MainBox = styled.div`
   width: 100%;
 
@@ -37,14 +59,6 @@ const MainBox = styled.div`
     order: 1;
     width: auto;
   `)};
-`;
-
-const BoxStyled = styled(Box)`
-  z-index: 3;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  margin-top: -1rem;
 `;
 
 const SocialIcons = styled.ul`
@@ -239,10 +253,21 @@ const StackBadge = styled.li`
   `};
 `;
 
+const StyledFooter = styled(Footer)`
+  position: absolute;
+  right: -5rem;
+  bottom: 8rem;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  font-size: .9rem;
+  color: #646464;
+`;
+
 export {
   Heading,
   SubHeading,
-  BoxStyled,
+  StyledContainer,
+  StyledBox,
   MainBox,
   SocialIcons,
   SocialItem,
@@ -258,5 +283,6 @@ export {
   WipBadge,
   Number,
   StackBadges,
-  StackBadge
+  StackBadge,
+  StyledFooter
 };

@@ -12,7 +12,6 @@ import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from '@constants';
 
 import { statsShape } from '@types/statsShape';
 
-import Container from '@components/Container';
 import Hero from '@components/Hero';
 import Footer from '@components/Footer';
 
@@ -21,7 +20,8 @@ import Me from '@components/elements/Me';
 import {
   Heading,
   SubHeading,
-  BoxStyled,
+  StyledContainer,
+  StyledBox,
   MainBox,
   SocialIcons,
   SocialItem,
@@ -37,7 +37,8 @@ import {
   WipBadge,
   Number,
   StackBadges,
-  StackBadge
+  StackBadge,
+  StyledFooter
 } from './MainPage.styles';
 import messages from './MainPage.messages';
 
@@ -47,8 +48,8 @@ const MainPage = (props) => {
   return (
     <React.Fragment>
       <Hero />
-      <Container>
-        <BoxStyled>
+      <StyledContainer>
+        <StyledBox>
           <MainBox>
             <Heading>{intl.formatMessage(messages.mainHeading)}</Heading>
             <SubHeading>{intl.formatMessage(messages.subHeading)}</SubHeading>
@@ -160,9 +161,9 @@ const MainPage = (props) => {
               }
             </SocialItem>
           </SocialIcons>
-        </BoxStyled>
-      </Container>
-      <Footer />
+          <StyledFooter />
+        </StyledBox>
+      </StyledContainer>
     </React.Fragment>
   );
 };

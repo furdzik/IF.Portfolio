@@ -13,11 +13,11 @@ const Box = (props) => (
   <Wrapper
     className={props.className}
   >
-    <TopLeftCorner />
-    <TopRightCorner />
+    {/*<TopLeftCorner />*/}
+    {/*<TopRightCorner />*/}
     {props.children}
-    <BottomLeftCorner />
-    <BottomRightCorner />
+    {/*<BottomLeftCorner />*/}
+    {/*<BottomRightCorner />*/}
   </Wrapper>
 );
 

@@ -54,6 +54,7 @@ const Hero = (props) => (
         <TreeGreenCracowThree color="green" isTaller />
         <TreeGreenCracowFour color="green" />
         <TreeGreenCracowFive color="green" />
+        {/* <StyledStMarysBasilica /> */}
       </CracowWrapper>
       <TokyoWrapper>
         <StyledMtFuji />
@@ -63,8 +64,6 @@ const Hero = (props) => (
         <TreePinkTokyoFour color="pink" />
         <StyledSkyTree />
       </TokyoWrapper>
-
-      <StyledStMarysBasilica />
     </ContainerStyled>
   </Wrapper>
 );

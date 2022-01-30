@@ -49,7 +49,7 @@ const MainPage = (props) => {
     <React.Fragment>
       <Hero />
       <StyledContainer>
-        <StyledBox>
+        <StyledBox showDecorations>
           <MainBox>
             <Heading>{intl.formatMessage(messages.mainHeading)}</Heading>
             <SubHeading>{intl.formatMessage(messages.subHeading)}</SubHeading>

@@ -139,7 +139,7 @@ const TokyoWrapper = styled.div`
 
 const StyledMtFuji = styled(MtFuji)`
   ${ElementsCommonStyle};
-  bottom: 40.5rem;
+  bottom: 42.5rem;
   left: 40rem;
 `;
 
@@ -244,8 +244,8 @@ const StyledSkyTree = styled(SkyTree)`
 
 const StyledStMarysBasilica = styled(StMarysBasilica)`
   ${ElementsCommonStyleUnspecified};
-  bottom: 313px;
-  left: 292px;
+  bottom: 360px;
+  left: 381px;
   //z-index: 1110;
   //transform: translateX(-50%);
 `;

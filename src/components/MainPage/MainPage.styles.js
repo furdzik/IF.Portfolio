@@ -36,7 +36,7 @@ const SubHeading = styled.h2`
 const StyledContainer = styled(Container)`
   width: 100rem;
   position: absolute;
-  bottom: 5%;
+  bottom: 4%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;

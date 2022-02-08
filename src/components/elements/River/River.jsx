@@ -17,7 +17,7 @@ const River = (props) => (
 );
 
 River.propTypes = {
-  className: PropTypes.string,
+  className: PropTypes.string
 };
 
 River.defaultProps = {

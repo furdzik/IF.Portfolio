@@ -13,7 +13,6 @@ import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from '@constants';
 import { statsShape } from '@types/statsShape';
 
 import Hero from '@components/Hero';
-import Footer from '@components/Footer';
 
 import Me from '@components/elements/Me';
 

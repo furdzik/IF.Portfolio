@@ -7,10 +7,6 @@ import {
   TopRightCorner,
   BottomLeftCorner,
   BottomRightCorner,
-  RoundDecorationOne,
-  RoundDecorationTwo,
-  RoundDecorationThree,
-  RoundDecorationFour,
   StarDecorationOne,
   StarDecorationTwo,
   StarDecorationThree

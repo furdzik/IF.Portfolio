@@ -48,8 +48,8 @@ const Wrapper = styled.div`
       z-index: 4;
       width: 1447px;
       height: 672px;
-      border-radius: 50%;
-      background: #79d5ad;
+      border-radius: 50% 50% 0 0;
+      background: linear-gradient(#79d5ad 9%, #91ddc2 51%, #79d4ac 63%);
     }
     &:nth-of-type(4) {
       bottom: -10rem;

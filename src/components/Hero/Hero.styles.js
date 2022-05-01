@@ -14,10 +14,12 @@ import Cloud from '@components/elements/Cloud';
 import Bird from '@components/elements/Bird';
 import SkyTree from '@components/elements/SkyTree';
 import MtFuji from '@components/elements/MtFuji';
+import CityGround from '@components/elements/CityGround';
 import Tree from '@components/elements/Tree';
 import River from '@components/elements/River';
 import Mountains from '@components/elements/Mountains';
 import StMarysBasilica from '@components/elements/StMarysBasilica';
+import TrainTracks from '@components/elements/TrainTracks';
 
 const Wrapper = styled.div`
   position: relative;
@@ -121,6 +123,7 @@ const StyledRiver = styled(River)`
   ${ElementsCommonStyleUnspecified};
   bottom: 0;
   left: -529px;
+  z-index: 2;
 `;
 
 const CracowWrapper = styled.div`
@@ -135,12 +138,20 @@ const TokyoWrapper = styled.div`
   left: 50%;
   width: 100%;
   height: 100%;
+  //outline: 1px dotted gray;
 `;
 
 const StyledMtFuji = styled(MtFuji)`
   ${ElementsCommonStyle};
-  bottom: 42.5rem;
+  bottom: 43.5rem;
   left: 40rem;
+`;
+
+const StyledCityGround = styled(CityGround)`
+  ${ElementsCommonStyle};
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 `;
 
 const StyledMountains = styled(Mountains)`
@@ -216,30 +227,36 @@ const TreePinkTokyoOne = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 0;
   left: 67rem;
+  z-index: 3;
 `;
 
 const TreePinkTokyoTwo = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 0;
   left: 59rem;
+  z-index: 3;
 `;
 
 const TreePinkTokyoThree = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 0;
   left: 86rem;
+  z-index: 3;
 `;
 
 const TreePinkTokyoFour = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 0;
   left: 109rem;
+  z-index: 3;
 `;
 
 const StyledSkyTree = styled(SkyTree)`
   ${ElementsCommonStyle};
-  bottom: 0;
+  bottom: -3rem;
   left: 54rem;
+  transform: scale(0.9);
+  z-index: 3;
 `;
 
 const StyledStMarysBasilica = styled(StMarysBasilica)`
@@ -248,6 +265,13 @@ const StyledStMarysBasilica = styled(StMarysBasilica)`
   left: 381px;
   //z-index: 1110;
   //transform: translateX(-50%);
+`;
+
+const StyledTrainTracks = styled(TrainTracks)`
+  ${ElementsCommonStyleUnspecified};
+  bottom: 0;
+  left: 200px;
+  z-index: 2;
 `;
 
 export {
@@ -260,6 +284,7 @@ export {
   CracowWrapper,
   TokyoWrapper,
   StyledMtFuji,
+  StyledCityGround,
   StyledMountains,
   TreeGreenCracowOne,
   TreeGreenCracowTwo,
@@ -274,5 +299,6 @@ export {
   TreePinkTokyoThree,
   TreePinkTokyoFour,
   StyledSkyTree,
-  StyledStMarysBasilica
+  StyledStMarysBasilica,
+  StyledTrainTracks
 };

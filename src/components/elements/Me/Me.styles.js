@@ -7,7 +7,7 @@ const AreaWrapper = styled.div`
   position: relative;
   width: 12.3rem;
   height: 18.6rem;
-  box-shadow: .5rem 1.6rem 1.3rem -1.7rem #a5a3a3;
+  //box-shadow: 0 1.6rem 1.3rem -1.7rem #a5a3a3;
 `;
 
 const MeWrapper = styled.div`
@@ -44,18 +44,9 @@ const Hair = styled.div`
       left: 2.1rem;
       z-index: 2;
       transform: rotate(27deg);
-      width: 10.9rem;
+      width: 10rem;
       height: 3.2rem;
       border-radius: 28.4rem 28.4rem 0 23rem / 8.3rem 18.1rem 8.3rem 4.9rem;
-    }
-    &:nth-of-type(4) {
-      top: 5.5rem;
-      right: 0;
-      z-index: 2;
-      transform: rotate(4deg);
-      width: .6rem;
-      height: 3rem;
-      background: #ffffff;
     }
   }
 `;

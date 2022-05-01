@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 
 import {
   Wrapper,
-  Vistula
+  Vistula,
+  Arakawa
 } from './River.styles.js';
 
 const River = (props) => (
@@ -13,6 +14,9 @@ const River = (props) => (
     <Vistula>
       <span /><span /><span /><span /><span /><span /><span />
     </Vistula>
+    <Arakawa>
+      <span /><span /><span /><span /><span /><span /><span /><span />
+    </Arakawa>
   </Wrapper>
 );
 

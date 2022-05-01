@@ -34,14 +34,12 @@ const SubHeading = styled.h2`
 `;
 
 const StyledContainer = styled(Container)`
-  width: 100rem;
   position: absolute;
   bottom: 4%;
   left: 50%;
-  transform: translateX(-50%);
   z-index: 2;
-  // do wywalenia
-  //opacity: .2;
+  transform: translateX(-50%);
+  width: 100rem;
 `;
 
 const StyledBox = styled(Box)`
@@ -188,7 +186,7 @@ const WipBadge = styled.span`
   height: 3rem;
   margin-left: 2rem;
   padding: .5rem;
-  border: 2px solid ${(props) => props.theme.color.red};
+  border: .2rem solid ${(props) => props.theme.color.red};
   border-radius: 50%;
   color: ${(props) => props.theme.color.red};
   vertical-align: middle;

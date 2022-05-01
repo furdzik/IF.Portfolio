@@ -122,7 +122,7 @@ const StyledBirdTwo = styled(Bird)`
 const StyledRiver = styled(River)`
   ${ElementsCommonStyleUnspecified};
   bottom: 0;
-  left: -529px;
+  left: -52.9rem;
   z-index: 2;
 `;
 
@@ -138,7 +138,6 @@ const TokyoWrapper = styled.div`
   left: 50%;
   width: 100%;
   height: 100%;
-  //outline: 1px dotted gray;
 `;
 
 const StyledMtFuji = styled(MtFuji)`
@@ -172,21 +171,21 @@ const TreeGreenCracowOne = styled(Tree)`
 
 const TreeGreenCracowTwo = styled(Tree)`
   ${ElementsCommonStyle};
-  bottom: 51px;
+  bottom: 5.1rem;
   left: 5.4rem;
   z-index: 3;
 `;
 
 const TreeGreenCracowThree = styled(Tree)`
   ${ElementsCommonStyle};
-  bottom: 111px;
-  left: -35px;
+  bottom: 11.1rem;
+  left: -3.5rem;
   z-index: 2;
 `;
 
 const TreeGreenCracowFour = styled(Tree)`
   ${ElementsCommonStyle};
-  bottom: 39px;
+  bottom: 3.9rem;
   left: 19.4rem;
   z-index: 2;
 `;
@@ -209,16 +208,16 @@ const TreeGreenCracowSix = styled(Tree)`
 
 const TreeGreenCracowSeven = styled(Tree)`
   ${ElementsCommonStyle};
-  left: 390px;
   bottom: -2.3rem;
+  left: 39rem;
   z-index: 2;
   transform: scale(.5);
 `;
 
 const TreeGreenCracowEight = styled(Tree)`
   ${ElementsCommonStyle};
-  left: 318px;
   bottom: 2.7rem;
+  left: 31.8rem;
   z-index: 2;
   transform: scale(.5);
 `;
@@ -253,40 +252,40 @@ const TreePinkTokyoFour = styled(Tree)`
 
 const TreePinkTokyoFive = styled(Tree)`
   ${ElementsCommonStyle};
-  bottom: 76px;
-  left: 743px;
-  transform: scale(.4);
+  bottom: 7.6rem;
+  left: 74.3rem;
   z-index: 2;
+  transform: scale(.4);
 `;
 
 const TreePinkTokyoSix = styled(Tree)`
   ${ElementsCommonStyle};
-  bottom: 88px;
-  left: 717px;
-  transform: scale(.4);
+  bottom: 8.8rem;
+  left: 71.7rem;
   z-index: 2;
+  transform: scale(.4);
 `;
 
 const TreePinkTokyoSeven = styled(Tree)`
   ${ElementsCommonStyle};
-  bottom: 139px;
-  left: 682px;
-  transform: scale(.4);
+  bottom: 13.9rem;
+  left: 68.2rem;
   z-index: 2;
+  transform: scale(.4);
 `;
 
 const StyledSkyTree = styled(SkyTree)`
   ${ElementsCommonStyle};
   bottom: -3rem;
   left: 54rem;
-  transform: scale(0.9);
   z-index: 3;
+  transform: scale(0.9);
 `;
 
 const StyledStMarysBasilica = styled(StMarysBasilica)`
   ${ElementsCommonStyleUnspecified};
-  bottom: 360px;
-  left: 381px;
+  bottom: 36rem;
+  left: 38.1rem;
   //z-index: 1110;
   //transform: translateX(-50%);
 `;
@@ -294,7 +293,7 @@ const StyledStMarysBasilica = styled(StMarysBasilica)`
 const StyledTrainTracks = styled(TrainTracks)`
   ${ElementsCommonStyleUnspecified};
   bottom: 0;
-  left: 200px;
+  left: 20rem;
   z-index: 2;
 `;
 

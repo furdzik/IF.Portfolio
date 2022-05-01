@@ -25,93 +25,93 @@ const Vistula = styled.div`
     }
 
     &:nth-of-type(1) {
-      width: 277px;
-      height: 202px;
-      border-radius: 65%;
       bottom: -109px;
       left: -22px;
       transform: rotate(-36deg);
+      width: 277px;
+      height: 202px;
+      border-radius: 65%;
       &::before {
-        width: 18px;
-        height: 22px;
         bottom: 147px;
         left: 175px;
         transform: rotate(-76deg);
+        width: 18px;
+        height: 22px;
       }
     }
     &:nth-of-type(2) {
-      width: 222px;
-      height: 131px;
-      border-radius: 65%;
       bottom: -16px;
       left: 63px;
       transform: rotate(-6deg);
+      width: 222px;
+      height: 131px;
+      border-radius: 65%;
       &::before {
-        width: 18px;
-        height: 18px;
         bottom: 76px;
         left: 150px;
         transform: rotate(-75deg);
+        width: 18px;
+        height: 18px;
       }
     }
     &:nth-of-type(3) {
-      width: 197px;
-      height: 80px;
-      border-radius: 65%;
       bottom: 27px;
       left: 153px;
       transform: rotate(15deg);
+      width: 197px;
+      height: 80px;
+      border-radius: 65%;
     }
     &:nth-of-type(4) {
-      width: 197px;
-      height: 144px;
-      border-radius: 65%;
       bottom: -74px;
       left: 214px;
       transform: rotate(50deg);
+      width: 197px;
+      height: 144px;
+      border-radius: 65%;
     }
     &:nth-of-type(5) {
-      width: 265px;
-      height: 147px;
-      border-radius: 65%;
       bottom: -43px;
       left: 332px;
       transform: rotate(17deg);
+      width: 265px;
+      height: 147px;
       border-top: 0;
       border-bottom: 39px solid #298cef;
+      border-radius: 65%;
       &::before {
-        width: 95px;
-        border-width: 12px;
-        height: 0;
         bottom: 2px;
         left: 15px;
         transform: rotate(18deg);
+        width: 95px;
+        height: 0;
+        border-width: 12px;
       }
     }
     &:nth-of-type(6) {
-      width: 408px;
-      height: 215px;
-      border-radius: 65%;
       bottom: -154px;
       left: 630px;
       transform: rotate(-2deg);
+      width: 408px;
+      height: 215px;
+      border-radius: 65%;
     }
     &:nth-of-type(7) {
-      width: 265px;
-      height: 104px;
-      border-radius: 65%;
       bottom: -35px;
       left: 958px;
       transform: rotate(11deg);
+      width: 265px;
+      height: 104px;
       border-top: 0;
       border-bottom: 39px solid #298cef;
+      border-radius: 65%;
       &::before {
-        width: 95px;
-        border-width: 12px;
-        height: 0;
         bottom: -28px;
         left: -22px;
         transform: rotate(15deg);
+        width: 95px;
+        height: 0;
+        border-width: 12px;
       }
     }
   }
@@ -119,9 +119,9 @@ const Vistula = styled.div`
 
 const Arakawa = styled.div`
   ${ElementsCommonStyleUnspecified};
+  left: 61%;
   width: 352px;
   height: 100%;
-  left: 61%;
 
   span {
     ${ElementsCommonStyleUnspecified};
@@ -131,13 +131,13 @@ const Arakawa = styled.div`
     }
 
     &:nth-of-type(1) {
+      bottom: -216px;
+      left: -102px;
+      transform: rotate(21deg);
       width: 721px;
       height: 542px;
       border-radius: 50% 50% 0 0;
       background: #e1e1e1;
-      left: -102px;
-      bottom: -216px;
-      transform: rotate(21deg);
     }
     &:nth-of-type(2) {
       bottom: -60px;
@@ -151,131 +151,128 @@ const Arakawa = styled.div`
         background: #3785d3;
       }
       &::after {
-        left: 207px;
         bottom: 0;
+        left: 207px;
         width: 102px;
         height: 174px;
         background: #3785d3;
       }
     }
     &:nth-of-type(3) {
-      width: 383px;
-      height: 483px;
-      border-radius: 65%;
       bottom: -168px;
       left: -9px;
-      border-left: 37px solid #2d393e;
       transform: rotate(-7deg);
+      width: 383px;
+      height: 483px;
+      border-left: 37px solid #2d393e;
+      border-radius: 65%;
       &::before {
-        width: 59px;
-        height: 155px;
-        border-radius: 33%;
         bottom: 323px;
         left: 24px;
-        border-left: 22px solid #2d393e;
         transform: rotate(43deg);
+        width: 59px;
+        height: 155px;
+        border-left: 22px solid #2d393e;
+        border-radius: 33%;
       }
       &::after {
-        width: 97px;
-        height: 159px;
-        border-radius: 50%;
         bottom: 355px;
         left: 96px;
-        border-left: 28px solid #2d393e;
         transform: rotate(91deg);
+        width: 97px;
+        height: 159px;
+        border-left: 28px solid #2d393e;
+        border-radius: 50%;
       }
     }
     &:nth-of-type(4) {
-      width: 255px;
-      height: 136px;
       bottom: 189px;
       left: 15px;
+      width: 255px;
+      height: 136px;
       &::before {
-        width: 0;
-        height: 29px;
-        border-radius: 22px 0 0 0;
-        border-left: 87px solid #2d393e;
         bottom: 94px;
         left: 118px;
-      }
-      &::after {
-
+        width: 0;
+        height: 29px;
+        border-left: 87px solid #2d393e;
+        border-radius: 22px 0 0;
       }
     }
     &:nth-of-type(5) {
-      width: 252px;
-      height: 539px;
-      border-radius: 65%;
       bottom: -165px;
       left: 254px;
-      border-left: 80px solid #7c9ca9;
       transform: rotate(-35deg);
+      width: 252px;
+      height: 539px;
+      border-left: 80px solid #7c9ca9;
+      border-radius: 65%;
       &::before {
         bottom: 97px;
         left: -19px;
-        width: 0;
-        border-left: 57px solid #7c9ca9;
-        height: 258px;
         transform: rotate(-19deg);
+        width: 0;
+        height: 258px;
+        border-left: 57px solid #7c9ca9;
       }
     }
     &:nth-of-type(6) {
+      bottom: -198px;
+      left: 251px;
+      transform: rotate(-38deg);
       width: 139px;
       height: 534px;
-      left: 251px;
-      bottom: -198px;
-      transform: rotate(-38deg);
       &::before {
+        bottom: -15px;
+        left: 23px;
         width: 175%;
         height: 100%;
-        left: 23px;
-        bottom: -15px;
-        border-radius: 65%;
         border-left: 2px solid #5b7681;
+        border-radius: 65%;
       }
       &::after {
+        bottom: -15px;
+        left: 43px;
+        transform: rotate(-5deg);
         width: 175%;
         height: 100%;
-        left: 43px;
-        bottom: -15px;
-        border-radius: 65%;
         border-left: 2px solid #5b7681;
-        transform: rotate(-5deg);
+        border-radius: 65%;
       }
     }
     &:nth-of-type(7) {
+      bottom: -198px;
+      left: 251px;
+      transform: rotate(-38deg);
       width: 139px;
       height: 534px;
-      left: 251px;
-      bottom: -198px;
-      transform: rotate(-38deg);
       &::before {
+        bottom: -15px;
+        left: 64px;
+        transform: rotate(-7deg);
         width: 175%;
         height: 100%;
-        left: 64px;
-        bottom: -15px;
-        border-radius: 65%;
         border-left: 2px solid #5b7681;
-        transform: rotate(-7deg);
+        border-radius: 65%;
       }
       &::after {
+        bottom: -15px;
+        left: 85px;
+        transform: rotate(-9deg);
         width: 175%;
         height: 100%;
-        left: 85px;
-        bottom: -15px;
-        border-radius: 65%;
         border-left: 2px solid #5b7681;
-        transform: rotate(-9deg);
+        border-radius: 65%;
       }
     }
     &:nth-of-type(8) {
+      bottom: 267px;
+      left: 222px;
+      transform: rotate(-13deg);
       width: 40px;
       height: 70px;
-      background: #e1e1e1;
-      left: 222px;
-      bottom: 267px;
       border-radius: 50%;
-      transform: rotate(-13deg);
+      background: #e1e1e1;
     }
   }
 `;

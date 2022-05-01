@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   padding: 2rem 3rem 3rem;
   border-radius: 1rem;
   background: ${(props) => props.theme.monoColors.white};
-  box-shadow: 1px 1px 33px 2px rgb(255 255 255 / 21%), 1px 1px 10px 2px rgb(0 0 0 / 30%);
+  box-shadow: .1rem .1rem 3.3rem .2rem rgb(255 255 255 / 21%), .1rem .1rem 1rem .2rem rgb(0 0 0 / 30%);
 
   // Do wywalenia
   // opacity: 0.2;
@@ -110,56 +110,56 @@ const BottomRightCorner = styled.div`
 
 const RoundDecoration = styled.span`
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
-  box-shadow: 1px 1px 23px 2px rgb(255 255 255 / 36%), 1px 1px 10px 2px rgb(0 0 0 / 35%);
   background: rgb(255 255 255 / 35%);
+  box-shadow: .1rem .1rem 2.3rem .2rem rgb(255 255 255 / 36%), .1rem .1rem 1rem .2rem rgb(0 0 0 / 35%);
 `;
 
 const RoundDecorationOne = styled(RoundDecoration)`
-  border: 3px solid #d12665;
-  top: 70px;
-  left: -54px;
+  top: 7rem;
+  left: -5.4rem;
+  border: .3rem solid #d12665;
 `;
 
 const RoundDecorationTwo = styled(RoundDecoration)`
-  border: 3px solid #d12665;
-  top: 70px;
-  left: -54px;
+  top: 7rem;
+  left: -5.4rem;
+  border: .3rem solid #d12665;
 `;
 
 const RoundDecorationThree = styled(RoundDecoration)`
-  border: 3px solid #d12665;
-  top: 70px;
-  left: -54px;
+  top: 7rem;
+  left: -5.4rem;
+  border: .3rem solid #d12665;
 `;
 
 const RoundDecorationFour = styled(RoundDecoration)`
-  border: 3px solid #8e26d1;
-  bottom: -39px;
-  right: 21px;
-  box-shadow: 1px 1px 23px 2px rgb(255 255 255 / 36%), 1px 1px 10px 2px rgb(255 255 255 / 35%);
+  right: 2.1rem;
+  bottom: -3.9rem;
+  border: .3rem solid #8e26d1;
+  box-shadow: .1rem .1rem 2.3rem .2rem rgb(255 255 255 / 36%), .1rem .1rem 1rem .2rem rgb(255 255 255 / 35%);
 `;
 
 const StarDecorationOne = styled(StarDecoration)`
   position: absolute;
-  top: 14px;
-  left: -35px;
+  top: 1.4rem;
+  left: -3.5rem;
   transform: rotate(-66deg);
 `;
 
 const StarDecorationTwo = styled(StarDecoration)`
   position: absolute;
-  top: -21px;
-  left: -47px;
+  top: -2.1rem;
+  left: -4.7rem;
   transform: rotate(-66deg);
 `;
 
 const StarDecorationThree = styled(StarDecoration)`
   position: absolute;
-  top: -23px;
-  left: -18px;
+  top: -2.3rem;
+  left: -1.8rem;
   transform: rotate(-66deg);
 `;
 

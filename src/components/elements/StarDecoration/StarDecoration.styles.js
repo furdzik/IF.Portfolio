@@ -13,13 +13,12 @@ const StarWrapper = styled.span`
   width: 100%;
   height: 100%;
 
-  &::before, &:after {
+  &::before, &::after {
     content: '';
     position: absolute;
     display: block;
-
-    background: ${(props) => props.color};
     border-radius: 50%;
+    background: ${(props) => props.color};
   }
   &::before {
     top: 5.5%;
@@ -27,33 +26,33 @@ const StarWrapper = styled.span`
     width: 14%;
     height: 89%;
   }
-  &:after {
-    width: 89%;
-    height: 14%;
+  &::after {
     top: 44%;
     left: 5.5%;
+    width: 89%;
+    height: 14%;
   }
 
   span {
     position: absolute;
     display: block;
+    overflow: hidden;
     width: ${(props) => props.size}px;
     height: ${(props) => props.size}px;
-    overflow: hidden;
     &::before {
       content: '';
+      position: absolute;
       display: block;
       width: 200%;
       height: 200%;
-      position: absolute;
       border-radius: 50%;
     }
     &:nth-of-type(1) {
       top: 0;
       left: 0;
       &::before {
-        bottom: 0;
         right: 0;
+        bottom: 0;
         box-shadow: ${(props) => props.size / 2}px ${(props) => props.size / 2}px 0 0 ${(props) => props.color};
       }
     }
@@ -72,7 +71,7 @@ const StarWrapper = styled.span`
       &::before {
         top: 0;
         right: 0;
-        box-shadow: ${(props) => props.size / 2}px -${(props) => props.size / 2}px 0 0 ${(props) => props.color};
+        box-shadow: ${(props) => props.size / 2}px (-${(props) => props.size / 2}px) 0 0 ${(props) => props.color};
       }
     }
     &:nth-of-type(4) {
@@ -81,11 +80,10 @@ const StarWrapper = styled.span`
       &::before {
         top: 0;
         left: 0;
-        box-shadow: -${(props) => props.size / 2}px -${(props) => props.size / 2}px 0 0 ${(props) => props.color};
+        box-shadow: -${(props) => props.size / 2}px (-${(props) => props.size / 2}px) 0 0 ${(props) => props.color};
       }
     }
   }
-
 `;
 
 export {

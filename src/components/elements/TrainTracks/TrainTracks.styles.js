@@ -10,7 +10,6 @@ const Wrapper = styled.div`
 
 const MainTrainTracksBridge = styled.div`
   ${ElementsCommonStyle};
-  //outline: 1px dotted red;
   width: 100%;
   height: 17rem;
 
@@ -30,8 +29,8 @@ const MainTrainTracksBridge = styled.div`
         left: -30px;
         width: 30px;
         height: 100%;
-        border-style: solid;
         border-width: 26px 30px 0 0;
+        border-style: solid;
         border-color: transparent #3e5662;
       }
       &::after {
@@ -39,47 +38,47 @@ const MainTrainTracksBridge = styled.div`
         left: -48px;
         width: 0;
         height: 0;
-        border-style: solid;
         border-width: 0 0 260px 20px;
+        border-style: solid;
         border-color: #3e5662 transparent;
       }
     }
     &:nth-of-type(2) {
       bottom: 83px;
       left: 279px;
+      transform: rotate(-4deg);
       width: 830px;
       height: 23px;
       background: #617886;
-      transform: rotate(-4deg);
       &::before {
         bottom: 19px;
         left: -44px;
         width: 0;
         height: 100%;
-        border-style: solid;
         border-width: 5px 0 0 874px;
+        border-style: solid;
         border-color: transparent #3e5662;
-        border-radius: 17px 0 0 0;
+        border-radius: 17px 0 0;
       }
       &::after {
         bottom: -88px;
         left: 352px;
+        transform: rotate(-12deg);
         width: 36px;
         height: 0;
-        transform: rotate(-12deg);
-        border-style: solid;
         border-width: 94px 8px 0;
+        border-style: solid;
         border-color: #617886 transparent;
       }
     }
     &:nth-of-type(3) {
       bottom: -16px;
       left: 203px;
+      transform: rotate(-12deg);
       width: 36px;
       height: 0;
-      transform: rotate(-12deg);
-      border-style: solid;
       border-width: 54px 8px 0;
+      border-style: solid;
       border-color: #617886 transparent;
     }
   }
@@ -87,16 +86,13 @@ const MainTrainTracksBridge = styled.div`
 
 const MainTrainTracks = styled.div`
   ${ElementsCommonStyle};
-  //outline: 1px dotted blue;
   width: 100%;
   height: 17rem;
 
   span {
-    &::before, &::after {
-      content: '';
-    }
     &::before,
     &::after {
+      content: '';
       width: 100%;
       border-top: 2px solid black;
     }
@@ -116,15 +112,15 @@ const MainTrainTracks = styled.div`
       }
     }
     &:nth-of-type(2) {
+      bottom: 51px;
       left: 192px;
       width: 82px;
       height: 53px;
-      bottom: 51px;
 
       &::before {
         bottom: 21px;
-        transform: rotate(-22deg);
         left: -2px;
+        transform: rotate(-22deg);
         width: 77%;
       }
       &::after {
@@ -135,23 +131,23 @@ const MainTrainTracks = styled.div`
       }
     }
     &:nth-of-type(3) {
+      bottom: 70px;
       left: 248px;
       width: 1082px;
       height: 60px;
-      bottom: 70px;
 
       &::before, &::after {
         width: 0;
         height: 0;
-        border-style: solid;
         border-width: 1px 0 1px 815px;
+        border-style: solid;
         border-color: transparent black;
       }
 
       &::before {
         bottom: 42px;
-        transform: rotate(-4deg);
         left: 2px;
+        transform: rotate(-4deg);
       }
       &::after {
         bottom: 37px;

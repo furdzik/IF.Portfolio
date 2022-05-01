@@ -25,22 +25,22 @@ const Wrapper = styled.div`
         bottom: -48px;
         left: -63px;
         z-index: 4;
+        transform: rotate(-38deg);
         width: 337px;
         height: 250px;
         border-radius: 50%;
         background: #6fcfa5;
-        transform: rotate(-38deg);
       }
     }
     &:nth-of-type(2) {
       bottom: -20rem;
       left: 34rem;
       z-index: 4;
+      transform: rotate(11deg);
       width: 592px;
       height: 253px;
       border-radius: 50%;
       background: #6ac58f;
-      transform: rotate(11deg);
     }
     &:nth-of-type(3) {
       bottom: -67rem;

@@ -18,7 +18,7 @@ const Wrapper = styled.div`
       width: 100%;
       height: 100%;
       border-radius: 50% 50% 0 0;
-      background: linear-gradient(#79d5ad 25%, #91ddc2 74%, #79d4ac 94%);
+      background: linear-gradient(#83dbb5 25%, #91ddc2 74%, #79d4ac 94%);
     }
   }
 `;

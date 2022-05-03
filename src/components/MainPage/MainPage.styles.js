@@ -37,9 +37,8 @@ const StyledContainer = styled(Container)`
   position: absolute;
   bottom: 4%;
   left: 50%;
-  z-index: 2;
+  z-index: 3;
   transform: translateX(-50%);
-  width: 100rem;
 `;
 
 const StyledBox = styled(Box)`
@@ -47,7 +46,7 @@ const StyledBox = styled(Box)`
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  background: rgb(255 255 255 / 88%);
+  background: linear-gradient(#ffffff 67%, rgb(255 255 255 / 88%));
 `;
 
 const MainBox = styled.div`
@@ -91,6 +90,12 @@ const AdditionalInfoBox = styled.span`
   display: flex;
   flex-flow: row wrap;
   margin-left: .5rem;
+  line-height: 1;
+`;
+
+const StatsWrapper = styled.span`
+  display: flex;
+  align-items: center;
 `;
 
 const IconStyled = styled(Icon)`
@@ -199,12 +204,13 @@ const WipBadge = styled.span`
 `;
 
 const Number = styled.span`
-  display: inline-block;
+  flex-shrink: 0;
+  margin-left: .5rem;
   padding: .1rem .5rem;
   border-radius: 2rem;
   font-size: 1rem;
+  line-height: 1.4;
   color: ${(props) => props.theme.monoColors.white};
-  vertical-align: middle;
 
   ${(props) => props.type === NUMBER_BUTTON_TYPE.contributions && css`
     background: #40c463;
@@ -220,17 +226,18 @@ const StackBadges = styled.ul`
 `;
 
 const StackBadge = styled.li`
-  display:  inline-block;
+  display:  flex;
+  align-items: center;
   margin-right: .5rem;
 
   &::before {
     content: '';
-    display: inline-block;
+    flex-shrink: 0;
     width: 1rem;
     height: 1rem;
+    margin-top: -.1rem;
     margin-right: .2rem;
     border-radius: 50%;
-    vertical-align: middle;
   }
 
   ${(props) => props.type === STACK_BADGE_TYPE.gold && css`
@@ -270,6 +277,7 @@ export {
   SocialItem,
   SocialLink,
   AdditionalInfoBox,
+  StatsWrapper,
   IconStyled,
   ListWrapper,
   List,

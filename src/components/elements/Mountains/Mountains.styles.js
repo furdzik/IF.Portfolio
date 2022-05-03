@@ -36,7 +36,7 @@ const Wrapper = styled.div`
       bottom: -20rem;
       left: 34rem;
       z-index: 4;
-      transform: rotate(11deg);
+      transform: rotate(5deg);
       width: 592px;
       height: 253px;
       border-radius: 50%;
@@ -45,6 +45,7 @@ const Wrapper = styled.div`
     &:nth-of-type(3) {
       bottom: -67rem;
       left: -21rem;
+      left: -47rem;
       z-index: 4;
       width: 1447px;
       height: 672px;

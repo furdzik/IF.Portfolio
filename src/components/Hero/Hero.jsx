@@ -30,6 +30,10 @@ import {
   TreePinkTokyoFive,
   TreePinkTokyoSix,
   TreePinkTokyoSeven,
+  TreePinkTokyoEight,
+  TreePinkTokyoNine,
+  TreePinkTokyoTen,
+  TreePinkTokyoEleven,
   StyledSkyTree,
   StyledStMarysBasilica,
   StyledTrainTracks
@@ -76,9 +80,13 @@ const Hero = (props) => (
         <TreePinkTokyoTwo color="pink" isTaller />
         <TreePinkTokyoThree color="pink" />
         <TreePinkTokyoFour color="pink" />
-        <TreePinkTokyoFive color="green" isTaller />
-        <TreePinkTokyoSix color="green" />
+        <TreePinkTokyoEight color="pink" isTaller />
         <TreePinkTokyoSeven color="green" isTaller />
+        <TreePinkTokyoSix color="green" />
+        <TreePinkTokyoFive color="green" isTaller />
+        <TreePinkTokyoNine color="green" />
+        <TreePinkTokyoTen color="pink" />
+        <TreePinkTokyoEleven color="pink" isTaller />
         <StyledSkyTree />
         <StyledTrainTracks />
       </TokyoWrapper>

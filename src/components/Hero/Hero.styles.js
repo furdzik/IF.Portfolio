@@ -138,6 +138,7 @@ const TokyoWrapper = styled.div`
   left: 50%;
   width: 100%;
   height: 100%;
+  //outline: 1px dotted gray;
 `;
 
 const StyledMtFuji = styled(MtFuji)`
@@ -274,6 +275,38 @@ const TreePinkTokyoSeven = styled(Tree)`
   transform: scale(.4);
 `;
 
+const TreePinkTokyoEight = styled(Tree)`
+  ${ElementsCommonStyle};
+  bottom: 17.9rem;
+  left: 66.2rem;
+  z-index: 2;
+  transform: scale(.4);
+`;
+
+const TreePinkTokyoNine = styled(Tree)`
+  ${ElementsCommonStyle};
+  bottom: 9.9rem;
+  left: 36.2rem;
+  z-index: 2;
+  transform: scale(.3);
+`;
+
+const TreePinkTokyoTen = styled(Tree)`
+  ${ElementsCommonStyle};
+  bottom: 16.9rem;
+  left: 41.2rem;
+  z-index: 2;
+  transform: scale(.3);
+`;
+
+const TreePinkTokyoEleven = styled(Tree)`
+  ${ElementsCommonStyle};
+  bottom: 19.9rem;
+  left: 43.2rem;
+  z-index: 2;
+  transform: scale(.3);
+`;
+
 const StyledSkyTree = styled(SkyTree)`
   ${ElementsCommonStyle};
   bottom: -3rem;
@@ -324,6 +357,10 @@ export {
   TreePinkTokyoFive,
   TreePinkTokyoSix,
   TreePinkTokyoSeven,
+  TreePinkTokyoEight,
+  TreePinkTokyoNine,
+  TreePinkTokyoTen,
+  TreePinkTokyoEleven,
   StyledSkyTree,
   StyledStMarysBasilica,
   StyledTrainTracks

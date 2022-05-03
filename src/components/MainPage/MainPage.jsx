@@ -26,6 +26,7 @@ import {
   SocialItem,
   SocialLink,
   AdditionalInfoBox,
+  StatsWrapper,
   ListWrapper,
   List,
   ListItem,
@@ -103,12 +104,12 @@ const MainPage = (props) => {
               {
                 props.stats?.gitHub ? (
                   <AdditionalInfoBox>
-                    <div>
-                      {intl.formatMessage(messages.contributionsText)}
+                    <StatsWrapper>
+                      <span>{intl.formatMessage(messages.contributionsText)}</span>
                       <Number type={NUMBER_BUTTON_TYPE.contributions}>
                         {props.stats?.gitHub?.totalContributions}
                       </Number>
-                    </div>
+                    </StatsWrapper>
                   </AdditionalInfoBox>
                 ) : null
               }
@@ -122,12 +123,12 @@ const MainPage = (props) => {
               {
                 props.stats?.stackOverflow ? (
                   <AdditionalInfoBox>
-                    <div>
-                      {intl.formatMessage(messages.reputationText)}
+                    <StatsWrapper>
+                      <span>{intl.formatMessage(messages.reputationText)}</span>
                       <Number type={NUMBER_BUTTON_TYPE.reputation}>
                         {props.stats?.stackOverflow?.reputation}
                       </Number>
-                    </div>
+                    </StatsWrapper>
                     {
                       props.stats?.stackOverflow?.badgeCounts ? (
                         <StackBadges>

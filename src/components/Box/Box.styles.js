@@ -14,8 +14,11 @@ const Wrapper = styled.div`
 
   // Do wywalenia
   // opacity: 0.2;
-  //opacity: 0;
+
+  outline: 1px dotted darkblue;
   //display: none !important;
+  background: none !important;
+  * { opacity: 0; }
 `;
 
 const Slice = (props) => css`

@@ -20,6 +20,8 @@ import River from '@components/elements/River';
 import Mountains from '@components/elements/Mountains';
 import StMarysBasilica from '@components/elements/StMarysBasilica';
 import TrainTracks from '@components/elements/TrainTracks';
+import BuildingOne from '@components/elements/buildings/BuildingOne';
+import BuildingTwo from '@components/elements/buildings/BuildingTwo';
 
 const Wrapper = styled.div`
   position: relative;
@@ -138,7 +140,7 @@ const TokyoWrapper = styled.div`
   left: 50%;
   width: 100%;
   height: 100%;
-  //outline: 1px dotted gray;
+  outline: 1px dotted gray;
 `;
 
 const StyledMtFuji = styled(MtFuji)`
@@ -151,7 +153,7 @@ const StyledCityGround = styled(CityGround)`
   ${ElementsCommonStyle};
   bottom: 0;
   left: 0;
-  z-index: 1;
+  //z-index: 1;
 `;
 
 const StyledMountains = styled(Mountains)`
@@ -164,10 +166,10 @@ const StyledMountains = styled(Mountains)`
 const TreeGreenCracowOne = styled(Tree)`
   ${ElementsCommonStyle};
   right: .4rem;
-  bottom: 41.7rem;
+  bottom: 39.7rem;
   left: auto;
   z-index: 2;
-  transform: scale(.5);
+  transform: scale(.3);
 `;
 
 const TreeGreenCracowTwo = styled(Tree)`
@@ -201,10 +203,10 @@ const TreeGreenCracowFive = styled(Tree)`
 const TreeGreenCracowSix = styled(Tree)`
   ${ElementsCommonStyle};
   right: 5.4rem;
-  bottom: 43.7rem;
+  bottom: 40.7rem;
   left: auto;
   z-index: 2;
-  transform: scale(.5);
+  transform: scale(.3);
 `;
 
 const TreeGreenCracowSeven = styled(Tree)`
@@ -330,6 +332,18 @@ const StyledTrainTracks = styled(TrainTracks)`
   z-index: 2;
 `;
 
+const StyledBuildingOne = styled(BuildingOne)`
+  ${ElementsCommonStyleUnspecified};
+  bottom: 27rem;
+  left: 25rem;
+`;
+
+const StyledBuildingTwo = styled(BuildingTwo)`
+  ${ElementsCommonStyleUnspecified};
+  bottom: 26rem;
+  left: 0;
+`;
+
 export {
   Wrapper,
   ContainerStyled,
@@ -363,5 +377,7 @@ export {
   TreePinkTokyoEleven,
   StyledSkyTree,
   StyledStMarysBasilica,
-  StyledTrainTracks
+  StyledTrainTracks,
+  StyledBuildingOne,
+  StyledBuildingTwo
 };

@@ -36,7 +36,9 @@ import {
   TreePinkTokyoEleven,
   StyledSkyTree,
   StyledStMarysBasilica,
-  StyledTrainTracks
+  StyledTrainTracks,
+  StyledBuildingOne,
+  StyledBuildingTwo
 } from './Hero.styles.js';
 
 const Hero = (props) => (
@@ -89,6 +91,8 @@ const Hero = (props) => (
         <TreePinkTokyoEleven color="pink" isTaller />
         <StyledSkyTree />
         <StyledTrainTracks />
+        <StyledBuildingOne />
+        <StyledBuildingTwo />
       </TokyoWrapper>
 
     </ContainerStyled>

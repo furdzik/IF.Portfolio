@@ -7,15 +7,15 @@ import Building from '@components/elements/buildings/Building';
 
 const Wrapper = styled.div`
   ${ElementsCommonStyleUnspecified};
-  width: 118px;
-  height: 160px;
+  width: 133px;
+  height: 190px;
   outline: 1px dotted green;
 `;
 
 const StyledBuilding = styled(Building)`
   ${ElementsCommonStyleUnspecified};
-  bottom: 0;
-  right: 17px;
+  bottom: 2rem;
+  right: 3.2rem;
 `;
 
 const SideWalk = styled.span`

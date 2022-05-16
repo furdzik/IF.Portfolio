@@ -9,6 +9,7 @@ import {
 
 const BuildingTwo = (props) => (
   <Wrapper className={props.className}>
+
     <StyledBuilding
       width={8.5}
       height={12}

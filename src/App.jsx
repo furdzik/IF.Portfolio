@@ -35,7 +35,6 @@ const App = () => (
       <Global styles={GlobalStyles} />
       <Provider store={store}>
         <RoutesConfig />
-        <button onClick={() => portfolio17}>Break the world</button>
       </Provider>
     </ThemeProvider>
   </IntlProvider>

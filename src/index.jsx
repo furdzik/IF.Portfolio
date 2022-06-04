@@ -3,8 +3,8 @@ import '@utils/polyfills';
 import React from 'react';
 import { render } from 'react-dom';
 
-import * as Sentry from "@sentry/react";
-import { BrowserTracing } from "@sentry/tracing";
+import * as Sentry from '@sentry/react';
+import { BrowserTracing } from '@sentry/tracing';
 
 import { sentryDns } from '@config/environment';
 

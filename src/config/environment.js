@@ -3,5 +3,6 @@ module.exports = {
   stackOverflowApiUrl: STACKOVERFLOW_API_URL,
   stackOverflowUser: STACKOVERFLOW_USER,
   githubUser: GITHUB_USER,
-  githubKey: GITHUB_KEY
+  githubKey: GITHUB_KEY,
+  sentryDns: SENTRY_DNS
 };

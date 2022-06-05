@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.1](https://github.com/furdzik/IF.Portfolio/compare/v1.0.0...v1.0.1) (2022-06-05)
+
+
+### Bug Fixes
+
+* **config:** Change linters config packages ([6c14a3a](https://github.com/furdzik/IF.Portfolio/commit/6c14a3a6296023774944ebe50c1683808c9e7fa7))
+* **config:** Remove handlebars ([4e603e0](https://github.com/furdzik/IF.Portfolio/commit/4e603e057550dedaf184a0b9ca0132a9c965dd2a))
+* **config:** Remove handlebars option ([cc5004b](https://github.com/furdzik/IF.Portfolio/commit/cc5004b231accf97c3f07a9cffcd8517f7f79009))
+
 ## 1.0.0 (2022-06-05)
 
 

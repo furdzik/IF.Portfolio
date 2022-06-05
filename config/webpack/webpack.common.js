@@ -1,5 +1,5 @@
 const { resolve } = require('path');
-const { LoaderOptionsPlugin, DefinePlugin } = require('webpack');
+const { DefinePlugin } = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const dotenv = require('dotenv');
@@ -56,11 +56,6 @@ module.exports = ({ production }) => {
       ]
     },
     plugins: [
-      new LoaderOptionsPlugin({
-        options: {
-          handlebarsLoader: {}
-        }
-      }),
       new HtmlWebpackPlugin({
         title: 'Izabela Furdzik Portfolio',
         template: './src/index.ejs',

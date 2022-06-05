@@ -9,7 +9,7 @@
     ]
   ],
   "extends": [
-    "@furdzik/stylelint-config"
+    "stylelint-config-kamisama"
   ],
   "rules": {
     "max-nesting-depth": [

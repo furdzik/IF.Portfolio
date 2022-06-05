@@ -52,10 +52,6 @@ module.exports = ({ production }) => {
         {
           test: /\.(svg|woff|woff2|ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
           use: 'file-loader?name=assets/fonts/[name].[ext]'
-        },
-        {
-          test: /\.hbs$/,
-          use: 'handlebars-loader'
         }
       ]
     },
@@ -67,7 +63,7 @@ module.exports = ({ production }) => {
       }),
       new HtmlWebpackPlugin({
         title: 'Izabela Furdzik Portfolio',
-        template: './src/index.hbs',
+        template: './src/index.ejs',
         favicon: './public/favicon.ico',
         appVersion: `${version}`,
         noscript: 'Proszę włączyć obsługę JavaScript w przeglądarce.',

@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/furdzik/IF.Portfolio/compare/v1.0.1...v1.0.2) (2022-06-10)
+
+
+### Bug Fixes
+
+* **config:** Update package-lock ([6b633b8](https://github.com/furdzik/IF.Portfolio/commit/6b633b8a34d1aa90d311ebbceef9abe9d4b04485))
+* **config:** Update packages ([d7d95ef](https://github.com/furdzik/IF.Portfolio/commit/d7d95ef90b2023ef6a7458db7bb0af5c178f98f2))
+
 ## [1.0.1](https://github.com/furdzik/IF.Portfolio/compare/v1.0.0...v1.0.1) (2022-06-05)
 
 

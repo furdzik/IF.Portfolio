@@ -279,7 +279,7 @@ const Wrapper = styled.div`
       &:nth-of-type(6) {
         &::before {
           bottom: -2.9rem;
-          left: 0.6rem;
+          left: .6rem;
           background: #dcadbe;
         }
       }

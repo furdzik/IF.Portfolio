@@ -1,12 +1,6 @@
 {
   "processors": [
-    [
-      "stylelint-processor-styled-components",
-      {
-        "moduleName": "@emotion",
-        "importName": "default"
-      }
-    ]
+    "stylelint-processor-styled-components"
   ],
   "extends": [
     "stylelint-config-kamisama"

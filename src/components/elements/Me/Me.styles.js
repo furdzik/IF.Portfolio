@@ -91,11 +91,11 @@ const Eyebrows = styled.div`
     border-top: 2px solid #8a6522;
     border-radius: 24px / 12px;
     &:nth-of-type(1) {
-      left:0;
+      left: 0;
       transform: rotate(9deg);
     }
     &:nth-of-type(2) {
-      right:0;
+      right: 0;
       transform: rotate(-6deg);
     }
   }
@@ -170,7 +170,7 @@ const Lips = styled.div`
       width: 30px;
       height: 30px;
       border-radius: 30px;
-      background:#ffffff;
+      background: #ffffff;
     }
     &:nth-of-type(5) {
       top: -18px;

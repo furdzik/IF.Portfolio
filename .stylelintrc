@@ -1,15 +1,9 @@
 {
   "processors": [
-    [
-      "stylelint-processor-styled-components",
-      {
-        "moduleName": "@emotion",
-        "importName": "default"
-      }
-    ]
+    "stylelint-processor-styled-components"
   ],
   "extends": [
-    "@furdzik/stylelint-config"
+    "stylelint-config-kamisama"
   ],
   "rules": {
     "max-nesting-depth": [

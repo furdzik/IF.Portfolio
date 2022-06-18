@@ -1,7 +1,7 @@
 {
   "parser": "@babel/eslint-parser",
   "extends": [
-    "@furdzik/eslint-config"
+    "eslint-config-kamisama"
   ],
   "settings": {
     "import/resolver": {
@@ -19,6 +19,7 @@
     "STACKOVERFLOW_API_URL": "readonly",
     "STACKOVERFLOW_USER": "readonly",
     "GITHUB_USER": "readonly",
-    "GITHUB_KEY": "readonly"
+    "GITHUB_KEY": "readonly",
+    "SENTRY_DNS": "readonly"
   }
 }

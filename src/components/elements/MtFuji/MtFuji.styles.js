@@ -53,7 +53,7 @@ const Wrapper = styled.div`
       border-width: 14rem 1rem 0;
     }
     &::after {
-      top: -0.5rem;
+      top: -.5rem;
       left: -5.3rem;
       transform: rotate(47deg);
       border-width: 13rem 3rem 0;
@@ -108,7 +108,7 @@ const Wrapper = styled.div`
     }
     &::before {
       top: -8.6rem;
-      left: 0.5rem;
+      left: .5rem;
       transform: rotate(-8deg);
       border-width: 6rem 2rem 0;
     }

@@ -75,7 +75,7 @@ const SocialIcons = styled.ul`
 `;
 
 const SocialItem = styled.li`
-  display:  flex;
+  display: flex;
   align-items: center;
   & + & {
     margin-left: 1rem;

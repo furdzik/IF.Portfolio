@@ -404,7 +404,7 @@ const Wrapper = styled.div`
       }
       &::before {
         left: .2rem;
-        border-width: .7rem 0 0 0.2rem;
+        border-width: .7rem 0 0 .2rem;
         border-style: solid;
         border-color: ${gray} transparent;
       }
@@ -661,7 +661,7 @@ const Wrapper = styled.div`
       }
       &::before {
         left: .1rem;
-        border-width: .7rem 0 0 0.2rem;
+        border-width: .7rem 0 0 .2rem;
         border-style: solid;
         border-color: ${gray} transparent;
       }
@@ -715,7 +715,7 @@ const Wrapper = styled.div`
       }
       &::after {
         left: 50%;
-        border-width:  0 .3rem 1.3rem 0;
+        border-width: 0 .3rem 1.3rem 0;
         border-style: solid;
         border-color: ${grayShadow} transparent;
       }
@@ -763,7 +763,7 @@ const Wrapper = styled.div`
       }
       &::after {
         left: 50%;
-        border-width:  0 .1rem .4rem 0;
+        border-width: 0 .1rem .4rem 0;
         border-style: solid;
         border-color: ${grayShadow} transparent;
       }

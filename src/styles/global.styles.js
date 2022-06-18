@@ -64,7 +64,7 @@ const GlobalStyles = css`
   h1,
   h2,
   h3 {
-    letter-spacing: -0.01em;
+    letter-spacing: -.01em;
   }
 
   h1 {

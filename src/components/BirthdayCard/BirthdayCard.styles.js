@@ -37,7 +37,6 @@ const SubHeader = styled.h2`
   color: #d27310;
   text-transform: uppercase;
 
-
   &::before,
   &::after {
     content: '';
@@ -65,7 +64,7 @@ const Present = styled.div`
     transform: rotate(45deg);
     width: 129%;
     height: 32rem;
-    background-image: radial-gradient(#bddbd9 37%,transparent 34%);
+    background-image: radial-gradient(#bddbd9 37%, transparent 34%);
     background-size: 8rem 6.5rem;
     background-position: 0 0;
   }

@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/furdzik/IF.Portfolio/compare/v1.0.2...v1.1.0) (2022-06-18)
+
+
+### Features
+
+* **app:** Add google analytics ([083b2be](https://github.com/furdzik/IF.Portfolio/commit/083b2beb8ad0106357b1768d0f917a5580fd8f12))
+
+
+### Bug Fixes
+
+* **app:** Stylelint fixes ([058d13f](https://github.com/furdzik/IF.Portfolio/commit/058d13f4968dd6d0556b0a53d7aad3fd0fe02b8a))
+
 ## [1.0.2](https://github.com/furdzik/IF.Portfolio/compare/v1.0.1...v1.0.2) (2022-06-10)
 
 

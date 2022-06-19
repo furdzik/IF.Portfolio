@@ -9,13 +9,13 @@ import {
 
 const BuildingOne = (props) => (
   <Wrapper className={props.className}>
-    {/*<Building*/}
-    {/*  width={10}*/}
-    {/*  height={10}*/}
-    {/*  leftRightSideColor="red"*/}
-    {/*  topBottomSideColor="red"*/}
-    {/*  frontBackSideColor="red"*/}
-    {/*/>*/}
+    {/* <Building */}
+    {/*  width={10} */}
+    {/*  height={10} */}
+    {/*  leftRightSideColor="red" */}
+    {/*  topBottomSideColor="red" */}
+    {/*  frontBackSideColor="red" */}
+    {/* /> */}
   </Wrapper>
 );
 

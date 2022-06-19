@@ -108,12 +108,12 @@ const MainCross = styled.span`
     }
     &:nth-of-type(2) {
       left: 3.1px;
-      width: 0.5px;
+      width: .5px;
       height: 10.5px;
       background: #465662;
       &::before {
-        top: -0.1px;
-        left: -0.5px;
+        top: -.1px;
+        left: -.5px;
         width: 1.5px;
         height: 1.5px;
         border-radius: 50%;
@@ -124,20 +124,20 @@ const MainCross = styled.span`
       top: 3.2px;
       left: 0;
       width: 6.5px;
-      height: 0.5px;
+      height: .5px;
       background: #465662;
       &::before, &::after {
-        top: -0.5px;
+        top: -.5px;
         width: 1.5px;
         height: 1.5px;
         border-radius: 50%;
         background: #465662;
       }
       &::before {
-        left: -0.5px;
+        left: -.5px;
       }
       &::after {
-        right: -0.5px;
+        right: -.5px;
       }
     }
   }
@@ -155,7 +155,7 @@ const RoofWindow = styled.span`
   &::before {
     content: '';
     top: -3px;
-    left: -0.6px;
+    left: -.6px;
     border-width: 0 3px 3px;
     border-style: solid;
     border-color: #94a5a6 transparent;
@@ -329,7 +329,7 @@ const RightTower = styled.span`
 const TowerCornice = styled.span`
   top: ${(props) => props.top}px;
   right: -.9px;
-  left:-.9px;
+  left: -.9px;
   height: 1.2px;
   &::before, &::after {
     content: '';

@@ -226,7 +226,7 @@ const StackBadges = styled.ul`
 `;
 
 const StackBadge = styled.li`
-  display:  flex;
+  display: flex;
   align-items: center;
   margin-right: .5rem;
 

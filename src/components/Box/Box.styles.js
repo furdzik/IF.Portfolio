@@ -13,12 +13,12 @@ const Wrapper = styled.div`
   box-shadow: .1rem .1rem 3.3rem .2rem rgb(255 255 255 / 21%), .1rem .1rem 1rem .2rem rgb(0 0 0 / 30%);
 
   // Do wywalenia
-  // opacity: 0.2;
+  // opacity: .2;
 
-  outline: 1px dotted darkblue;
+  //outline: 1px dotted darkblue;
   //display: none !important;
-  background: none !important;
-  * { opacity: 0; }
+  //background: none !important;
+  //* { opacity: 0; }
 `;
 
 const Slice = (props) => css`

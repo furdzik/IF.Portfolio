@@ -14,8 +14,8 @@ const Wrapper = styled.div`
 
 const StyledBuilding = styled(Building)`
   ${ElementsCommonStyleUnspecified};
-  bottom: 2rem;
   right: 3.2rem;
+  bottom: 2rem;
 `;
 
 const SideWalk = styled.span`

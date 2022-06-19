@@ -314,7 +314,7 @@ const StyledSkyTree = styled(SkyTree)`
   bottom: -3rem;
   left: 54rem;
   z-index: 3;
-  transform: scale(0.9);
+  transform: scale(.9);
 `;
 
 const StyledStMarysBasilica = styled(StMarysBasilica)`

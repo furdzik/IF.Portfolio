@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.2.0](https://github.com/furdzik/IF.Portfolio/compare/v1.1.0...v1.2.0) (2022-07-10)
+
+
+### Features
+
+* **app:** add building one ([c046889](https://github.com/furdzik/IF.Portfolio/commit/c0468892c2d097c1738ae74c2351bf720c7343d6))
+* **app:** add buildings ([1400bc9](https://github.com/furdzik/IF.Portfolio/commit/1400bc9b714959386dccde0451aa728058333702))
+* **app:** all buildings ([b47dd6a](https://github.com/furdzik/IF.Portfolio/commit/b47dd6afa3425ff3732d69f81c845ca3d2ec8036))
+* **app:** wide train tracks ([715ddc4](https://github.com/furdzik/IF.Portfolio/commit/715ddc4e699a67c65cd35a3049b824311bc743d9))
+
+
+### Bug Fixes
+
+* **app:** cleanup ([659e138](https://github.com/furdzik/IF.Portfolio/commit/659e13845b6a55becfeb2060bf6be39653e6ea8a))
+* **app:** hide not St Mary's Basilica ([ebde23b](https://github.com/furdzik/IF.Portfolio/commit/ebde23be919dacaf357db10f8047b76159ab1ce9))
+
 ## [1.1.0](https://github.com/furdzik/IF.Portfolio/compare/v1.0.2...v1.1.0) (2022-06-18)
 
 

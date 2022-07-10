@@ -341,7 +341,7 @@ const StyledBuildingOne = styled(BuildingOne)`
 const StyledBuildingTwo = styled(BuildingTwo)`
   ${ElementsCommonStyleUnspecified};
   bottom: 26rem;
-  left: 0;
+  left: 2rem;
 `;
 
 export {

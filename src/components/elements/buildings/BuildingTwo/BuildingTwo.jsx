@@ -4,23 +4,39 @@ import PropTypes from 'prop-types';
 import {
   Wrapper,
   StyledBuilding,
-  SideWalk
+  SideWalk,
+  FrontSideBlock,
+  LeftSideBlock
 } from './BuildingTwo.styles.js';
 
-const BuildingTwo = (props) => (
-  <Wrapper className={props.className}>
+const BuildingTwo = (props) => {
+  const frontSide = (
+    <FrontSideBlock>
+      <span /><span /><span /><span /><span /><span /><span />
+    </FrontSideBlock>
+  );
+  const leftSide = (
+    <LeftSideBlock>
+      <span /><span /><span /><span /><span /><span /><span />
+    </LeftSideBlock>
+  );
 
-    <StyledBuilding
-      width={8.5}
-      height={12}
-      frontBackSideColor="#f2e8de"
-      leftRightSideColor="#dcc2a9"
-      topBottomSideColor="#dcc2a9"
-      transform="rotateY(36deg) rotateX(0)"
-    />
-    <SideWalk />
-  </Wrapper>
-);
+  return (
+    <Wrapper className={props.className}>
+      <StyledBuilding
+        width={9.5}
+        height={16}
+        frontBackSideColor="#f2e8de"
+        leftRightSideColor="#dbcfc4"
+        topBottomSideColor="#d5c6b8"
+        frontSideBlock={frontSide}
+        leftSideBlock={leftSide}
+        transform="rotateY(30deg) rotateX(-8deg) rotateZ(-4deg)"
+      />
+      <SideWalk />
+    </Wrapper>
+  );
+};
 
 BuildingTwo.propTypes = {
   className: PropTypes.string

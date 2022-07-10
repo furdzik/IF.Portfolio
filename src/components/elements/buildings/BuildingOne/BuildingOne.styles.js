@@ -6,7 +6,6 @@ const Wrapper = styled.div`
   ${ElementsCommonStyleUnspecified};
   width: 100px;
   height: 220px;
-  outline: 1px dotted red;
 `;
 
 export {

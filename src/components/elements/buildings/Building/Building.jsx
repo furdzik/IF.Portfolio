@@ -20,11 +20,19 @@ const Building = (props) => (
   >
     <Cube transform={props.transform}>
       <BackSide frontBackSideColor={props.frontBackSideColor} />
-      <LeftSide leftRightSideColor={props.leftRightSideColor} />
-      <RightSide leftRightSideColor={props.leftRightSideColor} />
-      <TopSide topBottomSideColor={props.topBottomSideColor} />
+      <LeftSide leftRightSideColor={props.leftRightSideColor}>
+        {props.leftSideBlock}
+      </LeftSide>
+      <RightSide leftRightSideColor={props.leftRightSideColor}>
+        {props.rightSideBlock}
+      </RightSide>
+      <TopSide topBottomSideColor={props.topBottomSideColor}>
+        {props.topSideBlock}
+      </TopSide>
       <BottomSide topBottomSideColor={props.topBottomSideColor} />
-      <FrontSide frontBackSideColor={props.frontBackSideColor} />
+      <FrontSide frontBackSideColor={props.frontBackSideColor}>
+        {props.frontSideBlock}
+      </FrontSide>
     </Cube>
   </Wrapper>
 );
@@ -34,14 +42,22 @@ Building.propTypes = {
   width: PropTypes.number.isRequired,
   className: PropTypes.string,
   frontBackSideColor: PropTypes.string,
+  frontSideBlock: PropTypes.node,
   leftRightSideColor: PropTypes.string,
+  leftSideBlock: PropTypes.node,
+  rightSideBlock: PropTypes.node,
   topBottomSideColor: PropTypes.string,
+  topSideBlock: PropTypes.node,
   transform: PropTypes.string
 };
 
 Building.defaultProps = {
   className: '',
   frontBackSideColor: 'transparent',
+  frontSideBlock: null,
+  rightSideBlock: null,
+  leftSideBlock: null,
+  topSideBlock: null,
   leftRightSideColor: 'transparent',
   topBottomSideColor: 'transparent',
   transform: 'rotateY(33deg) rotateX(0)'

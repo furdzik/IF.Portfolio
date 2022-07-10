@@ -11,10 +11,6 @@ const Wrapper = styled.div`
   border-radius: 1rem;
   background: ${(props) => props.theme.monoColors.white};
   box-shadow: .1rem .1rem 3.3rem .2rem rgb(255 255 255 / 21%), .1rem .1rem 1rem .2rem rgb(0 0 0 / 30%);
-
-  //display: none !important;
-  //background: none !important;
-  //* { opacity: 0; }
 `;
 
 const Slice = (props) => css`

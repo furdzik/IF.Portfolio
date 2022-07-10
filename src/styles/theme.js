@@ -7,6 +7,6 @@ export default {
   layout: {
     width: '100rem',
     sidePadding: '2rem',
-    background: '#95e6c3'
+    background: colors.monoColors.white // '#95e6c3'
   }
 };

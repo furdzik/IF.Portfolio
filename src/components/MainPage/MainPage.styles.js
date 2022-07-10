@@ -14,6 +14,9 @@ import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from '@constants';
 import { breakpointMixin } from '@styles/mixins';
 
 import Box from '@components/Box';
+import Container from '@components/Container';
+import Footer from '@components/Footer';
+
 import Cat from '@components/elements/Cat';
 
 const Heading = styled.h1`
@@ -30,6 +33,21 @@ const SubHeading = styled.h2`
   white-space: pre-line;
 `;
 
+const StyledContainer = styled(Container)`
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  z-index: 6;
+  transform: translateX(-50%);
+`;
+
+const StyledBox = styled(Box)`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: linear-gradient(#ffffff 67%, rgb(255 255 255 / 88%));
+`;
+
 const MainBox = styled.div`
   width: 100%;
 
@@ -37,14 +55,6 @@ const MainBox = styled.div`
     order: 1;
     width: auto;
   `)};
-`;
-
-const BoxStyled = styled(Box)`
-  z-index: 3;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  margin-top: -1rem;
 `;
 
 const SocialIcons = styled.ul`
@@ -79,6 +89,12 @@ const AdditionalInfoBox = styled.span`
   display: flex;
   flex-flow: row wrap;
   margin-left: .5rem;
+  line-height: 1;
+`;
+
+const StatsWrapper = styled.span`
+  display: flex;
+  align-items: center;
 `;
 
 const IconStyled = styled(Icon)`
@@ -174,9 +190,8 @@ const WipBadge = styled.span`
   height: 3rem;
   margin-left: 2rem;
   padding: .5rem;
-  border: 2px solid ${(props) => props.theme.color.red};
+  border: .2rem solid ${(props) => props.theme.color.red};
   border-radius: 50%;
-  background: ${(props) => props.theme.monoColors.white};
   color: ${(props) => props.theme.color.red};
   vertical-align: middle;
 
@@ -188,12 +203,13 @@ const WipBadge = styled.span`
 `;
 
 const Number = styled.span`
-  display: inline-block;
+  flex-shrink: 0;
+  margin-left: .5rem;
   padding: .1rem .5rem;
   border-radius: 2rem;
   font-size: 1rem;
+  line-height: 1.4;
   color: ${(props) => props.theme.monoColors.white};
-  vertical-align: middle;
 
   ${(props) => props.type === NUMBER_BUTTON_TYPE.contributions && css`
     background: #40c463;
@@ -209,17 +225,18 @@ const StackBadges = styled.ul`
 `;
 
 const StackBadge = styled.li`
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin-right: .5rem;
 
   &::before {
     content: '';
-    display: inline-block;
+    flex-shrink: 0;
     width: 1rem;
     height: 1rem;
+    margin-top: -.1rem;
     margin-right: .2rem;
     border-radius: 50%;
-    vertical-align: middle;
   }
 
   ${(props) => props.type === STACK_BADGE_TYPE.gold && css`
@@ -239,15 +256,27 @@ const StackBadge = styled.li`
   `};
 `;
 
+const StyledFooter = styled(Footer)`
+  position: absolute;
+  right: -5rem;
+  bottom: 6.5rem;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  font-size: .9rem;
+  color: #646464;
+`;
+
 export {
   Heading,
   SubHeading,
-  BoxStyled,
+  StyledContainer,
+  StyledBox,
   MainBox,
   SocialIcons,
   SocialItem,
   SocialLink,
   AdditionalInfoBox,
+  StatsWrapper,
   IconStyled,
   ListWrapper,
   List,
@@ -258,5 +287,6 @@ export {
   WipBadge,
   Number,
   StackBadges,
-  StackBadge
+  StackBadge,
+  StyledFooter
 };

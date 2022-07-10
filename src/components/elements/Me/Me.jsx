@@ -25,7 +25,7 @@ const Me = (props) => (
   >
     <MeWrapper>
       <HeadWrapper>
-        <Hair><span /><span /><span /><span /></Hair>
+        <Hair><span /><span /><span /></Hair>
         <Face>
           <Eyebrows><span /><span /></Eyebrows>
           <Eyes><span /><span /></Eyes>

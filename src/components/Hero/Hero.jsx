@@ -7,21 +7,56 @@ import {
   Wrapper,
   ContainerStyled,
   StyledCloud,
-  StyledBirds,
+  StyledBirdOne,
+  StyledBirdTwo,
+  StyledRiver,
   CracowWrapper,
   TokyoWrapper,
   StyledMtFuji,
+  StyledCityGround,
   StyledMountains,
-  TreeGreenCracowOne,
-  TreeGreenCracowTwo,
-  TreeGreenCracowThree,
-  TreeGreenCracowFour,
-  TreeGreenCracowFive,
-  TreePinkTokyoOne,
-  TreePinkTokyoTwo,
-  TreePinkTokyoThree,
-  TreePinkTokyoFour,
-  StyledSkyTree
+  TreeCracowOne,
+  TreeCracowTwo,
+  TreeCracowThree,
+  TreeCracowFour,
+  TreeCracowFive,
+  TreeCracowSix,
+  TreeCracowSeven,
+  TreeCracowEight,
+  TreeTokyoOne,
+  TreeTokyoTwo,
+  TreeTokyoThree,
+  TreeTokyoFour,
+  TreeTokyoFive,
+  TreeTokyoSix,
+  TreeTokyoSeven,
+  TreeTokyoEight,
+  TreeTokyoNine,
+  TreeTokyoTen,
+  TreeTokyoEleven,
+  TreeTokyoTwelve,
+  TreeTokyoThirteen,
+  TreeTokyoFourteen,
+  TreeTokyoFifteen,
+  TreeTokyoSixteen,
+  TreeTokyoSeventeen,
+  StyledSkyTree,
+  StyledStMarysBasilica,
+  StyledTrainTracks,
+  StyledBuildingOne,
+  StyledBuildingTwo,
+  StyledBuildingThree,
+  StyledBuildingFour,
+  StyledBuildingFive,
+  StyledBuildingSix,
+  StyledBuildingSeven,
+  StyledBuildingEight,
+  StyledBuildingNine,
+  StyledBuildingTen,
+  StyledBuildingEleven,
+  StyledBuildingTwelve,
+  StyledBuildingThirteen,
+  StyledBuildingFourteen
 } from './Hero.styles.js';
 
 const Hero = (props) => (
@@ -43,22 +78,57 @@ const Hero = (props) => (
       <StyledCloud cloudType={cloudType.fourteen} />
       <StyledCloud cloudType={cloudType.fifteen} />
       <StyledCloud cloudType={cloudType.sixteen} />
-      <StyledBirds />
+      <StyledBirdOne />
+      <StyledBirdTwo />
+      <StyledRiver />
       <CracowWrapper>
         <StyledMountains />
-        <TreeGreenCracowOne color="green" isTaller />
-        <TreeGreenCracowTwo color="green" />
-        <TreeGreenCracowThree color="green" isTaller />
-        <TreeGreenCracowFour color="green" />
-        <TreeGreenCracowFive color="green" />
+        <TreeCracowOne color="green" isTaller />
+        <TreeCracowTwo color="green" />
+        <TreeCracowThree color="green" isTaller />
+        <TreeCracowFour color="green" />
+        <TreeCracowFive color="green" />
+        <TreeCracowSix color="green" />
+        <TreeCracowSeven color="green" />
+        <TreeCracowEight color="green" />
+        <StyledStMarysBasilica />
       </CracowWrapper>
       <TokyoWrapper>
         <StyledMtFuji />
-        <TreePinkTokyoOne color="pink" />
-        <TreePinkTokyoTwo color="pink" isTaller />
-        <TreePinkTokyoThree color="pink" />
-        <TreePinkTokyoFour color="pink" />
+        <StyledCityGround />
+        <TreeTokyoOne color="pink" />
+        <TreeTokyoTwo color="pink" isTaller />
+        <TreeTokyoThree color="pink" />
+        <TreeTokyoFour color="pink" />
+        <TreeTokyoEight color="pink" isTaller />
+        <TreeTokyoSeven color="green" isTaller />
+        <TreeTokyoSix color="green" />
+        <TreeTokyoFive color="green" isTaller />
+        <TreeTokyoNine color="green" />
+        <TreeTokyoTen color="pink" />
+        <TreeTokyoEleven color="pink" isTaller />
+        <TreeTokyoTwelve color="pink" isTaller />
+        <TreeTokyoThirteen color="green" />
+        <TreeTokyoFourteen color="green" />
+        <TreeTokyoFifteen color="green" isTaller />
+        <TreeTokyoSixteen color="pink" />
+        <TreeTokyoSeventeen color="green" inTaller />
         <StyledSkyTree />
+        <StyledTrainTracks />
+        <StyledBuildingOne />
+        <StyledBuildingTwo />
+        <StyledBuildingThree />
+        <StyledBuildingFour />
+        <StyledBuildingFive />
+        <StyledBuildingSix />
+        <StyledBuildingSeven />
+        <StyledBuildingEight />
+        <StyledBuildingNine />
+        <StyledBuildingTen />
+        <StyledBuildingEleven />
+        <StyledBuildingTwelve />
+        <StyledBuildingThirteen />
+        <StyledBuildingFourteen />
       </TokyoWrapper>
     </ContainerStyled>
   </Wrapper>

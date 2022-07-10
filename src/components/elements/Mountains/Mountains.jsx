@@ -15,6 +15,7 @@ const Mountains = (props) => (
     <span />
     <span />
     <span />
+    <span />
   </Wrapper>
 );
 

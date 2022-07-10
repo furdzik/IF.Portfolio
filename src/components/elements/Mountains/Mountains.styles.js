@@ -5,7 +5,7 @@ import { ElementsCommonStyle } from '@styles/elementsCommonStyle.styles';
 const Wrapper = styled.div`
   position: relative;
   width: 80rem;
-  height: 45rem;
+  height: 19rem;
   > span {
     &, &::before, &::after {
       ${ElementsCommonStyle};
@@ -14,24 +14,45 @@ const Wrapper = styled.div`
       content: '';
     }
     &:nth-of-type(1) {
-      bottom: -9rem;
-      left: -44px;
+      bottom: -18.7rem;
+      left: -40px;
       z-index: 4;
-      width: 459px;
-      height: 141px;
-      border-radius: 50%;
-      background: #75d5ab;
+      width: 482px;
+      height: 241px;
+      border-radius: 50% 50% 0 0;
+      background: #6fcfa5;
+      &::before {
+        bottom: -48px;
+        left: -63px;
+        z-index: 4;
+        transform: rotate(-38deg);
+        width: 337px;
+        height: 250px;
+        border-radius: 50%;
+        background: #6fcfa5;
+      }
     }
     &:nth-of-type(2) {
-      bottom: -7rem;
-      left: 33rem;
+      bottom: -20rem;
+      left: 34rem;
       z-index: 4;
-      width: 397px;
-      height: 110px;
+      transform: rotate(5deg);
+      width: 592px;
+      height: 253px;
       border-radius: 50%;
       background: #6ac58f;
     }
     &:nth-of-type(3) {
+      bottom: -67rem;
+      left: -21rem;
+      left: -47rem;
+      z-index: 4;
+      width: 1447px;
+      height: 672px;
+      border-radius: 50% 50% 0 0;
+      background: linear-gradient(#79d5ad 9%, #91ddc2 51%, #79d4ac 63%);
+    }
+    &:nth-of-type(4) {
       bottom: -10rem;
       left: 26rem;
       z-index: 3;
@@ -40,7 +61,7 @@ const Wrapper = styled.div`
       border-radius: 50%;
       background: #94e5b5; // #75d19a;
     }
-    &:nth-of-type(4) {
+    &:nth-of-type(5) {
       left: 0;
       width: 71rem;
       border-width: 0 28rem 16rem;
@@ -65,7 +86,7 @@ const Wrapper = styled.div`
         border-color: #b5c7c7 transparent;
       }
     }
-    &:nth-of-type(5) {
+    &:nth-of-type(6) {
       left: 386px;
       width: 312px;
       border-width: 0 14rem 17rem;
@@ -90,7 +111,7 @@ const Wrapper = styled.div`
         border-color: #b5c7c7 transparent;
       }
     }
-    &:nth-of-type(6) {
+    &:nth-of-type(7) {
       bottom: 170px;
       left: 537px;
       width: 1rem;

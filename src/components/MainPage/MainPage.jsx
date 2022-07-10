@@ -12,21 +12,21 @@ import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from '@constants';
 
 import { statsShape } from '@types/statsShape';
 
-import Container from '@components/Container';
 import Hero from '@components/Hero';
-import Footer from '@components/Footer';
 
 import Me from '@components/elements/Me';
 
 import {
   Heading,
   SubHeading,
-  BoxStyled,
+  StyledContainer,
+  StyledBox,
   MainBox,
   SocialIcons,
   SocialItem,
   SocialLink,
   AdditionalInfoBox,
+  StatsWrapper,
   ListWrapper,
   List,
   ListItem,
@@ -37,7 +37,8 @@ import {
   WipBadge,
   Number,
   StackBadges,
-  StackBadge
+  StackBadge,
+  StyledFooter
 } from './MainPage.styles';
 import messages from './MainPage.messages';
 
@@ -47,8 +48,8 @@ const MainPage = (props) => {
   return (
     <React.Fragment>
       <Hero />
-      <Container>
-        <BoxStyled>
+      <StyledContainer>
+        <StyledBox>
           <MainBox>
             <Heading>{intl.formatMessage(messages.mainHeading)}</Heading>
             <SubHeading>{intl.formatMessage(messages.subHeading)}</SubHeading>
@@ -103,12 +104,12 @@ const MainPage = (props) => {
               {
                 props.stats?.gitHub ? (
                   <AdditionalInfoBox>
-                    <div>
-                      {intl.formatMessage(messages.contributionsText)}
+                    <StatsWrapper>
+                      <span>{intl.formatMessage(messages.contributionsText)}</span>
                       <Number type={NUMBER_BUTTON_TYPE.contributions}>
                         {props.stats?.gitHub?.totalContributions}
                       </Number>
-                    </div>
+                    </StatsWrapper>
                   </AdditionalInfoBox>
                 ) : null
               }
@@ -122,12 +123,12 @@ const MainPage = (props) => {
               {
                 props.stats?.stackOverflow ? (
                   <AdditionalInfoBox>
-                    <div>
-                      {intl.formatMessage(messages.reputationText)}
+                    <StatsWrapper>
+                      <span>{intl.formatMessage(messages.reputationText)}</span>
                       <Number type={NUMBER_BUTTON_TYPE.reputation}>
                         {props.stats?.stackOverflow?.reputation}
                       </Number>
-                    </div>
+                    </StatsWrapper>
                     {
                       props.stats?.stackOverflow?.badgeCounts ? (
                         <StackBadges>
@@ -160,9 +161,9 @@ const MainPage = (props) => {
               }
             </SocialItem>
           </SocialIcons>
-        </BoxStyled>
-      </Container>
-      <Footer />
+          <StyledFooter />
+        </StyledBox>
+      </StyledContainer>
     </React.Fragment>
   );
 };

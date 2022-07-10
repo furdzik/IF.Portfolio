@@ -1,7 +1,7 @@
 {
   "components.BirthdayCard.header": "Wszystkiego Najlepszego",
   "components.BirthdayCard.name": "Monika",
-  "components.Footer.copyright": "IZABELA FURDZIK © {currentYear} All rights reserved",
+  "components.Footer.copyright": "© {currentYear} All rights reserved",
   "components.Header.title": "IF.Portfolio [WIP]",
   "components.MainPage.contributionsText": "contributions: ",
   "components.MainPage.cssArt": "CSS Art",

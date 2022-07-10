@@ -276,15 +276,15 @@ const TreePinkTokyoSeven = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 13.9rem;
   left: 68.2rem;
-  z-index: 2;
+  z-index: 3;
   transform: scale(.4);
 `;
 
 const TreePinkTokyoEight = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 17.9rem;
-  left: 66.2rem;
-  z-index: 2;
+  left: 71.2rem; // 66.2rem;
+  z-index: 3;
   transform: scale(.4);
 `;
 
@@ -308,7 +308,7 @@ const TreePinkTokyoEleven = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 19.9rem;
   left: 43.2rem;
-  z-index: 2;
+  z-index: 3;
   transform: scale(.3);
 `;
 

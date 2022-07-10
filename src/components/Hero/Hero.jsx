@@ -100,7 +100,6 @@ const Hero = (props) => (
         <StyledBuildingFour />
         <StyledBuildingFive />
       </TokyoWrapper>
-
     </ContainerStyled>
   </Wrapper>
 );

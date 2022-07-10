@@ -6,19 +6,14 @@ import Building from '@components/elements/buildings/Building';
 
 const Wrapper = styled.div`
   ${ElementsCommonStyleUnspecified};
-  width: 15.5rem;
-  height: 19.3rem;
+  width: 13.3rem;
+  height: 20.5rem;
 `;
 
 const StyledBuilding = styled(Building)`
   ${ElementsCommonStyleUnspecified};
   right: 3.2rem;
   bottom: 2rem;
-`;
-
-const SideWalk = styled.span`
-  ${ElementsCommonStyleUnspecified};
-  // @TODO
 `;
 
 const FrontSideBlock = styled.span`
@@ -28,12 +23,9 @@ const FrontSideBlock = styled.span`
     span {
       position: static;
       display: block;
-      height: 1rem;
-      margin: .8rem 1rem;
-      background: #5f81ae;
-      &:first-of-type {
-        margin-top: 1rem;
-      }
+      height: .8rem;
+      margin: .6rem .2rem;
+      background: #ffa22b;
     }
   }
 `;
@@ -45,12 +37,9 @@ const LeftSideBlock = styled.span`
     span {
       position: static;
       display: block;
-      height: 1rem;
-      margin: .8rem 1rem;
-      background: #314f75;
-      &:first-of-type {
-        margin-top: 1rem;
-      }
+      height: .8rem;
+      margin: .6rem 1.2rem .6rem .2rem;
+      background: #765d3e;
     }
   }
 `;
@@ -58,7 +47,6 @@ const LeftSideBlock = styled.span`
 export {
   Wrapper,
   StyledBuilding,
-  SideWalk,
   FrontSideBlock,
   LeftSideBlock
 };

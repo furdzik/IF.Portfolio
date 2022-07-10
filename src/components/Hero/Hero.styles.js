@@ -22,6 +22,9 @@ import StMarysBasilica from '@components/elements/StMarysBasilica';
 import TrainTracks from '@components/elements/TrainTracks';
 import BuildingOne from '@components/elements/buildings/BuildingOne';
 import BuildingTwo from '@components/elements/buildings/BuildingTwo';
+import BuildingThree from '@components/elements/buildings/BuildingThree';
+import BuildingFour from '@components/elements/buildings/BuildingFour';
+import BuildingFive from '@components/elements/buildings/BuildingFive';
 
 const Wrapper = styled.div`
   position: relative;
@@ -335,13 +338,35 @@ const StyledTrainTracks = styled(TrainTracks)`
 const StyledBuildingOne = styled(BuildingOne)`
   ${ElementsCommonStyleUnspecified};
   bottom: 27rem;
-  left: 25rem;
+  left: 29rem;
 `;
 
 const StyledBuildingTwo = styled(BuildingTwo)`
   ${ElementsCommonStyleUnspecified};
   bottom: 26rem;
+  left: 0;
+  z-index: 3;
+`;
+
+const StyledBuildingThree = styled(BuildingThree)`
+  ${ElementsCommonStyleUnspecified};
+  bottom: 32rem;
+  left: 11rem;
+  z-index: 2;
+`;
+
+const StyledBuildingFour = styled(BuildingFour)`
+  ${ElementsCommonStyleUnspecified};
+  bottom: 34rem;
   left: 2rem;
+  z-index: 1;
+`;
+
+const StyledBuildingFive = styled(BuildingFive)`
+  ${ElementsCommonStyleUnspecified};
+  bottom: 36rem;
+  left: 24rem;
+  z-index: 1;
 `;
 
 export {
@@ -379,5 +404,8 @@ export {
   StyledStMarysBasilica,
   StyledTrainTracks,
   StyledBuildingOne,
-  StyledBuildingTwo
+  StyledBuildingTwo,
+  StyledBuildingThree,
+  StyledBuildingFour,
+  StyledBuildingFive
 };

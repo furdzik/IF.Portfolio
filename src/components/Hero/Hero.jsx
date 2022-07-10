@@ -38,7 +38,10 @@ import {
   StyledStMarysBasilica,
   StyledTrainTracks,
   StyledBuildingOne,
-  StyledBuildingTwo
+  StyledBuildingTwo,
+  StyledBuildingThree,
+  StyledBuildingFour,
+  StyledBuildingFive
 } from './Hero.styles.js';
 
 const Hero = (props) => (
@@ -93,6 +96,9 @@ const Hero = (props) => (
         <StyledTrainTracks />
         <StyledBuildingOne />
         <StyledBuildingTwo />
+        <StyledBuildingThree />
+        <StyledBuildingFour />
+        <StyledBuildingFive />
       </TokyoWrapper>
 
     </ContainerStyled>

@@ -24,16 +24,16 @@ const FrontSideBlock = styled.span`
       position: static;
       display: block;
       height: .8rem;
-      margin: .6rem .2rem;
-      background: #3b4e85;
+      margin: .6rem;
+      background: #2b7dd3;
       &:first-of-type {
-        background: #c5d928;
+        background: #28d95e;
       }
     }
   }
 `;
 
-const LeftSideBlock = styled.span`
+const RightSideBlock = styled.span`
   && {
     position: static;
     overflow: hidden;
@@ -41,8 +41,8 @@ const LeftSideBlock = styled.span`
       position: static;
       display: block;
       height: .8rem;
-      margin: .6rem 1.2rem .6rem .2rem;
-      background: #2e3750;
+      margin: .6rem 1.2rem;
+      background: #19528f;
       &:first-of-type {
         margin-top: 2rem;
       }
@@ -54,5 +54,5 @@ export {
   Wrapper,
   StyledBuilding,
   FrontSideBlock,
-  LeftSideBlock
+  RightSideBlock
 };

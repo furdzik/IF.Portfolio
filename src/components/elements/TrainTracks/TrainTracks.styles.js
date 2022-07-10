@@ -5,7 +5,7 @@ import { ElementsCommonStyleUnspecified, ElementsCommonStyle } from '@styles/ele
 const Wrapper = styled.div`
   ${ElementsCommonStyleUnspecified};
   width: 140rem;
-  height: 54rem;
+  height: 44rem;
 `;
 
 const MainTracks = styled.div`
@@ -163,7 +163,7 @@ const MainTrainTracks = styled.div`
 const WideTracks = styled.div`
   ${ElementsCommonStyle};
   width: 140rem;
-  height: 54rem;
+  height: 44rem;
 `;
 
 const WideTrainTracksBridge = styled.div`
@@ -269,7 +269,7 @@ const WideTrainTracksBridge = styled.div`
 const WideTrainTracks = styled.div`
   ${ElementsCommonStyle};
   width: 140rem;
-  height: 54rem;
+  height: 44rem;
   span {
     &::before,
     &::after {

@@ -6,28 +6,29 @@ import {
   StyledBuilding,
   FrontSideBlock,
   LeftSideBlock
-} from './BuildingFive.styles.js';
+} from './BuildingNine.styles.js';
 
-const BuildingFive = (props) => {
+const BuildingNine = (props) => {
   const frontSide = (
     <FrontSideBlock>
-      <span /><span /><span /><span /><span /><span /><span />
+      <span /><span /><span /><span /><span />
     </FrontSideBlock>
   );
   const leftSide = (
     <LeftSideBlock>
-      <span /><span /><span /><span /><span /><span />
+      <span /><span /><span /><span /><span /><span /><span />
+      <span /><span /><span /><span />
     </LeftSideBlock>
   );
 
   return (
     <Wrapper className={props.className}>
       <StyledBuilding
-        width={7.5}
-        height={22.5}
-        frontBackSideColor="#edf2ec"
-        leftRightSideColor="#aed7ef"
-        topBottomSideColor="#86c0e1"
+        width={9}
+        height={18}
+        frontBackSideColor="#ffffff"
+        leftRightSideColor="#e9edef"
+        topBottomSideColor="#dbdfe1"
         frontSideBlock={frontSide}
         leftSideBlock={leftSide}
         transform="rotateY(20deg) rotateX(-9deg) rotateZ(-3deg)"
@@ -36,12 +37,12 @@ const BuildingFive = (props) => {
   );
 };
 
-BuildingFive.propTypes = {
+BuildingNine.propTypes = {
   className: PropTypes.string
 };
 
-BuildingFive.defaultProps = {
+BuildingNine.defaultProps = {
   className: ''
 };
 
-export default BuildingFive;
+export default BuildingNine;

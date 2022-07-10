@@ -57,14 +57,8 @@ const GlobalStyles = css`
   h4,
   h5,
   h6 {
-    font-family: ${theme.fontFamily.shadowsInto}, sans-serif;
-    font-weight: ${theme.fontWeight.light};
-  }
-
-  h1,
-  h2,
-  h3 {
-    letter-spacing: -.01em;
+    font-family: ${theme.fontFamily.lobster}, sans-serif;
+    font-weight: normal;
   }
 
   h1 {

@@ -37,12 +37,11 @@ const StyledContainer = styled(Container)`
   position: absolute;
   bottom: 4%;
   left: 50%;
-  z-index: 3;
+  z-index: 6;
   transform: translateX(-50%);
 `;
 
 const StyledBox = styled(Box)`
-  z-index: 3;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;

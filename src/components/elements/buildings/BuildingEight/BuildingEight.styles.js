@@ -6,45 +6,55 @@ import Building from '@components/elements/buildings/Building';
 
 const Wrapper = styled.div`
   ${ElementsCommonStyleUnspecified};
-  width: 13.3rem;
-  height: 25.5rem;
+  width: 8.2rem;
+  height: 20.5rem;
 `;
 
 const StyledBuilding = styled(Building)`
   ${ElementsCommonStyleUnspecified};
-  right: 3.2rem;
-  bottom: 2rem;
+  left: 1.5rem;
 `;
 
 const FrontSideBlock = styled.span`
   && {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: 100%;
     span {
       position: static;
       display: block;
+      flex-shrink: 0;
+      width: .8rem;
       height: .8rem;
-      margin: .6rem .2rem;
-      background: #3b4e85;
+      margin: .4rem;
+      background: #72788b;
       &:first-of-type {
-        background: #c5d928;
+        flex-grow: 3;
+        width: 83%;
+        background: #dd67b3;
       }
     }
   }
 `;
 
-const LeftSideBlock = styled.span`
+const RightSideBlock = styled.span`
   && {
     position: static;
+    display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
     span {
       position: static;
       display: block;
+      flex-shrink: 0;
+      width: .8rem;
       height: .8rem;
-      margin: .6rem 1.2rem .6rem .2rem;
-      background: #2e3750;
+      margin: .4rem;
+      background: #72788b;
       &:first-of-type {
-        margin-top: 2rem;
+        flex-grow: 3;
+        width: 83%;
+        background: #b5b4b4;
       }
     }
   }
@@ -54,5 +64,5 @@ export {
   Wrapper,
   StyledBuilding,
   FrontSideBlock,
-  LeftSideBlock
+  RightSideBlock
 };

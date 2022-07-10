@@ -7,7 +7,7 @@ import Building from '@components/elements/buildings/Building';
 const Wrapper = styled.div`
   ${ElementsCommonStyleUnspecified};
   width: 13.3rem;
-  height: 25.5rem;
+  height: 20.5rem;
 `;
 
 const StyledBuilding = styled(Building)`
@@ -25,15 +25,12 @@ const FrontSideBlock = styled.span`
       display: block;
       height: .8rem;
       margin: .6rem .2rem;
-      background: #3b4e85;
-      &:first-of-type {
-        background: #c5d928;
-      }
+      background: #ad6f21;
     }
   }
 `;
 
-const LeftSideBlock = styled.span`
+const RightSideBlock = styled.span`
   && {
     position: static;
     overflow: hidden;
@@ -42,10 +39,7 @@ const LeftSideBlock = styled.span`
       display: block;
       height: .8rem;
       margin: .6rem 1.2rem .6rem .2rem;
-      background: #2e3750;
-      &:first-of-type {
-        margin-top: 2rem;
-      }
+      background: #91887d;
     }
   }
 `;
@@ -54,5 +48,5 @@ export {
   Wrapper,
   StyledBuilding,
   FrontSideBlock,
-  LeftSideBlock
+  RightSideBlock
 };

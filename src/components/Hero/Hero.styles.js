@@ -25,6 +25,15 @@ import BuildingTwo from '@components/elements/buildings/BuildingTwo';
 import BuildingThree from '@components/elements/buildings/BuildingThree';
 import BuildingFour from '@components/elements/buildings/BuildingFour';
 import BuildingFive from '@components/elements/buildings/BuildingFive';
+import BuildingSix from '@components/elements/buildings/BuildingSix';
+import BuildingSeven from '@components/elements/buildings/BuildingSeven';
+import BuildingEight from '@components/elements/buildings/BuildingEight';
+import BuildingNine from '@components/elements/buildings/BuildingNine';
+import BuildingTen from '@components/elements/buildings/BuildingTen';
+import BuildingEleven from '@components/elements/buildings/BuildingEleven';
+import BuildingTwelve from '@components/elements/buildings/BuildingTwelve';
+import BuildingThirteen from '@components/elements/buildings/BuildingThirteen';
+import BuildingFourteen from '@components/elements/buildings/BuildingFourteen';
 
 const Wrapper = styled.div`
   position: relative;
@@ -166,7 +175,7 @@ const StyledMountains = styled(Mountains)`
   z-index: 0;
 `;
 
-const TreeGreenCracowOne = styled(Tree)`
+const TreeCracowOne = styled(Tree)`
   ${ElementsCommonStyle};
   right: .4rem;
   bottom: 39.7rem;
@@ -175,35 +184,35 @@ const TreeGreenCracowOne = styled(Tree)`
   transform: scale(.3);
 `;
 
-const TreeGreenCracowTwo = styled(Tree)`
+const TreeCracowTwo = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 5.1rem;
   left: 5.4rem;
   z-index: 3;
 `;
 
-const TreeGreenCracowThree = styled(Tree)`
+const TreeCracowThree = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 11.1rem;
   left: -3.5rem;
   z-index: 2;
 `;
 
-const TreeGreenCracowFour = styled(Tree)`
+const TreeCracowFour = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 3.9rem;
   left: 19.4rem;
   z-index: 2;
 `;
 
-const TreeGreenCracowFive = styled(Tree)`
+const TreeCracowFive = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 0;
   left: -22rem;
   z-index: 2;
 `;
 
-const TreeGreenCracowSix = styled(Tree)`
+const TreeCracowSix = styled(Tree)`
   ${ElementsCommonStyle};
   right: 5.4rem;
   bottom: 40.7rem;
@@ -212,7 +221,7 @@ const TreeGreenCracowSix = styled(Tree)`
   transform: scale(.3);
 `;
 
-const TreeGreenCracowSeven = styled(Tree)`
+const TreeCracowSeven = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: -2.3rem;
   left: 39rem;
@@ -220,7 +229,7 @@ const TreeGreenCracowSeven = styled(Tree)`
   transform: scale(.5);
 `;
 
-const TreeGreenCracowEight = styled(Tree)`
+const TreeCracowEight = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 2.7rem;
   left: 31.8rem;
@@ -228,35 +237,35 @@ const TreeGreenCracowEight = styled(Tree)`
   transform: scale(.5);
 `;
 
-const TreePinkTokyoOne = styled(Tree)`
+const TreeTokyoOne = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 0;
   left: 67rem;
-  z-index: 3;
+  z-index: 4;
 `;
 
-const TreePinkTokyoTwo = styled(Tree)`
+const TreeTokyoTwo = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 0;
   left: 59rem;
-  z-index: 3;
+  z-index: 4;
 `;
 
-const TreePinkTokyoThree = styled(Tree)`
+const TreeTokyoThree = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 0;
   left: 86rem;
-  z-index: 3;
+  z-index: 4;
 `;
 
-const TreePinkTokyoFour = styled(Tree)`
+const TreeTokyoFour = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 0;
   left: 109rem;
-  z-index: 3;
+  z-index: 4;
 `;
 
-const TreePinkTokyoFive = styled(Tree)`
+const TreeTokyoFive = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 7.6rem;
   left: 74.3rem;
@@ -264,7 +273,7 @@ const TreePinkTokyoFive = styled(Tree)`
   transform: scale(.4);
 `;
 
-const TreePinkTokyoSix = styled(Tree)`
+const TreeTokyoSix = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 8.8rem;
   left: 71.7rem;
@@ -272,7 +281,7 @@ const TreePinkTokyoSix = styled(Tree)`
   transform: scale(.4);
 `;
 
-const TreePinkTokyoSeven = styled(Tree)`
+const TreeTokyoSeven = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 13.9rem;
   left: 68.2rem;
@@ -280,15 +289,15 @@ const TreePinkTokyoSeven = styled(Tree)`
   transform: scale(.4);
 `;
 
-const TreePinkTokyoEight = styled(Tree)`
+const TreeTokyoEight = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 17.9rem;
-  left: 71.2rem; // 66.2rem;
-  z-index: 3;
+  left: 71.2rem;
+  z-index: 4;
   transform: scale(.4);
 `;
 
-const TreePinkTokyoNine = styled(Tree)`
+const TreeTokyoNine = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 9.9rem;
   left: 36.2rem;
@@ -296,7 +305,7 @@ const TreePinkTokyoNine = styled(Tree)`
   transform: scale(.3);
 `;
 
-const TreePinkTokyoTen = styled(Tree)`
+const TreeTokyoTen = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 16.9rem;
   left: 41.2rem;
@@ -304,7 +313,7 @@ const TreePinkTokyoTen = styled(Tree)`
   transform: scale(.3);
 `;
 
-const TreePinkTokyoEleven = styled(Tree)`
+const TreeTokyoEleven = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 19.9rem;
   left: 43.2rem;
@@ -312,11 +321,59 @@ const TreePinkTokyoEleven = styled(Tree)`
   transform: scale(.3);
 `;
 
+const TreeTokyoTwelve = styled(Tree)`
+  ${ElementsCommonStyle};
+  bottom: 25.1rem;
+  left: 8.2rem;
+  z-index: 3;
+  transform: scale(.3);
+`;
+
+const TreeTokyoThirteen = styled(Tree)`
+  ${ElementsCommonStyle};
+  bottom: 26.1rem;
+  left: 17.2rem;
+  z-index: 4;
+  transform: scale(.3);
+`;
+
+const TreeTokyoFourteen = styled(Tree)`
+  ${ElementsCommonStyle};
+  bottom: 31.1rem;
+  left: 34.2rem;
+  z-index: 1;
+  transform: scale(.3);
+`;
+
+const TreeTokyoFifteen = styled(Tree)`
+  ${ElementsCommonStyle};
+  bottom: 31.1rem;
+  left: 39.2rem;
+  z-index: 3;
+  transform: scale(.3);
+`;
+
+const TreeTokyoSixteen = styled(Tree)`
+  ${ElementsCommonStyle};
+  bottom: 32.1rem;
+  left: 42.2rem;
+  z-index: 3;
+  transform: scale(.3);
+`;
+
+const TreeTokyoSeventeen = styled(Tree)`
+  ${ElementsCommonStyle};
+  right: -40.8rem;
+  bottom: 11.1rem;
+  z-index: 2;
+  transform: scale(.5);
+`;
+
 const StyledSkyTree = styled(SkyTree)`
   ${ElementsCommonStyle};
   bottom: -3rem;
   left: 54rem;
-  z-index: 3;
+  z-index: 4;
   transform: scale(.9);
 `;
 
@@ -332,13 +389,13 @@ const StyledTrainTracks = styled(TrainTracks)`
   ${ElementsCommonStyleUnspecified};
   bottom: 0;
   left: 20rem;
-  z-index: 2;
+  z-index: 3;
 `;
 
 const StyledBuildingOne = styled(BuildingOne)`
   ${ElementsCommonStyleUnspecified};
-  bottom: 27rem;
-  left: 29rem;
+  right: 19rem;
+  bottom: 35rem;
 `;
 
 const StyledBuildingTwo = styled(BuildingTwo)`
@@ -369,6 +426,69 @@ const StyledBuildingFive = styled(BuildingFive)`
   z-index: 1;
 `;
 
+const StyledBuildingSix = styled(BuildingSix)`
+  ${ElementsCommonStyleUnspecified};
+  right: 3rem;
+  bottom: 17rem;
+  z-index: 5;
+`;
+
+const StyledBuildingSeven = styled(BuildingSeven)`
+  ${ElementsCommonStyleUnspecified};
+  right: 8.5rem;
+  bottom: 19rem;
+  z-index: 4;
+`;
+
+const StyledBuildingEight = styled(BuildingEight)`
+  ${ElementsCommonStyleUnspecified};
+  bottom: 35rem;
+  left: 33.5rem;
+  z-index: 1;
+`;
+
+const StyledBuildingNine = styled(BuildingNine)`
+  ${ElementsCommonStyleUnspecified};
+  bottom: 39rem;
+  left: 39.5rem;
+  z-index: 0;
+`;
+
+const StyledBuildingTen = styled(BuildingTen)`
+  ${ElementsCommonStyleUnspecified};
+  right: -32rem;
+  bottom: 15rem;
+  z-index: 2;
+`;
+
+const StyledBuildingEleven = styled(BuildingEleven)`
+  ${ElementsCommonStyleUnspecified};
+  right: -21rem;
+  bottom: 19.5rem;
+  z-index: 2;
+`;
+
+const StyledBuildingTwelve = styled(BuildingTwelve)`
+  ${ElementsCommonStyleUnspecified};
+  right: -11rem;
+  bottom: 26.5rem;
+  z-index: 1;
+`;
+
+const StyledBuildingThirteen = styled(BuildingThirteen)`
+  ${ElementsCommonStyleUnspecified};
+  right: -1rem;
+  bottom: 26.5rem;
+  z-index: 0;
+`;
+
+const StyledBuildingFourteen = styled(BuildingFourteen)`
+  ${ElementsCommonStyleUnspecified};
+  right: -28rem;
+  bottom: 21.5rem;
+  z-index: 0;
+`;
+
 export {
   Wrapper,
   ContainerStyled,
@@ -381,25 +501,31 @@ export {
   StyledMtFuji,
   StyledCityGround,
   StyledMountains,
-  TreeGreenCracowOne,
-  TreeGreenCracowTwo,
-  TreeGreenCracowThree,
-  TreeGreenCracowFour,
-  TreeGreenCracowFive,
-  TreeGreenCracowSix,
-  TreeGreenCracowSeven,
-  TreeGreenCracowEight,
-  TreePinkTokyoOne,
-  TreePinkTokyoTwo,
-  TreePinkTokyoThree,
-  TreePinkTokyoFour,
-  TreePinkTokyoFive,
-  TreePinkTokyoSix,
-  TreePinkTokyoSeven,
-  TreePinkTokyoEight,
-  TreePinkTokyoNine,
-  TreePinkTokyoTen,
-  TreePinkTokyoEleven,
+  TreeCracowOne,
+  TreeCracowTwo,
+  TreeCracowThree,
+  TreeCracowFour,
+  TreeCracowFive,
+  TreeCracowSix,
+  TreeCracowSeven,
+  TreeCracowEight,
+  TreeTokyoOne,
+  TreeTokyoTwo,
+  TreeTokyoThree,
+  TreeTokyoFour,
+  TreeTokyoFive,
+  TreeTokyoSix,
+  TreeTokyoSeven,
+  TreeTokyoEight,
+  TreeTokyoNine,
+  TreeTokyoTen,
+  TreeTokyoEleven,
+  TreeTokyoTwelve,
+  TreeTokyoThirteen,
+  TreeTokyoFourteen,
+  TreeTokyoFifteen,
+  TreeTokyoSixteen,
+  TreeTokyoSeventeen,
   StyledSkyTree,
   StyledStMarysBasilica,
   StyledTrainTracks,
@@ -407,5 +533,14 @@ export {
   StyledBuildingTwo,
   StyledBuildingThree,
   StyledBuildingFour,
-  StyledBuildingFive
+  StyledBuildingFive,
+  StyledBuildingSix,
+  StyledBuildingSeven,
+  StyledBuildingEight,
+  StyledBuildingNine,
+  StyledBuildingTen,
+  StyledBuildingEleven,
+  StyledBuildingTwelve,
+  StyledBuildingThirteen,
+  StyledBuildingFourteen
 };

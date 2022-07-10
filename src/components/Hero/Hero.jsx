@@ -15,25 +15,31 @@ import {
   StyledMtFuji,
   StyledCityGround,
   StyledMountains,
-  TreeGreenCracowOne,
-  TreeGreenCracowTwo,
-  TreeGreenCracowThree,
-  TreeGreenCracowFour,
-  TreeGreenCracowFive,
-  TreeGreenCracowSix,
-  TreeGreenCracowSeven,
-  TreeGreenCracowEight,
-  TreePinkTokyoOne,
-  TreePinkTokyoTwo,
-  TreePinkTokyoThree,
-  TreePinkTokyoFour,
-  TreePinkTokyoFive,
-  TreePinkTokyoSix,
-  TreePinkTokyoSeven,
-  TreePinkTokyoEight,
-  TreePinkTokyoNine,
-  TreePinkTokyoTen,
-  TreePinkTokyoEleven,
+  TreeCracowOne,
+  TreeCracowTwo,
+  TreeCracowThree,
+  TreeCracowFour,
+  TreeCracowFive,
+  TreeCracowSix,
+  TreeCracowSeven,
+  TreeCracowEight,
+  TreeTokyoOne,
+  TreeTokyoTwo,
+  TreeTokyoThree,
+  TreeTokyoFour,
+  TreeTokyoFive,
+  TreeTokyoSix,
+  TreeTokyoSeven,
+  TreeTokyoEight,
+  TreeTokyoNine,
+  TreeTokyoTen,
+  TreeTokyoEleven,
+  TreeTokyoTwelve,
+  TreeTokyoThirteen,
+  TreeTokyoFourteen,
+  TreeTokyoFifteen,
+  TreeTokyoSixteen,
+  TreeTokyoSeventeen,
   StyledSkyTree,
   StyledStMarysBasilica,
   StyledTrainTracks,
@@ -41,7 +47,16 @@ import {
   StyledBuildingTwo,
   StyledBuildingThree,
   StyledBuildingFour,
-  StyledBuildingFive
+  StyledBuildingFive,
+  StyledBuildingSix,
+  StyledBuildingSeven,
+  StyledBuildingEight,
+  StyledBuildingNine,
+  StyledBuildingTen,
+  StyledBuildingEleven,
+  StyledBuildingTwelve,
+  StyledBuildingThirteen,
+  StyledBuildingFourteen
 } from './Hero.styles.js';
 
 const Hero = (props) => (
@@ -68,30 +83,36 @@ const Hero = (props) => (
       <StyledRiver />
       <CracowWrapper>
         <StyledMountains />
-        <TreeGreenCracowOne color="green" isTaller />
-        <TreeGreenCracowTwo color="green" />
-        <TreeGreenCracowThree color="green" isTaller />
-        <TreeGreenCracowFour color="green" />
-        <TreeGreenCracowFive color="green" />
-        <TreeGreenCracowSix color="green" />
-        <TreeGreenCracowSeven color="green" />
-        <TreeGreenCracowEight color="green" />
+        <TreeCracowOne color="green" isTaller />
+        <TreeCracowTwo color="green" />
+        <TreeCracowThree color="green" isTaller />
+        <TreeCracowFour color="green" />
+        <TreeCracowFive color="green" />
+        <TreeCracowSix color="green" />
+        <TreeCracowSeven color="green" />
+        <TreeCracowEight color="green" />
         <StyledStMarysBasilica />
       </CracowWrapper>
       <TokyoWrapper>
         <StyledMtFuji />
         <StyledCityGround />
-        <TreePinkTokyoOne color="pink" />
-        <TreePinkTokyoTwo color="pink" isTaller />
-        <TreePinkTokyoThree color="pink" />
-        <TreePinkTokyoFour color="pink" />
-        <TreePinkTokyoEight color="pink" isTaller />
-        <TreePinkTokyoSeven color="green" isTaller />
-        <TreePinkTokyoSix color="green" />
-        <TreePinkTokyoFive color="green" isTaller />
-        <TreePinkTokyoNine color="green" />
-        <TreePinkTokyoTen color="pink" />
-        <TreePinkTokyoEleven color="pink" isTaller />
+        <TreeTokyoOne color="pink" />
+        <TreeTokyoTwo color="pink" isTaller />
+        <TreeTokyoThree color="pink" />
+        <TreeTokyoFour color="pink" />
+        <TreeTokyoEight color="pink" isTaller />
+        <TreeTokyoSeven color="green" isTaller />
+        <TreeTokyoSix color="green" />
+        <TreeTokyoFive color="green" isTaller />
+        <TreeTokyoNine color="green" />
+        <TreeTokyoTen color="pink" />
+        <TreeTokyoEleven color="pink" isTaller />
+        <TreeTokyoTwelve color="pink" isTaller />
+        <TreeTokyoThirteen color="green" />
+        <TreeTokyoFourteen color="green" />
+        <TreeTokyoFifteen color="green" isTaller />
+        <TreeTokyoSixteen color="pink" />
+        <TreeTokyoSeventeen color="green" inTaller />
         <StyledSkyTree />
         <StyledTrainTracks />
         <StyledBuildingOne />
@@ -99,6 +120,15 @@ const Hero = (props) => (
         <StyledBuildingThree />
         <StyledBuildingFour />
         <StyledBuildingFive />
+        <StyledBuildingSix />
+        <StyledBuildingSeven />
+        <StyledBuildingEight />
+        <StyledBuildingNine />
+        <StyledBuildingTen />
+        <StyledBuildingEleven />
+        <StyledBuildingTwelve />
+        <StyledBuildingThirteen />
+        <StyledBuildingFourteen />
       </TokyoWrapper>
     </ContainerStyled>
   </Wrapper>

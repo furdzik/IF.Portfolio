@@ -5,19 +5,21 @@ import {
   Wrapper,
   StyledBuilding,
   FrontSideBlock,
-  LeftSideBlock
-} from './BuildingFive.styles.js';
+  RightSideBlock
+} from './BuildingTen.styles.js';
 
-const BuildingFive = (props) => {
+const BuildingTen = (props) => {
   const frontSide = (
     <FrontSideBlock>
       <span /><span /><span /><span /><span /><span /><span />
+      <span /><span /><span />
     </FrontSideBlock>
   );
-  const leftSide = (
-    <LeftSideBlock>
+  const rightSide = (
+    <RightSideBlock>
       <span /><span /><span /><span /><span /><span />
-    </LeftSideBlock>
+      <span /><span /><span />
+    </RightSideBlock>
   );
 
   return (
@@ -25,23 +27,23 @@ const BuildingFive = (props) => {
       <StyledBuilding
         width={7.5}
         height={22.5}
-        frontBackSideColor="#edf2ec"
-        leftRightSideColor="#aed7ef"
-        topBottomSideColor="#86c0e1"
+        frontBackSideColor="#e1efde"
+        leftRightSideColor="#83bacf"
+        topBottomSideColor="#b8c7c5"
         frontSideBlock={frontSide}
-        leftSideBlock={leftSide}
-        transform="rotateY(20deg) rotateX(-9deg) rotateZ(-3deg)"
+        rightSideBlock={rightSide}
+        transform="rotateY(-22deg) rotateX(-15deg) rotateZ(5deg)"
       />
     </Wrapper>
   );
 };
 
-BuildingFive.propTypes = {
+BuildingTen.propTypes = {
   className: PropTypes.string
 };
 
-BuildingFive.defaultProps = {
+BuildingTen.defaultProps = {
   className: ''
 };
 
-export default BuildingFive;
+export default BuildingTen;

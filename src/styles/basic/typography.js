@@ -3,6 +3,8 @@ const fontFamily = {
   mainFontAlt: 'Roboto',
   roboto: 'Roboto',
   shadowsInto: 'Shadows Into Light Two',
+  pacifico: 'Pacifico',
+  lobster: 'Lobster',
   fallback: 'Arial',
   fallbackIos: '-apple-system',
   fallbackAndroid: 'Roboto',

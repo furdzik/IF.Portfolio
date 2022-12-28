@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { cloudType } from '@constants';
+import { cloudType as CLOUD_TYPE } from '@constants';
 
 import {
   Wrapper,
@@ -62,22 +62,22 @@ import {
 const Hero = (props) => (
   <Wrapper className={props.className}>
     <ContainerStyled>
-      <StyledCloud cloudType={cloudType.one} />
-      <StyledCloud cloudType={cloudType.two} />
-      <StyledCloud cloudType={cloudType.three} />
-      <StyledCloud cloudType={cloudType.four} />
-      <StyledCloud cloudType={cloudType.five} />
-      <StyledCloud cloudType={cloudType.six} />
-      <StyledCloud cloudType={cloudType.seven} />
-      <StyledCloud cloudType={cloudType.eight} />
-      <StyledCloud cloudType={cloudType.nine} />
-      <StyledCloud cloudType={cloudType.ten} />
-      <StyledCloud cloudType={cloudType.eleven} />
-      <StyledCloud cloudType={cloudType.twelve} />
-      <StyledCloud cloudType={cloudType.thirteen} />
-      <StyledCloud cloudType={cloudType.fourteen} />
-      <StyledCloud cloudType={cloudType.fifteen} />
-      <StyledCloud cloudType={cloudType.sixteen} />
+      <StyledCloud cloudType={CLOUD_TYPE.one} />
+      <StyledCloud cloudType={CLOUD_TYPE.two} />
+      <StyledCloud cloudType={CLOUD_TYPE.three} />
+      <StyledCloud cloudType={CLOUD_TYPE.four} />
+      <StyledCloud cloudType={CLOUD_TYPE.five} />
+      <StyledCloud cloudType={CLOUD_TYPE.six} />
+      <StyledCloud cloudType={CLOUD_TYPE.seven} />
+      <StyledCloud cloudType={CLOUD_TYPE.eight} />
+      <StyledCloud cloudType={CLOUD_TYPE.nine} />
+      <StyledCloud cloudType={CLOUD_TYPE.ten} />
+      <StyledCloud cloudType={CLOUD_TYPE.eleven} />
+      <StyledCloud cloudType={CLOUD_TYPE.twelve} />
+      <StyledCloud cloudType={CLOUD_TYPE.thirteen} />
+      <StyledCloud cloudType={CLOUD_TYPE.fourteen} />
+      <StyledCloud cloudType={CLOUD_TYPE.fifteen} />
+      <StyledCloud cloudType={CLOUD_TYPE.sixteen} />
       <StyledBirdOne />
       <StyledBirdTwo />
       <StyledRiver />

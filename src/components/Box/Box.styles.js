@@ -11,6 +11,11 @@ const Wrapper = styled.div`
   border-radius: 1rem;
   background: ${(props) => props.theme.monoColors.white};
   box-shadow: .1rem .1rem 3.3rem .2rem rgb(255 255 255 / 21%), .1rem .1rem 1rem .2rem rgb(0 0 0 / 30%);
+
+  // do wywalenia
+  outline: 1px dotted blue;
+  background: none !important;
+  * { display: none !important; }
 `;
 
 const Slice = (props) => css`

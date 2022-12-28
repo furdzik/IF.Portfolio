@@ -3,6 +3,8 @@ import { css } from '@emotion/react';
 
 import { cloudType } from '@constants';
 
+// import { breakpointHeightMixin } from '@styles/mixins';
+
 import {
   ElementsCommonStyle,
   ElementsCommonStyleUnspecified
@@ -202,13 +204,13 @@ const TreeCracowFour = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 3.9rem;
   left: 19.4rem;
-  z-index: 2;
+  z-index: 4;
 `;
 
 const TreeCracowFive = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 0;
-  left: -22rem;
+  left: -28rem;
   z-index: 2;
 `;
 
@@ -379,9 +381,10 @@ const StyledSkyTree = styled(SkyTree)`
 
 const StyledStMarysBasilica = styled(StMarysBasilica)`
   ${ElementsCommonStyleUnspecified};
-  bottom: 36rem;
-  left: 38.1rem;
-  display: none;
+  //bottom: 36rem;
+  //left: 51.1rem;
+  bottom: 17rem;
+  left: 26.1rem;
   //z-index: 1110;
   //transform: translateX(-50%);
 `;

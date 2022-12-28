@@ -51,6 +51,7 @@
     "caniuse-lite": "1.0.30001341",
     "core-js": "3.23.1",
     "cross-env": "7.0.3",
+    "css-in-js-styles-utils": "1.6.14",
     "lodash": "4.17.21",
     "prop-types": "15.8.1",
     "react": "18.1.0",

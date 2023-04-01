@@ -40,6 +40,8 @@ import {
   TreeTokyoFifteen,
   TreeTokyoSixteen,
   TreeTokyoSeventeen,
+  TreeTokyoEighteen,
+  TreeTokyoNineteen,
   StyledSkyTree,
   StyledStMarysBasilica,
   StyledTrainTracks,
@@ -113,6 +115,8 @@ const Hero = (props) => (
         <TreeTokyoFifteen color="green" isTaller />
         <TreeTokyoSixteen color="pink" />
         <TreeTokyoSeventeen color="green" inTaller />
+        <TreeTokyoEighteen color="pink" inTaller />
+        <TreeTokyoNineteen color="green" />
         <StyledSkyTree />
         <StyledTrainTracks />
         <StyledBuildingOne />

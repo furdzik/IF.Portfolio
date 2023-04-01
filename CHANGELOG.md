@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/furdzik/IF.Portfolio/compare/v1.2.0...v1.3.0) (2023-04-01)
+
+
+### Features
+
+* **hero:** add pogoda ([69ba994](https://github.com/furdzik/IF.Portfolio/commit/69ba9948a6cbe6e6be9d3ad013396898e18765e7))
+
 ## [1.2.0](https://github.com/furdzik/IF.Portfolio/compare/v1.1.0...v1.2.0) (2022-07-10)
 
 

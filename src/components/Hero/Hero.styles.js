@@ -3,6 +3,8 @@ import { css } from '@emotion/react';
 
 import { cloudType } from '@constants';
 
+import { breakpointHeightMixin } from '@styles/mixins';
+
 import {
   ElementsCommonStyle,
   ElementsCommonStyleUnspecified
@@ -50,6 +52,11 @@ const ContainerStyled = styled(Container)`
 
 const StyledCloud = styled(Cloud)`
   position: absolute;
+  display: none;
+
+  ${breakpointHeightMixin.desktop(css`
+    display: block;
+  `)};
 
   ${(props) => props.cloudType === cloudType.one && css`
     top: 2rem;
@@ -112,6 +119,7 @@ const StyledCloud = styled(Cloud)`
     left: -14.5rem;
   `};
   ${(props) => props.cloudType === cloudType.sixteen && css`
+    //top: 2rem;
     top: 30rem;
     right: -47rem;
   `};
@@ -152,7 +160,6 @@ const TokyoWrapper = styled.div`
   left: 50%;
   width: 100%;
   height: 100%;
-  //outline: 1px dotted gray;
 `;
 
 const StyledMtFuji = styled(MtFuji)`
@@ -165,7 +172,6 @@ const StyledCityGround = styled(CityGround)`
   ${ElementsCommonStyle};
   bottom: 0;
   left: 0;
-  //z-index: 1;
 `;
 
 const StyledMountains = styled(Mountains)`
@@ -254,7 +260,7 @@ const TreeTokyoTwo = styled(Tree)`
 const TreeTokyoThree = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 0;
-  left: 86rem;
+  left: 85rem;
   z-index: 4;
 `;
 
@@ -268,16 +274,16 @@ const TreeTokyoFour = styled(Tree)`
 const TreeTokyoFive = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 7.6rem;
-  left: 74.3rem;
-  z-index: 2;
+  left: 78.3rem;
+  z-index: 5;
   transform: scale(.4);
 `;
 
 const TreeTokyoSix = styled(Tree)`
   ${ElementsCommonStyle};
-  bottom: 8.8rem;
-  left: 71.7rem;
-  z-index: 2;
+  bottom: 12.8rem;
+  left: 74.7rem;
+  z-index: 5;
   transform: scale(.4);
 `;
 
@@ -308,7 +314,7 @@ const TreeTokyoNine = styled(Tree)`
 const TreeTokyoTen = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 16.9rem;
-  left: 41.2rem;
+  left: 40.2rem;
   z-index: 2;
   transform: scale(.3);
 `;
@@ -316,8 +322,8 @@ const TreeTokyoTen = styled(Tree)`
 const TreeTokyoEleven = styled(Tree)`
   ${ElementsCommonStyle};
   bottom: 19.9rem;
-  left: 43.2rem;
-  z-index: 3;
+  left: 42.2rem;
+  z-index: 4;
   transform: scale(.3);
 `;
 
@@ -369,6 +375,22 @@ const TreeTokyoSeventeen = styled(Tree)`
   transform: scale(.5);
 `;
 
+const TreeTokyoEighteen = styled(Tree)`
+  ${ElementsCommonStyle};
+  right: 12.2rem;
+  bottom: 27.8rem;
+  z-index: 2;
+  transform: scale(0.3);
+`;
+
+const TreeTokyoNineteen = styled(Tree)`
+  ${ElementsCommonStyle};
+  right: 15rem;
+  bottom: 26.8rem;
+  z-index: 3;
+  transform: scale(0.3);
+`;
+
 const StyledSkyTree = styled(SkyTree)`
   ${ElementsCommonStyle};
   bottom: -3rem;
@@ -389,13 +411,13 @@ const StyledStMarysBasilica = styled(StMarysBasilica)`
 const StyledTrainTracks = styled(TrainTracks)`
   ${ElementsCommonStyleUnspecified};
   bottom: 0;
-  left: 20rem;
+  left: 19rem;
   z-index: 3;
 `;
 
 const StyledBuildingOne = styled(BuildingOne)`
   ${ElementsCommonStyleUnspecified};
-  right: 19rem;
+  right: 21rem;
   bottom: 35rem;
 `;
 
@@ -429,14 +451,14 @@ const StyledBuildingFive = styled(BuildingFive)`
 
 const StyledBuildingSix = styled(BuildingSix)`
   ${ElementsCommonStyleUnspecified};
-  right: 3rem;
+  right: 4rem;
   bottom: 17rem;
   z-index: 5;
 `;
 
 const StyledBuildingSeven = styled(BuildingSeven)`
   ${ElementsCommonStyleUnspecified};
-  right: 8.5rem;
+  right: 9.5rem;
   bottom: 19rem;
   z-index: 4;
 `;
@@ -478,7 +500,7 @@ const StyledBuildingTwelve = styled(BuildingTwelve)`
 
 const StyledBuildingThirteen = styled(BuildingThirteen)`
   ${ElementsCommonStyleUnspecified};
-  right: -1rem;
+  right: 0;
   bottom: 26.5rem;
   z-index: 0;
 `;
@@ -527,6 +549,8 @@ export {
   TreeTokyoFifteen,
   TreeTokyoSixteen,
   TreeTokyoSeventeen,
+  TreeTokyoEighteen,
+  TreeTokyoNineteen,
   StyledSkyTree,
   StyledStMarysBasilica,
   StyledTrainTracks,

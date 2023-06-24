@@ -42,7 +42,8 @@ const Wrapper = styled.div`
   overflow: hidden;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(#c3eeef 67%, #75d3a9); // 90%
+  //background: linear-gradient(#c3eeef 67%, #75d3a9); // 90%
+  background: linear-gradient(0deg, #75d3a9 0%, #c3eeef 67%, #d5eff0 100%); // 90%
 `;
 
 const ContainerStyled = styled(Container)`
@@ -53,75 +54,60 @@ const ContainerStyled = styled(Container)`
 const StyledCloud = styled(Cloud)`
   position: absolute;
   display: none;
+  scale: 0.6;
 
   ${breakpointHeightMixin.desktop(css`
     display: block;
   `)};
 
   ${(props) => props.cloudType === cloudType.one && css`
-    top: 2rem;
+    top: 1rem;
     left: 18rem;
   `};
   ${(props) => props.cloudType === cloudType.two && css`
-    top: 3rem;
+    top: 2rem;
     right: -36rem;
   `};
   ${(props) => props.cloudType === cloudType.three && css`
-    top: 16rem;
-    right: -42rem;
+    top: 3rem;
+    right: 14rem;
   `};
   ${(props) => props.cloudType === cloudType.four && css`
-    top: 5rem;
-    right: -17rem;
+    top: 2rem;
+    right: 47rem;
   `};
   ${(props) => props.cloudType === cloudType.five && css`
-    top: 2rem;
+    top: 1rem;
     left: -10rem;
   `};
   ${(props) => props.cloudType === cloudType.six && css`
-    top: 7rem;
+    top: 6rem;
     left: 39rem;
   `};
   ${(props) => props.cloudType === cloudType.seven && css`
-    top: 22rem;
+    top: 12rem;
     left: -34rem;
   `};
   ${(props) => props.cloudType === cloudType.eight && css`
-    top: 5rem;
-    right: -56rem;
+    top: 8rem;
+    right: -53rem;
   `};
   ${(props) => props.cloudType === cloudType.nine && css`
-    top: 8rem;
-    left: -46rem;
+    top: 6rem;
+    left: -44rem;
   `};
   ${(props) => props.cloudType === cloudType.ten && css`
-    top: 4rem;
+    top: 3rem;
     right: 4rem;
   `};
   ${(props) => props.cloudType === cloudType.eleven && css`
-    top: 5rem;
-    left: -37rem;
+    top: 4.5rem;
+    left: -37.4rem;
   `};
   ${(props) => props.cloudType === cloudType.twelve && css`
-    top: 16rem;
-    right: -30rem;
-  `};
-  ${(props) => props.cloudType === cloudType.thirteen && css`
-    top: 3rem;
-    right: -9rem;
-  `};
-  ${(props) => props.cloudType === cloudType.fourteen && css`
-    top: 4rem;
-    left: 35rem;
-  `};
-  ${(props) => props.cloudType === cloudType.fifteen && css`
-    top: 3rem;
-    left: -14.5rem;
-  `};
-  ${(props) => props.cloudType === cloudType.sixteen && css`
-    //top: 2rem;
-    top: 30rem;
-    right: -47rem;
+    top: 3.5rem;
+    right: -32rem;
+    z-index: 2;
   `};
 `;
 
@@ -131,6 +117,7 @@ const StyledBirdOne = styled(Bird)`
   bottom: auto;
   left: -22rem;
   transform: rotate(31deg);
+  scale: .7;
 `;
 
 const StyledBirdTwo = styled(Bird)`
@@ -139,6 +126,7 @@ const StyledBirdTwo = styled(Bird)`
   bottom: auto;
   left: -17rem;
   transform: rotate(-38deg);
+  scale: .9;
 `;
 
 const StyledRiver = styled(River)`
@@ -146,6 +134,7 @@ const StyledRiver = styled(River)`
   bottom: 0;
   left: -52.9rem;
   z-index: 2;
+  // display: none;
 `;
 
 const CracowWrapper = styled.div`
@@ -401,10 +390,12 @@ const StyledSkyTree = styled(SkyTree)`
 
 const StyledStMarysBasilica = styled(StMarysBasilica)`
   ${ElementsCommonStyleUnspecified};
-  bottom: 36rem;
-  left: 38.1rem;
+  //bottom: 36rem;
+  //left: 38.1rem;
   display: none;
-  //z-index: 1110;
+  z-index: 1110;
+  bottom: 2rem;
+  right: 20rem
   //transform: translateX(-50%);
 `;
 

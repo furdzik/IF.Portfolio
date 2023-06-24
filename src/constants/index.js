@@ -12,11 +12,7 @@ export const cloudType = {
   nine: 'nine',
   ten: 'ten',
   eleven: 'eleven',
-  twelve: 'twelve',
-  thirteen: 'thirteen',
-  fourteen: 'fourteen',
-  fifteen: 'fifteen',
-  sixteen: 'sixteen'
+  twelve: 'twelve'
 };
 
 export const NUMBER_BUTTON_TYPE = {

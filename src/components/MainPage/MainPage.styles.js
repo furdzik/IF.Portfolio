@@ -46,6 +46,7 @@ const StyledBox = styled(Box)`
   flex-wrap: wrap;
   align-items: flex-start;
   background: linear-gradient(#ffffff 67%, rgb(255 255 255 / 88%));
+  // display: none;
 `;
 
 const MainBox = styled.div`

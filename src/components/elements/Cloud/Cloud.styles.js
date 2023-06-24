@@ -184,6 +184,7 @@ const CloudTypeSixSize = css`
 `;
 
 const CloudTypeSix = css`
+  background: #bae3e3;
   &:nth-of-type(1) {
     bottom: 0;
     left: 0;
@@ -397,7 +398,7 @@ const CloudTypeElevenSize = css`
 
 const CloudTypeEleven = css`
   ${SmallCloud};
-  background: #ace6e7;
+  background: #bae3e3;
 `;
 
 const CloudTypeTwelveSize = css`
@@ -406,43 +407,7 @@ const CloudTypeTwelveSize = css`
 
 const CloudTypeTwelve = css`
   ${SmallCloud};
-  background: #aae6e7;
-`;
-
-const CloudTypeThirteenSize = css`
-  ${SmallCloudSize};
-`;
-
-const CloudTypeThirteen = css`
-  ${SmallCloud};
-  background: #9bdfe1;
-`;
-
-const CloudTypeFourteenSize = css`
-  ${SmallCloudSize};
-`;
-
-const CloudTypeFourteen = css`
-  ${SmallCloud};
-  background: #b0eaeb;
-`;
-
-const CloudTypeFifteenSize = css`
-  ${SmallCloudSize};
-`;
-
-const CloudTypeFifteen = css`
-  ${SmallCloud};
-  background: #aae6e7;
-`;
-
-const CloudTypeSixteenSize = css`
-  ${SmallCloudSize};
-`;
-
-const CloudTypeSixteen = css`
-  ${SmallCloud};
-  background: #aae6e7;
+  background: #bae3e3;
 `;
 
 const Wrapper = styled.div`
@@ -485,18 +450,6 @@ const Wrapper = styled.div`
   ${(props) => props.cloudType === cloudType.twelve && css`
     ${CloudTypeTwelveSize};
   `};
-  ${(props) => props.cloudType === cloudType.thirteen && css`
-    ${CloudTypeThirteenSize};
-  `};
-  ${(props) => props.cloudType === cloudType.fourteen && css`
-    ${CloudTypeFourteenSize};
-  `};
-  ${(props) => props.cloudType === cloudType.fifteen && css`
-    ${CloudTypeFifteenSize};
-  `};
-  ${(props) => props.cloudType === cloudType.sixteen && css`
-    ${CloudTypeSixteenSize};
-  `};
 
   span {
     position: absolute;
@@ -538,18 +491,6 @@ const Wrapper = styled.div`
     `};
     ${(props) => props.cloudType === cloudType.twelve && css`
       ${CloudTypeTwelve};
-    `};
-    ${(props) => props.cloudType === cloudType.thirteen && css`
-      ${CloudTypeThirteen};
-    `};
-    ${(props) => props.cloudType === cloudType.fourteen && css`
-      ${CloudTypeFourteen};
-    `};
-    ${(props) => props.cloudType === cloudType.fifteen && css`
-      ${CloudTypeFifteen};
-    `};
-    ${(props) => props.cloudType === cloudType.sixteen && css`
-      ${CloudTypeSixteen};
     `};
   }
 `;

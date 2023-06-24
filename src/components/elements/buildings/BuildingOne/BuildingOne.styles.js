@@ -422,11 +422,11 @@ const Door = styled.span`
 
 const Window = css`
   ${ElementsCommonStyleUnspecified};
-  width: 8px;
-  height: 12px;
+  width: 9px;
+  height: 13px;
   background-size: 4px 3px;
-  background-image: linear-gradient(to right, #54625b .5px, transparent .5px),
-    linear-gradient(to bottom, #54625b .5px, transparent .5px);
+  background-image: linear-gradient(to right, #54625b .6px, transparent .6px),
+    linear-gradient(to bottom, #54625b .6px, transparent .6px);
   border-right: .5px solid #54625b;
   border-bottom: .5px solid #54625b;
   bottom: calc(35% + 3px);

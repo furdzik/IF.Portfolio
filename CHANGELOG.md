@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/furdzik/IF.Portfolio/compare/v1.3.0...v1.3.1) (2023-06-24)
+
+
+### Bug Fixes
+
+* **hero:** change position of clouds ([5d4e085](https://github.com/furdzik/IF.Portfolio/commit/5d4e0857cceff5c58fdac6b43b965037ffa84f86))
+
 ## [1.3.0](https://github.com/furdzik/IF.Portfolio/compare/v1.2.0...v1.3.0) (2023-04-01)
 
 

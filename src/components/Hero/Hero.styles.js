@@ -134,7 +134,8 @@ const StyledRiver = styled(River)`
   bottom: 0;
   left: -52.9rem;
   z-index: 2;
-  // display: none;
+  // do wywalenia
+  display: none;
 `;
 
 const CracowWrapper = styled.div`
@@ -392,10 +393,10 @@ const StyledStMarysBasilica = styled(StMarysBasilica)`
   ${ElementsCommonStyleUnspecified};
   //bottom: 36rem;
   //left: 38.1rem;
-  display: none;
+  //display: none;
   z-index: 1110;
   bottom: 2rem;
-  right: 20rem
+  right: 30rem
   //transform: translateX(-50%);
 `;
 

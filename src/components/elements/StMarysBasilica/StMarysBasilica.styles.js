@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import { ElementsCommonStyleUnspecified } from '@styles/elementsCommonStyle.styles';
+import { ElementsCommonStyle, ElementsCommonStyleUnspecified } from '@styles/elementsCommonStyle.styles';
 
 import Bricklay from './Bricklay';
 
@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   //width: 205px;
   //height: 435px;
   //background: #2581bc; // do wywalenia
-  background: url(${smaller}) center bottom no-repeat; // do wywalenia
+  //background: url(${smaller}) center bottom no-repeat; // do wywalenia
   background-size: contain;
 `;
 
@@ -312,6 +312,7 @@ const LeftTowerUpperCornice = styled.span`
 const RightTower = styled.span`
   bottom: calc(${mainWallBottomPosition});
   left: calc(${mainWallLeftPosition} + 72px);
+  z-index: 2;
   width: 46.2px;
   height: calc(${mainWallHeight} + 83.35px);
   background: ${wallColor};
@@ -351,6 +352,196 @@ const TowerCornice = styled.span`
   `};
 `;
 
+const LeftSideWall = styled.div`
+  bottom: 9px;
+  left: 0;
+  height: 90px;
+  width: 30px;
+  span {
+    ${ElementsCommonStyle};
+    &:nth-of-type(1) {
+      top: 9px;
+      right: 0;
+      z-index: 1;
+      width: 8.5px;
+      height: 22px;
+      background: #7b3900;
+      &::before {
+        content: '';
+        top: -6.5px;
+        bottom: auto;
+        border-style: solid;
+        border-color: #7b3900 transparent;
+        border-width: 0 0 7px 9px;
+      }
+    }
+    &:nth-of-type(2) {
+      left: 1px;
+      width: calc(100% - 1px);
+      height: 50.8px;
+      background: #d6561c;
+      &::before {
+        content: '';
+        top: -16px;
+        bottom: auto;
+        border-style: solid;
+        border-color: #d6561c transparent;
+        border-width: 0 0 16px 29px;
+      }
+      &::after {
+        content: '';
+        top: -16px;
+        right: 0;
+        bottom: auto;
+        z-index: 1;
+        border-style: solid;
+        border-color: transparent #933c06;
+        border-width: 12px 23px 56px 0;
+      }
+    }
+    &:nth-of-type(3) {
+      bottom: 56px;
+      &::before {
+        content: '';
+        bottom: .6px;
+        left: -3px;
+        transform: rotate(-28deg);
+        width: 27px;
+        height: 2px;
+        background: #6b747d;
+      }
+      &::after {
+        content: '';
+        bottom: 0;
+        left: -2.5px;
+        transform: rotate(-28deg);
+        z-index: 1;
+        width: 26px;
+        height: 1px;
+        border-radius: 10px;
+        background: #455661;
+      }
+    }
+    &:nth-of-type(4) {
+      bottom: 84.5px;
+      &::before {
+        content: '';
+        bottom: .6px;
+        left: 18px;
+        transform: rotate(-37deg);
+        width: 17px;
+        height: 2px;
+        background: #6b747d;
+      }
+      &::after {
+        content: '';
+        bottom: 0;
+        left: 19px;
+        transform: rotate(-37deg);
+        width: 16px;
+        height: 1px;
+        border-radius: 10px;
+        background: #455661;
+        z-index: 1;
+      }
+    }
+  }
+`;
+
+const RightSideWall = styled.div`
+  bottom: 4.7px;
+  right: 2px;
+  height: 77px;
+  width: 26px;
+  span {
+    ${ElementsCommonStyle};
+    &:nth-of-type(1) {
+      bottom: 54px;
+      left: 0;
+      width: 24px;
+      height: 8px;
+      background: #923a05;
+      &::before {
+        content: '';
+        top: -11.5px;
+        bottom: auto;
+        border-style: solid;
+        border-color: #923a05 transparent;
+        border-width: 0 24.3px 12px 0;
+      }
+    }
+    &:nth-of-type(2) {
+      left: 0;
+      width: 100%;
+      height: 53.8px;
+      background: #d1501c;
+      &::before {
+        content: '';
+        top: -13px;
+        bottom: auto;
+        border-style: solid;
+        border-color: #d1501c transparent;
+        border-width: 0 26px 13px 0;
+      }
+      &::after {
+        content: '';
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        border-style: solid;
+        border-color: #933c06 transparent;
+        border-width: 0 25px 66px 0;
+      }
+    }
+    &:nth-of-type(3) {
+      bottom: 66.5px;
+      &::before {
+        content: '';
+        bottom: .7px;
+        left: -3px;
+        transform: rotate(26deg);
+        width: 30px;
+        height: 2px;
+        background: #6b747d;
+      }
+      &::after {
+        content: '';
+        bottom: 0;
+        left: -2.5px;
+        transform: rotate(26deg);
+        z-index: 1;
+        width: 29px;
+        height: 1px;
+        border-radius: 10px;
+        background: #455661;
+      }
+    }
+    &:nth-of-type(4) {
+      bottom: 59px;
+      &::before {
+        content: '';
+        bottom: .6px;
+        left: -3px;
+        transform: rotate(26deg);
+        width: 33px;
+        height: 2px;
+        background: #6b747d;
+      }
+      &::after {
+        content: '';
+        bottom: 0;
+        left: -2.5px;
+        transform: rotate(26deg);
+        z-index: 1;
+        width: 32px;
+        height: 1px;
+        border-radius: 10px;
+        background: #455661;
+      }
+    }
+  }
+`;
+
 export {
   Wrapper,
   StMarysBasilicaWrapper,
@@ -369,5 +560,7 @@ export {
   LeftTowerUpperBricklayRight,
   LeftTowerUpperCornice,
   RightTower,
-  TowerCornice
+  TowerCornice,
+  LeftSideWall,
+  RightSideWall
 };

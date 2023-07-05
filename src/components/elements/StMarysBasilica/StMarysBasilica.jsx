@@ -19,7 +19,9 @@ import {
   LeftTowerUpperBricklayRight,
   LeftTowerUpperCornice,
   RightTower,
-  TowerCornice
+  TowerCornice,
+  LeftSideWall,
+  RightSideWall
 } from './StMarysBasilica.styles.js';
 
 const StMarysBasilica = (props) => (
@@ -61,6 +63,13 @@ const StMarysBasilica = (props) => (
         <TowerCornice top={115.6} />
         <TowerCornice top={138.6} longer />
       </RightTower>
+      <LeftSideWall>
+        <span /><span /><span /><span />
+      </LeftSideWall>
+      <RightSideWall>
+        <span /><span /><span /><span /><span />
+        <span /><span /><span /><span /><span />
+      </RightSideWall>
     </StMarysBasilicaWrapper>
   </Wrapper>
 );

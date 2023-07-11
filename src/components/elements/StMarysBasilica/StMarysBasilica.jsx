@@ -9,6 +9,8 @@ import {
   RoofTower,
   MainCross,
   RoofWindow,
+  LeftTowerRoof,
+  LeftTowerRoofMainTower,
   LeftTower,
   LeftTowerBricklayLeft,
   LeftTowerBricklayRight,
@@ -33,12 +35,17 @@ const StMarysBasilica = (props) => (
       <Roof>
         <RoofTower />
         <MainCross>
-          <span />
-          <span />
-          <span />
+          <span /><span /><span />
         </MainCross>
         <RoofWindow />
       </Roof>
+      <LeftTowerRoof>
+        <span /><span /><span />
+        <LeftTowerRoofMainTower>
+          <span /><span /><span /><span /><span /><span />
+          <span /><span /><span /><span /><span /><span />
+        </LeftTowerRoofMainTower>
+      </LeftTowerRoof>
       <LeftTower>
         <LeftTowerBricklayLeft long={7} />
         <LeftTowerBricklayRight long={7} flip />
@@ -67,8 +74,7 @@ const StMarysBasilica = (props) => (
         <span /><span /><span /><span />
       </LeftSideWall>
       <RightSideWall>
-        <span /><span /><span /><span /><span />
-        <span /><span /><span /><span /><span />
+        <span /><span /><span /><span />
       </RightSideWall>
     </StMarysBasilicaWrapper>
   </Wrapper>

@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   //width: 205px;
   //height: 435px;
   //background: #2581bc; // do wywalenia
-  //background: url(${smaller}) center bottom no-repeat; // do wywalenia
+  background: url(${smaller}) center bottom no-repeat; // do wywalenia
   background-size: contain;
 `;
 
@@ -170,6 +170,100 @@ const RoofWindow = styled.span`
     border-radius: .5px .5px 0 0;
     background: #7e8c90;
   }
+`;
+
+const LeftTowerRoof = styled.span`
+  bottom: 254.5px;
+  left: 28px;
+  width: 46px;
+  height: 50px;
+  span {
+    ${ElementsCommonStyle};
+    &:nth-of-type(1) {
+      left: 12px;
+      z-index: 2;
+      width: 22.2px;
+      height: 1.5px;
+      background: #6c737c;
+      &::before,
+      &::after {
+        height: 100%;
+        width: 10.5px;
+        top: 2px;
+        background: #6c737c;
+      }
+      &::before {
+        content: '';
+        right: 100%;
+        transform: skewY(-21deg);
+      }
+      &::after {
+        content: '';
+        left: 100%;
+        transform: skewY(21deg);
+      }
+    }
+    &:nth-of-type(2) {
+      bottom: 1.5px;
+      left: 12px;
+      z-index: 2;
+      width: 22.2px;
+      height: 1px;
+      background: #94a5a6;
+      &::before,
+      &::after {
+        height: 100%;
+        width: 10.5px;
+        top: 2px;
+        background: #94a5a6;
+      }
+      &::before {
+        content: '';
+        right: 100%;
+        transform: skewY(-21deg);
+      }
+      &::after {
+        content: '';
+        left: 100%;
+        transform: skewY(21deg);
+      }
+    }
+    &:nth-of-type(3) {
+      display: none;
+
+      width: 43.5px;
+      border-style: solid;
+      border-color: #455661 transparent;
+      border-width: 4px 1px 2px 1px;
+      left: 1.4px;
+      bottom: -3.5px;
+      &::before {
+        content: '';
+        bottom: 4px;
+        width: 43.5px;
+        left: -1px;
+        border-style: solid;
+        border-color: #455661 transparent;
+        border-width: 0 4px 10px 5px;
+      }
+    }
+    &:nth-of-type(4) {
+
+    }
+    &:nth-of-type(5) {
+
+    }
+    &:nth-of-type(6) {
+
+    }
+    &:nth-of-type(7) {
+
+    }
+  }
+`;
+
+const LeftTowerRoofMainTower = styled.span`
+
 `;
 
 const LeftTower = styled.span`
@@ -450,7 +544,7 @@ const LeftSideWall = styled.div`
 
 const RightSideWall = styled.div`
   bottom: 4.7px;
-  right: 2px;
+  right: 2.5px;
   height: 77px;
   width: 26px;
   span {
@@ -550,6 +644,8 @@ export {
   RoofTower,
   MainCross,
   RoofWindow,
+  LeftTowerRoof,
+  LeftTowerRoofMainTower,
   LeftTower,
   LeftTowerBricklayLeft,
   LeftTowerBricklayRight,

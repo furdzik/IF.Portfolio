@@ -395,7 +395,7 @@ const StyledStMarysBasilica = styled(StMarysBasilica)`
   //left: 38.1rem;
   //display: none;
   z-index: 1110;
-  bottom: 2rem;
+  bottom: -19rem;
   right: 30rem
   //transform: translateX(-50%);
 `;

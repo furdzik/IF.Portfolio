@@ -265,6 +265,25 @@ const LeftTowerRoofMainTower = styled.span`
       border-style: solid;
       border-color: #bdc2c8 transparent;
       border-width: 0 0 63px 7.5px;
+      &::before {
+        content: '';
+        left: -2.5px;
+        bottom: -9px;
+        width: 5px;
+        height: 3px;
+        border-radius: 50%;
+        background: #95a5a6;
+        z-index: 2;
+      }
+      &::after {
+        content: '';
+        left: -0.6px;
+        bottom: -6px;
+        width: 1px;
+        height: 24px;
+        background: #eef3f5;
+        z-index: 2;
+      }
     }
     &:nth-of-type(2) {
       left: 7px;
@@ -272,6 +291,16 @@ const LeftTowerRoofMainTower = styled.span`
       border-style: solid;
       border-color: #eef3f5 transparent;
       border-width: 0 7.5px 63px 0;
+      &::before {
+        content: '';
+        left: -2px;
+        bottom: 18px;
+        width: 4.5px;
+        height: 4.5px;
+        border-radius: 50%;
+        background: #cfa113;
+        z-index: 2;
+      }
     }
     &:nth-of-type(3),
     &:nth-of-type(4) {
@@ -311,6 +340,21 @@ const LeftTowerRoofMainTower = styled.span`
       transform: skewY(26deg);
       &::before {
         margin-right: -.5px;
+      }
+    }
+    &:nth-of-type(5) {
+      left: 7px;
+      bottom: 101px;
+      width: 0.5px;
+      height: 8.3px;
+      background: #eef3f5;
+      &:before {
+        content: '';
+        left: 0;
+        bottom: 4px;
+        border-style: solid;
+        border-color: transparent #e7d667;
+        border-width: 2.5px 0 2.5px 6px
       }
     }
   }

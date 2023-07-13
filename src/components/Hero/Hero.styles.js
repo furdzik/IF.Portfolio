@@ -54,7 +54,7 @@ const ContainerStyled = styled(Container)`
 const StyledCloud = styled(Cloud)`
   position: absolute;
   display: none;
-  scale: 0.6;
+  scale: .6;
 
   ${breakpointHeightMixin.desktop(css`
     display: block;
@@ -134,6 +134,7 @@ const StyledRiver = styled(River)`
   bottom: 0;
   left: -52.9rem;
   z-index: 2;
+  // do wywalenia
   // display: none;
 `;
 
@@ -369,7 +370,7 @@ const TreeTokyoEighteen = styled(Tree)`
   right: 12.2rem;
   bottom: 27.8rem;
   z-index: 2;
-  transform: scale(0.3);
+  transform: scale(.3);
 `;
 
 const TreeTokyoNineteen = styled(Tree)`
@@ -377,7 +378,7 @@ const TreeTokyoNineteen = styled(Tree)`
   right: 15rem;
   bottom: 26.8rem;
   z-index: 3;
-  transform: scale(0.3);
+  transform: scale(.3);
 `;
 
 const StyledSkyTree = styled(SkyTree)`
@@ -390,13 +391,14 @@ const StyledSkyTree = styled(SkyTree)`
 
 const StyledStMarysBasilica = styled(StMarysBasilica)`
   ${ElementsCommonStyleUnspecified};
-  //bottom: 36rem;
-  //left: 38.1rem;
-  display: none;
-  z-index: 1110;
-  bottom: 2rem;
-  right: 20rem
-  //transform: translateX(-50%);
+  bottom: 36rem;
+  left: 38.1rem;
+  // display: none;
+
+  // robocze
+  // z-index: 1110;
+  // bottom: 130px;
+  // right: 30rem
 `;
 
 const StyledTrainTracks = styled(TrainTracks)`

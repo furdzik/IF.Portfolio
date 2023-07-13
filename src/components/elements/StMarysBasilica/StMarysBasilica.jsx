@@ -9,6 +9,13 @@ import {
   RoofTower,
   MainCross,
   RoofWindow,
+  LeftTowerRoof,
+  LeftTowerRoofBase,
+  LeftTowerRoofMainTower,
+  LeftTowerRoofSmallTowerColumnOne,
+  LeftTowerRoofSmallTowerColumnTwo,
+  LeftTowerRoofSmallTowerColumnThree,
+  LeftTowerRoofSmallTowerColumnFour,
   LeftTower,
   LeftTowerBricklayLeft,
   LeftTowerBricklayRight,
@@ -18,8 +25,12 @@ import {
   LeftTowerUpperBricklayLeft,
   LeftTowerUpperBricklayRight,
   LeftTowerUpperCornice,
+  RightTowerRoof,
+  RightTowerRoofBase,
   RightTower,
-  TowerCornice
+  TowerCornice,
+  LeftSideWall,
+  RightSideWall
 } from './StMarysBasilica.styles.js';
 
 const StMarysBasilica = (props) => (
@@ -31,12 +42,22 @@ const StMarysBasilica = (props) => (
       <Roof>
         <RoofTower />
         <MainCross>
-          <span />
-          <span />
-          <span />
+          <span /><span /><span />
         </MainCross>
         <RoofWindow />
       </Roof>
+      <LeftTowerRoof>
+        <LeftTowerRoofBase>
+          <span /><span /><span />
+        </LeftTowerRoofBase>
+        <LeftTowerRoofSmallTowerColumnThree skew />
+        <LeftTowerRoofSmallTowerColumnFour skew scalex />
+        <LeftTowerRoofSmallTowerColumnOne />
+        <LeftTowerRoofSmallTowerColumnTwo />
+        <LeftTowerRoofMainTower>
+          <span /><span /><span /><span /><span />
+        </LeftTowerRoofMainTower>
+      </LeftTowerRoof>
       <LeftTower>
         <LeftTowerBricklayLeft long={7} />
         <LeftTowerBricklayRight long={7} flip />
@@ -54,6 +75,11 @@ const StMarysBasilica = (props) => (
         <LeftTowerUpperBricklayRight long={30} flip />
         <LeftTowerUpperCornice />
       </LeftTowerUpper>
+      <RightTowerRoof>
+        <RightTowerRoofBase>
+          <span />
+        </RightTowerRoofBase>
+      </RightTowerRoof>
       <RightTower>
         <TowerCornice top={33.3} />
         <TowerCornice top={66.3} />
@@ -61,6 +87,12 @@ const StMarysBasilica = (props) => (
         <TowerCornice top={115.6} />
         <TowerCornice top={138.6} longer />
       </RightTower>
+      <LeftSideWall>
+        <span /><span /><span /><span />
+      </LeftSideWall>
+      <RightSideWall>
+        <span /><span /><span /><span />
+      </RightSideWall>
     </StMarysBasilicaWrapper>
   </Wrapper>
 );

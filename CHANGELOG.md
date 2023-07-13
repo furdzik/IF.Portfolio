@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.3.2](https://github.com/furdzik/IF.Portfolio/compare/v1.3.1...v1.3.2) (2023-07-13)
+
+
+### Bug Fixes
+
+* **st-marys-basilica:** cs fixes ([852a7c7](https://github.com/furdzik/IF.Portfolio/commit/852a7c770eaa2d867311bf0f22c24d48cc3f9385))
+* **st-marys-basilica:** roof left tower completed ([810d21f](https://github.com/furdzik/IF.Portfolio/commit/810d21f845280e17c8ba134ee319966c413d6fa6))
+* **st-marys-basilica:** roof right wip ([00649f5](https://github.com/furdzik/IF.Portfolio/commit/00649f5cfef7215c8adb5334d76336a5cb2dae86))
+* **st-marys-basilica:** roof wip ([ac3b98d](https://github.com/furdzik/IF.Portfolio/commit/ac3b98d658eec8b3292cdcca230569644a138fa3))
+* **st-marys-basilica:** roof wip ([383bbf1](https://github.com/furdzik/IF.Portfolio/commit/383bbf100c4c3047371e74a7238a0a3b951c99e7))
+* **st-marys-basilica:** roof wip ([e24e39f](https://github.com/furdzik/IF.Portfolio/commit/e24e39fadf1405d07587086be82e8c0641a64597))
+* **st-marys-basilica:** side walls ([d00d417](https://github.com/furdzik/IF.Portfolio/commit/d00d4179979124eea2ceb6bdae68ea2d1983e1b5))
+
 ## [1.3.1](https://github.com/furdzik/IF.Portfolio/compare/v1.3.0...v1.3.1) (2023-06-24)
 
 

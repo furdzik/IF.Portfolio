@@ -135,7 +135,7 @@ const StyledRiver = styled(River)`
   left: -52.9rem;
   z-index: 2;
   // do wywalenia
-  display: none;
+  // display: none;
 `;
 
 const CracowWrapper = styled.div`
@@ -391,13 +391,14 @@ const StyledSkyTree = styled(SkyTree)`
 
 const StyledStMarysBasilica = styled(StMarysBasilica)`
   ${ElementsCommonStyleUnspecified};
-  //bottom: 36rem;
-  //left: 38.1rem;
-  //display: none;
-  z-index: 1110;
-  bottom: -19rem;
-  right: 30rem
-  //transform: translateX(-50%);
+  bottom: 36rem;
+  left: 38.1rem;
+  // display: none;
+
+  // robocze
+  // z-index: 1110;
+  // bottom: 130px;
+  // right: 30rem
 `;
 
 const StyledTrainTracks = styled(TrainTracks)`

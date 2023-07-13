@@ -24,7 +24,7 @@ const Wrapper = styled.div`
   //width: 205px;
   //height: 435px;
   //background: #2581bc; // do wywalenia
-  //background: url(${smaller}) center bottom no-repeat; // do wywalenia
+  // background: url(${smaller}) center bottom no-repeat; // do wywalenia
   background-size: contain;
 `;
 
@@ -112,14 +112,6 @@ const MainCross = styled.span`
       width: .5px;
       height: 10.5px;
       background: #465662;
-      &::before {
-        top: -.1px;
-        left: -.5px;
-        width: 1.5px;
-        height: 1.5px;
-        border-radius: 50%;
-        background: #465662;
-      }
     }
     &:nth-of-type(3) {
       top: 3.2px;
@@ -316,7 +308,7 @@ const LeftTowerRoofMainTower = styled.span`
         width: calc(100% + .5px);
       }
       &::after {
-        top: 50%;
+        top: 9.4px;
       }
     }
     &:nth-of-type(3) {
@@ -517,11 +509,24 @@ const LeftTowerUpperCornice = styled.span`
 `;
 
 const RightTowerRoof = styled.span`
-
+  bottom: 217px;
+  right: 26.5px;
+  width: 49px;
+  height: 86px;
 `;
 
 const RightTowerRoofBase = styled.span`
-
+  ${ElementsCommonStyle};
+  width: 100%;
+  span {
+    ${ElementsCommonStyle};
+    &:nth-of-type(1) {
+      width: 100%;
+      height: 3px;
+      border-top: 1px solid #bdc2c8;
+      background: #455661;
+    }
+  }
 `;
 
 const RightTower = styled.span`

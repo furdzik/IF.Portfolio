@@ -76,7 +76,9 @@ const StMarysBasilica = (props) => (
         <LeftTowerUpperCornice />
       </LeftTowerUpper>
       <RightTowerRoof>
-        <RightTowerRoofBase />
+        <RightTowerRoofBase>
+          <span />
+        </RightTowerRoofBase>
       </RightTowerRoof>
       <RightTower>
         <TowerCornice top={33.3} />

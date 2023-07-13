@@ -1,7 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Wrapper } from './Tree.styles.js';
+import {
+  Wrapper,
+  Trunk,
+  BranchOne
+} from './Tree.styles.js';
 
 const Tree = (props) => (
   <Wrapper
@@ -9,8 +13,14 @@ const Tree = (props) => (
     green={props.color === 'green'}
     isTaller={props.isTaller}
   >
-    <span /><span /><span /><span /><span />
-    <span /><span /><span /><span />
+    <Trunk>
+      <span />
+    </Trunk>
+    {/* All branches: 10 */}
+    <BranchOne>
+      <span /><span /><span /><span /><span />
+      <span /><span /><span /><span /><span />
+    </BranchOne>
   </Wrapper>
 );
 

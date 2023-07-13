@@ -15,19 +15,19 @@ const BaseWall = styled.span`
   ${ElementsCommonStyle};
   bottom: 2px;
   left: 0;
+  z-index: 2;
   width: 9.5px;
   height: 10.5px;
   background: #bdc2c8;
-  z-index: 2;
 
   ${(props) => props.skew && css`
+    transform: skewY(-26deg);
     width: 5px;
     height: 12.6px;
-    transform: skewY(-26deg);
     background: #94a5a5;
   `};
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: '';
     width: 100%;
     height: 1px;
@@ -53,9 +53,9 @@ const Roof = styled.span`
   span {
     &:nth-of-type(1) {
       left: -.5px;
+      border-width: 0 0 19px 5.5px;
       border-style: solid;
       border-color: #bdc2c8 transparent;
-      border-width: 0 0 19px 5.5px;
 
       ${(props) => props.scalex && css`
         border-color: #eef3f5 transparent;
@@ -66,40 +66,40 @@ const Roof = styled.span`
       `};
       &::before {
         content: '';
-        left: -1.2px;
         bottom: -2px;
+        left: -1.2px;
+        z-index: 2;
         width: 3px;
         height: 2px;
         border-radius: 50%;
         background: #95a5a6;
-        z-index: 2;
         ${(props) => props.skew && css`
-          left: -1.5px;
           bottom: -1.4px;
+          left: -1.5px;
           width: 2px;
           height: 2px;
         `};
       }
       &::after {
         content: '';
-        left: -.6px;
         bottom: 0;
+        left: -.6px;
+        z-index: 1;
         width: .4px;
         height: 10px;
         background: #eef3f5;
-        z-index: 1;
         ${(props) => props.skew && css`
-          left: -0.3px;
           bottom: -0.3px;
+          left: -0.3px;
           height: 8px;
         `};
       }
     }
     &:nth-of-type(2) {
       left: 4.5px;
+      border-width: 0 5.5px 19px 0;
       border-style: solid;
       border-color: #eef3f5 transparent;
-      border-width: 0 5.5px 19px 0;
 
       ${(props) => props.scalex && css`
         border-color: #bdc2c8 transparent;
@@ -110,25 +110,25 @@ const Roof = styled.span`
       `};
       &::before {
         content: '';
-        left: -1.4px;
         bottom: 10px;
+        left: -1.4px;
+        z-index: 2;
         width: 2.5px;
         height: 2.5px;
         border-radius: 50%;
         background: #cfa113;
-        z-index: 2;
 
         ${(props) => props.skew && css`
-          left: -1px;
           bottom: 7.4px;
+          left: -1px;
           width: 2px;
           height: 2px;
       `};
       }
     }
     &:nth-of-type(3) {
-      left: 4.3px;
       bottom: 31.2px;
+      left: 4.3px;
       width: .2px;
       height: 5.3px;
       background: #eef3f5;
@@ -137,17 +137,17 @@ const Roof = styled.span`
         transform: scalex(-1);
       `};
       ${(props) => props.skew && css`
-        left: 5.3px;
         bottom: 26.2px;
+        left: 5.3px;
       `};
 
-      &:before {
+      &::before {
         content: '';
-        left: 0;
         bottom: 3px;
+        left: 0;
+        border-width: 1px 0 1px 3px;
         border-style: solid;
         border-color: transparent #e7d667;
-        border-width: 1px 0 1px 3px;
       }
     }
   }

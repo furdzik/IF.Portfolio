@@ -184,9 +184,9 @@ const LeftTowerRoofBase = styled.span`
       background: #6c737c;
       &::before,
       &::after {
-        height: 100%;
-        width: 10.5px;
         top: 2px;
+        width: 10.5px;
+        height: 100%;
         background: #6c737c;
       }
       &::before {
@@ -209,9 +209,9 @@ const LeftTowerRoofBase = styled.span`
       background: #94a5a6;
       &::before,
       &::after {
-        height: 100%;
-        width: 10.5px;
         top: 2px;
+        width: 10.5px;
+        height: 100%;
         background: #94a5a6;
       }
       &::before {
@@ -226,20 +226,20 @@ const LeftTowerRoofBase = styled.span`
       }
     }
     &:nth-of-type(3) {
+      bottom: -3.5px;
+      left: 1.4px;
       width: 43.5px;
+      border-width: 4px 1px 2px;
       border-style: solid;
       border-color: #455661 transparent;
-      border-width: 4px 1px 2px 1px;
-      left: 1.4px;
-      bottom: -3.5px;
       &::before {
         content: '';
         bottom: 3.9px;
-        width: 43.5px;
         left: -1px;
+        width: 43.5px;
+        border-width: 0 4px 10px 5px;
         border-style: solid;
         border-color: #455661 transparent;
-        border-width: 0 4px 10px 5px;
       }
     }
   }
@@ -251,52 +251,52 @@ const LeftTowerRoofMainTower = styled.span`
   span {
     ${ElementsCommonStyle};
     &:nth-of-type(1) {
-      left: 0;
       bottom: 15.5px;
+      left: 0;
+      border-width: 0 0 60px 7.3px;
       border-style: solid;
       border-color: #bdc2c8 transparent;
-      border-width: 0 0 60px 7.3px;
       &::before {
         content: '';
-        left: -2px;
         bottom: -7.5px;
+        left: -2px;
+        z-index: 2;
         width: 4px;
         height: 3px;
         border-radius: 50%;
         background: #95a5a6;
-        z-index: 2;
       }
       &::after {
         content: '';
-        left: -.3px;
         bottom: -4.3px;
+        left: -.3px;
+        z-index: 2;
         width: 1px;
         height: 24px;
         background: #eef3f5;
-        z-index: 2;
       }
     }
     &:nth-of-type(2) {
-      left: 7px;
       bottom: 15.5px;
+      left: 7px;
+      border-width: 0 7.3px 60px 0;
       border-style: solid;
       border-color: #eef3f5 transparent;
-      border-width: 0 7.3px 60px 0;
       &::before {
         content: '';
-        left: -2.4px;
         bottom: 18px;
+        left: -2.4px;
+        z-index: 2;
         width: 4.5px;
         height: 4.5px;
         border-radius: 50%;
         background: #cfa113;
-        z-index: 2;
       }
     }
     &:nth-of-type(3),
     &:nth-of-type(4) {
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         content: '';
         width: 100%;
         height: 1px;
@@ -312,40 +312,40 @@ const LeftTowerRoofMainTower = styled.span`
       }
     }
     &:nth-of-type(3) {
-      left: -0.3px;
       bottom: 1.8px;
+      left: -.3px;
+      transform: skewY(-26deg);
       width: 7.5px;
       height: 15px;
       background: #94a5a5;
-      transform: skewY(-26deg);
       &::before {
         margin-left: -.5px;
       }
     }
     &:nth-of-type(4) {
-      left: 7px;
       bottom: 1.8px;
+      left: 7px;
+      transform: skewY(26deg);
       width: 7.5px;
       height: 15px;
       background: #b8c0c9;
-      transform: skewY(26deg);
       &::before {
         margin-right: -.5px;
       }
     }
     &:nth-of-type(5) {
-      left: 6.6px;
       bottom: 98px;
-      width: 0.5px;
+      left: 6.6px;
+      width: .5px;
       height: 8.3px;
       background: #eef3f5;
-      &:before {
+      &::before {
         content: '';
-        left: 0;
         bottom: 4px;
+        left: 0;
+        border-width: 2.5px 0 2.5px 6px;
         border-style: solid;
         border-color: transparent #e7d667;
-        border-width: 2.5px 0 2.5px 6px
       }
     }
   }
@@ -509,8 +509,8 @@ const LeftTowerUpperCornice = styled.span`
 `;
 
 const RightTowerRoof = styled.span`
-  bottom: 217px;
   right: 26.5px;
+  bottom: 217px;
   width: 49px;
   height: 86px;
 `;
@@ -575,8 +575,8 @@ const TowerCornice = styled.span`
 const LeftSideWall = styled.div`
   bottom: 9px;
   left: 0;
-  height: 90px;
   width: 30px;
+  height: 90px;
   span {
     ${ElementsCommonStyle};
     &:nth-of-type(1) {
@@ -590,9 +590,9 @@ const LeftSideWall = styled.div`
         content: '';
         top: -6.5px;
         bottom: auto;
+        border-width: 0 0 7px 9px;
         border-style: solid;
         border-color: #7b3900 transparent;
-        border-width: 0 0 7px 9px;
       }
     }
     &:nth-of-type(2) {
@@ -604,9 +604,9 @@ const LeftSideWall = styled.div`
         content: '';
         top: -16px;
         bottom: auto;
+        border-width: 0 0 16px 29px;
         border-style: solid;
         border-color: #d6561c transparent;
-        border-width: 0 0 16px 29px;
       }
       &::after {
         content: '';
@@ -614,9 +614,9 @@ const LeftSideWall = styled.div`
         right: 0;
         bottom: auto;
         z-index: 1;
+        border-width: 12px 23px 56px 0;
         border-style: solid;
         border-color: transparent #933c06;
-        border-width: 12px 23px 56px 0;
       }
     }
     &:nth-of-type(3) {
@@ -634,8 +634,8 @@ const LeftSideWall = styled.div`
         content: '';
         bottom: 0;
         left: -2.5px;
-        transform: rotate(-28deg);
         z-index: 1;
+        transform: rotate(-28deg);
         width: 26px;
         height: 1px;
         border-radius: 10px;
@@ -657,22 +657,22 @@ const LeftSideWall = styled.div`
         content: '';
         bottom: 0;
         left: 19px;
+        z-index: 1;
         transform: rotate(-37deg);
         width: 16px;
         height: 1px;
         border-radius: 10px;
         background: #455661;
-        z-index: 1;
       }
     }
   }
 `;
 
 const RightSideWall = styled.div`
-  bottom: 4.7px;
   right: 2.5px;
-  height: 77px;
+  bottom: 4.7px;
   width: 26px;
+  height: 77px;
   span {
     ${ElementsCommonStyle};
     &:nth-of-type(1) {
@@ -685,9 +685,9 @@ const RightSideWall = styled.div`
         content: '';
         top: -11.5px;
         bottom: auto;
+        border-width: 0 24.3px 12px 0;
         border-style: solid;
         border-color: #923a05 transparent;
-        border-width: 0 24.3px 12px 0;
       }
     }
     &:nth-of-type(2) {
@@ -699,18 +699,18 @@ const RightSideWall = styled.div`
         content: '';
         top: -13px;
         bottom: auto;
+        border-width: 0 26px 13px 0;
         border-style: solid;
         border-color: #d1501c transparent;
-        border-width: 0 26px 13px 0;
       }
       &::after {
         content: '';
-        left: 0;
         bottom: 0;
+        left: 0;
         z-index: 1;
+        border-width: 0 25px 66px 0;
         border-style: solid;
         border-color: #933c06 transparent;
-        border-width: 0 25px 66px 0;
       }
     }
     &:nth-of-type(3) {
@@ -728,8 +728,8 @@ const RightSideWall = styled.div`
         content: '';
         bottom: 0;
         left: -2.5px;
-        transform: rotate(26deg);
         z-index: 1;
+        transform: rotate(26deg);
         width: 29px;
         height: 1px;
         border-radius: 10px;
@@ -751,8 +751,8 @@ const RightSideWall = styled.div`
         content: '';
         bottom: 0;
         left: -2.5px;
-        transform: rotate(26deg);
         z-index: 1;
+        transform: rotate(26deg);
         width: 32px;
         height: 1px;
         border-radius: 10px;

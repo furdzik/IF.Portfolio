@@ -54,7 +54,7 @@ const ContainerStyled = styled(Container)`
 const StyledCloud = styled(Cloud)`
   position: absolute;
   display: none;
-  scale: 0.6;
+  scale: .6;
 
   ${breakpointHeightMixin.desktop(css`
     display: block;
@@ -370,7 +370,7 @@ const TreeTokyoEighteen = styled(Tree)`
   right: 12.2rem;
   bottom: 27.8rem;
   z-index: 2;
-  transform: scale(0.3);
+  transform: scale(.3);
 `;
 
 const TreeTokyoNineteen = styled(Tree)`
@@ -378,7 +378,7 @@ const TreeTokyoNineteen = styled(Tree)`
   right: 15rem;
   bottom: 26.8rem;
   z-index: 3;
-  transform: scale(0.3);
+  transform: scale(.3);
 `;
 
 const StyledSkyTree = styled(SkyTree)`

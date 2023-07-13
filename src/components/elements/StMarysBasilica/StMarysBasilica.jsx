@@ -12,6 +12,10 @@ import {
   LeftTowerRoof,
   LeftTowerRoofBase,
   LeftTowerRoofMainTower,
+  LeftTowerRoofSmallTowerColumnOne,
+  LeftTowerRoofSmallTowerColumnTwo,
+  LeftTowerRoofSmallTowerColumnThree,
+  LeftTowerRoofSmallTowerColumnFour,
   LeftTower,
   LeftTowerBricklayLeft,
   LeftTowerBricklayRight,
@@ -21,6 +25,8 @@ import {
   LeftTowerUpperBricklayLeft,
   LeftTowerUpperBricklayRight,
   LeftTowerUpperCornice,
+  RightTowerRoof,
+  RightTowerRoofBase,
   RightTower,
   TowerCornice,
   LeftSideWall,
@@ -44,9 +50,12 @@ const StMarysBasilica = (props) => (
         <LeftTowerRoofBase>
           <span /><span /><span />
         </LeftTowerRoofBase>
+        <LeftTowerRoofSmallTowerColumnThree skew />
+        <LeftTowerRoofSmallTowerColumnFour skew scalex />
+        <LeftTowerRoofSmallTowerColumnOne />
+        <LeftTowerRoofSmallTowerColumnTwo />
         <LeftTowerRoofMainTower>
-          <span /><span /><span /><span /><span /><span />
-          <span /><span /><span /><span /><span /><span />
+          <span /><span /><span /><span /><span />
         </LeftTowerRoofMainTower>
       </LeftTowerRoof>
       <LeftTower>
@@ -66,6 +75,9 @@ const StMarysBasilica = (props) => (
         <LeftTowerUpperBricklayRight long={30} flip />
         <LeftTowerUpperCornice />
       </LeftTowerUpper>
+      <RightTowerRoof>
+        <RightTowerRoofBase />
+      </RightTowerRoof>
       <RightTower>
         <TowerCornice top={33.3} />
         <TowerCornice top={66.3} />

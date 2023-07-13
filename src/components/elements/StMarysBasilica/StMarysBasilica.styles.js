@@ -4,6 +4,7 @@ import { css } from '@emotion/react';
 import { ElementsCommonStyle, ElementsCommonStyleUnspecified } from '@styles/elementsCommonStyle.styles';
 
 import Bricklay from './Bricklay';
+import LeftTowerRoofSmallTower from './LeftTowerRoofSmallTower';
 
 import smaller from './smaller-no-bg.png'; // do wywalenia
 
@@ -23,7 +24,7 @@ const Wrapper = styled.div`
   //width: 205px;
   //height: 435px;
   //background: #2581bc; // do wywalenia
-  background: url(${smaller}) center bottom no-repeat; // do wywalenia
+  //background: url(${smaller}) center bottom no-repeat; // do wywalenia
   background-size: contain;
 `;
 
@@ -233,8 +234,6 @@ const LeftTowerRoofBase = styled.span`
       }
     }
     &:nth-of-type(3) {
-      display: none;
-
       width: 43.5px;
       border-style: solid;
       border-color: #455661 transparent;
@@ -243,7 +242,7 @@ const LeftTowerRoofBase = styled.span`
       bottom: -3.5px;
       &::before {
         content: '';
-        bottom: 4px;
+        bottom: 3.9px;
         width: 43.5px;
         left: -1px;
         border-style: solid;
@@ -264,12 +263,12 @@ const LeftTowerRoofMainTower = styled.span`
       bottom: 15.5px;
       border-style: solid;
       border-color: #bdc2c8 transparent;
-      border-width: 0 0 63px 7.5px;
+      border-width: 0 0 60px 7.3px;
       &::before {
         content: '';
-        left: -2.5px;
-        bottom: -9px;
-        width: 5px;
+        left: -2px;
+        bottom: -7.5px;
+        width: 4px;
         height: 3px;
         border-radius: 50%;
         background: #95a5a6;
@@ -277,8 +276,8 @@ const LeftTowerRoofMainTower = styled.span`
       }
       &::after {
         content: '';
-        left: -0.6px;
-        bottom: -6px;
+        left: -.3px;
+        bottom: -4.3px;
         width: 1px;
         height: 24px;
         background: #eef3f5;
@@ -290,10 +289,10 @@ const LeftTowerRoofMainTower = styled.span`
       bottom: 15.5px;
       border-style: solid;
       border-color: #eef3f5 transparent;
-      border-width: 0 7.5px 63px 0;
+      border-width: 0 7.3px 60px 0;
       &::before {
         content: '';
-        left: -2px;
+        left: -2.4px;
         bottom: 18px;
         width: 4.5px;
         height: 4.5px;
@@ -321,9 +320,9 @@ const LeftTowerRoofMainTower = styled.span`
       }
     }
     &:nth-of-type(3) {
-      bottom: 2px;
-      left: 0;
-      width: 7px;
+      left: -0.3px;
+      bottom: 1.8px;
+      width: 7.5px;
       height: 15px;
       background: #94a5a5;
       transform: skewY(-26deg);
@@ -333,8 +332,8 @@ const LeftTowerRoofMainTower = styled.span`
     }
     &:nth-of-type(4) {
       left: 7px;
-      bottom: 2px;
-      width: 7px;
+      bottom: 1.8px;
+      width: 7.5px;
       height: 15px;
       background: #b8c0c9;
       transform: skewY(26deg);
@@ -343,8 +342,8 @@ const LeftTowerRoofMainTower = styled.span`
       }
     }
     &:nth-of-type(5) {
-      left: 7px;
-      bottom: 101px;
+      left: 6.6px;
+      bottom: 98px;
       width: 0.5px;
       height: 8.3px;
       background: #eef3f5;
@@ -358,6 +357,26 @@ const LeftTowerRoofMainTower = styled.span`
       }
     }
   }
+`;
+
+const LeftTowerRoofSmallTowerColumnOne = styled(LeftTowerRoofSmallTower)`
+  bottom: 8.8px;
+  left: 6.5px;
+`;
+
+const LeftTowerRoofSmallTowerColumnTwo = styled(LeftTowerRoofSmallTower)`
+  bottom: 8.8px;
+  left: 30px;
+`;
+
+const LeftTowerRoofSmallTowerColumnThree = styled(LeftTowerRoofSmallTower)`
+  bottom: 4.8px;
+  left: 1.5px;
+`;
+
+const LeftTowerRoofSmallTowerColumnFour = styled(LeftTowerRoofSmallTower)`
+  bottom: 4.8px;
+  left: 44.6px;
 `;
 
 const LeftTower = styled.span`
@@ -495,6 +514,14 @@ const LeftTowerUpperCornice = styled.span`
     right: 100%;
     transform: rotate(4deg);
   }
+`;
+
+const RightTowerRoof = styled.span`
+
+`;
+
+const RightTowerRoofBase = styled.span`
+
 `;
 
 const RightTower = styled.span`
@@ -741,6 +768,10 @@ export {
   LeftTowerRoof,
   LeftTowerRoofBase,
   LeftTowerRoofMainTower,
+  LeftTowerRoofSmallTowerColumnOne,
+  LeftTowerRoofSmallTowerColumnTwo,
+  LeftTowerRoofSmallTowerColumnThree,
+  LeftTowerRoofSmallTowerColumnFour,
   LeftTower,
   LeftTowerBricklayLeft,
   LeftTowerBricklayRight,
@@ -750,6 +781,8 @@ export {
   LeftTowerUpperBricklayLeft,
   LeftTowerUpperBricklayRight,
   LeftTowerUpperCornice,
+  RightTowerRoof,
+  RightTowerRoofBase,
   RightTower,
   TowerCornice,
   LeftSideWall,

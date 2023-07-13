@@ -10,6 +10,7 @@ import {
   MainCross,
   RoofWindow,
   LeftTowerRoof,
+  LeftTowerRoofBase,
   LeftTowerRoofMainTower,
   LeftTower,
   LeftTowerBricklayLeft,
@@ -40,7 +41,9 @@ const StMarysBasilica = (props) => (
         <RoofWindow />
       </Roof>
       <LeftTowerRoof>
-        <span /><span /><span />
+        <LeftTowerRoofBase>
+          <span /><span /><span />
+        </LeftTowerRoofBase>
         <LeftTowerRoofMainTower>
           <span /><span /><span /><span /><span /><span />
           <span /><span /><span /><span /><span /><span />

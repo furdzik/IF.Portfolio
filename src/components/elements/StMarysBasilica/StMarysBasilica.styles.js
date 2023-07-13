@@ -177,6 +177,10 @@ const LeftTowerRoof = styled.span`
   left: 28px;
   width: 46px;
   height: 50px;
+`;
+
+const LeftTowerRoofBase = styled.span`
+  ${ElementsCommonStyle};
   span {
     ${ElementsCommonStyle};
     &:nth-of-type(1) {
@@ -247,23 +251,69 @@ const LeftTowerRoof = styled.span`
         border-width: 0 4px 10px 5px;
       }
     }
-    &:nth-of-type(4) {
-
-    }
-    &:nth-of-type(5) {
-
-    }
-    &:nth-of-type(6) {
-
-    }
-    &:nth-of-type(7) {
-
-    }
   }
 `;
 
 const LeftTowerRoofMainTower = styled.span`
-
+  bottom: 8.5px;
+  left: 16px;
+  span {
+    ${ElementsCommonStyle};
+    &:nth-of-type(1) {
+      left: 0;
+      bottom: 15.5px;
+      border-style: solid;
+      border-color: #bdc2c8 transparent;
+      border-width: 0 0 63px 7.5px;
+    }
+    &:nth-of-type(2) {
+      left: 7px;
+      bottom: 15.5px;
+      border-style: solid;
+      border-color: #eef3f5 transparent;
+      border-width: 0 7.5px 63px 0;
+    }
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      &:before,
+      &:after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        border-bottom: .5px solid #4a5963;
+        background: #556373;
+      }
+      &::before {
+        top: -1px;
+        width: calc(100% + .5px);
+      }
+      &::after {
+        top: 50%;
+      }
+    }
+    &:nth-of-type(3) {
+      bottom: 2px;
+      left: 0;
+      width: 7px;
+      height: 15px;
+      background: #94a5a5;
+      transform: skewY(-26deg);
+      &::before {
+        margin-left: -.5px;
+      }
+    }
+    &:nth-of-type(4) {
+      left: 7px;
+      bottom: 2px;
+      width: 7px;
+      height: 15px;
+      background: #b8c0c9;
+      transform: skewY(26deg);
+      &::before {
+        margin-right: -.5px;
+      }
+    }
+  }
 `;
 
 const LeftTower = styled.span`
@@ -645,6 +695,7 @@ export {
   MainCross,
   RoofWindow,
   LeftTowerRoof,
+  LeftTowerRoofBase,
   LeftTowerRoofMainTower,
   LeftTower,
   LeftTowerBricklayLeft,

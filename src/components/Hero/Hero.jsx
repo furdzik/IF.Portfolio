@@ -86,13 +86,13 @@ const Hero = (props) => (
       <CracowWrapper>
         <StyledMountains />
         <TreeCracowOne color="green" isTaller />
-        <TreeCracowTwo color="green" />
-        <TreeCracowThree color="green" isTaller />
+        <TreeCracowTwo color="green" isTaller />
+        {/* <TreeCracowThree color="green" isTaller /> */}
         <TreeCracowFour color="green" />
         <TreeCracowFive color="green" />
         <TreeCracowSix color="green" />
         <TreeCracowSeven color="green" />
-        <TreeCracowEight color="green" />
+        {/* <TreeCracowEight color="green" /> */}
         <StyledStMarysBasilica />
       </CracowWrapper>
       <TokyoWrapper>

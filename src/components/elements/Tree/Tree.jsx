@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import {
   Wrapper,
   Trunk,
+  TrunkMain,
   BranchOne
 } from './Tree.styles.js';
 
@@ -13,14 +14,14 @@ const Tree = (props) => (
     green={props.color === 'green'}
     isTaller={props.isTaller}
   >
-    <Trunk>
-      <span />
+    <Trunk isTaller={props.isTaller}>
+      <TrunkMain isTaller={props.isTaller} />
+      <BranchOne>
+        <span /><span /><span /><span /><span />
+        <span /><span /><span /><span /><span />
+      </BranchOne>
     </Trunk>
     {/* All branches: 10 */}
-    <BranchOne>
-      <span /><span /><span /><span /><span />
-      <span /><span /><span /><span /><span />
-    </BranchOne>
   </Wrapper>
 );
 

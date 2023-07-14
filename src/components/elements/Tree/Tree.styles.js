@@ -1,7 +1,9 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import { ElementsCommonStyle } from '@styles/elementsCommonStyle.styles';
+import { ElementsCommonStyleUnspecified } from '@styles/elementsCommonStyle.styles';
+
+const treeTrunkAndBranchColor = '#6e471c';
 
 const Wrapper = styled.div`
   position: relative;
@@ -19,43 +21,85 @@ const Wrapper = styled.div`
 `;
 
 const Trunk = styled.span`
-  ${ElementsCommonStyle};
+  ${ElementsCommonStyleUnspecified};
   left: 50%;
   transform: translateX(-50%);
   width: 10px;
   height: 116px;
-  span {
-    ${ElementsCommonStyle};
-    &:nth-of-type(1) {
-      border-width: 0 5px 69px 5px;
-      border-style: solid;
-      border-color: #6e471c transparent;
-      &::before {
-        content: '';
-        bottom: -44px;
-        left: -3px;
-        width: 6px;
-        height: 60px;
-        background: #6e471c;
-      }
-      &::after {
-        content: '';
-        bottom: 15px;
-        left: -3px;
-        border-width: 0 3px 35px 3px;
-        border-style: solid;
-        border-color: #6e471c transparent;
-      }
-    }
+
+  ${(props) => props.isTaller && css`
+    height: 136px;
+  `};
+`;
+
+const TrunkMain = styled.span`
+  ${ElementsCommonStyleUnspecified};
+  border-width: 0 5px 69px 5px;
+  border-style: solid;
+  border-color: #6e471c transparent;
+
+  ${(props) => props.isTaller && css`
+    border-bottom-width: 89px;
+  `};
+
+  &&::before {
+    content: '';
+    bottom: -42px;
+    left: -3px;
+    width: 6px;
+    height: 78px;
+    background: ${treeTrunkAndBranchColor};
+
+    ${(props) => props.isTaller && css`
+      bottom: -55px;
+      height: 91px;
+    `};
+  }
+  &&::after {
+    content: '';
+    bottom: 36px;
+    left: -3px;
+    border-width: 0 3px 8px 3px;
+    border-style: solid;
+    border-color: ${treeTrunkAndBranchColor} transparent;
   }
 `;
 
 const BranchOne = styled.span`
-
+  ${ElementsCommonStyleUnspecified};
+  && {
+    bottom: calc(100% - 7px);
+    left: calc(50% - 1px);
+  }
+  transform: rotate(-18deg);
+  transform-origin: right;
+  span {
+    ${ElementsCommonStyleUnspecified};
+    &:nth-of-type(1) {
+      height: 37px;
+      width: 2px;
+      background: ${treeTrunkAndBranchColor};
+      &::before,
+      &::after {
+        content: '';
+        background: ${treeTrunkAndBranchColor};
+        transform-origin: right;
+      }
+      &::before {
+        left: -5px;
+        top: -3px;
+        transform: rotate(-48deg);
+        width: 1px;
+        height: 12px;
+      }
+      &::after {}
+    }
+  }
 `;
 
 export {
   Wrapper,
   Trunk,
+  TrunkMain,
   BranchOne
 };

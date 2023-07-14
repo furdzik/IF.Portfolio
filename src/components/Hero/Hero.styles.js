@@ -196,9 +196,13 @@ const TreeCracowThree = styled(Tree)`
 
 const TreeCracowFour = styled(Tree)`
   ${ElementsCommonStyle};
-  bottom: 3.9rem;
-  left: 19.4rem;
+  // bottom: 3.9rem;
+  // left: 19.4rem;
   z-index: 2;
+
+  // do wywalenia
+  bottom: 5.1rem;
+  left: 24.4rem;
 `;
 
 const TreeCracowFive = styled(Tree)`

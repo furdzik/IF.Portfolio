@@ -15,9 +15,11 @@ const Footer = (props) => {
     <Wrapper
       className={props.className}
     >
-      {intl.formatMessage(messages.copyright, {
-        currentYear
-      })}
+      {
+        intl.formatMessage(messages.copyright, {
+          currentYear
+        })
+      }
     </Wrapper>
   );
 };

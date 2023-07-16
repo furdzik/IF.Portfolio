@@ -8,7 +8,7 @@ const ButtonWrapper = styled.a`
   padding: .3rem 2rem;
   border: .3rem solid ${(props) => props.theme.color.pink};
   border-radius: 4rem;
-  font-family: ${(props) => props.theme.fontFamily.roboto};
+  font-family: ${(props) => props.theme.fontFamily.mainFont};
   font-size: 2.5rem;
   font-weight: ${(props) => props.theme.fontWeight.ultraLight};
   color: ${(props) => props.theme.monoColors.black};

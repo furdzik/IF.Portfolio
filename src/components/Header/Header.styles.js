@@ -9,7 +9,7 @@ const Wrapper = styled.header`
 `;
 
 const Title = styled.h1`
-  font-family: ${(props) => props.theme.fontFamily.roboto};
+  font-family: ${(props) => props.theme.fontFamily.mainFont};
   font-size: 2rem;
   font-weight: ${(props) => props.theme.fontWeight.extrabold};
   color: ${(props) => props.theme.monoColors.bold};

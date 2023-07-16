@@ -1,9 +1,7 @@
 const fontFamily = {
-  mainFont: 'Roboto',
-  mainFontAlt: 'Roboto',
+  mainFont: 'Martel Sans',
   roboto: 'Roboto',
   shadowsInto: 'Shadows Into Light Two',
-  pacifico: 'Pacifico',
   lobster: 'Lobster',
   fallback: 'Arial',
   fallbackIos: '-apple-system',

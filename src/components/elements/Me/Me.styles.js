@@ -7,7 +7,7 @@ const AreaWrapper = styled.div`
   position: relative;
   width: 12.3rem;
   height: 18.6rem;
-  //box-shadow: 0 1.6rem 1.3rem -1.7rem #a5a3a3;
+  /* box-shadow: 0 1.6rem 1.3rem -1.7rem #a5a3a3; */
 `;
 
 const MeWrapper = styled.div`
@@ -30,7 +30,7 @@ const Hair = styled.div`
       width: 11.8rem;
       height: 100%;
       border-radius: 5.5rem / 8rem;
-      background: #eacb6e; // #ecd48e, #ecd48e, #c0b3a1
+      background: #eacb6e; /* #ecd48e, #ecd48e, #c0b3a1 */
     }
     &:nth-of-type(2) {
       left: 4.1rem;
@@ -66,7 +66,7 @@ const Face = styled.div`
   width: 7.8rem;
   height: 11rem;
   border-radius: 7.1rem / 8.9rem;
-  background: #ffd9bc; //#e7bc99;
+  background: #ffd9bc; /* #e7bc99; */
 `;
 
 const Eyebrows = styled.div`

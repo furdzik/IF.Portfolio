@@ -1,7 +1,5 @@
 {
-  "processors": [
-    "stylelint-processor-styled-components"
-  ],
+  "customSyntax": "postcss-styled-syntax",
   "extends": [
     "stylelint-config-kamisama"
   ],
@@ -19,6 +17,7 @@
           "return"
         ]
       }
-    ]
+    ],
+    "comment-empty-line-before": null
   }
 }

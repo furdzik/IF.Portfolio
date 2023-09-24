@@ -7,7 +7,7 @@ const Wrapper = styled.span`
   ${ElementsCommonStyle};
 
   ${(props) => props.scalex && css`
-    transform: scalex(-1);
+    transform: scaleX(-1);
   `};
 `;
 
@@ -134,7 +134,7 @@ const Roof = styled.span`
       background: #eef3f5;
 
       ${(props) => props.scalex && css`
-        transform: scalex(-1);
+        transform: scaleX(-1);
       `};
       ${(props) => props.skew && css`
         bottom: 26.2px;

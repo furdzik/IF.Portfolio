@@ -44,7 +44,6 @@ const Wrapper = styled.div`
     }
     &:nth-of-type(3) {
       bottom: -67rem;
-      left: -21rem;
       left: -47rem;
       z-index: 4;
       width: 1447px;
@@ -59,14 +58,14 @@ const Wrapper = styled.div`
       width: 360px;
       height: 185px;
       border-radius: 50%;
-      background: #94e5b5; // #75d19a;
+      background: #94e5b5; /* #75d19a; */
     }
     &:nth-of-type(5) {
       left: 0;
       width: 71rem;
       border-width: 0 28rem 16rem;
       border-style: solid;
-      border-color: #b5c7c7 transparent; // #b1cece // #c0d4d5
+      border-color: #b5c7c7 transparent; /* #b1cece // #c0d4d5 */
       &::before {
         top: 31px;
         left: -184px;

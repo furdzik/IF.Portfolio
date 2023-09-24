@@ -42,8 +42,8 @@ const Wrapper = styled.div`
   overflow: hidden;
   width: 100%;
   height: 100vh;
-  //background: linear-gradient(#c3eeef 67%, #75d3a9); // 90%
-  background: linear-gradient(0deg, #75d3a9 0%, #c3eeef 67%, #d5eff0 100%); // 90%
+  /* background: linear-gradient(#c3eeef 67%, #75d3a9); // 90% */
+  background: linear-gradient(0deg, #75d3a9 0%, #c3eeef 67%, #d5eff0 100%); /* 90% */
 `;
 
 const ContainerStyled = styled(Container)`
@@ -134,8 +134,8 @@ const StyledRiver = styled(River)`
   bottom: 0;
   left: -52.9rem;
   z-index: 2;
-  // do wywalenia
-  // display: none;
+
+  /* display: none; */
 `;
 
 const CracowWrapper = styled.div`
@@ -393,12 +393,12 @@ const StyledStMarysBasilica = styled(StMarysBasilica)`
   ${ElementsCommonStyleUnspecified};
   bottom: 36rem;
   left: 38.1rem;
-  // display: none;
+  /* display: none; */
 
-  // robocze
+  /* robocze
   // z-index: 1110;
   // bottom: 130px;
-  // right: 30rem
+  // right: 30rem */
 `;
 
 const StyledTrainTracks = styled(TrainTracks)`

@@ -18,7 +18,7 @@ const StyledBuilding = styled(Building)`
 
 const SideWalk = styled.span`
   ${ElementsCommonStyleUnspecified};
-  // @TODO
+  /* TODO */
 `;
 
 const FrontSideBlock = styled.span`

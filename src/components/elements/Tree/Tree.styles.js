@@ -34,7 +34,7 @@ const Trunk = styled.span`
 
 const TrunkMain = styled.span`
   ${ElementsCommonStyleUnspecified};
-  border-width: 0 5px 69px 5px;
+  border-width: 0 5px 69px;
   border-style: solid;
   border-color: #6e471c transparent;
 
@@ -59,7 +59,7 @@ const TrunkMain = styled.span`
     content: '';
     bottom: 36px;
     left: -3px;
-    border-width: 0 3px 8px 3px;
+    border-width: 0 3px 8px;
     border-style: solid;
     border-color: ${treeTrunkAndBranchColor} transparent;
   }
@@ -76,23 +76,22 @@ const BranchOne = styled.span`
   span {
     ${ElementsCommonStyleUnspecified};
     &:nth-of-type(1) {
-      height: 37px;
       width: 2px;
+      height: 37px;
       background: ${treeTrunkAndBranchColor};
       &::before,
       &::after {
         content: '';
-        background: ${treeTrunkAndBranchColor};
         transform-origin: right;
+        background: ${treeTrunkAndBranchColor};
       }
       &::before {
-        left: -5px;
         top: -3px;
+        left: -5px;
         transform: rotate(-48deg);
         width: 1px;
         height: 12px;
       }
-      &::after {}
     }
   }
 `;

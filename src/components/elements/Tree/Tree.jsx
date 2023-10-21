@@ -5,7 +5,14 @@ import {
   Wrapper,
   Trunk,
   TrunkMain,
-  BranchOne
+  BranchOne,
+  BranchTwo,
+  BranchThree,
+  BranchFour,
+  BranchFive,
+  BranchSix,
+  BranchSeven,
+  BranchEight
 } from './Tree.styles.js';
 
 const Tree = (props) => (
@@ -18,8 +25,28 @@ const Tree = (props) => (
       <TrunkMain isTaller={props.isTaller} />
       <BranchOne>
         <span /><span /><span /><span /><span />
-        <span /><span /><span /><span /><span />
       </BranchOne>
+      <BranchTwo>
+        <span /><span /><span /><span /><span />
+      </BranchTwo>
+      <BranchThree>
+        <span /><span /><span /><span /><span />
+      </BranchThree>
+      <BranchFour>
+        <span /><span /><span /><span /><span />
+      </BranchFour>
+      <BranchFive>
+        <span /><span /><span /><span /><span />
+      </BranchFive>
+      <BranchSix>
+        <span /><span /><span /><span /><span />
+      </BranchSix>
+      <BranchSeven>
+        <span /><span /><span /><span /><span />
+      </BranchSeven>
+      <BranchEight>
+        <span /><span /><span /><span /><span />
+      </BranchEight>
     </Trunk>
     {/* All branches: 10 */}
   </Wrapper>

@@ -134,8 +134,6 @@ const StyledRiver = styled(River)`
   bottom: 0;
   left: -52.9rem;
   z-index: 2;
-
-  /* display: none; */
 `;
 
 const CracowWrapper = styled.div`

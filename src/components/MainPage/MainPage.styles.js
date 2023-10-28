@@ -26,9 +26,9 @@ const Heading = styled.h1`
 `;
 
 const SubHeading = styled.h2`
-  font-family: ${(props) => props.theme.fontFamily.roboto};
+  font-family: ${(props) => props.theme.fontFamily.mainFont};
   font-size: 2.5rem;
-  font-weight: ${(props) => props.theme.fontWeight.semibold};
+  font-weight: ${(props) => props.theme.fontWeight.extrabold};
   color: ${(props) => props.theme.monoColors.black};
   white-space: pre-line;
 `;
@@ -64,6 +64,7 @@ const SocialIcons = styled.ul`
   align-items: center;
   width: 100%;
   margin-top: 4rem;
+  font-family: ${(props) => props.theme.fontFamily.roboto};
 
   ${breakpointMixin.portraitTablet(css`
     order: 3;
@@ -129,14 +130,14 @@ const ListWrapper = styled.div`
 
   ${breakpointMixin.landscapeTablet(css`
     order: 2;
-    width: 38%;
+    width: 34%;
     margin-top: 0;
     margin-left: 2rem;
   `)};
   ${breakpointMixin.laptop(css`
     flex-direction: row;
     order: 2;
-    margin-left: 7rem;
+    margin-left: 6rem;
   `)};
 `;
 
@@ -260,8 +261,8 @@ const StackBadge = styled.li`
 
 const StyledFooter = styled(Footer)`
   position: absolute;
-  right: -5rem;
-  bottom: 6.5rem;
+  right: -5.5rem;
+  bottom: 7rem;
   transform: rotate(-90deg);
   transform-origin: center;
   font-size: .9rem;

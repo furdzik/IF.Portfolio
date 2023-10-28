@@ -76,17 +76,13 @@ const Hero = (props) => (
       <StyledCloud cloudType={cloudType.ten} />
       <StyledCloud cloudType={cloudType.eleven} />
       <StyledCloud cloudType={cloudType.twelve} />
-      <StyledCloud cloudType={cloudType.thirteen} />
-      <StyledCloud cloudType={cloudType.fourteen} />
-      <StyledCloud cloudType={cloudType.fifteen} />
-      <StyledCloud cloudType={cloudType.sixteen} />
       <StyledBirdOne />
       <StyledBirdTwo />
       <StyledRiver />
       <CracowWrapper>
         <StyledMountains />
         <TreeCracowOne color="green" isTaller />
-        <TreeCracowTwo color="green" />
+        <TreeCracowTwo color="green" isTaller />
         <TreeCracowThree color="green" isTaller />
         <TreeCracowFour color="green" />
         <TreeCracowFive color="green" />

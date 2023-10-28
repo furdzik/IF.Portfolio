@@ -11,13 +11,14 @@ const pinkColor5 = '#efa5c0';
 const pinkColor6 = '#da8ca9';
 const pinkColor7 = '#ad8e99';
 
-const greenColor1 = '#97f5a6'; // 9be8a7
+const greenColor1 = '#8bd2a1';
 const greenColor2 = '#33ca6c';
 const greenColor3 = '#6eb879';
 const greenColor4 = '#7dc787';
 const greenColor5 = '#23ac55';
 const greenColor6 = '#6cce7c';
-const greenColor7 = '#5e9469'; // #80ef92
+const greenColor7 = '#5e9469';
+const greenColor8 = '#99eab3';
 
 const Wrapper = styled.span`
   ${ElementsCommonStyleUnspecified};
@@ -41,8 +42,8 @@ const LeafOne = styled.span`
   &::before {
     top: 50%;
     left: calc(50% - 4px);
-    transform: rotate(-45deg) translate(-50%, -50%);
     z-index: 2;
+    transform: rotate(-45deg) translate(-50%, -50%);
     width: 8px;
     height: 4px;
     border-radius: 40px / 20px;
@@ -60,8 +61,8 @@ const LeafOne = styled.span`
   &::after {
     top: 50%;
     left: calc(50% - 4px);
-    transform: rotate(-12deg) translate(-50%, -50%);
     z-index: 2;
+    transform: rotate(-12deg) translate(-50%, -50%);
     width: 8px;
     height: 4px;
     border-radius: 40px / 20px;
@@ -83,8 +84,8 @@ const LeafTwo = styled.span`
   &::before {
     top: 50%;
     left: calc(50% - 5px);
-    transform: rotate(37deg) translate(-50%, -50%);
     z-index: 2;
+    transform: rotate(37deg) translate(-50%, -50%);
     width: 8px;
     height: 4px;
     border-radius: 40px / 20px;
@@ -102,8 +103,8 @@ const LeafTwo = styled.span`
   &::after {
     top: 50%;
     left: calc(50% - 5px);
-    transform: rotate(80deg) translate(-50%, -50%);
     z-index: 2;
+    transform: rotate(80deg) translate(-50%, -50%);
     width: 8px;
     height: 4px;
     border-radius: 40px / 20px;
@@ -125,8 +126,8 @@ const LeafThree = styled.span`
   &::before {
     top: calc(50% - 1px);
     left: calc(50% - 5px);
-    transform: rotate(124deg) translate(-50%, -50%);
     z-index: 2;
+    transform: rotate(124deg) translate(-50%, -50%);
     width: 8px;
     height: 4px;
     border-radius: 40px / 20px;
@@ -144,14 +145,14 @@ const LeafThree = styled.span`
   &::after {
     top: calc(50% - 2px);
     left: calc(50% - 5px);
-    transform: rotate(168deg) translate(-50%, -50%);
     z-index: 2;
+    transform: rotate(168deg) translate(-50%, -50%);
     width: 8px;
     height: 4px;
     border-radius: 40px / 20px;
 
     ${(props) => props.variant === 'one' && css`
-      background: ${props.color === 'green' ? greenColor1 : pinkColor4};
+      background: ${props.color === 'green' ? greenColor8 : pinkColor4};
     `};
     ${(props) => props.variant === 'two' && css`
       background: ${props.color === 'green' ? greenColor4 : pinkColor4};
@@ -167,8 +168,8 @@ const LeafFour = styled.span`
   &::before {
     top: calc(50% - 1px);
     left: calc(50% - 4px);
-    transform: rotate(192deg) translate(-50%, -50%);
     z-index: 2;
+    transform: rotate(192deg) translate(-50%, -50%);
     width: 8px;
     height: 4px;
     border-radius: 40px / 20px;
@@ -186,8 +187,8 @@ const LeafFour = styled.span`
   &::after {
     top: calc(50% - 1px);
     left: calc(50% - 4px);
-    transform: rotate(217deg) translate(-50%, -50%);
     z-index: 2;
+    transform: rotate(217deg) translate(-50%, -50%);
     width: 8px;
     height: 4px;
     border-radius: 40px / 20px;

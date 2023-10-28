@@ -12,7 +12,6 @@ export const Wrapper = styled.div`
   z-index: 1;
   width: 15rem;
   height: 16rem;
-  //outline: 1px dotted red;
 
   ${(props) => props.isTaller && css`
     height: 18rem;
@@ -348,9 +347,9 @@ export const BranchFour = styled.span`
     }
     &:nth-of-type(4) {
       &::before {
-        top: -20px;
-        left: -3px;
-        transform: rotate(-63deg);
+        top: -14px;
+        left: -2px;
+        transform: rotate(-90deg);
         width: 1px;
         height: 5px;
       }
@@ -435,9 +434,9 @@ export const BranchFour = styled.span`
         height: 6px;
       }
       &::after {
-        top: -18px;
-        right: -7px;
-        transform: rotate(-9deg);
+        top: -14px;
+        right: -5px;
+        transform: rotate(5deg);
         width: 1px;
         height: 6px;
       }
@@ -569,7 +568,7 @@ export const BranchSix = styled.span`
     }
     &:nth-of-type(3) {
       &::before {
-        top: -28px;
+        top: -24px;
         left: -3px;
         transform: rotate(-52deg);
         width: 1px;
@@ -585,11 +584,11 @@ export const BranchSix = styled.span`
     }
     &:nth-of-type(4) {
       &::before {
-        top: -17px;
-        left: -3px;
-        transform: rotate(-48deg);
+        top: -11px;
+        left: -4px;
+        transform: rotate(-87deg);
         width: 1px;
-        height: 9px;
+        height: 6px;
       }
       &::after {
         top: -28px;
@@ -694,7 +693,7 @@ export const BranchSeven = styled.span`
         height: 8px;
       }
       &::after {
-        top: -14px;
+        top: -12px;
         right: -4px;
         transform: rotate(52deg);
         width: 1px;
@@ -758,7 +757,7 @@ export const BranchEight = styled.span`
     }
     &:nth-of-type(4) {
       &::before {
-        top: -14px;
+        top: -10px;
         right: -5px;
         transform: rotate(55deg);
         width: 1px;
@@ -803,8 +802,8 @@ export const BranchEight = styled.span`
 export const BranchNine = styled.span`
   ${ElementsCommonStyleUnspecified};
   && {
-    bottom: calc(100% - 59px);
     right: calc(50% + 1px);
+    bottom: calc(100% - 59px);
   }
   transform: rotate(-60deg);
   transform-origin: right;
@@ -838,7 +837,7 @@ export const BranchNine = styled.span`
     }
     &:nth-of-type(3) {
       &::before {
-        top: -30px;
+        top: -35px;
         left: -3px;
         transform: rotate(-46deg);
         width: 1px;
@@ -956,7 +955,7 @@ export const BranchTen = styled.span`
         height: 9px;
       }
       &::after {
-        top: -20px;
+        top: -17px;
         right: -9px;
         transform: rotate(55deg);
         width: 1px;
@@ -965,14 +964,14 @@ export const BranchTen = styled.span`
     }
     &:nth-of-type(5) {
       &::before {
-        top: -17px;
+        top: -14px;
         right: -8.4px;
-        transform: rotate(-5deg);
+        transform: rotate(11deg);
         width: 1px;
         height: 7px;
       }
       &::after {
-        top: -11px;
+        top: -8px;
         right: -9px;
         transform: rotate(-61deg);
         width: 1px;
@@ -981,9 +980,9 @@ export const BranchTen = styled.span`
     }
     &:nth-of-type(6) {
       &::before {
-        top: -16px;
+        top: -12px;
         right: -15px;
-        transform: rotate(-74deg);
+        transform: rotate(-60deg);
         width: 1px;
         height: 7px;
       }
@@ -1051,7 +1050,7 @@ export const BranchEleven = styled.span`
         height: 8px;
       }
       &::after {
-        top: -14px;
+        top: -10px;
         right: -4px;
         transform: rotate(52deg);
         width: 1px;
@@ -1273,8 +1272,8 @@ export const BranchFourLeafsSeven = styled(Leafs)`
 
 export const BranchFourLeafsEight = styled(Leafs)`
   position: absolute;
-  top: -27px;
-  left: -14px;
+  top: -21px;
+  left: -15px;
   transform: rotate(-88deg);
 `;
 
@@ -1401,7 +1400,6 @@ export const BranchSixLeafsOne = styled(Leafs)`
   position: absolute;
   top: -59px;
   left: -6px;
-  transform: rotate(0deg);
 `;
 
 export const BranchSixLeafsTwo = styled(Leafs)`
@@ -1427,15 +1425,15 @@ export const BranchSixLeafsFour = styled(Leafs)`
 
 export const BranchSixLeafsFive = styled(Leafs)`
   position: absolute;
-  top: -33px;
+  top: -29px;
   left: -14px;
   transform: rotate(-91deg);
 `;
 
 export const BranchSixLeafsSix = styled(Leafs)`
   position: absolute;
-  top: -21px;
-  left: -16px;
+  top: -16px;
+  left: -17px;
   transform: rotate(-104deg);
 `;
 
@@ -1458,4 +1456,309 @@ export const BranchSixLeafsNine = styled(Leafs)`
   top: -24px;
   left: 5px;
   transform: rotate(75deg);
+`;
+
+export const BranchSevenLeafsOne = styled(Leafs)`
+  position: absolute;
+  top: -59px;
+  left: -6px;
+`;
+
+export const BranchSevenLeafsTwo = styled(Leafs)`
+  position: absolute;
+  top: -55px;
+  left: 1px;
+  transform: rotate(34deg);
+`;
+
+export const BranchSevenLeafsThree = styled(Leafs)`
+  position: absolute;
+  top: -45px;
+  left: -1px;
+  transform: rotate(34deg);
+`;
+
+export const BranchSevenLeafsFour = styled(Leafs)`
+  position: absolute;
+  top: -46px;
+  left: -12px;
+  transform: rotate(-56deg);
+`;
+
+export const BranchSevenLeafsFive = styled(Leafs)`
+  position: absolute;
+  top: -33px;
+  left: 0;
+  transform: rotate(75deg);
+`;
+
+export const BranchSevenLeafsSix = styled(Leafs)`
+  position: absolute;
+  top: -35px;
+  left: -13px;
+  transform: rotate(-69deg);
+`;
+
+export const BranchSevenLeafsSeven = styled(Leafs)`
+  position: absolute;
+  top: -23px;
+  left: -14px;
+  transform: rotate(-79deg);
+`;
+
+export const BranchSevenLeafsEight = styled(Leafs)`
+  position: absolute;
+  top: -17px;
+  left: 0;
+  transform: rotate(75deg);
+`;
+
+export const BranchEightLeafsOne = styled(Leafs)`
+  position: absolute;
+  top: -59px;
+  left: -6px;
+`;
+
+export const BranchEightLeafsTwo = styled(Leafs)`
+  position: absolute;
+  top: -50px;
+  left: -14px;
+  transform: rotate(-101deg);
+`;
+
+export const BranchEightLeafsThree = styled(Leafs)`
+  position: absolute;
+  top: -50px;
+  left: 0;
+  transform: rotate(25deg);
+`;
+
+export const BranchEightLeafsFour = styled(Leafs)`
+  position: absolute;
+  top: -38px;
+  left: 0;
+  transform: rotate(24deg);
+`;
+
+export const BranchEightLeafsFive = styled(Leafs)`
+  position: absolute;
+  top: -36px;
+  left: -12px;
+  transform: rotate(-62deg);
+`;
+
+export const BranchEightLeafsSix = styled(Leafs)`
+  position: absolute;
+  top: -26px;
+  left: 0;
+  transform: rotate(67deg);
+`;
+
+export const BranchEightLeafsSeven = styled(Leafs)`
+  position: absolute;
+  top: -13px;
+  left: 0;
+  transform: rotate(74deg);
+`;
+
+export const BranchEightLeafsEight = styled(Leafs)`
+  position: absolute;
+  top: -29px;
+  left: -23px;
+  transform: rotate(-70deg);
+`;
+
+export const BranchEightLeafsNine = styled(Leafs)`
+  position: absolute;
+  top: -21px;
+  left: -19px;
+  transform: rotate(-115deg);
+`;
+
+export const BranchEightLeafsTen = styled(Leafs)`
+  position: absolute;
+  top: -29px;
+  left: -12px;
+  transform: rotate(11deg);
+`;
+
+export const BranchNineLeafsOne = styled(Leafs)`
+  position: absolute;
+  top: -60px;
+  left: -7px;
+  transform: rotate(-7deg);
+`;
+
+export const BranchNineLeafsTwo = styled(Leafs)`
+  position: absolute;
+  top: -49px;
+  left: 0;
+  transform: rotate(40deg);
+`;
+
+export const BranchNineLeafsThree = styled(Leafs)`
+  position: absolute;
+  top: -54px;
+  left: -14px;
+  transform: rotate(-65deg);
+`;
+
+export const BranchNineLeafsFour = styled(Leafs)`
+  position: absolute;
+  top: -40px;
+  left: -13px;
+  transform: rotate(-76deg);
+`;
+
+export const BranchNineLeafsFive = styled(Leafs)`
+  position: absolute;
+  top: -36px;
+  left: -1px;
+  transform: rotate(111deg);
+`;
+
+export const BranchNineLeafsSix = styled(Leafs)`
+  position: absolute;
+  top: -27px;
+  left: 2px;
+  transform: rotate(72deg);
+`;
+
+export const BranchNineLeafsSeven = styled(Leafs)`
+  position: absolute;
+  top: -18px;
+  left: 3px;
+  transform: rotate(72deg);
+`;
+
+export const BranchNineLeafsEight = styled(Leafs)`
+  position: absolute;
+  top: -29px;
+  left: -19px;
+  transform: rotate(-58deg);
+`;
+
+export const BranchNineLeafsNine = styled(Leafs)`
+  position: absolute;
+  top: -30px;
+  left: -11px;
+  transform: rotate(17deg);
+`;
+
+export const BranchNineLeafsTen = styled(Leafs)`
+  position: absolute;
+  top: -15px;
+  left: -14px;
+  transform: rotate(-150deg);
+`;
+
+export const BranchElevenLeafsOne = styled(Leafs)`
+  position: absolute;
+  top: -48px;
+  left: -6px;
+  transform: rotate(-13deg);
+`;
+
+export const BranchElevenLeafsTwo = styled(Leafs)`
+  position: absolute;
+  top: -41px;
+  left: -2px;
+  transform: rotate(49deg);
+`;
+
+export const BranchElevenLeafsThree = styled(Leafs)`
+  position: absolute;
+  top: -44px;
+  left: -13px;
+  transform: rotate(-77deg);
+`;
+
+export const BranchElevenLeafsFour = styled(Leafs)`
+  position: absolute;
+  top: -34px;
+  left: -14px;
+  transform: rotate(-83deg);
+`;
+
+export const BranchElevenLeafsFive = styled(Leafs)`
+  position: absolute;
+  top: -30px;
+  left: 0;
+  transform: rotate(107deg);
+`;
+
+export const BranchElevenLeafsSix = styled(Leafs)`
+  position: absolute;
+  top: -22px;
+  left: -14px;
+  transform: rotate(-94deg);
+`;
+
+export const BranchElevenLeafsSeven = styled(Leafs)`
+  position: absolute;
+  top: -14px;
+  left: 1px;
+  transform: rotate(74deg);
+`;
+
+export const BranchTenLeafsOne = styled(Leafs)`
+  position: absolute;
+  top: -51px;
+  left: -6px;
+`;
+
+export const BranchTenLeafsTwo = styled(Leafs)`
+  position: absolute;
+  top: -44px;
+  left: -14px;
+  transform: rotate(-72deg);
+`;
+
+export const BranchTenLeafsThree = styled(Leafs)`
+  position: absolute;
+  top: -44px;
+  left: -1px;
+  transform: rotate(40deg);
+`;
+
+export const BranchTenLeafsFour = styled(Leafs)`
+  position: absolute;
+  top: -34px;
+  left: 1px;
+  transform: rotate(55deg);
+`;
+
+export const BranchTenLeafsFive = styled(Leafs)`
+  position: absolute;
+  top: -31px;
+  left: -14px;
+  transform: rotate(-99deg);
+`;
+
+export const BranchTenLeafsSix = styled(Leafs)`
+  position: absolute;
+  top: -19px;
+  left: -15px;
+  transform: rotate(-102deg);
+`;
+
+export const BranchTenLeafsSeven = styled(Leafs)`
+  position: absolute;
+  top: -19px;
+  left: 7px;
+  transform: rotate(67deg);
+`;
+
+export const BranchTenLeafsEight = styled(Leafs)`
+  position: absolute;
+  top: -23px;
+  left: -1px;
+  transform: rotate(-20deg);
+`;
+
+export const BranchTenLeafsNine = styled(Leafs)`
+  position: absolute;
+  top: -10px;
+  left: 3px;
+  transform: rotate(137deg);
 `;

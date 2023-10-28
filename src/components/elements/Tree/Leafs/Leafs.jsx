@@ -21,7 +21,7 @@ const Leafs = (props) => (
 Leafs.propTypes = {
   className: PropTypes.string,
   color: PropTypes.oneOf(['pink', 'green']),
-  variant: PropTypes.oneOf(['one', 'two', 'three']),
+  variant: PropTypes.oneOf(['one', 'two', 'three'])
 };
 
 Leafs.defaultProps = {

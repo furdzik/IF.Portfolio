@@ -2,29 +2,119 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {
-  Wrapper, Trunk, TrunkMain,
-  BranchOne, BranchTwo, BranchThree,
-  BranchFour, BranchFive, BranchSix,
-  BranchSeven, BranchEight, BranchNine,
-  BranchTen, BranchEleven, BranchOneLeafsOne,
-  BranchOneLeafsTwo, BranchOneLeafsThree, BranchOneLeafsFour,
-  BranchOneLeafsFive, BranchOneLeafsSix, BranchTwoLeafsOne,
-  BranchTwoLeafsTwo, BranchTwoLeafsThree, BranchTwoLeafsFour,
-  BranchTwoLeafsFive, BranchTwoLeafsSix, BranchTwoLeafsSeven,
-  BranchTwoLeafsEight, BranchThreeLeafsOne, BranchThreeLeafsTwo,
-  BranchThreeLeafsThree, BranchThreeLeafsFour, BranchThreeLeafsFive,
-  BranchThreeLeafsSix, BranchThreeLeafsSeven, BranchThreeLeafsEight,
-  BranchThreeLeafsNine, BranchFourLeafsOne, BranchFourLeafsTwo,
-  BranchFourLeafsThree, BranchFourLeafsFour, BranchFourLeafsFive,
-  BranchFourLeafsSix, BranchFourLeafsSeven, BranchFourLeafsEight,
-  BranchFourLeafsNine, BranchFourLeafsTen, BranchFourLeafsEleven,
-  BranchFourLeafsTwelve, BranchFourLeafsThirteen, BranchFourLeafsFourteen,
-  BranchFourLeafsFifteen, BranchFourLeafsSixteen, BranchFiveLeafsOne,
-  BranchFiveLeafsTwo, BranchFiveLeafsThree, BranchFiveLeafsFour,
-  BranchFiveLeafsFive, BranchFiveLeafsSix, BranchFiveLeafsSeven,
-  BranchFiveLeafsEight, BranchFiveLeafsNine, BranchSixLeafsOne,
-  BranchSixLeafsTwo, BranchSixLeafsThree, BranchSixLeafsFour,
-  BranchSixLeafsFive, BranchSixLeafsSix, BranchSixLeafsSeven, BranchSixLeafsEight, BranchSixLeafsNine
+  Wrapper,
+  Trunk,
+  TrunkMain,
+  BranchOne,
+  BranchTwo,
+  BranchThree,
+  BranchFour,
+  BranchFive,
+  BranchSix,
+  BranchSeven,
+  BranchEight,
+  BranchNine,
+  BranchTen,
+  BranchEleven,
+  BranchOneLeafsOne,
+  BranchOneLeafsTwo,
+  BranchOneLeafsThree,
+  BranchOneLeafsFour,
+  BranchOneLeafsFive,
+  BranchOneLeafsSix,
+  BranchTwoLeafsOne,
+  BranchTwoLeafsTwo,
+  BranchTwoLeafsThree,
+  BranchTwoLeafsFour,
+  BranchTwoLeafsFive,
+  BranchTwoLeafsSix,
+  BranchTwoLeafsSeven,
+  BranchTwoLeafsEight,
+  BranchThreeLeafsOne,
+  BranchThreeLeafsTwo,
+  BranchThreeLeafsThree,
+  BranchThreeLeafsFour,
+  BranchThreeLeafsFive,
+  BranchThreeLeafsSix,
+  BranchThreeLeafsSeven,
+  BranchThreeLeafsEight,
+  BranchThreeLeafsNine,
+  BranchFourLeafsOne,
+  BranchFourLeafsTwo,
+  BranchFourLeafsThree,
+  BranchFourLeafsFour,
+  BranchFourLeafsFive,
+  BranchFourLeafsSix,
+  BranchFourLeafsSeven,
+  BranchFourLeafsEight,
+  BranchFourLeafsNine,
+  BranchFourLeafsTen,
+  BranchFourLeafsEleven,
+  BranchFourLeafsTwelve,
+  BranchFourLeafsThirteen,
+  BranchFourLeafsFourteen,
+  BranchFourLeafsFifteen,
+  BranchFourLeafsSixteen,
+  BranchFiveLeafsOne,
+  BranchFiveLeafsTwo,
+  BranchFiveLeafsThree,
+  BranchFiveLeafsFour,
+  BranchFiveLeafsFive,
+  BranchFiveLeafsSix,
+  BranchFiveLeafsSeven,
+  BranchFiveLeafsEight,
+  BranchFiveLeafsNine,
+  BranchSixLeafsOne,
+  BranchSixLeafsTwo,
+  BranchSixLeafsThree,
+  BranchSixLeafsFour,
+  BranchSixLeafsFive,
+  BranchSixLeafsSix,
+  BranchSixLeafsSeven,
+  BranchSixLeafsEight,
+  BranchSixLeafsNine,
+  BranchSevenLeafsOne,
+  BranchSevenLeafsTwo,
+  BranchSevenLeafsThree,
+  BranchSevenLeafsFour,
+  BranchSevenLeafsFive,
+  BranchSevenLeafsSix,
+  BranchSevenLeafsSeven,
+  BranchSevenLeafsEight,
+  BranchEightLeafsOne,
+  BranchEightLeafsTwo,
+  BranchEightLeafsThree,
+  BranchEightLeafsFour,
+  BranchEightLeafsFive,
+  BranchEightLeafsSix,
+  BranchEightLeafsSeven,
+  BranchEightLeafsEight,
+  BranchEightLeafsNine,
+  BranchEightLeafsTen,
+  BranchNineLeafsOne,
+  BranchNineLeafsTwo,
+  BranchNineLeafsThree,
+  BranchNineLeafsFour,
+  BranchNineLeafsFive,
+  BranchNineLeafsSix,
+  BranchNineLeafsSeven,
+  BranchNineLeafsEight,
+  BranchNineLeafsNine,
+  BranchNineLeafsTen,
+  BranchElevenLeafsOne,
+  BranchElevenLeafsTwo,
+  BranchElevenLeafsThree,
+  BranchElevenLeafsFour,
+  BranchElevenLeafsFive,
+  BranchElevenLeafsSix,
+  BranchElevenLeafsSeven,
+  BranchTenLeafsOne,
+  BranchTenLeafsTwo,
+  BranchTenLeafsThree,
+  BranchTenLeafsFour,
+  BranchTenLeafsFive,
+  BranchTenLeafsSix,
+  BranchTenLeafsSeven, BranchTenLeafsEight, BranchTenLeafsNine
 } from './Tree.styles.js';
 
 const Tree = (props) => (
@@ -113,21 +203,65 @@ const Tree = (props) => (
       </BranchSix>
       <BranchSeven color={props.color}>
         <span /><span /><span /><span /><span />
+        <BranchSevenLeafsOne color={props.color} variant="one" />
+        <BranchSevenLeafsTwo color={props.color} variant="two" />
+        <BranchSevenLeafsThree color={props.color} variant="three" />
+        <BranchSevenLeafsFour color={props.color} variant="three" />
+        <BranchSevenLeafsFive color={props.color} variant="one" />
+        <BranchSevenLeafsSix color={props.color} variant="two" />
+        <BranchSevenLeafsSeven color={props.color} variant="three" />
+        <BranchSevenLeafsEight color={props.color} variant="one" />
       </BranchSeven>
       <BranchEight color={props.color}>
         <span /><span /><span /><span /><span />
         <span />
+        <BranchEightLeafsOne color={props.color} variant="three" />
+        <BranchEightLeafsTwo color={props.color} variant="one" />
+        <BranchEightLeafsThree color={props.color} variant="two" />
+        <BranchEightLeafsFour color={props.color} variant="one" />
+        <BranchEightLeafsFive color={props.color} variant="three" />
+        <BranchEightLeafsSix color={props.color} variant="one" />
+        <BranchEightLeafsSeven color={props.color} variant="three" />
+        <BranchEightLeafsEight color={props.color} variant="two" />
+        <BranchEightLeafsNine color={props.color} variant="three" />
+        <BranchEightLeafsTen color={props.color} variant="one" />
       </BranchEight>
       <BranchNine color={props.color}>
         <span /><span /><span /><span /><span />
         <span />
+        <BranchNineLeafsOne color={props.color} variant="three" />
+        <BranchNineLeafsTwo color={props.color} variant="one" />
+        <BranchNineLeafsThree color={props.color} variant="two" />
+        <BranchNineLeafsFour color={props.color} variant="three" />
+        <BranchNineLeafsFive color={props.color} variant="one" />
+        <BranchNineLeafsSix color={props.color} variant="two" />
+        <BranchNineLeafsSeven color={props.color} variant="one" />
+        <BranchNineLeafsEight color={props.color} variant="two" />
+        <BranchNineLeafsNine color={props.color} variant="three" />
+        <BranchNineLeafsTen color={props.color} variant="one" />
       </BranchNine>
       <BranchTen color={props.color}>
         <span /><span /><span /><span /><span />
         <span />
+        <BranchTenLeafsOne color={props.color} variant="two" />
+        <BranchTenLeafsTwo color={props.color} variant="one" />
+        <BranchTenLeafsThree color={props.color} variant="three" />
+        <BranchTenLeafsFour color={props.color} variant="two" />
+        <BranchTenLeafsFive color={props.color} variant="two" />
+        <BranchTenLeafsSix color={props.color} variant="one" />
+        <BranchTenLeafsSeven color={props.color} variant="three" />
+        <BranchTenLeafsEight color={props.color} variant="two" />
+        <BranchTenLeafsNine color={props.color} variant="three" />
       </BranchTen>
       <BranchEleven color={props.color}>
         <span /><span /><span /><span />
+        <BranchElevenLeafsOne color={props.color} variant="one" />
+        <BranchElevenLeafsTwo color={props.color} variant="three" />
+        <BranchElevenLeafsThree color={props.color} variant="two" />
+        <BranchElevenLeafsFour color={props.color} variant="one" />
+        <BranchElevenLeafsFive color={props.color} variant="three" />
+        <BranchElevenLeafsSix color={props.color} variant="two" />
+        <BranchElevenLeafsSeven color={props.color} variant="one" />
       </BranchEleven>
     </Trunk>
   </Wrapper>

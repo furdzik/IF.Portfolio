@@ -134,8 +134,6 @@ const StyledRiver = styled(River)`
   bottom: 0;
   left: -52.9rem;
   z-index: 2;
-
-  /* display: none; */
 `;
 
 const CracowWrapper = styled.div`
@@ -196,12 +194,8 @@ const TreeCracowThree = styled(Tree)`
 
 const TreeCracowFour = styled(Tree)`
   ${ElementsCommonStyle};
-  /* bottom: 3.9rem;
-  // left: 19.4rem; */
-  /* do wywalenia */
-  bottom: 5.1rem;
-  left: 24.4rem;
-
+  bottom: 3.9rem;
+  left: 19.4rem;
   z-index: 2;
 `;
 

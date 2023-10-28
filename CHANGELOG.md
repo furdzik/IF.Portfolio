@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.4.0](https://github.com/furdzik/IF.Portfolio/compare/v1.3.2...v1.4.0) (2023-10-28)
+
+
+### Features
+
+* **app:** change font ([fcc31bc](https://github.com/furdzik/IF.Portfolio/commit/fcc31bca7491cbe37d5000df457a0e89949e4aba))
+
+
+### Bug Fixes
+
+* **tree:** add leaves ([ddf2454](https://github.com/furdzik/IF.Portfolio/commit/ddf2454f9521d69b2819f2ddcc26327219c4a4e1))
+* **tree:** add new branches ([68e5461](https://github.com/furdzik/IF.Portfolio/commit/68e5461a50ffb7091440382d02f04e887bb360e7))
+* **tree:** change tree ([b8500de](https://github.com/furdzik/IF.Portfolio/commit/b8500de5e4986f1ae243bd7a1684c235e1d17161))
+* **tree:** change tree - wip ([68b7399](https://github.com/furdzik/IF.Portfolio/commit/68b7399b08b174ed6ee791ab6def7c3fc6b96b04))
+* **tree:** finish new tree ([c7a6e71](https://github.com/furdzik/IF.Portfolio/commit/c7a6e7104eb3d67652021c441080a66d7cb097b5))
+* **tree:** style linter fixes ([9bbdc1d](https://github.com/furdzik/IF.Portfolio/commit/9bbdc1df9b9de7d47b8f4762220cfb3bafb63e93))
+
 ## [1.3.2](https://github.com/furdzik/IF.Portfolio/compare/v1.3.1...v1.3.2) (2023-07-13)
 
 

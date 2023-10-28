@@ -86,7 +86,8 @@ const Hero = (props) => (
       <CracowWrapper>
         <StyledMountains />
         <TreeCracowOne color="green" isTaller />
-        <TreeCracowTwo color="green" isTaller />
+        <TreeCracowTwo color="pink" isTaller />
+        {/*<TreeCracowTwo color="green" isTaller />*/}
         {/* <TreeCracowThree color="green" isTaller /> */}
         <TreeCracowFour color="green" />
         <TreeCracowFive color="green" />

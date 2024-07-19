@@ -10,11 +10,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Wait for Netlify Preview
-        id: netlify
-        uses: josephduffy/wait-for-netlify-action@v1
+      - name: Waiting for 200 from the Netlify Preview
+        uses: jakepartusch/wait-for-netlify-action@v1.4
+        id: waitFor200
         with:
-          site_name: if-furdzik-portfolio
+          site_name: "if-furdzik-portfolio"
           max_timeout: 60
 
       - name: Audit Preview URL using Lighthouse

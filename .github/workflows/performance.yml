@@ -10,12 +10,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-  - name: Waiting for Netlify Preview
-      uses: archiewood/wait-for-netlify-action@v1
-      id: netlify
-      with:
-        site_name: "if-furdzik-portfolio"
-        max_timeout: 60
+      - name: Waiting for Netlify Preview
+        uses: archiewood/wait-for-netlify-action@v1
+        id: netlify
+        with:
+          site_name: "if-furdzik-portfolio"
+          max_timeout: 60
 
       - name: Audit Preview URL using Lighthouse
         id: lighthouse_audit

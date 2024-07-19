@@ -4,7 +4,7 @@
   "components.Footer.copyright": "© {currentYear} All rights reserved",
   "components.Header.title": "IF.Portfolio [WIP]",
   "components.MainPage.contributionsText": "contributions: ",
-  "components.MainPage.cssArt": "CSS Art",
+  "components.MainPage.dice": "Dice game table",
   "components.MainPage.japaneseApp": "Japanese App",
   "components.MainPage.mainHeading": "Hello!",
   "components.MainPage.reputationText": "reputation: ",

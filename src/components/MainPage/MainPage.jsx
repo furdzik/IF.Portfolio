@@ -63,9 +63,8 @@ const MainPage = (props) => {
                 </Link>
               </ListItem>
               <ListItem>
-                <Link href="http://cssart.furdzik.com/" target="_blank" rel="noreferrer">
-                  {intl.formatMessage(messages.cssArt)}
-                  <WipBadge />
+                <Link href="https://dice.furdzik.com/" target="_blank" rel="noreferrer">
+                  {intl.formatMessage(messages.dice)}
                 </Link>
               </ListItem>
               <ListItem>

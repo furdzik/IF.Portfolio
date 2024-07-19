@@ -12,7 +12,7 @@ jobs:
 
       - name: Waiting for 200 from the Netlify Preview
         uses: jakepartusch/wait-for-netlify-action@v1.4
-        id: waitFor200
+        id: previewUrl
         with:
           site_name: "if-furdzik-portfolio"
           max_timeout: 60
@@ -22,7 +22,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v3
         with:
           urls: |
-            ${{ steps.netlify.outputs.url }}
+            ${{ steps.previewUrl.outputs.url }}
           uploadArtifacts: true
           temporaryPublicStorage: true
 

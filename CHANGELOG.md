@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.5.0](https://github.com/furdzik/IF.Portfolio/compare/v1.4.0...v1.5.0) (2024-07-19)
+
+
+### Features
+
+* **home:** add dice app to the description ([a3e9b7d](https://github.com/furdzik/IF.Portfolio/commit/a3e9b7d349b5d3fed0c5a90c1e67af9004d3cb1d))
+* **home:** try to fix github action ([355819c](https://github.com/furdzik/IF.Portfolio/commit/355819cce8a3e1dc0146134e99dc20d10781bfc2))
+* **home:** try to fix github action ([5dcaada](https://github.com/furdzik/IF.Portfolio/commit/5dcaada360a01ced3387b5596f7841ab1f7a46da))
+* **home:** try to fix github action ([320d51d](https://github.com/furdzik/IF.Portfolio/commit/320d51d4aa30ce9dcb4488aa28fa851dbec7c9d0))
+* **home:** try to fix github action ([b285189](https://github.com/furdzik/IF.Portfolio/commit/b28518938fe986e21c82bebc882db3310fa7ceec))
+* **home:** try to fix github action ([594bd02](https://github.com/furdzik/IF.Portfolio/commit/594bd02847d638076e8b72e36c5f249dc78ff180))
+* **home:** try to fix github action ([fd6294c](https://github.com/furdzik/IF.Portfolio/commit/fd6294cc143e12c562090f7308f73b217535aaeb))
+
 ## [1.4.0](https://github.com/furdzik/IF.Portfolio/compare/v1.3.2...v1.4.0) (2023-10-28)
 
 

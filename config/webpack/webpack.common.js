@@ -54,7 +54,7 @@ module.exports = ({ production }) => {
         favicon: './public/favicon.ico',
         appVersion: `${version}`,
         noscript: 'Proszę włączyć obsługę JavaScript w przeglądarce.',
-        appUrl: production ? process.env.APP_URL : 'http://if.portfolio.local:7017',
+        appUrl: production ? process.env.APP_URL : 'http://localhost:7017',
         base: '/',
         minify: {
           removeAttributeQuotes: true,

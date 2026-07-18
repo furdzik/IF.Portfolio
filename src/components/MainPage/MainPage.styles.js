@@ -27,9 +27,17 @@ const Heading = styled.h1`
 
 const SubHeading = styled.h2`
   font-family: ${(props) => props.theme.fontFamily.mainFont};
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: ${(props) => props.theme.fontWeight.extrabold};
   color: ${(props) => props.theme.monoColors.black};
+  white-space: pre-line;
+`;
+
+const SecondSubHeading = styled.div`
+  font-family: ${(props) => props.theme.fontFamily.mainFont};
+  font-size: 1.5rem;
+  font-weight: ${(props) => props.theme.fontWeight.extrabold};
+  color: ${(props) => props.theme.color.violet};
   white-space: pre-line;
 `;
 
@@ -46,8 +54,6 @@ const StyledBox = styled(Box)`
   flex-wrap: wrap;
   align-items: flex-start;
   background: linear-gradient(#ffffff 67%, rgb(255 255 255 / 88%));
-
-  /* display: none; */
 `;
 
 const MainBox = styled.div`
@@ -126,11 +132,11 @@ const ListWrapper = styled.div`
   flex-flow: column wrap;
   order: 2;
   width: 100%;
-  margin-top: 5rem;
+  //margin-top: 5rem;
 
   ${breakpointMixin.landscapeTablet(css`
     order: 2;
-    width: 34%;
+    width: 32%;
     margin-top: 0;
     margin-left: 2rem;
   `)};
@@ -186,23 +192,6 @@ const CatStyled = styled(Cat)`
   position: absolute;
   bottom: 0;
   left: -6rem;
-`;
-
-const WipBadge = styled.span`
-  display: inline-block;
-  height: 3rem;
-  margin-left: 2rem;
-  padding: .5rem;
-  border: .2rem solid ${(props) => props.theme.color.red};
-  border-radius: 50%;
-  color: ${(props) => props.theme.color.red};
-  vertical-align: middle;
-
-  &::before {
-    content: 'WIP';
-    display: block;
-    font-size: 1.2rem;
-  }
 `;
 
 const Number = styled.span`
@@ -272,6 +261,7 @@ const StyledFooter = styled(Footer)`
 export {
   Heading,
   SubHeading,
+  SecondSubHeading,
   StyledContainer,
   StyledBox,
   MainBox,
@@ -287,7 +277,6 @@ export {
   Link,
   MeAndCatWrapper,
   CatStyled,
-  WipBadge,
   Number,
   StackBadges,
   StackBadge,

@@ -10,15 +10,18 @@ import {
 
 import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from '@constants';
 
+import { breakpoints } from '@styles/basic';
+
 import { statsShape } from '@types/statsShape';
+import { useMediaQuery } from '@hooks/useMediaQuery';
 
 import Hero from '@components/Hero';
-
 import Me from '@components/elements/Me';
 
 import {
   Heading,
   SubHeading,
+  SecondSubHeading,
   StyledContainer,
   StyledBox,
   MainBox,
@@ -34,7 +37,6 @@ import {
   IconStyled,
   MeAndCatWrapper,
   CatStyled,
-  WipBadge,
   Number,
   StackBadges,
   StackBadge,
@@ -45,18 +47,26 @@ import messages from './MainPage.messages';
 const MainPage = (props) => {
   const intl = useIntl();
 
+  const isWiderThanPortraitTablet = useMediaQuery(`(min-width: ${breakpoints.portraitTablet})`);
+
   return (
     <React.Fragment>
       <Hero />
       <StyledContainer>
-        <StyledBox>
+        <StyledBox showTapes={!isWiderThanPortraitTablet}>
           <MainBox>
             <Heading>{intl.formatMessage(messages.mainHeading)}</Heading>
             <SubHeading>{intl.formatMessage(messages.subHeading)}</SubHeading>
+            <SecondSubHeading>{intl.formatMessage(messages.subHeading2)}</SecondSubHeading>
           </MainBox>
           <ListWrapper>
             <Heading>{intl.formatMessage(messages.seeMore)}</Heading>
             <List>
+              <ListItem>
+                <Link href="https://fans4oneokrock.com" target="_blank" rel="noreferrer">
+                  {intl.formatMessage(messages.fans4oor)}
+                </Link>
+              </ListItem>
               <ListItem>
                 <Link href="https://japanese.furdzik.com/" target="_blank" rel="noreferrer">
                   {intl.formatMessage(messages.japaneseApp)}
@@ -65,12 +75,6 @@ const MainPage = (props) => {
               <ListItem>
                 <Link href="https://dice.furdzik.com/" target="_blank" rel="noreferrer">
                   {intl.formatMessage(messages.dice)}
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link href="https://github.com/furdzik/IF.StyleGuide/blob/main/README.md" target="_blank" rel="noreferrer">
-                  {intl.formatMessage(messages.styleGuide)}
-                  <WipBadge />
                 </Link>
               </ListItem>
             </List>

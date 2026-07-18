@@ -3,7 +3,7 @@ import { css } from '@emotion/react';
 
 import { cloudType } from '@constants';
 
-import { breakpointHeightMixin } from '@styles/mixins';
+import { breakpointHeightMixin, breakpointMixin } from '@styles/mixins';
 
 import {
   ElementsCommonStyle,
@@ -42,6 +42,7 @@ const Wrapper = styled.div`
   overflow: hidden;
   width: 100%;
   height: 100vh;
+  contain: layout paint style;
   /* background: linear-gradient(#c3eeef 67%, #75d3a9); // 90% */
   background: linear-gradient(0deg, #75d3a9 0%, #c3eeef 67%, #d5eff0 100%); /* 90% */
 `;
@@ -115,18 +116,38 @@ const StyledBirdOne = styled(Bird)`
   ${ElementsCommonStyleUnspecified};
   top: 10rem;
   bottom: auto;
-  left: -22rem;
+  left: 8rem;
   transform: rotate(31deg);
   scale: .7;
+
+  ${breakpointMixin.landscapeTablet(css`
+    left: 11rem;
+  `)};
+  ${breakpointMixin.desktop(css`
+    left: -12rem;
+  `)};
+  ${breakpointMixin.hdDesktop(css`
+    left: -22rem;
+  `)};
 `;
 
 const StyledBirdTwo = styled(Bird)`
   ${ElementsCommonStyleUnspecified};
   top: 13rem;
   bottom: auto;
-  left: -17rem;
+  left: 13rem;
   transform: rotate(-38deg);
   scale: .9;
+
+  ${breakpointMixin.landscapeTablet(css`
+    left: 16rem;
+  `)};
+  ${breakpointMixin.desktop(css`
+    left: -7rem;
+  `)};
+  ${breakpointMixin.hdDesktop(css`
+    left: -17rem;
+  `)};
 `;
 
 const StyledRiver = styled(River)`
@@ -139,21 +160,35 @@ const StyledRiver = styled(River)`
 const CracowWrapper = styled.div`
   position: absolute;
   right: 50%;
+  bottom: 30rem;
   width: 100%;
   height: 100%;
+
+  ${breakpointMixin.landscapeTablet(css`
+    bottom: 0
+  `)};
 `;
 
 const TokyoWrapper = styled.div`
   position: absolute;
   left: 50%;
+  bottom: 30rem;
   width: 100%;
   height: 100%;
+
+  ${breakpointMixin.landscapeTablet(css`
+    bottom: 0
+  `)};
 `;
 
 const StyledMtFuji = styled(MtFuji)`
   ${ElementsCommonStyle};
   bottom: 43.5rem;
-  left: 40rem;
+  left: 20rem;
+
+  ${breakpointMixin.desktop(css`
+    left: 40rem;
+  `)};
 `;
 
 const StyledCityGround = styled(CityGround)`
@@ -390,7 +425,15 @@ const StyledSkyTree = styled(SkyTree)`
 const StyledStMarysBasilica = styled(StMarysBasilica)`
   ${ElementsCommonStyleUnspecified};
   bottom: 36rem;
-  left: 38.1rem;
+  left: 36.1rem;
+
+  ${breakpointMixin.landscapeTablet(css`
+    left: 52.1rem;
+  `)};
+  ${breakpointMixin.desktop(css`
+    left: 38.1rem;
+  `)};
+
   /* display: none; */
 
   /* robocze

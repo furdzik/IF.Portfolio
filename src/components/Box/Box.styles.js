@@ -103,40 +103,6 @@ const BottomRightCorner = styled.div`
   }
 `;
 
-const RoundDecoration = styled.span`
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
-  background: rgb(255 255 255 / 35%);
-  box-shadow: .1rem .1rem 2.3rem .2rem rgb(255 255 255 / 36%), .1rem .1rem 1rem .2rem rgb(0 0 0 / 35%);
-`;
-
-const RoundDecorationOne = styled(RoundDecoration)`
-  top: 7rem;
-  left: -5.4rem;
-  border: .3rem solid #d12665;
-`;
-
-const RoundDecorationTwo = styled(RoundDecoration)`
-  top: 7rem;
-  left: -5.4rem;
-  border: .3rem solid #d12665;
-`;
-
-const RoundDecorationThree = styled(RoundDecoration)`
-  top: 7rem;
-  left: -5.4rem;
-  border: .3rem solid #d12665;
-`;
-
-const RoundDecorationFour = styled(RoundDecoration)`
-  right: 2.1rem;
-  bottom: -3.9rem;
-  border: .3rem solid #8e26d1;
-  box-shadow: .1rem .1rem 2.3rem .2rem rgb(255 255 255 / 36%), .1rem .1rem 1rem .2rem rgb(255 255 255 / 35%);
-`;
-
 const StarDecorationOne = styled(StarDecoration)`
   position: absolute;
   top: 1.4rem;
@@ -164,10 +130,6 @@ export {
   TopRightCorner,
   BottomLeftCorner,
   BottomRightCorner,
-  RoundDecorationOne,
-  RoundDecorationTwo,
-  RoundDecorationThree,
-  RoundDecorationFour,
   StarDecorationOne,
   StarDecorationTwo,
   StarDecorationThree

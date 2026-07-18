@@ -10,11 +10,19 @@ const webpackDevelopment = () => ({
   entry: 'src/index.jsx',
   mode: 'development',
   devtool: 'source-map',
+  watchOptions: {
+    ignored: '**/node_modules/**'
+  },
   devServer: {
     port: PORT,
-    host: 'if.portfolio.local',
+    host: 'localhost',
     historyApiFallback: true,
-    static: './'
+    static: {
+      directory: './',
+      watch: {
+        ignored: '**/node_modules/**'
+      }
+    }
   },
   plugins: [
     new CopyPlugin({

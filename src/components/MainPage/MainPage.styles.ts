@@ -199,7 +199,7 @@ const CatStyled = styled(Cat)`
   left: -6rem;
 `;
 
-const Number = styled.span`
+const Number = styled.span<{ type?: string }>`
   flex-shrink: 0;
   margin-left: .5rem;
   padding: .1rem .5rem;
@@ -221,7 +221,7 @@ const StackBadges = styled.ul`
   margin-left: .5rem;
 `;
 
-const StackBadge = styled.li`
+const StackBadge = styled.li<{ type?: string }>`
   display: flex;
   align-items: center;
   margin-right: .5rem;

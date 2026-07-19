@@ -1,3 +1,5 @@
+import { AnyAction } from 'redux';
+
 import { fetchStackOverflowStats, fetchGitHubStats } from 'api';
 
 const actionTypes = {
@@ -10,7 +12,7 @@ const initialState = {
   stats: {}
 };
 
-export default function mainPageReducer (state = initialState, action = {}) {
+export default function mainPageReducer (state = initialState, action: AnyAction = { type: '' }) {
   switch (action.type) {
     case actionTypes.GET_STATS: {
       const { stackOverflow, gitHub } = action.payload;

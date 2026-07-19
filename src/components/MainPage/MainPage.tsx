@@ -5,7 +5,7 @@ import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from 'constant';
 
 import { breakpoints } from 'styles/basic';
 
-import { statsShape } from 'types/statsShape';
+import { IStats } from 'types/statsShape';
 import { useMediaQuery } from 'hooks/useMediaQuery';
 
 import Hero from 'components/Hero';
@@ -39,7 +39,11 @@ import {
   StyledFooter
 } from './MainPage.styles';
 
-const MainPage = (props) => {
+interface MainPageProps {
+  stats?: IStats;
+}
+
+const MainPage = (props: MainPageProps) => {
   const intl = useIntl();
 
   const isWiderThanPortraitTablet = useMediaQuery(`(min-width: ${breakpoints.portraitTablet})`);
@@ -156,10 +160,6 @@ const MainPage = (props) => {
       </StyledContainer>
     </React.Fragment>
   );
-};
-
-MainPage.propTypes = {
-  stats: statsShape.isRequired
 };
 
 export default MainPage;

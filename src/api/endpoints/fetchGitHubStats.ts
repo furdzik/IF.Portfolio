@@ -19,7 +19,7 @@ const body = {
   }`
 };
 
-export const fetchGitHubStats = () => (
+export const fetchGitHubStats = (): Promise<any> => (
   api.post(
     'https://api.github.com/graphql',
     body,

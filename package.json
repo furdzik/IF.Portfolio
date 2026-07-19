@@ -12,7 +12,7 @@
     "lint": "yarn eslint && yarn stylelint",
     "typecheck": "tsc --noEmit",
     "find-duplicates": "jscpd ./src/",
-    "stylelint": "stylelint \"**/*.styles.{js,jsx}\"",
+    "stylelint": "stylelint \"**/*.styles.{ts,tsx,js,jsx}\"",
     "eslint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
     "outdated": "yarn outdated",
     "audit": "yarn audit"

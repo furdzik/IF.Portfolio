@@ -8,7 +8,7 @@ import {
   Torso,
   Leg,
   Tail
-} from './Cat.styles.js';
+} from './Cat.styles';
 
 const Cat = (props) => (
   <AreaWrapper

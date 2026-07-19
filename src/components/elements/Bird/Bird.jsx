@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import {
   Wrapper,
   BirdWrapper
-} from './Bird.styles.js';
+} from './Bird.styles';
 
 const Bird = (props) => (
   <Wrapper

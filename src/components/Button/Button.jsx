@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import {
   ButtonWrapper
-} from './Button.styles.js';
+} from './Button.styles';
 
 const Button = (props) => (
   <ButtonWrapper

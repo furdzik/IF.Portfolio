@@ -7,7 +7,7 @@ import Container from 'components/Container';
 import {
   Wrapper,
   Title
-} from './Header.styles.js';
+} from './Header.styles';
 
 const Header = (props) => {
   const intl = useIntl();

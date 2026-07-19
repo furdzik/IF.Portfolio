@@ -21,7 +21,7 @@ import {
   OneWindow,
   SecondWindow,
   Balustrade
-} from './BuildingOne.styles.js';
+} from './BuildingOne.styles';
 
 const BuildingOne = (props) => {
   // eslint-disable-next-line react/no-unstable-nested-components

@@ -31,7 +31,7 @@ import {
   TowerCornice,
   LeftSideWall,
   RightSideWall
-} from './StMarysBasilica.styles.js';
+} from './StMarysBasilica.styles';
 
 const StMarysBasilica = (props) => (
   <Wrapper

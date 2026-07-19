@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import {
   SemicircularWindowWrapper
-} from './SemicircularWindow.styles.js';
+} from './SemicircularWindow.styles';
 
 const SemicircularWindow = (props) => (
   <SemicircularWindowWrapper

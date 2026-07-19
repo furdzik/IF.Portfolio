@@ -10,7 +10,7 @@ import {
   StarDecorationOne,
   StarDecorationTwo,
   StarDecorationThree
-} from './Box.styles.js';
+} from './Box.styles';
 
 const Box = (props) => (
   <Wrapper

@@ -59,7 +59,7 @@ import {
   StyledBuildingTwelve,
   StyledBuildingThirteen,
   StyledBuildingFourteen
-} from './Hero.styles.js';
+} from './Hero.styles';
 
 const Hero = (props) => (
   <Wrapper className={props.className}>

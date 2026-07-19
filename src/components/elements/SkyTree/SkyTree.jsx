@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import {
   Wrapper
-} from './SkyTree.styles.js';
+} from './SkyTree.styles';
 
 const SkyTree = (props) => (
   <Wrapper

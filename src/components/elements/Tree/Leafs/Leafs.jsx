@@ -7,7 +7,7 @@ import {
   LeafTwo,
   LeafThree,
   LeafFour
-} from './Leafs.styles.js';
+} from './Leafs.styles';
 
 const Leafs = (props) => (
   <Wrapper className={props.className}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Wrapper } from './MtFuji.styles.js';
+import { Wrapper } from './MtFuji.styles';
 
 const MtFuji = (props) => (
   <Wrapper

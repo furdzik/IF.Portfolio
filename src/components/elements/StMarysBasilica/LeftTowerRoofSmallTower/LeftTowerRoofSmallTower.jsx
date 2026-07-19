@@ -5,7 +5,7 @@ import {
   Wrapper,
   BaseWall,
   Roof
-} from './LeftTowerRoofSmallTower.styles.js';
+} from './LeftTowerRoofSmallTower.styles';
 
 const LeftTowerRoofSmallTower = (props) => (
   <Wrapper

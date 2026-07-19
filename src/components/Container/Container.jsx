@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Wrapper } from './Container.styles.js';
+import { Wrapper } from './Container.styles';
 
 const Container = (props) => (
   <Wrapper

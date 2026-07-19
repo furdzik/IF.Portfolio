@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import {
   Wrapper,
   StarWrapper
-} from './StarDecoration.styles.js';
+} from './StarDecoration.styles';
 
 const StarDecoration = (props) => (
   <Wrapper

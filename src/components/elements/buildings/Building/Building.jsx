@@ -10,7 +10,7 @@ import {
   TopSide,
   BottomSide,
   FrontSide
-} from './Building.styles.js';
+} from './Building.styles';
 
 const Building = (props) => (
   <Wrapper

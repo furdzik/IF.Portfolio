@@ -5,7 +5,7 @@ import { cloudType } from 'constant';
 
 import {
   Wrapper
-} from './Cloud.styles.js';
+} from './Cloud.styles';
 
 const Cloud = (props) => (
   <Wrapper

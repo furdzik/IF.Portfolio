@@ -17,7 +17,7 @@ import {
   Hand,
   Legs,
   Leg
-} from './Me.styles.js';
+} from './Me.styles';
 
 const Me = (props) => (
   <AreaWrapper

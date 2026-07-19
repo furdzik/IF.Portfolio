@@ -7,7 +7,7 @@ import {
   FrontSideBlock,
   LeftSideBlock,
   TopSideBlock
-} from './BuildingThree.styles.js';
+} from './BuildingThree.styles';
 
 const BuildingThree = (props) => {
   const frontSide = (

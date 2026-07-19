@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import {
   Wrapper
-} from './CityGround.styles.js';
+} from './CityGround.styles';
 
 const CityGround = (props) => (
   <Wrapper

@@ -5,7 +5,7 @@ import {
   Wrapper,
   Vistula,
   Arakawa
-} from './River.styles.js';
+} from './River.styles';
 
 const River = (props) => (
   <Wrapper

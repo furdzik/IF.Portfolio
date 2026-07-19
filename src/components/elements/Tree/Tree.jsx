@@ -115,7 +115,7 @@ import {
   BranchTenLeafsFive,
   BranchTenLeafsSix,
   BranchTenLeafsSeven, BranchTenLeafsEight, BranchTenLeafsNine
-} from './Tree.styles.js';
+} from './Tree.styles';
 
 const Tree = (props) => (
   <Wrapper

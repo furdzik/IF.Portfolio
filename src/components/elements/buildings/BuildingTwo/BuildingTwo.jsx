@@ -7,7 +7,7 @@ import {
   SideWalk,
   FrontSideBlock,
   LeftSideBlock
-} from './BuildingTwo.styles.js';
+} from './BuildingTwo.styles';
 
 const BuildingTwo = (props) => {
   const frontSide = (

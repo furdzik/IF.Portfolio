@@ -6,7 +6,7 @@ import {
   BricklayWrapper,
   BrickWrapper,
   Brick
-} from './Bricklay.styles.js';
+} from './Bricklay.styles';
 
 const Bricklay = (props) => (
   <BricklayWrapper

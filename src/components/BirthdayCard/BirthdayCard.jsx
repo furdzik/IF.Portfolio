@@ -8,7 +8,7 @@ import {
   Header,
   SubHeader,
   Present
-} from './BirthdayCard.styles.js';
+} from './BirthdayCard.styles';
 
 const BirthdayCard = (props) => {
   const intl = useIntl();

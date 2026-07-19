@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Wrapper } from './Separator.styles.js';
+import { Wrapper } from './Separator.styles';
 
 const Separator = (props) => (
   <Wrapper

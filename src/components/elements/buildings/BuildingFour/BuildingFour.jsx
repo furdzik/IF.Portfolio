@@ -6,7 +6,7 @@ import {
   StyledBuilding,
   FrontSideBlock,
   LeftSideBlock
-} from './BuildingFour.styles.js';
+} from './BuildingFour.styles';
 
 const BuildingFour = (props) => {
   const frontSide = (

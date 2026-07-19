@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import {
   Wrapper
-} from './Mountains.styles.js';
+} from './Mountains.styles';
 
 const Mountains = (props) => (
   <Wrapper

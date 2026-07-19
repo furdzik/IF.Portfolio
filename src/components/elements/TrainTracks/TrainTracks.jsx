@@ -9,7 +9,7 @@ import {
   WideTracks,
   WideTrainTracksBridge,
   WideTrainTracks
-} from './TrainTracks.styles.js';
+} from './TrainTracks.styles';
 
 const TrainTracks = (props) => (
   <Wrapper className={props.className}>

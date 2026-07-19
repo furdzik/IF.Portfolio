@@ -6,7 +6,7 @@ import {
   StyledBuilding,
   FrontSideBlock,
   RightSideBlock
-} from './BuildingEleven.styles.js';
+} from './BuildingEleven.styles';
 
 const BuildingEleven = (props) => {
   const frontSide = (

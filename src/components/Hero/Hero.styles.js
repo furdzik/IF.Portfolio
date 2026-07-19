@@ -171,8 +171,8 @@ const CracowWrapper = styled.div`
 
 const TokyoWrapper = styled.div`
   position: absolute;
-  left: 50%;
   bottom: 30rem;
+  left: 50%;
   width: 100%;
   height: 100%;
 

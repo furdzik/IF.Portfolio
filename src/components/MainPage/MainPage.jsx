@@ -1,13 +1,6 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
 
-import {
-  mdiGmail,
-  mdiGithub,
-  mdiLinkedin,
-  mdiStackOverflow
-} from '@mdi/js';
-
 import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from '@constants';
 
 import { breakpoints } from '@styles/basic';
@@ -34,7 +27,10 @@ import {
   List,
   ListItem,
   Link,
-  IconStyled,
+  GmailIcon,
+  LinkedinIcon,
+  GithubIcon,
+  StackOverflowIcon,
   MeAndCatWrapper,
   CatStyled,
   Number,
@@ -86,23 +82,17 @@ const MainPage = (props) => {
           <SocialIcons>
             <SocialItem>
               <SocialLink href="mailto:izabela.furdzik+portfolio@gmail.com" target="_blank" rel="noreferrer">
-                <IconStyled
-                  path={mdiGmail}
-                />
+                <GmailIcon />
               </SocialLink>
             </SocialItem>
             <SocialItem>
               <SocialLink href="https://www.linkedin.com/in/izabela-furdzik-4971315a/" target="_blank" rel="noreferrer">
-                <IconStyled
-                  path={mdiLinkedin}
-                />
+                <LinkedinIcon />
               </SocialLink>
             </SocialItem>
             <SocialItem>
               <SocialLink href="https://github.com/furdzik" target="_blank" rel="noreferrer">
-                <IconStyled
-                  path={mdiGithub}
-                />
+                <GithubIcon />
               </SocialLink>
               {
                 props.stats?.gitHub ? (
@@ -119,9 +109,7 @@ const MainPage = (props) => {
             </SocialItem>
             <SocialItem>
               <SocialLink href="https://stackoverflow.com/users/7615658/izabela-furdzik" target="_blank" rel="noreferrer">
-                <IconStyled
-                  path={mdiStackOverflow}
-                />
+                <StackOverflowIcon />
               </SocialLink>
               {
                 props.stats?.stackOverflow ? (

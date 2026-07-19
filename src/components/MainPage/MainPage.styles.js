@@ -1,13 +1,8 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import Icon from '@mdi/react';
-import {
-  mdiGmail,
-  mdiGithub,
-  mdiLinkedin,
-  mdiStackOverflow
-} from '@mdi/js';
+import { FaLinkedin, FaGithub, FaStackOverflow } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
 
 import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from '@constants';
 
@@ -106,25 +101,32 @@ const StatsWrapper = styled.span`
   align-items: center;
 `;
 
-const IconStyled = styled(Icon)`
+const socialIconStyles = css`
   width: 3rem;
   height: 3rem;
   &:hover {
     opacity: .8;
   }
+`;
 
-  ${(props) => props.path === mdiGmail && css`
-    color: #eb4336;
-  `};
-  ${(props) => props.path === mdiGithub && css`
-    color: #1b1f23;
-  `};
-  ${(props) => props.path === mdiLinkedin && css`
-    color: #0a66c2;
-  `};
-  ${(props) => props.path === mdiStackOverflow && css`
-    color: #f48225;
-  `};
+const GmailIcon = styled(SiGmail)`
+  ${socialIconStyles};
+  color: #eb4336;
+`;
+
+const LinkedinIcon = styled(FaLinkedin)`
+  ${socialIconStyles};
+  color: #0a66c2;
+`;
+
+const GithubIcon = styled(FaGithub)`
+  ${socialIconStyles};
+  color: #1b1f23;
+`;
+
+const StackOverflowIcon = styled(FaStackOverflow)`
+  ${socialIconStyles};
+  color: #f48225;
 `;
 
 const ListWrapper = styled.div`
@@ -132,7 +134,7 @@ const ListWrapper = styled.div`
   flex-flow: column wrap;
   order: 2;
   width: 100%;
-  //margin-top: 5rem;
+  /* margin-top: 5rem; */
 
   ${breakpointMixin.landscapeTablet(css`
     order: 2;
@@ -270,7 +272,10 @@ export {
   SocialLink,
   AdditionalInfoBox,
   StatsWrapper,
-  IconStyled,
+  GmailIcon,
+  LinkedinIcon,
+  GithubIcon,
+  StackOverflowIcon,
   ListWrapper,
   List,
   ListItem,

@@ -26,7 +26,7 @@ export const monoColors = {
 
 export const textColors = {
   primary: monoColors.black,
-  secondary: mainColors.darkGray,
+  secondary: color.darkGray,
   colored: mainColors.primary
 };
 

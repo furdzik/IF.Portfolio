@@ -1,6 +1,8 @@
+import { ITheme } from 'interfaces';
+
 import { colors, typography } from './basic';
 
-export default {
+const theme: ITheme = {
   ...colors,
   ...typography,
 
@@ -10,3 +12,5 @@ export default {
     background: colors.monoColors.white // '#95e6c3'
   }
 };
+
+export default theme;

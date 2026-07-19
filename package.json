@@ -10,6 +10,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "yarn eslint && yarn stylelint",
+    "typecheck": "tsc --noEmit",
     "find-duplicates": "jscpd ./src/",
     "stylelint": "stylelint \"**/*.styles.{js,jsx}\"",
     "eslint": "eslint src/ --ext .jsx,.js",
@@ -74,6 +75,11 @@
     "@commitlint/config-conventional": "17.7.0",
     "@emotion/babel-plugin": "11.11.0",
     "@emotion/babel-preset-css-prop": "11.11.0",
+    "@types/lodash": "4.17.24",
+    "@types/node": "22.15.29",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@types/uuid": "9.0.8",
     "commitlint": "17.7.1",
     "commitlint-config-kamisama": "0.3.3",
     "editorconfig": "1.0.4",
@@ -86,6 +92,7 @@
     "react-scripts": "5.0.1",
     "redux-devtools-extension": "2.13.9",
     "stylelint": "15.10.3",
-    "stylelint-config-kamisama": "0.4.7"
+    "stylelint-config-kamisama": "0.4.7",
+    "typescript": "5.9.3"
   }
 }

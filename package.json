@@ -91,7 +91,6 @@
     "commitlint-config-kamisama": "0.3.3",
     "editorconfig": "1.0.4",
     "eslint": "8.50.0",
-    "eslint-config-kamisama": "0.3.3",
     "eslint-config-prettier": "10.1.8",
     "eslint-config-ts-kamisama": "1.0.0",
     "eslint-plugin-jest": "25.7.0",

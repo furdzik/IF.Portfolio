@@ -1,19 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { useIntl } from 'react-intl';
 
-import {
-  Wrapper
-} from './Footer.styles.js';
+import { Wrapper } from './Footer.styles';
 
-const Footer = (props) => {
+export interface FooterProps {
+  className?: string;
+}
+
+const Footer = ({ className = '' }: FooterProps) => {
   const intl = useIntl();
   const currentYear = new Date().getFullYear();
 
   return (
-    <Wrapper
-      className={props.className}
-    >
+    <Wrapper className={className}>
       {
         intl.formatMessage({ id: 'footer.copyright' }, {
           currentYear
@@ -21,14 +20,6 @@ const Footer = (props) => {
       }
     </Wrapper>
   );
-};
-
-Footer.propTypes = {
-  className: PropTypes.string
-};
-
-Footer.defaultProps = {
-  className: ''
 };
 
 export default Footer;

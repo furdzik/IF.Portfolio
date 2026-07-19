@@ -16,7 +16,7 @@ import { defaultLocale } from '@config/lang';
 import theme from '@styles/theme';
 import { GlobalStyles } from '@styles/global.styles';
 
-import { english } from '@lang';
+import english from '@src/translations/en';
 
 import RoutesConfig from '@routes';
 

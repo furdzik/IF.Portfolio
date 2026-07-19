@@ -29,10 +29,6 @@
         "@utils": "./src/utils"
       }
     }],
-    ["react-intl-auto", {
-      "removePrefix": "src",
-      "filebase": false
-    }],
     "@emotion"
   ],
   "env": {

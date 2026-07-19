@@ -8,7 +8,6 @@ import {
   Wrapper,
   Title
 } from './Header.styles.js';
-import messages from './Header.messages';
 
 const Header = (props) => {
   const intl = useIntl();
@@ -19,7 +18,7 @@ const Header = (props) => {
     >
       <Container>
         <Title>
-          {intl.formatMessage(messages.title)}
+          {intl.formatMessage({ id: 'header.title' })}
         </Title>
       </Container>
     </Wrapper>

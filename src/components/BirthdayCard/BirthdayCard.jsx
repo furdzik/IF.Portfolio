@@ -9,7 +9,6 @@ import {
   SubHeader,
   Present
 } from './BirthdayCard.styles.js';
-import messages from './BirthdayCard.messages';
 
 const BirthdayCard = (props) => {
   const intl = useIntl();
@@ -18,9 +17,9 @@ const BirthdayCard = (props) => {
     <Wrapper className={props.className}>
       <Card>
         <Header>
-          {intl.formatMessage(messages.header)}
+          {intl.formatMessage({ id: 'birthdayCard.header' })}
         </Header>
-        <SubHeader>{intl.formatMessage(messages.name)}</SubHeader>
+        <SubHeader>{intl.formatMessage({ id: 'birthdayCard.name' })}</SubHeader>
         <Present />
       </Card>
     </Wrapper>

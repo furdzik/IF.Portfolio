@@ -38,7 +38,6 @@ import {
   StackBadge,
   StyledFooter
 } from './MainPage.styles';
-import messages from './MainPage.messages';
 
 const MainPage = (props) => {
   const intl = useIntl();
@@ -51,26 +50,26 @@ const MainPage = (props) => {
       <StyledContainer>
         <StyledBox showTapes={!isWiderThanPortraitTablet}>
           <MainBox>
-            <Heading>{intl.formatMessage(messages.mainHeading)}</Heading>
-            <SubHeading>{intl.formatMessage(messages.subHeading)}</SubHeading>
-            <SecondSubHeading>{intl.formatMessage(messages.subHeading2)}</SecondSubHeading>
+            <Heading>{intl.formatMessage({ id: 'mainPage.mainHeading' })}</Heading>
+            <SubHeading>{intl.formatMessage({ id: 'mainPage.subHeading' })}</SubHeading>
+            <SecondSubHeading>{intl.formatMessage({ id: 'mainPage.subHeading2' })}</SecondSubHeading>
           </MainBox>
           <ListWrapper>
-            <Heading>{intl.formatMessage(messages.seeMore)}</Heading>
+            <Heading>{intl.formatMessage({ id: 'mainPage.seeMore' })}</Heading>
             <List>
               <ListItem>
                 <Link href="https://fans4oneokrock.com" target="_blank" rel="noreferrer">
-                  {intl.formatMessage(messages.fans4oor)}
+                  {intl.formatMessage({ id: 'mainPage.fans4oor' })}
                 </Link>
               </ListItem>
               <ListItem>
                 <Link href="https://japanese.furdzik.com/" target="_blank" rel="noreferrer">
-                  {intl.formatMessage(messages.japaneseApp)}
+                  {intl.formatMessage({ id: 'mainPage.japaneseApp' })}
                 </Link>
               </ListItem>
               <ListItem>
                 <Link href="https://dice.furdzik.com/" target="_blank" rel="noreferrer">
-                  {intl.formatMessage(messages.dice)}
+                  {intl.formatMessage({ id: 'mainPage.dice' })}
                 </Link>
               </ListItem>
             </List>
@@ -98,7 +97,7 @@ const MainPage = (props) => {
                 props.stats?.gitHub ? (
                   <AdditionalInfoBox>
                     <StatsWrapper>
-                      <span>{intl.formatMessage(messages.contributionsText)}</span>
+                      <span>{intl.formatMessage({ id: 'mainPage.contributionsText' })}</span>
                       <Number type={NUMBER_BUTTON_TYPE.contributions}>
                         {props.stats?.gitHub?.totalContributions}
                       </Number>
@@ -115,7 +114,7 @@ const MainPage = (props) => {
                 props.stats?.stackOverflow ? (
                   <AdditionalInfoBox>
                     <StatsWrapper>
-                      <span>{intl.formatMessage(messages.reputationText)}</span>
+                      <span>{intl.formatMessage({ id: 'mainPage.reputationText' })}</span>
                       <Number type={NUMBER_BUTTON_TYPE.reputation}>
                         {props.stats?.stackOverflow?.reputation}
                       </Number>

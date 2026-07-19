@@ -5,7 +5,6 @@ import { useIntl } from 'react-intl';
 import {
   Wrapper
 } from './Footer.styles.js';
-import messages from './Footer.messages';
 
 const Footer = (props) => {
   const intl = useIntl();
@@ -16,7 +15,7 @@ const Footer = (props) => {
       className={props.className}
     >
       {
-        intl.formatMessage(messages.copyright, {
+        intl.formatMessage({ id: 'footer.copyright' }, {
           currentYear
         })
       }

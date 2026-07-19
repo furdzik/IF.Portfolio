@@ -10,10 +10,5 @@
   "plugins": [
     "@babel/plugin-transform-runtime",
     "@emotion"
-  ],
-  "env": {
-    "test": {
-      "plugins": ["require-context-hook"]
-    }
-  }
+  ]
 }

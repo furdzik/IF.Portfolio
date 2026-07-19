@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 
-import { breakpoints, breakpointsHeight } from '@styles/basic/breakpoints';
+import { breakpoints, breakpointsHeight } from 'styles/basic/breakpoints';
 
 export const breakpointMixin = Object.keys(breakpoints).reduce((accumulator, label) => {
   accumulator[label] = (...args) => css`

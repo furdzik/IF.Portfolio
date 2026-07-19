@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { ElementsCommonStyle } from '@styles/elementsCommonStyle.styles';
+import { ElementsCommonStyle } from 'styles/elementsCommonStyle.styles';
 
 const Wrapper = styled.div`
   position: relative;

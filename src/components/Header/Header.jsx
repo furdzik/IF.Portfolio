@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useIntl } from 'react-intl';
 
-import Container from '@components/Container';
+import Container from 'components/Container';
 
 import {
   Wrapper,

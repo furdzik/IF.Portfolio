@@ -1,15 +1,15 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
 
-import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from '@constants';
+import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from 'constants';
 
-import { breakpoints } from '@styles/basic';
+import { breakpoints } from 'styles/basic';
 
-import { statsShape } from '@types/statsShape';
-import { useMediaQuery } from '@hooks/useMediaQuery';
+import { statsShape } from 'types/statsShape';
+import { useMediaQuery } from 'hooks/useMediaQuery';
 
-import Hero from '@components/Hero';
-import Me from '@components/elements/Me';
+import Hero from 'components/Hero';
+import Me from 'components/elements/Me';
 
 import {
   Heading,

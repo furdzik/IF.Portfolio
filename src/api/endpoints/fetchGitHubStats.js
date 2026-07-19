@@ -1,5 +1,5 @@
-import { githubUser, githubKey } from '@config/environment';
-import api from '@config/api';
+import { githubUser, githubKey } from 'config/environment';
+import api from 'config/api';
 
 const body = {
   query: `{

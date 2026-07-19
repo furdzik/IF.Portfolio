@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { ElementsCommonStyle } from '@styles/elementsCommonStyle.styles';
+import { ElementsCommonStyle } from 'styles/elementsCommonStyle.styles';
 
 const blue = '#5b6f8d'; // #1c5b7a
 const blueShadow = '#52637c'; // #20475f

@@ -13,7 +13,7 @@ module.exports = ({ production }) => {
     resolve: {
       extensions: ['.js', '.jsx', '.json'],
         mainFields: ['browser', 'main', 'module'],
-        modules: [resolve('./'), resolve('node_modules')]
+        modules: [resolve('./src'), resolve('./'), resolve('node_modules')]
     },
     optimization: {
       splitChunks: {

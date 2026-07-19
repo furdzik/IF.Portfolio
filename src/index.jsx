@@ -1,12 +1,12 @@
-import '@utils/polyfills';
+import 'utils/polyfills';
 
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
 import * as Sentry from '@sentry/react';
-import { sentryDns } from '@config/environment';
+import { sentryDns } from 'config/environment';
 
-import App from '@src/App';
+import App from 'App';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);

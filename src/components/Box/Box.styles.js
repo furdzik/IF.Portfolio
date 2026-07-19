@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import StarDecoration from '@components/elements/StarDecoration';
+import StarDecoration from 'components/elements/StarDecoration';
 
 const Wrapper = styled.div`
   position: relative;

@@ -1,41 +1,41 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import { cloudType } from '@constants';
+import { cloudType } from 'constants';
 
-import { breakpointHeightMixin, breakpointMixin } from '@styles/mixins';
+import { breakpointHeightMixin, breakpointMixin } from 'styles/mixins';
 
 import {
   ElementsCommonStyle,
   ElementsCommonStyleUnspecified
-} from '@styles/elementsCommonStyle.styles';
+} from 'styles/elementsCommonStyle.styles';
 
-import Container from '@components/Container';
+import Container from 'components/Container';
 
-import Cloud from '@components/elements/Cloud';
-import Bird from '@components/elements/Bird';
-import SkyTree from '@components/elements/SkyTree';
-import MtFuji from '@components/elements/MtFuji';
-import CityGround from '@components/elements/CityGround';
-import Tree from '@components/elements/Tree';
-import River from '@components/elements/River';
-import Mountains from '@components/elements/Mountains';
-import StMarysBasilica from '@components/elements/StMarysBasilica';
-import TrainTracks from '@components/elements/TrainTracks';
-import BuildingOne from '@components/elements/buildings/BuildingOne';
-import BuildingTwo from '@components/elements/buildings/BuildingTwo';
-import BuildingThree from '@components/elements/buildings/BuildingThree';
-import BuildingFour from '@components/elements/buildings/BuildingFour';
-import BuildingFive from '@components/elements/buildings/BuildingFive';
-import BuildingSix from '@components/elements/buildings/BuildingSix';
-import BuildingSeven from '@components/elements/buildings/BuildingSeven';
-import BuildingEight from '@components/elements/buildings/BuildingEight';
-import BuildingNine from '@components/elements/buildings/BuildingNine';
-import BuildingTen from '@components/elements/buildings/BuildingTen';
-import BuildingEleven from '@components/elements/buildings/BuildingEleven';
-import BuildingTwelve from '@components/elements/buildings/BuildingTwelve';
-import BuildingThirteen from '@components/elements/buildings/BuildingThirteen';
-import BuildingFourteen from '@components/elements/buildings/BuildingFourteen';
+import Cloud from 'components/elements/Cloud';
+import Bird from 'components/elements/Bird';
+import SkyTree from 'components/elements/SkyTree';
+import MtFuji from 'components/elements/MtFuji';
+import CityGround from 'components/elements/CityGround';
+import Tree from 'components/elements/Tree';
+import River from 'components/elements/River';
+import Mountains from 'components/elements/Mountains';
+import StMarysBasilica from 'components/elements/StMarysBasilica';
+import TrainTracks from 'components/elements/TrainTracks';
+import BuildingOne from 'components/elements/buildings/BuildingOne';
+import BuildingTwo from 'components/elements/buildings/BuildingTwo';
+import BuildingThree from 'components/elements/buildings/BuildingThree';
+import BuildingFour from 'components/elements/buildings/BuildingFour';
+import BuildingFive from 'components/elements/buildings/BuildingFive';
+import BuildingSix from 'components/elements/buildings/BuildingSix';
+import BuildingSeven from 'components/elements/buildings/BuildingSeven';
+import BuildingEight from 'components/elements/buildings/BuildingEight';
+import BuildingNine from 'components/elements/buildings/BuildingNine';
+import BuildingTen from 'components/elements/buildings/BuildingTen';
+import BuildingEleven from 'components/elements/buildings/BuildingEleven';
+import BuildingTwelve from 'components/elements/buildings/BuildingTwelve';
+import BuildingThirteen from 'components/elements/buildings/BuildingThirteen';
+import BuildingFourteen from 'components/elements/buildings/BuildingFourteen';
 
 const Wrapper = styled.div`
   position: relative;

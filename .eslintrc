@@ -5,7 +5,10 @@
   ],
   "settings": {
     "import/resolver": {
-      "babel-module": {}
+      "node": {
+        "extensions": [".js", ".jsx", ".json"],
+        "moduleDirectory": ["node_modules", "src"]
+      }
     }
   },
   "env": {

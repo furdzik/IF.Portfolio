@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import { ElementsCommonStyle, ElementsCommonStyleUnspecified } from '@styles/elementsCommonStyle.styles';
+import { ElementsCommonStyle, ElementsCommonStyleUnspecified } from 'styles/elementsCommonStyle.styles';
 
 import Bricklay from './Bricklay';
 import LeftTowerRoofSmallTower from './LeftTowerRoofSmallTower';

@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import { cloudType } from '@constants';
+import { cloudType } from 'constants';
 
-import { ElementsCommonStyleUnspecified } from '@styles/elementsCommonStyle.styles';
+import { ElementsCommonStyleUnspecified } from 'styles/elementsCommonStyle.styles';
 
 const CloudTypeOneSize = css`
   width: 119px;

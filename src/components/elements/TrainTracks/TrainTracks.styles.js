@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { ElementsCommonStyleUnspecified, ElementsCommonStyle } from '@styles/elementsCommonStyle.styles';
+import { ElementsCommonStyleUnspecified, ElementsCommonStyle } from 'styles/elementsCommonStyle.styles';
 
 const Wrapper = styled.div`
   ${ElementsCommonStyleUnspecified};

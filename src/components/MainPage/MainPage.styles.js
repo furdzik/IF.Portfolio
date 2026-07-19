@@ -4,15 +4,15 @@ import { css } from '@emotion/react';
 import { FaLinkedin, FaGithub, FaStackOverflow } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 
-import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from '@constants';
+import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from 'constants';
 
-import { breakpointMixin } from '@styles/mixins';
+import { breakpointMixin } from 'styles/mixins';
 
-import Box from '@components/Box';
-import Container from '@components/Container';
-import Footer from '@components/Footer';
+import Box from 'components/Box';
+import Container from 'components/Container';
+import Footer from 'components/Footer';
 
-import Cat from '@components/elements/Cat';
+import Cat from 'components/elements/Cat';
 
 const Heading = styled.h1`
   width: 100%;

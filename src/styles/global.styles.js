@@ -2,8 +2,8 @@ import { css } from '@emotion/react';
 
 import _map from 'lodash/map';
 
-import theme from '@styles/theme';
-import { breakpointMixin } from '@styles/mixins';
+import theme from 'styles/theme';
+import { breakpointMixin } from 'styles/mixins';
 
 const baseFontFamily = _map(theme.fontFamily, (el) => `${el}`).join(', ');
 

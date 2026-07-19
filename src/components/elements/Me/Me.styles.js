@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import { ElementsCommonStyleUnspecified } from '@styles/elementsCommonStyle.styles';
+import { ElementsCommonStyleUnspecified } from 'styles/elementsCommonStyle.styles';
 
 const AreaWrapper = styled.div`
   position: relative;

@@ -5,9 +5,9 @@ import {
   Routes
 } from 'react-router-dom';
 
-import BirthdayCard from '@components/BirthdayCard';
+import BirthdayCard from 'components/BirthdayCard';
 
-import MainPage from '@containers/MainPage';
+import MainPage from 'containers/MainPage';
 
 const RoutesConfig = () => (
   <BrowserRouter>

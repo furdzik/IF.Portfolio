@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import { breakpointMixin } from '@styles/mixins';
+import { breakpointMixin } from 'styles/mixins';
 
 const Wrapper = styled.div`
   width: 100%;

@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { statsShape } from '@types/statsShape';
+import { statsShape } from 'types/statsShape';
 
-import MainPageComponent from '@components/MainPage';
+import MainPageComponent from 'components/MainPage';
 
 import { getStats } from './MainPage.reducer';
 import selector from './MainPage.selector';

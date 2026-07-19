@@ -10,17 +10,17 @@ import { IntlProvider } from 'react-intl';
 
 import '@formatjs/intl-relativetimeformat/locale-data/en';
 
-import { production } from '@config/environment';
-import { defaultLocale } from '@config/lang';
+import { production } from 'config/environment';
+import { defaultLocale } from 'config/lang';
 
-import theme from '@styles/theme';
-import { GlobalStyles } from '@styles/global.styles';
+import theme from 'styles/theme';
+import { GlobalStyles } from 'styles/global.styles';
 
-import english from '@src/translations/en';
+import english from 'translations/en';
 
-import RoutesConfig from '@routes';
+import RoutesConfig from 'routes';
 
-import reducers from '@containers/reducers';
+import reducers from 'containers/reducers';
 
 const middlewareEnhancer = applyMiddleware(thunk);
 const enhancer = production ? middlewareEnhancer : composeWithDevTools(middlewareEnhancer);

@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
-import { ElementsCommonStyleUnspecified } from '@styles/elementsCommonStyle.styles';
+import { ElementsCommonStyleUnspecified } from 'styles/elementsCommonStyle.styles';
 
-import Building from '@components/elements/buildings/Building';
+import Building from 'components/elements/buildings/Building';
 
 const Wrapper = styled.div`
   ${ElementsCommonStyleUnspecified};

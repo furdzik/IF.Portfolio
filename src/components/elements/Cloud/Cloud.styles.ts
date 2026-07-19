@@ -410,7 +410,7 @@ const CloudTypeTwelve = css`
   background: #bae3e3;
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{ cloudType?: string; cloudSize?: string }>`
   ${ElementsCommonStyleUnspecified};
   z-index: 2;
 

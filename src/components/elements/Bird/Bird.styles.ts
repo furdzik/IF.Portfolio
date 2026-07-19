@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   height: 2rem;
 `;
 
-const BirdWrapper = styled.div`
+const BirdWrapper = styled.div<{ color?: string }>`
   --bird-color: ${(props) => props.color ? props.color : '#000000'};
 
   ${ElementsCommonStyleUnspecified};

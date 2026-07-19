@@ -1,13 +1,13 @@
 import styled from '@emotion/styled/macro';
 
-const Wrapper = styled.span`
+const Wrapper = styled.span<{ size?: number }>`
   position: absolute;
   display: block;
   width: ${(props) => props.size * 2}px;
   height: ${(props) => props.size * 2}px;
 `;
 
-const StarWrapper = styled.span`
+const StarWrapper = styled.span<{ size?: number; color?: string }>`
   position: absolute;
   display: block;
   width: 100%;

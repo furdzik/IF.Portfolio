@@ -8,7 +8,7 @@ import { sentryDns } from 'config/environment';
 
 import App from 'App';
 
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById('root') as HTMLElement;
 const root = createRoot(rootElement);
 
 Sentry.init({

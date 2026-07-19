@@ -1,7 +1,9 @@
 {
-  "parser": "@babel/eslint-parser",
+  "parser": "@typescript-eslint/parser",
   "extends": [
-    "eslint-config-kamisama"
+    "eslint-config-ts-kamisama",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
   ],
   "settings": {
     "import/resolver": {
@@ -19,21 +21,10 @@
   "globals": {
     "process": "readonly"
   },
-  "overrides": [
-    {
-      "files": ["*.ts", "*.tsx"],
-      "parser": "@typescript-eslint/parser",
-      "extends": [
-        "eslint-config-ts-kamisama",
-        "plugin:@typescript-eslint/recommended",
-        "prettier"
-      ],
-      "rules": {
-        "@typescript-eslint/space-before-function-paren": ["error", "always"],
-        "@typescript-eslint/no-extra-parens": "off",
-        "react/require-default-props": "off",
-        "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }]
-      }
-    }
-  ]
+  "rules": {
+    "@typescript-eslint/space-before-function-paren": ["error", "always"],
+    "@typescript-eslint/no-extra-parens": "off",
+    "react/require-default-props": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }]
+  }
 }

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from '@emotion/styled/macro';
 import { css } from '@emotion/react';
 
 import { FaLinkedin, FaGithub, FaStackOverflow } from 'react-icons/fa';

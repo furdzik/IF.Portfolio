@@ -3,7 +3,7 @@ import { css } from '@emotion/react';
 import _map from 'lodash/map';
 
 import theme from 'styles/theme';
-import { breakpointMixin } from 'styles/mixins';
+import { breakpoints } from 'styles/basic';
 
 const baseFontFamily = _map(theme.fontFamily, (el) => `${el}`).join(', ');
 
@@ -64,33 +64,33 @@ const GlobalStyles = css`
   h1 {
     font-size: ${theme.fontSize.h1Small};
 
-    ${breakpointMixin.portraitTablet(css`
+    @media (min-width: ${breakpoints.portraitTablet}) {
       font-size: ${theme.fontSize.h1Regular};
-    `)};
+  }
   }
 
   h2 {
     font-size: ${theme.fontSize.h2Small};
 
-    ${breakpointMixin.portraitTablet(css`
+    @media (min-width: ${breakpoints.portraitTablet}) {
       font-size: ${theme.fontSize.h2Regular};
-  `)};
+  }
   }
 
   h3 {
     font-size: ${theme.fontSize.h3Small};
 
-    ${breakpointMixin.portraitTablet(css`
+    @media (min-width: ${breakpoints.portraitTablet}) {
       font-size: ${theme.fontSize.h3Regular};
-    `)};
+  }
   }
 
   h4 {
     font-size: ${theme.fontSize.h4Small};
 
-    ${breakpointMixin.portraitTablet(css`
+    @media (min-width: ${breakpoints.portraitTablet}) {
       font-size: ${theme.fontSize.h4Regular};
-  `)};
+  }
   }
 
   a {

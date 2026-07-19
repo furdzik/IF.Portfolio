@@ -1,7 +1,7 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
 
-import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from 'constants';
+import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from 'constant';
 
 import { breakpoints } from 'styles/basic';
 

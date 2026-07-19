@@ -1,7 +1,7 @@
 import styled from '@emotion/styled/macro';
 import { css } from '@emotion/react';
 
-import { cloudType } from 'constants';
+import { cloudType } from 'constant';
 
 import { ElementsCommonStyleUnspecified } from 'styles/elementsCommonStyle.styles';
 

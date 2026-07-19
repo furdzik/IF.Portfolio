@@ -1,9 +1,9 @@
 import styled from '@emotion/styled/macro';
 import { css } from '@emotion/react';
 
-import { cloudType } from 'constants';
+import { cloudType } from 'constant';
 
-import { breakpointHeightMixin, breakpointMixin } from 'styles/mixins';
+import { breakpoints, breakpointsHeight } from 'styles/basic/breakpoints';
 
 import {
   ElementsCommonStyle,
@@ -57,9 +57,9 @@ const StyledCloud = styled(Cloud)`
   display: none;
   scale: .6;
 
-  ${breakpointHeightMixin.desktop(css`
+  @media (min-height: ${breakpointsHeight.desktop}) {
     display: block;
-  `)};
+  }
 
   ${(props) => props.cloudType === cloudType.one && css`
     top: 1rem;
@@ -120,15 +120,17 @@ const StyledBirdOne = styled(Bird)`
   transform: rotate(31deg);
   scale: .7;
 
-  ${breakpointMixin.landscapeTablet(css`
+  @media (min-width: ${breakpoints.landscapeTablet}) {
     left: 11rem;
-  `)};
-  ${breakpointMixin.desktop(css`
+  }
+
+  @media (min-width: ${breakpoints.desktop}) {
     left: -12rem;
-  `)};
-  ${breakpointMixin.hdDesktop(css`
+  }
+
+  @media (min-width: ${breakpoints.hdDesktop}) {
     left: -22rem;
-  `)};
+  }
 `;
 
 const StyledBirdTwo = styled(Bird)`
@@ -139,15 +141,17 @@ const StyledBirdTwo = styled(Bird)`
   transform: rotate(-38deg);
   scale: .9;
 
-  ${breakpointMixin.landscapeTablet(css`
+  @media (min-width: ${breakpoints.landscapeTablet}) {
     left: 16rem;
-  `)};
-  ${breakpointMixin.desktop(css`
+  }
+
+  @media (min-width: ${breakpoints.desktop}) {
     left: -7rem;
-  `)};
-  ${breakpointMixin.hdDesktop(css`
+  }
+
+  @media (min-width: ${breakpoints.hdDesktop}) {
     left: -17rem;
-  `)};
+  }
 `;
 
 const StyledRiver = styled(River)`
@@ -164,9 +168,9 @@ const CracowWrapper = styled.div`
   width: 100%;
   height: 100%;
 
-  ${breakpointMixin.landscapeTablet(css`
+  @media (min-width: ${breakpoints.landscapeTablet}) {
     bottom: 0
-  `)};
+  }
 `;
 
 const TokyoWrapper = styled.div`
@@ -176,9 +180,9 @@ const TokyoWrapper = styled.div`
   width: 100%;
   height: 100%;
 
-  ${breakpointMixin.landscapeTablet(css`
+  @media (min-width: ${breakpoints.landscapeTablet}) {
     bottom: 0
-  `)};
+  }
 `;
 
 const StyledMtFuji = styled(MtFuji)`
@@ -186,9 +190,9 @@ const StyledMtFuji = styled(MtFuji)`
   bottom: 43.5rem;
   left: 20rem;
 
-  ${breakpointMixin.desktop(css`
+  @media (min-width: ${breakpoints.desktop}) {
     left: 40rem;
-  `)};
+  }
 `;
 
 const StyledCityGround = styled(CityGround)`
@@ -427,12 +431,13 @@ const StyledStMarysBasilica = styled(StMarysBasilica)`
   bottom: 36rem;
   left: 36.1rem;
 
-  ${breakpointMixin.landscapeTablet(css`
+  @media (min-width: ${breakpoints.landscapeTablet}) {
     left: 52.1rem;
-  `)};
-  ${breakpointMixin.desktop(css`
+  }
+
+  @media (min-width: ${breakpoints.desktop}) {
     left: 38.1rem;
-  `)};
+  }
 
   /* display: none; */
 

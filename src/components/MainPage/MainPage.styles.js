@@ -4,9 +4,9 @@ import { css } from '@emotion/react';
 import { FaLinkedin, FaGithub, FaStackOverflow } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 
-import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from 'constants';
+import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from 'constant';
 
-import { breakpointMixin } from 'styles/mixins';
+import { breakpoints } from 'styles/basic';
 
 import Box from 'components/Box';
 import Container from 'components/Container';
@@ -54,10 +54,10 @@ const StyledBox = styled(Box)`
 const MainBox = styled.div`
   width: 100%;
 
-  ${breakpointMixin.portraitTablet(css`
+  @media (min-width: ${breakpoints.portraitTablet}) {
     order: 1;
     width: auto;
-  `)};
+  }
 `;
 
 const SocialIcons = styled.ul`
@@ -67,14 +67,15 @@ const SocialIcons = styled.ul`
   margin-top: 4rem;
   font-family: ${(props) => props.theme.fontFamily.roboto};
 
-  ${breakpointMixin.portraitTablet(css`
+  @media (min-width: ${breakpoints.portraitTablet}) {
     order: 3;
     margin-top: -1rem;
     margin-bottom: -3rem;
-  `)};
-  ${breakpointMixin.laptop(css`
+  }
+
+  @media (min-width: ${breakpoints.laptop}) {
     order: 4;
-  `)};
+  }
 `;
 
 const SocialItem = styled.li`
@@ -136,17 +137,18 @@ const ListWrapper = styled.div`
   width: 100%;
   /* margin-top: 5rem; */
 
-  ${breakpointMixin.landscapeTablet(css`
+  @media (min-width: ${breakpoints.landscapeTablet}) {
     order: 2;
     width: 32%;
     margin-top: 0;
     margin-left: 2rem;
-  `)};
-  ${breakpointMixin.laptop(css`
+  }
+
+  @media (min-width: ${breakpoints.laptop}) {
     flex-direction: row;
     order: 2;
     margin-left: 6rem;
-  `)};
+  }
 `;
 
 const List = styled.ul`
@@ -181,13 +183,14 @@ const MeAndCatWrapper = styled.div`
   order: 2;
   margin: 4rem 0 0 4rem; /* do zmiany */
 
-  ${breakpointMixin.portraitTablet(css`
+  @media (min-width: ${breakpoints.portraitTablet}) {
     margin-left: auto;
-  `)};
-  ${breakpointMixin.laptop(css`
+  }
+
+  @media (min-width: ${breakpoints.laptop}) {
     order: 3;
     margin-left: 4rem;
-  `)};
+  }
 `;
 
 const CatStyled = styled(Cat)`

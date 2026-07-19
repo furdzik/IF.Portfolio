@@ -1,7 +1,7 @@
 import styled from '@emotion/styled/macro';
 import { css } from '@emotion/react';
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{ width?: number; height?: number }>`
   --block-width: ${(props) => props.width}rem;
   --block-height: ${(props) => props.height}rem;
   --block-half-width: calc(var(--block-width) / 2);
@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   height: var(--block-height);
 `;
 
-const Cube = styled.div`
+const Cube = styled.div<{ transform?: string }>`
   position: relative;
   transform: ${(props) => props.transform};
   transform-style: preserve-3d;
@@ -28,32 +28,32 @@ const Side = css`
   height: var(--block-height);
 `;
 
-const BackSide = styled.div`
+const BackSide = styled.div<{ frontBackSideColor?: string }>`
   ${Side};
   transform: translateZ(var(--block-minus-half-width));
   background: ${(props) => props.frontBackSideColor};
 `;
 
-const LeftSide = styled.div`
+const LeftSide = styled.div<{ leftRightSideColor?: string }>`
   ${Side};
   transform: translateX(var(--block-minus-half-width)) rotateY(90deg);
   background: ${(props) => props.leftRightSideColor};
 `;
 
-const RightSide = styled.div`
+const RightSide = styled.div<{ leftRightSideColor?: string }>`
   ${Side};
   transform: translateX(var(--block-half-width)) rotateY(90deg);
   background: ${(props) => props.leftRightSideColor};
 `;
 
-const TopSide = styled.div`
+const TopSide = styled.div<{ topBottomSideColor?: string }>`
   ${Side};
   transform: translateY(var(--block-minus-half-width)) rotateX(90deg);
   height: var(--block-width);
   background: ${(props) => props.topBottomSideColor};
 `;
 
-const BottomSide = styled.div`
+const BottomSide = styled.div<{ topBottomSideColor?: string }>`
   ${Side};
   transform: translateY(var(--block-height)) translateZ(var(--block-minus-half-width)) rotateX(90deg);
   transform-origin: top;
@@ -61,7 +61,7 @@ const BottomSide = styled.div`
   background: ${(props) => props.topBottomSideColor};
 `;
 
-const FrontSide = styled.div`
+const FrontSide = styled.div<{ frontBackSideColor?: string }>`
   ${Side};
   transform: translateZ(var(--block-half-width));
   background: ${(props) => props.frontBackSideColor};

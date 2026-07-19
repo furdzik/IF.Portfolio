@@ -7,7 +7,7 @@ import Leafs from './Leafs';
 
 const treeTrunkAndBranchColor = '#6e471c';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<{ isTaller?: boolean }>`
   position: relative;
   z-index: 1;
   width: 15rem;
@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
   `};
 `;
 
-export const Trunk = styled.span`
+export const Trunk = styled.span<{ isTaller?: boolean }>`
   ${ElementsCommonStyleUnspecified};
   left: 50%;
   transform: translateX(-50%);
@@ -30,7 +30,7 @@ export const Trunk = styled.span`
   `};
 `;
 
-export const TrunkMain = styled.span`
+export const TrunkMain = styled.span<{ isTaller?: boolean }>`
   ${ElementsCommonStyleUnspecified};
   border-width: 0 5px 69px;
   border-style: solid;
@@ -63,7 +63,7 @@ export const TrunkMain = styled.span`
   }
 `;
 
-export const BranchOne = styled.span`
+export const BranchOne = styled.span<{ color?: string }>`
   ${ElementsCommonStyleUnspecified};
   && {
     bottom: calc(100% - 7px);
@@ -127,7 +127,7 @@ export const BranchOne = styled.span`
   }
 `;
 
-export const BranchTwo = styled.span`
+export const BranchTwo = styled.span<{ color?: string }>`
   ${ElementsCommonStyleUnspecified};
   && {
     bottom: calc(100% - 7px);
@@ -207,7 +207,7 @@ export const BranchTwo = styled.span`
   }
 `;
 
-export const BranchThree = styled.span`
+export const BranchThree = styled.span<{ color?: string }>`
   && {
     bottom: calc(100% - 13px);
     left: calc(50% - 3px);
@@ -293,7 +293,7 @@ export const BranchThree = styled.span`
   }
 `;
 
-export const BranchFour = styled.span`
+export const BranchFour = styled.span<{ color?: string }>`
   ${ElementsCommonStyleUnspecified};
   && {
     bottom: calc(100% - 15px);
@@ -444,7 +444,7 @@ export const BranchFour = styled.span`
   }
 `;
 
-export const BranchFive = styled.span`
+export const BranchFive = styled.span<{ color?: string }>`
   ${ElementsCommonStyleUnspecified};
   && {
     bottom: calc(100% - 28px);
@@ -531,7 +531,7 @@ export const BranchFive = styled.span`
   }
 `;
 
-export const BranchSix = styled.span`
+export const BranchSix = styled.span<{ color?: string }>`
   && {
     bottom: calc(100% - 28px);
     left: calc(50% + 2px);
@@ -617,7 +617,7 @@ export const BranchSix = styled.span`
   }
 `;
 
-export const BranchSeven = styled.span`
+export const BranchSeven = styled.span<{ color?: string }>`
   && {
     bottom: calc(100% - 41px);
     left: calc(50% - 3px);
@@ -703,7 +703,7 @@ export const BranchSeven = styled.span`
   }
 `;
 
-export const BranchEight = styled.span`
+export const BranchEight = styled.span<{ color?: string }>`
   ${ElementsCommonStyleUnspecified};
   && {
     bottom: calc(100% - 51px);
@@ -799,7 +799,7 @@ export const BranchEight = styled.span`
   }
 `;
 
-export const BranchNine = styled.span`
+export const BranchNine = styled.span<{ color?: string }>`
   ${ElementsCommonStyleUnspecified};
   && {
     right: calc(50% + 1px);
@@ -895,7 +895,7 @@ export const BranchNine = styled.span`
   }
 `;
 
-export const BranchTen = styled.span`
+export const BranchTen = styled.span<{ color?: string }>`
   && {
     bottom: calc(100% - 68px);
     left: calc(50% + 2px);
@@ -990,7 +990,7 @@ export const BranchTen = styled.span`
   }
 `;
 
-export const BranchEleven = styled.span`
+export const BranchEleven = styled.span<{ color?: string }>`
   && {
     bottom: calc(100% - 74px);
     left: calc(50% - 3px);

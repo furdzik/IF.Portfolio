@@ -5,7 +5,7 @@ import { css } from '@emotion/react';
 
 const brickHeight = 1.1;
 
-const BricklayWrapper = styled.span`
+const BricklayWrapper = styled.span<{ long?: number; flip?: boolean; noShadow?: boolean }>`
   width: 3.6px;
   height: ${(props) => props.long * brickHeight}px;
 
@@ -18,7 +18,7 @@ const BricklayWrapper = styled.span`
   `};
 `;
 
-const BrickWrapper = styled.span`
+const BrickWrapper = styled.span<{ noShadow?: boolean }>`
   position: static;
   display: flex;
   flex-direction: row;
@@ -47,7 +47,7 @@ const BrickWrapper = styled.span`
   }
 `;
 
-const Brick = styled.span`
+const Brick = styled.span<{ noShadow?: boolean }>`
   position: relative;
   left: 50%;
   z-index: 2;

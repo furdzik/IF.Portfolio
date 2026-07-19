@@ -3,7 +3,7 @@ import { css } from '@emotion/react';
 
 import { ElementsCommonStyle } from 'styles/elementsCommonStyle.styles';
 
-const Wrapper = styled.span`
+const Wrapper = styled.span<{ scalex?: boolean }>`
   ${ElementsCommonStyle};
 
   ${(props) => props.scalex && css`
@@ -11,7 +11,7 @@ const Wrapper = styled.span`
   `};
 `;
 
-const BaseWall = styled.span`
+const BaseWall = styled.span<{ skew?: boolean }>`
   ${ElementsCommonStyle};
   bottom: 2px;
   left: 0;
@@ -44,7 +44,7 @@ const BaseWall = styled.span`
   }
 `;
 
-const Roof = styled.span`
+const Roof = styled.span<{ skew?: boolean; scalex?: boolean }>`
   ${ElementsCommonStyle};
 
   && {

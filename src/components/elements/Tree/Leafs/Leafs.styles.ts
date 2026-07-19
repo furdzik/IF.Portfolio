@@ -37,7 +37,7 @@ const Leaf = css`
   }
 `;
 
-const LeafOne = styled.span`
+const LeafOne = styled.span<{ color?: string; variant?: string }>`
   ${Leaf};
   &::before {
     top: 50%;
@@ -79,7 +79,7 @@ const LeafOne = styled.span`
   }
 `;
 
-const LeafTwo = styled.span`
+const LeafTwo = styled.span<{ color?: string; variant?: string }>`
   ${Leaf};
   &::before {
     top: 50%;
@@ -121,7 +121,7 @@ const LeafTwo = styled.span`
   }
 `;
 
-const LeafThree = styled.span`
+const LeafThree = styled.span<{ color?: string; variant?: string }>`
   ${Leaf};
   &::before {
     top: calc(50% - 1px);
@@ -163,7 +163,7 @@ const LeafThree = styled.span`
   }
 `;
 
-const LeafFour = styled.span`
+const LeafFour = styled.span<{ color?: string; variant?: string }>`
   ${Leaf};
   &::before {
     top: calc(50% - 1px);

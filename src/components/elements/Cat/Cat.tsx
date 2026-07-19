@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   AreaWrapper,
@@ -10,9 +9,13 @@ import {
   Tail
 } from './Cat.styles';
 
-const Cat = (props) => (
+interface CatProps {
+  className?: string;
+}
+
+const Cat = ({ className = '' }: CatProps) => (
   <AreaWrapper
-    className={props.className}
+    className={className}
   >
     <CatWrapper>
       <HeadWrapper>
@@ -36,13 +39,5 @@ const Cat = (props) => (
     </CatWrapper>
   </AreaWrapper>
 );
-
-Cat.propTypes = {
-  className: PropTypes.string
-};
-
-Cat.defaultProps = {
-  className: ''
-};
 
 export default Cat;

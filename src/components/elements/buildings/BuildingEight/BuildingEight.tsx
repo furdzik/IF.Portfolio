@@ -1,21 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   Wrapper,
   StyledBuilding,
   FrontSideBlock,
   RightSideBlock
-} from './BuildingSeven.styles';
+} from './BuildingEight.styles';
 
-const BuildingSeven = (props) => {
+interface BuildingEightProps {
+  className?: string;
+}
+
+const BuildingEight = ({ className = '' }: BuildingEightProps) => {
   const frontSide = (
     <FrontSideBlock>
       <span /><span /><span /><span /><span /><span /><span /><span /><span /><span />
       <span /><span /><span /><span /><span /><span /><span /><span /><span />
     </FrontSideBlock>
   );
-  const rightSide = (
+  const leftSide = (
     <RightSideBlock>
       <span /><span /><span /><span /><span /><span /><span /><span /><span /><span />
       <span /><span /><span /><span /><span /><span /><span /><span /><span />
@@ -23,27 +26,19 @@ const BuildingSeven = (props) => {
   );
 
   return (
-    <Wrapper className={props.className}>
+    <Wrapper className={className}>
       <StyledBuilding
         width={5}
-        height={20}
-        frontBackSideColor="#ffffff"
-        leftRightSideColor="#e9edef"
+        height={18}
+        frontBackSideColor="#ededed"
+        leftRightSideColor="#d5d8d9"
         topBottomSideColor="#dbdfe1"
         frontSideBlock={frontSide}
-        rightSideBlock={rightSide}
-        transform="rotateY(-51deg) rotateX(-7deg) rotateZ(9deg)"
+        leftSideBlock={leftSide}
+        transform="rotateY(20deg) rotateX(-9deg) rotateZ(-3deg)"
       />
     </Wrapper>
   );
 };
 
-BuildingSeven.propTypes = {
-  className: PropTypes.string
-};
-
-BuildingSeven.defaultProps = {
-  className: ''
-};
-
-export default BuildingSeven;
+export default BuildingEight;

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { cloudType } from 'constant';
 
@@ -61,8 +60,12 @@ import {
   StyledBuildingFourteen
 } from './Hero.styles';
 
-const Hero = (props) => (
-  <Wrapper className={props.className}>
+interface HeroProps {
+  className?: string;
+}
+
+const Hero = ({ className = '' }: HeroProps) => (
+  <Wrapper className={className}>
     <ContainerStyled>
       <StyledCloud cloudType={cloudType.one} />
       <StyledCloud cloudType={cloudType.two} />
@@ -110,8 +113,8 @@ const Hero = (props) => (
         <TreeTokyoFourteen color="green" />
         <TreeTokyoFifteen color="green" isTaller />
         <TreeTokyoSixteen color="pink" />
-        <TreeTokyoSeventeen color="green" inTaller />
-        <TreeTokyoEighteen color="pink" inTaller />
+        <TreeTokyoSeventeen color="green" isTaller />
+        <TreeTokyoEighteen color="pink" isTaller />
         <TreeTokyoNineteen color="green" />
         <StyledSkyTree />
         <StyledTrainTracks />
@@ -133,13 +136,5 @@ const Hero = (props) => (
     </ContainerStyled>
   </Wrapper>
 );
-
-Hero.propTypes = {
-  className: PropTypes.string
-};
-
-Hero.defaultProps = {
-  className: ''
-};
 
 export default Hero;

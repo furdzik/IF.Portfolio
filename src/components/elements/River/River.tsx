@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   Wrapper,
@@ -7,9 +6,13 @@ import {
   Arakawa
 } from './River.styles';
 
-const River = (props) => (
+interface RiverProps {
+  className?: string;
+}
+
+const River = ({ className = '' }: RiverProps) => (
   <Wrapper
-    className={props.className}
+    className={className}
   >
     <Vistula>
       <span /><span /><span /><span /><span /><span /><span />
@@ -19,13 +22,5 @@ const River = (props) => (
     </Arakawa>
   </Wrapper>
 );
-
-River.propTypes = {
-  className: PropTypes.string
-};
-
-River.defaultProps = {
-  className: ''
-};
 
 export default River;

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { useIntl } from 'react-intl';
 
 import {
@@ -10,11 +9,15 @@ import {
   Present
 } from './BirthdayCard.styles';
 
-const BirthdayCard = (props) => {
+interface BirthdayCardProps {
+  className?: string;
+}
+
+const BirthdayCard = ({ className = '' }: BirthdayCardProps) => {
   const intl = useIntl();
 
   return (
-    <Wrapper className={props.className}>
+    <Wrapper className={className}>
       <Card>
         <Header>
           {intl.formatMessage({ id: 'birthdayCard.header' })}
@@ -24,14 +27,6 @@ const BirthdayCard = (props) => {
       </Card>
     </Wrapper>
   );
-};
-
-BirthdayCard.propTypes = {
-  className: PropTypes.string
-};
-
-BirthdayCard.defaultProps = {
-  className: ''
 };
 
 export default BirthdayCard;

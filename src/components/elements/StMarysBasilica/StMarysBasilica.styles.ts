@@ -547,7 +547,7 @@ const RightTower = styled.span`
   }
 `;
 
-const TowerCornice = styled.span`
+const TowerCornice = styled.span<{ top?: number; longer?: boolean }>`
   top: ${(props) => props.top}px;
   right: -.9px;
   left: -.9px;

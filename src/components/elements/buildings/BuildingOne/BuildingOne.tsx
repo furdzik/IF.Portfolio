@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   Wrapper,
@@ -23,7 +22,11 @@ import {
   Balustrade
 } from './BuildingOne.styles';
 
-const BuildingOne = (props) => {
+interface BuildingOneProps {
+  className?: string;
+}
+
+const BuildingOne = ({ className = '' }: BuildingOneProps) => {
   // eslint-disable-next-line react/no-unstable-nested-components
   const RoofTemplate = () => (
     <Roof>
@@ -32,7 +35,7 @@ const BuildingOne = (props) => {
   );
 
   return (
-    <Wrapper className={props.className}>
+    <Wrapper className={className}>
       <Base />
       <FirstFloor>
         <Wall>
@@ -93,14 +96,6 @@ const BuildingOne = (props) => {
       </FifthRoof>
     </Wrapper>
   );
-};
-
-BuildingOne.propTypes = {
-  className: PropTypes.string
-};
-
-BuildingOne.defaultProps = {
-  className: ''
 };
 
 export default BuildingOne;

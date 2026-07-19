@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   Wrapper,
@@ -11,8 +10,12 @@ import {
   WideTrainTracks
 } from './TrainTracks.styles';
 
-const TrainTracks = (props) => (
-  <Wrapper className={props.className}>
+interface TrainTracksProps {
+  className?: string;
+}
+
+const TrainTracks = ({ className = '' }: TrainTracksProps) => (
+  <Wrapper className={className}>
     <MainTracks>
       <MainTrainTracksBridge>
         <span /><span /><span />
@@ -31,13 +34,5 @@ const TrainTracks = (props) => (
     </WideTracks>
   </Wrapper>
 );
-
-TrainTracks.propTypes = {
-  className: PropTypes.string
-};
-
-TrainTracks.defaultProps = {
-  className: ''
-};
 
 export default TrainTracks;

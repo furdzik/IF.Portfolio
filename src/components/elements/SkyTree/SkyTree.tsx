@@ -1,13 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   Wrapper
 } from './SkyTree.styles';
 
-const SkyTree = (props) => (
+interface SkyTreeProps {
+  className?: string;
+}
+
+const SkyTree = ({ className = '' }: SkyTreeProps) => (
   <Wrapper
-    className={props.className}
+    className={className}
   >
     <span>
       <span /><span /><span /><span /><span /><span />
@@ -75,13 +78,5 @@ const SkyTree = (props) => (
     <span />
   </Wrapper>
 );
-
-SkyTree.propTypes = {
-  className: PropTypes.string
-};
-
-SkyTree.defaultProps = {
-  className: ''
-};
 
 export default SkyTree;

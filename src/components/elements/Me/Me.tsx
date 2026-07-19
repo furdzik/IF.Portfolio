@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   AreaWrapper,
@@ -19,9 +18,13 @@ import {
   Leg
 } from './Me.styles';
 
-const Me = (props) => (
+interface MeProps {
+  className?: string;
+}
+
+const Me = ({ className = '' }: MeProps) => (
   <AreaWrapper
-    className={props.className}
+    className={className}
   >
     <MeWrapper>
       <HeadWrapper>
@@ -44,13 +47,5 @@ const Me = (props) => (
     </MeWrapper>
   </AreaWrapper>
 );
-
-Me.propTypes = {
-  className: PropTypes.string
-};
-
-Me.defaultProps = {
-  className: ''
-};
 
 export default Me;

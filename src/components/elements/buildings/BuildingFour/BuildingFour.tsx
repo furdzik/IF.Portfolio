@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   Wrapper,
@@ -8,7 +7,11 @@ import {
   LeftSideBlock
 } from './BuildingFour.styles';
 
-const BuildingFour = (props) => {
+interface BuildingFourProps {
+  className?: string;
+}
+
+const BuildingFour = ({ className = '' }: BuildingFourProps) => {
   const frontSide = (
     <FrontSideBlock>
       <span /><span /><span /><span />
@@ -21,7 +24,7 @@ const BuildingFour = (props) => {
   );
 
   return (
-    <Wrapper className={props.className}>
+    <Wrapper className={className}>
       <StyledBuilding
         width={8.5}
         height={19.5}
@@ -34,14 +37,6 @@ const BuildingFour = (props) => {
       />
     </Wrapper>
   );
-};
-
-BuildingFour.propTypes = {
-  className: PropTypes.string
-};
-
-BuildingFour.defaultProps = {
-  className: ''
 };
 
 export default BuildingFour;

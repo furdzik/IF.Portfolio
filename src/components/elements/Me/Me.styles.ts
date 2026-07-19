@@ -248,7 +248,7 @@ const Hand = styled.div`
   background: #ffd9bc;
 `;
 
-const Arm = styled.div`
+const Arm = styled.div<{ left?: boolean; right?: boolean; wave?: boolean }>`
   ${ElementsCommonStyleUnspecified};
   top: 116px;
   left: 3.5rem;
@@ -328,7 +328,7 @@ const Legs = styled.div`
   height: 24px;
 `;
 
-const Leg = styled.div`
+const Leg = styled.div<{ left?: boolean; right?: boolean }>`
   ${ElementsCommonStyleUnspecified};
   left: 0;
   width: 5px;

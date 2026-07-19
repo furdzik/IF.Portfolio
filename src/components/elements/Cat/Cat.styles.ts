@@ -136,7 +136,7 @@ const Torso = styled.div`
   border-radius: 50px;
 `;
 
-const Leg = styled.div`
+const Leg = styled.div<{ front?: boolean; hind?: boolean }>`
   ${ElementsCommonStyleUnspecified};
   bottom: 0;
   width: 100%;

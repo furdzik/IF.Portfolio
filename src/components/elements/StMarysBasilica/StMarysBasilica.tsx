@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   Wrapper,
@@ -33,9 +32,13 @@ import {
   RightSideWall
 } from './StMarysBasilica.styles';
 
-const StMarysBasilica = (props) => (
+interface StMarysBasilicaProps {
+  className?: string;
+}
+
+const StMarysBasilica = ({ className = '' }: StMarysBasilicaProps) => (
   <Wrapper
-    className={props.className}
+    className={className}
   >
     <StMarysBasilicaWrapper>
       <MainWall />
@@ -96,13 +99,5 @@ const StMarysBasilica = (props) => (
     </StMarysBasilicaWrapper>
   </Wrapper>
 );
-
-StMarysBasilica.propTypes = {
-  className: PropTypes.string
-};
-
-StMarysBasilica.defaultProps = {
-  className: ''
-};
 
 export default StMarysBasilica;

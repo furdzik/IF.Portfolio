@@ -1,14 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   Wrapper,
   StyledBuilding,
   FrontSideBlock,
   RightSideBlock
-} from './BuildingFourteen.styles';
+} from './BuildingTwelve.styles';
 
-const BuildingFourteen = (props) => {
+interface BuildingTwelveProps {
+  className?: string;
+}
+
+const BuildingTwelve = ({ className = '' }: BuildingTwelveProps) => {
   const frontSide = (
     <FrontSideBlock>
       <span /><span /><span /><span />
@@ -16,18 +19,19 @@ const BuildingFourteen = (props) => {
   );
   const rightSide = (
     <RightSideBlock>
+      <span /><span /><span /><span /><span /><span /><span />
       <span /><span /><span /><span />
     </RightSideBlock>
   );
 
   return (
-    <Wrapper className={props.className}>
+    <Wrapper className={className}>
       <StyledBuilding
-        width={12}
-        height={25}
+        width={8}
+        height={17}
         frontBackSideColor="#ffffff"
-        leftRightSideColor="#83bacf"
-        topBottomSideColor="#94c7e5"
+        leftRightSideColor="#e9edef"
+        topBottomSideColor="#dbdfe1"
         frontSideBlock={frontSide}
         rightSideBlock={rightSide}
         transform="rotateY(-22deg) rotateX(-15deg) rotateZ(5deg)"
@@ -36,12 +40,4 @@ const BuildingFourteen = (props) => {
   );
 };
 
-BuildingFourteen.propTypes = {
-  className: PropTypes.string
-};
-
-BuildingFourteen.defaultProps = {
-  className: ''
-};
-
-export default BuildingFourteen;
+export default BuildingTwelve;

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   Wrapper,
@@ -9,7 +8,11 @@ import {
   TopSideBlock
 } from './BuildingThree.styles';
 
-const BuildingThree = (props) => {
+interface BuildingThreeProps {
+  className?: string;
+}
+
+const BuildingThree = ({ className = '' }: BuildingThreeProps) => {
   const frontSide = (
     <FrontSideBlock>
       <span /><span /><span /><span />
@@ -22,7 +25,7 @@ const BuildingThree = (props) => {
   );
 
   return (
-    <Wrapper className={props.className}>
+    <Wrapper className={className}>
       <TopSideBlock
         width={2}
         height={1.5}
@@ -43,14 +46,6 @@ const BuildingThree = (props) => {
       />
     </Wrapper>
   );
-};
-
-BuildingThree.propTypes = {
-  className: PropTypes.string
-};
-
-BuildingThree.defaultProps = {
-  className: ''
 };
 
 export default BuildingThree;

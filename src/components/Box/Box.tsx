@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {
   Wrapper,
@@ -12,12 +11,17 @@ import {
   StarDecorationThree
 } from './Box.styles';
 
-const Box = (props) => (
-  <Wrapper
-    className={props.className}
-  >
+export interface BoxProps {
+  children: React.ReactNode;
+  className?: string;
+  showDecorations?: boolean;
+  showTapes?: boolean;
+}
+
+const Box = ({ children, className = '', showDecorations = false, showTapes = false }: BoxProps) => (
+  <Wrapper className={className}>
     {
-      props.showTapes ? (
+      showTapes ? (
         <React.Fragment>
           <TopLeftCorner />
           <TopRightCorner />
@@ -27,7 +31,7 @@ const Box = (props) => (
       ) : null
     }
     {
-      props.showDecorations ? (
+      showDecorations ? (
         <React.Fragment>
           <StarDecorationOne color="#5319e7" size={10} />
           <StarDecorationTwo color="#e775a0" size={10} />
@@ -35,21 +39,8 @@ const Box = (props) => (
         </React.Fragment>
       ) : null
     }
-    {props.children}
+    {children}
   </Wrapper>
 );
-
-Box.propTypes = {
-  children: PropTypes.node.isRequired,
-  className: PropTypes.string,
-  showDecorations: PropTypes.bool,
-  showTapes: PropTypes.bool
-};
-
-Box.defaultProps = {
-  className: '',
-  showDecorations: false,
-  showTapes: false
-};
 
 export default Box;

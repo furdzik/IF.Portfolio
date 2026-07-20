@@ -1,0 +1,10 @@
+[build]
+  command = "yarn build"
+  publish = "build"
+
+[build.environment]
+  # react-scripts treats warnings as errors when CI=true (Netlify sets it) — disable that
+  CI = "false"
+  # linting runs separately via `yarn lint`; skip it during the production build
+  DISABLE_ESLINT_PLUGIN = "true"
+  GENERATE_SOURCEMAP = "false"

@@ -1,0 +1,51 @@
+import React from 'react';
+
+import {
+  AreaWrapper,
+  MeWrapper,
+  Hair,
+  HeadWrapper,
+  Face,
+  Eyebrows,
+  Eyes,
+  Nose,
+  Lips,
+  Ear,
+  Clothes,
+  Arm,
+  Hand,
+  Legs,
+  Leg
+} from './Me.styles';
+
+interface MeProps {
+  className?: string;
+}
+
+const Me = ({ className = '' }: MeProps) => (
+  <AreaWrapper
+    className={className}
+  >
+    <MeWrapper>
+      <HeadWrapper>
+        <Hair><span /><span /><span /></Hair>
+        <Face>
+          <Eyebrows><span /><span /></Eyebrows>
+          <Eyes><span /><span /></Eyes>
+          <Nose />
+          <Lips><span /><span /><span /><span /><span /><span /></Lips>
+        </Face>
+        <Ear />
+      </HeadWrapper>
+      <Clothes><span /><span /><span /><span /></Clothes>
+      <Arm left><span /><span /><Hand /></Arm>
+      <Arm right wave><span /><span /><Hand /></Arm>
+      <Legs>
+        <Leg left />
+        <Leg right />
+      </Legs>
+    </MeWrapper>
+  </AreaWrapper>
+);
+
+export default Me;

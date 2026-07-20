@@ -1,11 +1,16 @@
 {
-  "parser": "@babel/eslint-parser",
+  "parser": "@typescript-eslint/parser",
   "extends": [
-    "eslint-config-kamisama"
+    "eslint-config-ts-kamisama",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
   ],
   "settings": {
     "import/resolver": {
-      "babel-module": {}
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".json"],
+        "moduleDirectory": ["node_modules", "src"]
+      }
     }
   },
   "env": {
@@ -14,12 +19,12 @@
     "es6": true
   },
   "globals": {
-    "NODE_ENV": "readonly",
-    "JISHO_API_URL": "readonly",
-    "STACKOVERFLOW_API_URL": "readonly",
-    "STACKOVERFLOW_USER": "readonly",
-    "GITHUB_USER": "readonly",
-    "GITHUB_KEY": "readonly",
-    "SENTRY_DNS": "readonly"
+    "process": "readonly"
+  },
+  "rules": {
+    "@typescript-eslint/space-before-function-paren": ["error", "always"],
+    "@typescript-eslint/no-extra-parens": "off",
+    "react/require-default-props": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }]
   }
 }

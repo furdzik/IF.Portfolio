@@ -9,35 +9,6 @@
   ],
   "plugins": [
     "@babel/plugin-transform-runtime",
-    ["module-resolver", {
-      "alias": {
-        "@mocks": "./__mocks__",
-        "@root": "./",
-        "@src": "./src",
-        "@routes": "./src/routes",
-        "@api": "./src/api",
-        "@assets": "./src/assets",
-        "@components": "./src/components",
-        "@containers": "./src/containers",
-        "@constants": "./src/constants",
-        "@config": "./src/config",
-        "@data": "./src/data",
-        "@hooks": "./src/hooks",
-        "@lang": "./src/lang",
-        "@styles": "./src/styles",
-        "@types": "./src/types",
-        "@utils": "./src/utils"
-      }
-    }],
-    ["react-intl-auto", {
-      "removePrefix": "src",
-      "filebase": false
-    }],
     "@emotion"
-  ],
-  "env": {
-    "test": {
-      "plugins": ["require-context-hook"]
-    }
-  }
+  ]
 }

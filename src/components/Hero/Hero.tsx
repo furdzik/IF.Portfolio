@@ -1,0 +1,140 @@
+import React from 'react';
+
+import { cloudType } from 'constant';
+
+import {
+  Wrapper,
+  ContainerStyled,
+  StyledCloud,
+  StyledBirdOne,
+  StyledBirdTwo,
+  StyledRiver,
+  CracowWrapper,
+  TokyoWrapper,
+  StyledMtFuji,
+  StyledCityGround,
+  StyledMountains,
+  TreeCracowOne,
+  TreeCracowTwo,
+  TreeCracowThree,
+  TreeCracowFour,
+  TreeCracowFive,
+  TreeCracowSix,
+  TreeCracowSeven,
+  TreeCracowEight,
+  TreeTokyoOne,
+  TreeTokyoTwo,
+  TreeTokyoThree,
+  TreeTokyoFour,
+  TreeTokyoFive,
+  TreeTokyoSix,
+  TreeTokyoSeven,
+  TreeTokyoEight,
+  TreeTokyoNine,
+  TreeTokyoTen,
+  TreeTokyoEleven,
+  TreeTokyoTwelve,
+  TreeTokyoThirteen,
+  TreeTokyoFourteen,
+  TreeTokyoFifteen,
+  TreeTokyoSixteen,
+  TreeTokyoSeventeen,
+  TreeTokyoEighteen,
+  TreeTokyoNineteen,
+  StyledSkyTree,
+  StyledStMarysBasilica,
+  StyledTrainTracks,
+  StyledBuildingOne,
+  StyledBuildingTwo,
+  StyledBuildingThree,
+  StyledBuildingFour,
+  StyledBuildingFive,
+  StyledBuildingSix,
+  StyledBuildingSeven,
+  StyledBuildingEight,
+  StyledBuildingNine,
+  StyledBuildingTen,
+  StyledBuildingEleven,
+  StyledBuildingTwelve,
+  StyledBuildingThirteen,
+  StyledBuildingFourteen
+} from './Hero.styles';
+
+interface HeroProps {
+  className?: string;
+}
+
+const Hero = ({ className = '' }: HeroProps) => (
+  <Wrapper className={className}>
+    <ContainerStyled>
+      <StyledCloud cloudType={cloudType.one} />
+      <StyledCloud cloudType={cloudType.two} />
+      <StyledCloud cloudType={cloudType.three} />
+      <StyledCloud cloudType={cloudType.four} />
+      <StyledCloud cloudType={cloudType.five} />
+      <StyledCloud cloudType={cloudType.six} />
+      <StyledCloud cloudType={cloudType.seven} />
+      <StyledCloud cloudType={cloudType.eight} />
+      <StyledCloud cloudType={cloudType.nine} />
+      <StyledCloud cloudType={cloudType.ten} />
+      <StyledCloud cloudType={cloudType.eleven} />
+      <StyledCloud cloudType={cloudType.twelve} />
+      <StyledBirdOne />
+      <StyledBirdTwo />
+      <StyledRiver />
+      <CracowWrapper>
+        <StyledMountains />
+        <TreeCracowOne color="green" isTaller />
+        <TreeCracowTwo color="green" isTaller />
+        <TreeCracowThree color="green" isTaller />
+        <TreeCracowFour color="green" />
+        <TreeCracowFive color="green" />
+        <TreeCracowSix color="green" />
+        <TreeCracowSeven color="green" />
+        <TreeCracowEight color="green" />
+        <StyledStMarysBasilica />
+      </CracowWrapper>
+      <TokyoWrapper>
+        <StyledMtFuji />
+        <StyledCityGround />
+        <TreeTokyoOne color="pink" />
+        <TreeTokyoTwo color="pink" isTaller />
+        <TreeTokyoThree color="pink" />
+        <TreeTokyoFour color="pink" />
+        <TreeTokyoEight color="pink" isTaller />
+        <TreeTokyoSeven color="green" isTaller />
+        <TreeTokyoSix color="green" />
+        <TreeTokyoFive color="green" isTaller />
+        <TreeTokyoNine color="green" />
+        <TreeTokyoTen color="pink" />
+        <TreeTokyoEleven color="pink" isTaller />
+        <TreeTokyoTwelve color="pink" isTaller />
+        <TreeTokyoThirteen color="green" />
+        <TreeTokyoFourteen color="green" />
+        <TreeTokyoFifteen color="green" isTaller />
+        <TreeTokyoSixteen color="pink" />
+        <TreeTokyoSeventeen color="green" isTaller />
+        <TreeTokyoEighteen color="pink" isTaller />
+        <TreeTokyoNineteen color="green" />
+        <StyledSkyTree />
+        <StyledTrainTracks />
+        <StyledBuildingOne />
+        <StyledBuildingTwo />
+        <StyledBuildingThree />
+        <StyledBuildingFour />
+        <StyledBuildingFive />
+        <StyledBuildingSix />
+        <StyledBuildingSeven />
+        <StyledBuildingEight />
+        <StyledBuildingNine />
+        <StyledBuildingTen />
+        <StyledBuildingEleven />
+        <StyledBuildingTwelve />
+        <StyledBuildingThirteen />
+        <StyledBuildingFourteen />
+      </TokyoWrapper>
+    </ContainerStyled>
+  </Wrapper>
+);
+
+export default Hero;

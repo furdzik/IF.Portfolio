@@ -1,6 +1,8 @@
 import { githubUser, githubKey } from 'config/environment';
 import api from 'config/api';
 
+import { GitHubStatsResponse } from 'interfaces';
+
 const body = {
   query: `{
     user(login: "${githubUser}") {
@@ -19,8 +21,8 @@ const body = {
   }`
 };
 
-export const fetchGitHubStats = (): Promise<any> => (
-  api.post(
+export const fetchGitHubStats = (): Promise<GitHubStatsResponse> => (
+  api.post<GitHubStatsResponse, GitHubStatsResponse>(
     'https://api.github.com/graphql',
     body,
     {

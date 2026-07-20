@@ -39,9 +39,21 @@ const SecondSubHeading = styled.div`
 const StyledContainer = styled(Container)`
   position: absolute;
   bottom: 4%;
-  left: 50%;
+  left: 1rem;
+  right: 1rem;
   z-index: 6;
-  transform: translateX(-50%);
+
+  @media (min-width: ${breakpoints.portraitTablet}) {
+   width: auto;
+  }
+
+  @media (min-width: ${breakpoints.laptop}) {
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: ${(props) => props.theme.layout.width};
+    max-width: ${(props) => props.theme.layout.width};
+  }
 `;
 
 const StyledBox = styled(Box)`
@@ -135,7 +147,7 @@ const ListWrapper = styled.div`
   flex-flow: column wrap;
   order: 2;
   width: 100%;
-  /* margin-top: 5rem; */
+  margin-bottom: 4rem;
 
   @media (min-width: ${breakpoints.landscapeTablet}) {
     order: 2;
@@ -179,11 +191,12 @@ const Link = styled.a`
 `;
 
 const MeAndCatWrapper = styled.div`
-  position: relative;
+  position: absolute;
   order: 2;
-  margin: 4rem 0 0 4rem; /* do zmiany */
+  bottom: 4rem;
+  right: 4rem;
 
-  @media (min-width: ${breakpoints.portraitTablet}) {
+  @media (min-width: ${breakpoints.landscapeTablet}) {
     margin-left: auto;
   }
 

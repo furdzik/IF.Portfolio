@@ -58,16 +58,10 @@ const getStatsAction = (payload) => ({
 export const getStats = () => (dispatch) => {
   dispatch(getStatsInitAction());
 
-  Promise.all(
-    [
-      fetchGitHubStats(),
-      fetchStackOverflowStats()
-    ]
-  )
-    .then(([gitHubResponse, stackOverflowResponse]) => {
+  fetchGitHubStats()
+    .then((gitHubResponse) => {
       dispatch(getStatsAction({
-        gitHub: gitHubResponse?.data?.user?.contributionsCollection,
-        stackOverflow: stackOverflowResponse.items[0]
+        gitHub: gitHubResponse?.data?.user?.contributionsCollection
       }));
     })
     .catch(() => {

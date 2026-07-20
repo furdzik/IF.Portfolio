@@ -110,50 +110,6 @@ const MainPage = (props: MainPageProps) => {
                 ) : null
               }
             </SocialItem>
-            <SocialItem>
-              <SocialLink href="https://stackoverflow.com/users/7615658/izabela-furdzik" target="_blank" rel="noreferrer">
-                <StackOverflowIcon />
-              </SocialLink>
-              {
-                props.stats?.stackOverflow ? (
-                  <AdditionalInfoBox>
-                    <StatsWrapper>
-                      <span>{intl.formatMessage({ id: 'mainPage.reputationText' })}</span>
-                      <Number type={NUMBER_BUTTON_TYPE.reputation}>
-                        {props.stats?.stackOverflow?.reputation}
-                      </Number>
-                    </StatsWrapper>
-                    {
-                      props.stats?.stackOverflow?.badgeCounts ? (
-                        <StackBadges>
-                          {
-                            props.stats?.stackOverflow?.badgeCounts?.gold ? (
-                              <StackBadge type={STACK_BADGE_TYPE.gold}>
-                                {props.stats?.stackOverflow?.badgeCounts?.gold}
-                              </StackBadge>
-                            ) : null
-                          }
-                          {
-                            props.stats?.stackOverflow?.badgeCounts?.silver ? (
-                              <StackBadge type={STACK_BADGE_TYPE.silver}>
-                                {props.stats?.stackOverflow?.badgeCounts?.silver}
-                              </StackBadge>
-                            ) : null
-                          }
-                          {
-                            props.stats?.stackOverflow?.badgeCounts?.bronze ? (
-                              <StackBadge type={STACK_BADGE_TYPE.bronze}>
-                                {props.stats?.stackOverflow?.badgeCounts?.bronze}
-                              </StackBadge>
-                            ) : null
-                          }
-                        </StackBadges>
-                      ) : null
-                    }
-                  </AdditionalInfoBox>
-                ) : null
-              }
-            </SocialItem>
           </SocialIcons>
           <StyledFooter />
         </StyledBox>

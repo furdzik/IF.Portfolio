@@ -1,6 +1,6 @@
 import { AnyAction } from 'redux';
 
-import { fetchStackOverflowStats, fetchGitHubStats } from 'api';
+import { fetchGitHubStats } from 'api';
 
 const actionTypes = {
   GET_STATS_INIT: 'MAIN_PAGE/GET_STATS_INIT',

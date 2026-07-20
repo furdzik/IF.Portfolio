@@ -4,7 +4,7 @@ import { css } from '@emotion/react';
 import { FaLinkedin, FaGithub, FaStackOverflow } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 
-import { NUMBER_BUTTON_TYPE, STACK_BADGE_TYPE } from 'constant';
+import { NUMBER_BUTTON_TYPE } from 'constant';
 
 import { breakpoints } from 'styles/basic';
 
@@ -38,9 +38,9 @@ const SecondSubHeading = styled.div`
 
 const StyledContainer = styled(Container)`
   position: absolute;
+  right: 1rem;
   bottom: 4%;
   left: 1rem;
-  right: 1rem;
   z-index: 6;
 
   @media (min-width: ${breakpoints.portraitTablet}) {
@@ -192,9 +192,9 @@ const Link = styled.a`
 
 const MeAndCatWrapper = styled.div`
   position: absolute;
-  order: 2;
-  bottom: 4rem;
   right: 4rem;
+  bottom: 4rem;
+  order: 2;
 
   @media (min-width: ${breakpoints.landscapeTablet}) {
     margin-left: auto;
@@ -234,38 +234,6 @@ const StackBadges = styled.ul`
   margin-left: .5rem;
 `;
 
-const StackBadge = styled.li<{ type?: string }>`
-  display: flex;
-  align-items: center;
-  margin-right: .5rem;
-
-  &::before {
-    content: '';
-    flex-shrink: 0;
-    width: 1rem;
-    height: 1rem;
-    margin-top: -.1rem;
-    margin-right: .2rem;
-    border-radius: 50%;
-  }
-
-  ${(props) => props.type === STACK_BADGE_TYPE.gold && css`
-    &::before {
-      background: #ffcc01;
-    }
-  `};
-  ${(props) => props.type === STACK_BADGE_TYPE.silver && css`
-    &::before {
-      background: #b4b8bc;
-    }
-  `};
-  ${(props) => props.type === STACK_BADGE_TYPE.bronze && css`
-    &::before {
-      background: #d1a684;
-    }
-  `};
-`;
-
 const StyledFooter = styled(Footer)`
   position: absolute;
   right: -5.5rem;
@@ -300,6 +268,5 @@ export {
   CatStyled,
   Number,
   StackBadges,
-  StackBadge,
   StyledFooter
 };

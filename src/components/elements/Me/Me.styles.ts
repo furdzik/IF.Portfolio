@@ -7,7 +7,6 @@ const AreaWrapper = styled.div`
   position: relative;
   width: 12.3rem;
   height: 18.6rem;
-  /* box-shadow: 0 1.6rem 1.3rem -1.7rem #a5a3a3; */
 `;
 
 const MeWrapper = styled.div`

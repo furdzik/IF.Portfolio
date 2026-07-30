@@ -29,6 +29,7 @@ const GlobalStyles = css`
     font-size: ${theme.fontSize.normal};
     line-height: 1.6;
     color: ${theme.textColors.primary};
+    contain: layout;
   }
 
   body,

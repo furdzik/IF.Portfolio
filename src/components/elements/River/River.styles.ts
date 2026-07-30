@@ -1,6 +1,7 @@
 import styled from '@emotion/styled/macro';
 
 import { ElementsCommonStyleUnspecified } from 'styles/elementsCommonStyle.styles';
+import { breakpoints } from 'styles/basic';
 
 const Wrapper = styled.div`
   ${ElementsCommonStyleUnspecified};
@@ -120,8 +121,13 @@ const Vistula = styled.div`
 const Arakawa = styled.div`
   ${ElementsCommonStyleUnspecified};
   left: 61%;
+  display: none;
   width: 352px;
   height: 100%;
+
+  @media (min-width: ${breakpoints.landscapeTablet}) {
+    display: block;
+  }
 
   span {
     ${ElementsCommonStyleUnspecified};

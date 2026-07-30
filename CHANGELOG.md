@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.6.0](https://github.com/furdzik/IF.Portfolio/compare/v1.5.0...v1.6.0) (2026-07-30)
+
+
+### Features
+
+* **app:** add rwd and some fixes ([e0724c5](https://github.com/furdzik/IF.Portfolio/commit/e0724c5b2b2f353a5e729e74e4276f820467d515))
+* **app:** add rwd and some fixes ([4a0aa22](https://github.com/furdzik/IF.Portfolio/commit/4a0aa22a427760e2d313e24211e3782073dd1f27))
+* **app:** css ([0fbf0ff](https://github.com/furdzik/IF.Portfolio/commit/0fbf0ffc275bc7ddfed60efc136ff0c4b0cc201c))
+* **app:** lint fix ([2d0b0b0](https://github.com/furdzik/IF.Portfolio/commit/2d0b0b04faddf05b067789c4412757f20d4542ce))
+* **app:** remove not working workflow ([0b6fe0e](https://github.com/furdzik/IF.Portfolio/commit/0b6fe0efa44c3664daf1b697be1f2e3f11cbc9b3))
+* **app:** remove stack overflow ([2860792](https://github.com/furdzik/IF.Portfolio/commit/2860792f6ecc40b49d617d49f008cbf56fe51c23))
+* **app:** remove stack overflow ([b2ed54b](https://github.com/furdzik/IF.Portfolio/commit/b2ed54bc9596ed19222ec6337f04d6f7001a0bcd))
+
+
+### Bug Fixes
+
+* repair Hero/RWD rendering under CRA ([f0f2e5c](https://github.com/furdzik/IF.Portfolio/commit/f0f2e5cca5b07171a1a37081e2726982d4c589e6))
+* **styles:** use @emotion/styled/macro for CRA emotion transform ([42f8a3f](https://github.com/furdzik/IF.Portfolio/commit/42f8a3f88db41df8e43105761e36d7f13e3fc9ec))
+
 ## [1.5.0](https://github.com/furdzik/IF.Portfolio/compare/v1.4.0...v1.5.0) (2024-07-19)
 
 

@@ -57,7 +57,7 @@ const StyledCloud = styled(Cloud)`
   display: none;
   scale: .6;
 
-  @media (min-height: ${breakpointsHeight.desktop}) {
+  @media (min-height: ${breakpointsHeight.desktop}) and (min-width: ${breakpoints.landscapeTablet}) {
     display: block;
   }
 
@@ -117,6 +117,7 @@ const StyledBirdOne = styled(Bird)`
   top: 10rem;
   bottom: auto;
   left: 8rem;
+  display: none;
   transform: rotate(31deg);
   scale: .7;
 
@@ -131,6 +132,10 @@ const StyledBirdOne = styled(Bird)`
   @media (min-width: ${breakpoints.hdDesktop}) {
     left: -22rem;
   }
+
+  @media (min-height: ${breakpointsHeight.desktop}) and (min-width: ${breakpoints.landscapeTablet}) {
+    display: block;
+  }
 `;
 
 const StyledBirdTwo = styled(Bird)`
@@ -138,6 +143,7 @@ const StyledBirdTwo = styled(Bird)`
   top: 13rem;
   bottom: auto;
   left: 13rem;
+  display: none;
   transform: rotate(-38deg);
   scale: .9;
 
@@ -152,6 +158,10 @@ const StyledBirdTwo = styled(Bird)`
   @media (min-width: ${breakpoints.hdDesktop}) {
     left: -17rem;
   }
+
+  @media (min-height: ${breakpointsHeight.desktop}) and (min-width: ${breakpoints.landscapeTablet}) {
+    display: block;
+  }
 `;
 
 const StyledRiver = styled(River)`
@@ -164,31 +174,60 @@ const StyledRiver = styled(River)`
 const CracowWrapper = styled.div`
   position: absolute;
   right: 50%;
-  bottom: 30rem;
+  bottom: 15rem;
   width: 100%;
   height: 100%;
 
+  @media (min-width: ${breakpoints.landscapePhone}) {
+    bottom: 12rem;
+  }
+
+  @media (min-width: ${breakpoints.portraitTablet}) {
+    bottom: 10rem;
+  }
+
   @media (min-width: ${breakpoints.landscapeTablet}) {
-    bottom: 0
+    bottom: 0;
   }
 `;
 
 const TokyoWrapper = styled.div`
   position: absolute;
-  bottom: 30rem;
+  bottom: 15rem;
   left: 50%;
   width: 100%;
   height: 100%;
 
+  @media (min-width: ${breakpoints.landscapePhone}) {
+    bottom: 12rem;
+  }
+
+  @media (min-width: ${breakpoints.portraitTablet}) {
+    bottom: 10rem;
+  }
+
   @media (min-width: ${breakpoints.landscapeTablet}) {
-    bottom: 0
+    bottom: 0;
   }
 `;
 
 const StyledMtFuji = styled(MtFuji)`
   ${ElementsCommonStyle};
-  bottom: 43.5rem;
-  left: 20rem;
+  bottom: 36.5rem;
+  left: -22%;
+  z-index: -1;
+  scale: 0.55;
+
+  @media (min-width: ${breakpoints.phablet}) {
+    bottom: 40.5rem;
+    left: -8rem;
+    scale: 1;
+  }
+
+  @media (min-width: ${breakpoints.laptop}) {
+    bottom: 43.5rem;
+    left: 20rem;
+  }
 
   @media (min-width: ${breakpoints.desktop}) {
     left: 40rem;
@@ -210,11 +249,17 @@ const StyledMountains = styled(Mountains)`
 
 const TreeCracowOne = styled(Tree)`
   ${ElementsCommonStyle};
-  right: .4rem;
-  bottom: 39.7rem;
-  left: auto;
-  z-index: 2;
+  bottom: 33.7rem;
+  left: 72%;
+  z-index: 4;
   transform: scale(.3);
+
+  @media (min-width: ${breakpoints.phablet}) {
+    right: .4rem;
+    bottom: 39.7rem;
+    left: auto;
+    z-index: 2;
+  }
 `;
 
 const TreeCracowTwo = styled(Tree)`
@@ -222,6 +267,11 @@ const TreeCracowTwo = styled(Tree)`
   bottom: 5.1rem;
   left: 5.4rem;
   z-index: 3;
+  display: none;
+
+  @media (min-width: ${breakpoints.portraitTablet}) {
+    display: block;
+  }
 `;
 
 const TreeCracowThree = styled(Tree)`
@@ -236,6 +286,11 @@ const TreeCracowFour = styled(Tree)`
   bottom: 3.9rem;
   left: 19.4rem;
   z-index: 2;
+  display: none;
+
+  @media (min-width: ${breakpoints.portraitTablet}) {
+    display: block;
+  }
 `;
 
 const TreeCracowFive = styled(Tree)`
@@ -247,11 +302,16 @@ const TreeCracowFive = styled(Tree)`
 
 const TreeCracowSix = styled(Tree)`
   ${ElementsCommonStyle};
-  right: 5.4rem;
-  bottom: 40.7rem;
-  left: auto;
+  bottom: 37.7rem;
+  left: 30%;
   z-index: 2;
   transform: scale(.3);
+
+  @media (min-width: ${breakpoints.phablet}) {
+    right: 5.4rem;
+    bottom: 40.7rem;
+    left: auto;
+  }
 `;
 
 const TreeCracowSeven = styled(Tree)`
@@ -259,7 +319,12 @@ const TreeCracowSeven = styled(Tree)`
   bottom: -2.3rem;
   left: 39rem;
   z-index: 2;
+  display: none;
   transform: scale(.5);
+
+  @media (min-width: ${breakpoints.portraitTablet}) {
+    display: block;
+  }
 `;
 
 const TreeCracowEight = styled(Tree)`
@@ -267,7 +332,12 @@ const TreeCracowEight = styled(Tree)`
   bottom: 2.7rem;
   left: 31.8rem;
   z-index: 2;
+  display: none;
   transform: scale(.5);
+
+  @media (min-width: ${breakpoints.portraitTablet}) {
+    display: block;
+  }
 `;
 
 const TreeTokyoOne = styled(Tree)`
@@ -356,18 +426,28 @@ const TreeTokyoEleven = styled(Tree)`
 
 const TreeTokyoTwelve = styled(Tree)`
   ${ElementsCommonStyle};
-  bottom: 25.1rem;
-  left: 8.2rem;
+  bottom: 32.1rem;
+  left: 20%;
   z-index: 3;
   transform: scale(.3);
+
+  @media (min-width: ${breakpoints.phablet}) {
+    bottom: 25.1rem;
+    left: 8.2rem;
+  }
 `;
 
 const TreeTokyoThirteen = styled(Tree)`
   ${ElementsCommonStyle};
-  bottom: 26.1rem;
-  left: 17.2rem;
+  bottom: 31.1rem;
+  left: 19.2rem;
   z-index: 4;
   transform: scale(.3);
+
+  @media (min-width: ${breakpoints.phablet}) {
+    bottom: 26.1rem;
+    left: 17.2rem;
+  }
 `;
 
 const TreeTokyoFourteen = styled(Tree)`
@@ -404,10 +484,15 @@ const TreeTokyoSeventeen = styled(Tree)`
 
 const TreeTokyoEighteen = styled(Tree)`
   ${ElementsCommonStyle};
-  right: 12.2rem;
-  bottom: 27.8rem;
+  right: 67%;
+  bottom: 33.8rem;
   z-index: 2;
   transform: scale(.3);
+
+  @media (min-width: ${breakpoints.phablet}) {
+    right: 12.2rem;
+    bottom: 27.8rem;
+  }
 `;
 
 const TreeTokyoNineteen = styled(Tree)`
@@ -428,8 +513,20 @@ const StyledSkyTree = styled(SkyTree)`
 
 const StyledStMarysBasilica = styled(StMarysBasilica)`
   ${ElementsCommonStyleUnspecified};
-  bottom: 36rem;
-  left: 36.1rem;
+  bottom: 34rem;
+  left: 46%;
+  z-index: 3;
+  scale: .65;
+
+  @media (min-width: ${breakpoints.phablet}) {
+    bottom: 36rem;
+    left: 29.1rem;
+    scale: 1;
+  }
+
+  @media (min-width: ${breakpoints.portraitTablet}) {
+    left: 36.1rem;
+  }
 
   @media (min-width: ${breakpoints.landscapeTablet}) {
     left: 52.1rem;
@@ -452,12 +549,25 @@ const StyledTrainTracks = styled(TrainTracks)`
   bottom: 0;
   left: 19rem;
   z-index: 3;
+  display: none;
+
+  @media (min-width: ${breakpoints.landscapeTablet}) {
+    display: block;
+  }
 `;
 
 const StyledBuildingOne = styled(BuildingOne)`
   ${ElementsCommonStyleUnspecified};
-  right: 21rem;
-  bottom: 35rem;
+  right: 65%;
+  bottom: 37rem;
+  z-index: 1;
+  scale: .65;
+
+  @media (min-width: ${breakpoints.phablet}) {
+    right: 21rem;
+    bottom: 35rem;
+    scale: 1;
+  }
 `;
 
 const StyledBuildingTwo = styled(BuildingTwo)`
@@ -465,6 +575,11 @@ const StyledBuildingTwo = styled(BuildingTwo)`
   bottom: 26rem;
   left: 0;
   z-index: 3;
+  display: none;
+
+  @media (min-width: ${breakpoints.phablet}) {
+    display: block;
+  }
 `;
 
 const StyledBuildingThree = styled(BuildingThree)`
@@ -472,6 +587,11 @@ const StyledBuildingThree = styled(BuildingThree)`
   bottom: 32rem;
   left: 11rem;
   z-index: 2;
+  display: none;
+
+  @media (min-width: ${breakpoints.phablet}) {
+    display: block;
+  }
 `;
 
 const StyledBuildingFour = styled(BuildingFour)`
@@ -479,13 +599,27 @@ const StyledBuildingFour = styled(BuildingFour)`
   bottom: 34rem;
   left: 2rem;
   z-index: 1;
+  display: none;
+
+  @media (min-width: ${breakpoints.phablet}) {
+    display: block;
+  }
 `;
 
 const StyledBuildingFive = styled(BuildingFive)`
   ${ElementsCommonStyleUnspecified};
-  bottom: 36rem;
+  bottom: 34rem;
   left: 24rem;
   z-index: 1;
+  display: none;
+
+  @media (min-width: ${breakpoints.phablet}) {
+    display: block;
+  }
+
+  @media (min-width: ${breakpoints.landscapeTablet}) {
+    bottom: 36rem;
+  }
 `;
 
 const StyledBuildingSix = styled(BuildingSix)`
@@ -500,13 +634,22 @@ const StyledBuildingSeven = styled(BuildingSeven)`
   right: 9.5rem;
   bottom: 19rem;
   z-index: 4;
+  display: none;
+
+  @media (min-width: ${breakpoints.phablet}) {
+    display: block;
+  }
 `;
 
 const StyledBuildingEight = styled(BuildingEight)`
   ${ElementsCommonStyleUnspecified};
-  bottom: 35rem;
+  bottom: 33rem;
   left: 33.5rem;
   z-index: 1;
+
+  @media (min-width: ${breakpoints.landscapeTablet}) {
+    bottom: 35rem;
+  }
 `;
 
 const StyledBuildingNine = styled(BuildingNine)`

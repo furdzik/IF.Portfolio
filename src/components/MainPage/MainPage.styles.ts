@@ -1,7 +1,7 @@
 import styled from '@emotion/styled/macro';
 import { css } from '@emotion/react';
 
-import { FaLinkedin, FaGithub, FaStackOverflow } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 
 import { NUMBER_BUTTON_TYPE } from 'constant';
@@ -38,13 +38,21 @@ const SecondSubHeading = styled.div`
 
 const StyledContainer = styled(Container)`
   position: absolute;
-  right: 1rem;
-  bottom: 4%;
-  left: 1rem;
+  right: -1rem;
+  bottom: 2rem;
+  left: -1rem;
   z-index: 6;
+  width: auto;
 
-  @media (min-width: ${breakpoints.portraitTablet}) {
-   width: auto;
+  @media (min-width: ${breakpoints.phablet}) {
+    right: 0;
+    left: 0;
+  }
+
+  @media (min-width: ${breakpoints.landscapeTablet}) {
+    right: 1rem;
+    bottom: 4%;
+    left: 1rem;
   }
 
   @media (min-width: ${breakpoints.laptop}) {
@@ -75,12 +83,12 @@ const MainBox = styled.div`
 const SocialIcons = styled.ul`
   display: flex;
   align-items: center;
+  order: 3;
   width: 100%;
   margin-top: 4rem;
   font-family: ${(props) => props.theme.fontFamily.roboto};
 
   @media (min-width: ${breakpoints.portraitTablet}) {
-    order: 3;
     margin-top: -1rem;
     margin-bottom: -3rem;
   }
@@ -103,10 +111,14 @@ const SocialLink = styled.a`
 `;
 
 const AdditionalInfoBox = styled.span`
-  display: flex;
+  display: none;
   flex-flow: row wrap;
   margin-left: .5rem;
   line-height: 1;
+
+  @media (min-width: ${breakpoints.phablet}) {
+    display: flex;
+  }
 `;
 
 const StatsWrapper = styled.span`
@@ -135,11 +147,6 @@ const LinkedinIcon = styled(FaLinkedin)`
 const GithubIcon = styled(FaGithub)`
   ${socialIconStyles};
   color: #1b1f23;
-`;
-
-const StackOverflowIcon = styled(FaStackOverflow)`
-  ${socialIconStyles};
-  color: #f48225;
 `;
 
 const ListWrapper = styled.div`
@@ -192,15 +199,26 @@ const Link = styled.a`
 
 const MeAndCatWrapper = styled.div`
   position: absolute;
-  right: 4rem;
-  bottom: 4rem;
+  right: 0;
+  bottom: -1rem;
   order: 2;
+  scale: 0.55;
+
+  @media (min-width: ${breakpoints.phablet}) {
+    right: 1rem;
+    bottom: 0;
+    scale: 0.75;
+  }
 
   @media (min-width: ${breakpoints.landscapeTablet}) {
     margin-left: auto;
   }
 
   @media (min-width: ${breakpoints.laptop}) {
+    position: absolute;
+    right: 4rem;
+    bottom: 4rem;
+    scale: 1;
     order: 3;
     margin-left: 4rem;
   }
@@ -229,11 +247,6 @@ const Number = styled.span<{ type?: string }>`
   `};
 `;
 
-const StackBadges = styled.ul`
-  display: flex;
-  margin-left: .5rem;
-`;
-
 const StyledFooter = styled(Footer)`
   position: absolute;
   right: -5.5rem;
@@ -259,7 +272,6 @@ export {
   GmailIcon,
   LinkedinIcon,
   GithubIcon,
-  StackOverflowIcon,
   ListWrapper,
   List,
   ListItem,
@@ -267,6 +279,5 @@ export {
   MeAndCatWrapper,
   CatStyled,
   Number,
-  StackBadges,
   StyledFooter
 };

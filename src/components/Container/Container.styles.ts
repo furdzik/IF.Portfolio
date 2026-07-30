@@ -8,7 +8,6 @@ const Wrapper = styled.div`
   padding: 0 ${(props) => props.theme.layout.sidePadding};
 
   @media (min-width: ${breakpoints.portraitTablet}) {
-    width: ${(props) => props.theme.layout.width};
     max-width: ${(props) => props.theme.layout.width};
   }
 `;

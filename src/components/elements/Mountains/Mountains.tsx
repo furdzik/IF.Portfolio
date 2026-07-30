@@ -1,7 +1,12 @@
 import React from 'react';
 
 import {
-  Wrapper
+  Wrapper,
+  GiewontMt,
+  HillOne,
+  HillTwo,
+  HillThree,
+  HillFour
 } from './Mountains.styles';
 
 interface MountainsProps {
@@ -12,13 +17,13 @@ const Mountains = ({ className = '' }: MountainsProps) => (
   <Wrapper
     className={className}
   >
-    <span />
-    <span />
-    <span />
-    <span />
-    <span />
-    <span />
-    <span />
+    <HillOne />
+    <HillTwo />
+    <HillThree />
+    <HillFour />
+    <GiewontMt>
+      <span /><span /><span />
+    </GiewontMt>
   </Wrapper>
 );
 
